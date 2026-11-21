@@ -18,7 +18,7 @@ L = [
  ("Wellness Blog Engine", "$150–$300/mo", 150, 3, "Messages approved; prospects' blogs not checked yet", "Claude sharpens the messages and checks 10 prospects"),
  ("Review Reply Desk", "$79–$149/mo", 79, 3, "Quality gate step 1 of 5 (needs benchmark + real gold sample)", "Atlas re-checks PR #35; one timed dry run on a real public profile; you approve the pitch"),
  ("Listing Makeover", "$79 per 20 listings", 79, 3, "Quality gate: gold sample done (Davias); needs benchmark, scorecard, your read, free trial", "Atlas reviews PR #42; Claude finds the contact route for shops 1-3 and drafts their 2 free sample rewrites; you approve the pitch (tap 8)"),
- ("Fiverr gigs", "$15–$199 per order", 15, 3, "Account live (gravitystudios1); profile + first gig next, each gig waits on its quality gate", "Owner pastes profile text; reads the Listing Makeover sample",
+ ("Fiverr gigs", "$15–$199 per order", 15, 3, "Account live (gravitystudios1); profile + first gig next, each gig waits on its quality gate", "Owner pastes profile text; reads the Listing Makeover sample"),
  ("Social posting (Metricool)", "Free reach for every lane", None, 3, "Batch 01 ready: 10 draft posts for Concierge, Review Desk, Listing Makeover, GEO, Reactivation (Gravity-Studio PR #40, social_check 10/10); Metricool has no network connected (checked Nov 21 17:24 UTC)", "You connect your Facebook Page in Metricool (tap 12) and approve batch 01; Atlas reviews PR #40"),
  ("Paid diagnostic", "$250", 250, 2, "Ladder step after an audit", "Sell only to audit buyers"),
  ("Healing Guide PDF", "$39", 39, 2, "Manuscript lives on the owner's laptop (~/workspace/recipe-book)", "Owner shares the manuscript folder"),
