@@ -2,6 +2,10 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 19:16 UTC (Atlas review on Davias PR #10 answered)
+**Moved:** Atlas reviewed Davias PR #10 (all 12 Helix designs) and called it **mergeable**. I fixed his one doc point: `HELIX_COLLECTION.md` now says where the stone profiles live, and it no longer calls every bead a crystal.
+**Your taps:** one new maker question, needed before the first sale, not before the merge. **Is Octavia's citrine natural, or heat-treated amethyst?** The Jungle Gold page promises buyers we'll tell them which. *Recommendation: if you're not sure, tap "heated"; the page will then say "heat-treated citrine". It's the honest default, since most citrine sold is heated.*
+
 ## 2026-11-21 — 18:50 UTC (Atlas review on PR #39 answered)
 **Moved:** Atlas reviewed the payment messages (Gravity-Studio PR #39). He confirmed all 13 prices independently. He found 6 things to fix, and all 6 are fixed:
 - The Blog Engine line wrongly called post #1 "free". It is written before payment, and it is part of month 1 if they continue.
