@@ -16,6 +16,14 @@
 1. **Kai-Zen bar was understated — CORRECTED.** The hunt said ~$100k household income + ~$22k/yr. NIW's own site says **individual plans need $200,000 household income**; $100,000 is employer-sponsored plans only. Minimum contribution is **$21,350/yr** ($20,000 + $1,350 trust fee). A separate NIW/Allianz cover letter required $1M net worth for $100k–199k earners. The lowest premium-finance door is twice as high as the hunt said.
 2. Everything else in the hunt **held** under independent sources (see Part A).
 
+## CORRECTION — Nov 21, 2026 (execution pack, verified)
+
+Two scholarship items in this file were WRONG. Do not act on the original wording anywhere below:
+- **Perry "Second Chances" Scholarship ($10,000): HE DOES NOT QUALIFY.** It is for **women and girls** impacted by incarceration only (Thurman Perry Foundation). Do NOT apply. (Octavia fits the population but is not enrolled in college — a question only, not a plan.)
+- **NAACP "Empowering a Better Tomorrow" ($5,000): he DOES qualify, but the 2026 cycle CLOSED May 22, 2026.** 2027 dates not yet published — prepare now, apply when it opens (~April–May 2027, unverified). It is NOT an "apply now" item.
+- **Davis-Putter (up to $15,000/yr): CAN apply, deadline April 1, 2027** — the activism criterion is a real gap; do not claim activism he has not done.
+- Full detail: `~/workspace/research/money-lanes-execution-pack-2026-11-21.md`, Part 2.
+
 ---
 
 # PART A — TRIPLE CHECK of the loan/trust hunt
@@ -381,8 +389,8 @@ The owner named these specifically. They turn out to be the single biggest free-
 - **Federal Work-Study:** part-time campus (or approved off-campus) jobs for students with financial need; pay varies by school and hours. He must ask CCC's financial aid office whether work-study funds are available and what jobs exist — including remote/online-eligible roles, given no car. Work-study earnings do NOT count against next year's FAFSA the way regular earnings can (they are excluded from the SAI calculation) — a small but real advantage.
 - **Federal Direct Loans (optional — debt, not free money):** an independent first-year undergraduate can borrow **$9,500/yr** ($3,500 of it subsidized — no interest while enrolled at least half-time). This is a LOAN that must be repaid, with interest on the unsubsidized portion from day one. **Do not borrow the loans just to get the refund** — the Pell refund is already ~$4,155/yr without debt. Loans only make sense if a specific, larger expense requires it, and only after the Pell math is in hand. (Upper limits for independent students rise to $12,500/yr in later years.)
 - **Scholarships for formerly-incarcerated / reentry students (real, named):**
-  - **Perry "Second Chances" Scholarship** — one-time **$10,000** scholarships for formerly incarcerated students; 2026 cycle closed; next round opens **November 15, 2026** (i.e., open now — apply immediately).
-  - **NAACP "Empowering a Better Tomorrow" Scholarship (powered by Walmart)** — **$5,000** for formerly incarcerated individuals enrolled in public institutions.
+  - **Perry "Second Chances" Scholarship** — one-time **$10,000** scholarships — **CORRECTED Nov 21: HE DOES NOT QUALIFY. Women and girls only (Thurman Perry Foundation). Do NOT apply.**
+  - **NAACP "Empowering a Better Tomorrow" Scholarship (powered by Walmart)** — **$5,000** for formerly incarcerated individuals enrolled in public institutions — **CORRECTED Nov 21: 2026 cycle CLOSED May 22, 2026. 2027 dates not published — prepare now, apply when it opens (~April–May 2027, unverified).**
   - **Charles W. Colson Scholarship (Wheaton College, IL)** — full tuition + housing for formerly incarcerated students, 6+ months post-release; deadline **January 30** (annual) — but requires admission to Wheaton College in Illinois; only relevant if he would relocate, which he has not indicated. Listed for completeness.
   - **Davis-Putter Scholarship Fund** — up to **$15,000/yr** for students active in social-justice/community work + financial need; deadline April.
   - **Education Justice Project (Univ. of Illinois) scholarships** — $1,000 awards; two are for individuals released from an Illinois adult facility (IDOC) — **Illinois-only, does not fit him** (Arizona). Listed to show the pattern: most reentry scholarships are state- or school-specific, and Arizona has fewer named ones than Illinois/California/New York.
@@ -404,8 +412,8 @@ The owner named these specifically. They turn out to be the single biggest free-
 | Comet Promise | remaining tuition (likely $0 at his Pell level) | Qualifies at CCC |
 | Refund cash after tuition (fall + spring, full-time) | ~$4,155 | The money-in-pocket number |
 | Refund cash year-round (fall + spring + summer) | ~$6,233 | The money-in-pocket number |
-| Perry Second Chances Scholarship | $10,000 one-time | Apply now — cycle opened Nov 15, 2026 |
-| NAACP Empowering a Better Tomorrow | $5,000 | Apply |
+| Perry Second Chances Scholarship | $10,000 one-time | DOES NOT QUALIFY (women only) — do not apply |
+| NAACP Empowering a Better Tomorrow | $5,000 | Qualifies — 2027 cycle, prepare now |
 | Direct Loans (optional debt) | $9,500/yr max (year 1, independent) | Decline unless a specific need requires it |
 | Arizona Promise | $0 — does not qualify | Closed (recent-graduate rule) |
 | Veteran-family education benefits | $0 — does not transfer to a grandson | Closed |
@@ -733,8 +741,8 @@ Ranked by realistic cash in his pockets (free money first, then cheap money, the
 | 4 | **AHCCCS (Medicaid)** | Full health coverage (value: thousands/yr) | FREE | ~30 days | Same application as SNAP | Same application |
 | 5 | **GoFundMe (+ mirrors)** | $500–$2,000 first 30 days (planning range); upside $10k–$50k+ if viral | FREE (gifts; 2.9% + $0.30/donation) | Days after launch (transfers 2–5 business days) | Story + video + photos + sharing | His approval of exact text + photos/video |
 | 6 | **SBA microloan** | $5k–$15k realistic at 90 days; avg ~$13k; max $50k at 12 mo | REPAYABLE, 8–13% APR, up to 7 yrs | 30–60+ days after application | Business plan + projections + intermediary application | Business plan; score ~575–620+; AZ CDFI intermediary |
-| 7 | **Perry Second Chances Scholarship** | $10,000 one-time | FREE | Next cycle (opened Nov 15, 2026) | One application | Application + proof of prior incarceration |
-| 8 | **NAACP Empowering a Better Tomorrow** | $5,000 | FREE | Next cycle | One application | Enrolled in a public institution |
+| 7 | **Perry Second Chances Scholarship** | $10,000 one-time | DOES NOT QUALIFY (women only) — do not apply | — | — | — |
+| 8 | **NAACP Empowering a Better Tomorrow** | $5,000 | FREE | 2027 cycle — prepare now | One application | Enrolled in a public institution |
 | 9 | **Plasma (first month)** | Up to ~$800 | FREE (body fluid; health trade-off) | Same day per visit | 2–3 hrs first visit; 1–1.5 hrs after | Transport to a center + passing the health screen |
 | 10 | **AzLEAP** | Up to $2,500/yr (avg ~$1,000) | FREE | With the FAFSA package | Same FAFSA | Enrollment at CCC |
 | 11 | **FSEOG** | Up to $4,000/yr | FREE | With the FAFSA package | Same FAFSA, filed early | Early FAFSA; funds limited |
@@ -765,9 +773,9 @@ Each plan combines the best of Parts B–G. Each was tested against the sources 
 
 | Horizon | Cash in pockets (realistic) | Steps in order |
 |---|---|---|
-| **30 days** | ~$306/mo SNAP (from ~day 14–30) + AHCCCS coverage + GoFundMe $500–$2,000 (if launched week 1) + $0 Pell yet (refund comes at term start). **Realistic 30-day cash: ~$800–$2,300** (SNAP + GoFundMe; Pell not yet). | 1. File FAFSA (Nov 2026, for spring 2027). 2. Apply to CCC + confirm diploma/GED or ATB path. 3. Apply for SNAP + AHCCCS (Health-e-Arizona Plus). 4. Approve GoFundMe draft + record video + launch. 5. Open secured card ($200 Discover). 6. Search unclaimed property (AZ + CA). 7. Apply for Perry ($10,000) + NAACP ($5,000) scholarships. |
+| **30 days** | ~$306/mo SNAP (from ~day 14–30) + AHCCCS coverage + GoFundMe $500–$2,000 (if launched week 1) + $0 Pell yet (refund comes at term start). **Realistic 30-day cash: ~$800–$2,300** (SNAP + GoFundMe; Pell not yet). | 1. File FAFSA (Nov 2026, for spring 2027). 2. Apply to CCC + confirm diploma/GED or ATB path. 3. Apply for SNAP + AHCCCS (Health-e-Arizona Plus). 4. Approve GoFundMe draft + record video + launch. 5. Open secured card ($200 Discover). 6. Search unclaimed property (AZ + CA). 7. NAACP scholarship prep (2027 cycle) + Davis-Putter application (deadline April 1, 2027). Perry does NOT qualify — do not apply. |
 | **90 days** | Pell spring refund ~$2,078 (mid-Jan, within 14 days of term start) + SNAP ~$918 (3 mo) + GoFundMe ongoing + part-time work income starting. **Realistic 90-day cumulative cash: ~$4,000–$7,000** (including the Pell refund). | 8. Start CCC spring term (full-time if workload allows, else 6–9 credits). 9. Set up direct deposit for the refund. 10. Start part-time W-2 or GEO/concierge income + document it (business account + invoices). 11. File SBA microloan application (business plan ready). |
-| **365 days** | Pell refunds ~$4,155 (fall + spring) or ~$6,233 (year-round) + SNAP ~$3,672 + work income (part-time $800–$1,500/mo = $9,600–$18,000/yr gross, if sustained) + GoFundMe ongoing + possible Perry/NAACP ($0–$15,000). **Realistic 365-day cash: ~$18,000–$30,000** (mostly earned income + Pell + SNAP; scholarships are upside). Plus: a 650+ credit score, a business file, and a microloan ($5k–$15k) as borrowing capacity. | 12. Summer term (year-round Pell). 13. Fall 2027 term. 14. Microloan funds (if approved) invested in the businesses. 15. File 2026 taxes with Schedule C → EITC up to $664. 16. Evaluate NAU transfer + A2E for year 2. |
+| **365 days** | Pell refunds ~$4,155 (fall + spring) or ~$6,233 (year-round) + SNAP ~$3,672 + work income (part-time $800–$1,500/mo = $9,600–$18,000/yr gross, if sustained) + GoFundMe ongoing + possible NAACP/Davis-Putter ($0–$20,000). **Realistic 365-day cash: ~$18,000–$30,000** (mostly earned income + Pell + SNAP; scholarships are upside). Plus: a 650+ credit score, a business file, and a microloan ($5k–$15k) as borrowing capacity. | 12. Summer term (year-round Pell). 13. Fall 2027 term. 14. Microloan funds (if approved) invested in the businesses. 15. File 2026 taxes with Schedule C → EITC up to $664. 16. Evaluate NAU transfer + A2E for year 2. |
 
 **Test:** Pell eligibility — PASSES (independent, $0 income, no felony bar). CCC tuition math — PASSES ($129/credit published). SNAP/AHCCCS — PASSES ($0 income, under limits). Arizona Promise — FAILS (recent-graduate rule) and is excluded from this plan. Work-study — UNCERTAIN (depends on CCC funds/jobs); treated as upside, not base. **Plan 1 is the strongest plan on free money + lowest risk.** Its weakness: the Pell refund does not arrive until January, so the first 30 days depend on SNAP + GoFundMe + work.
 
@@ -789,7 +797,7 @@ Each plan combines the best of Parts B–G. Each was tested against the sources 
 
 | Horizon | Cash in pockets (realistic) | Steps in order |
 |---|---|---|
-| **30 days** | SNAP ~$306 + AHCCCS + GoFundMe $500–$2,000 + plasma up to ~$800 (first month, if transport + screening pass) + unclaimed property (unknown). **Realistic 30-day cash: ~$1,300–$3,100** (without plasma: ~$800–$2,300). Zero debt taken on. | 1. SNAP + AHCCCS application (day 1). 2. FAFSA filed (for spring Pell — even though school starts later, the FAFSA is the key to FSEOG/AzLEAP funds). 3. GoFundMe launch. 4. Unclaimed property searches. 5. Plasma center check (nearest CSL/BioLife + transport plan + screening). 6. Perry + NAACP scholarship applications. 7. Secured card ($200) — the only "debt" instrument, and only used for purchases paid in full. |
+| **30 days** | SNAP ~$306 + AHCCCS + GoFundMe $500–$2,000 + plasma up to ~$800 (first month, if transport + screening pass) + unclaimed property (unknown). **Realistic 30-day cash: ~$1,300–$3,100** (without plasma: ~$800–$2,300). Zero debt taken on. | 1. SNAP + AHCCCS application (day 1). 2. FAFSA filed (for spring Pell — even though school starts later, the FAFSA is the key to FSEOG/AzLEAP funds). 3. GoFundMe launch. 4. Unclaimed property searches. 5. Plasma center check (nearest CSL/BioLife + transport plan + screening). 6. NAACP scholarship prep (2027 cycle) + Davis-Putter (deadline April 1, 2027). Perry does NOT qualify — do not apply. 7. Secured card ($200) — the only "debt" instrument, and only used for purchases paid in full. |
 | **90 days** | SNAP ~$918 + Pell spring refund ~$2,078 (if enrolled spring) + GoFundMe + plasma steady ~$240–$560/mo + first freelance/gig income. **Realistic 90-day cumulative cash: ~$4,500–$8,000.** Zero debt. | 8. CCC spring enrollment (even part-time — 6 credits still draws 50% Pell ≈ $1,848/yr refund). 9. Freelance/gig work documented from day one (business account + invoices). 10. FCRA block letters filed. 11. Lifeline phone discount ($9.25/mo) once SNAP/AHCCCS approved. |
 | **365 days** | Pell ~$4,155–$6,233 + SNAP ~$3,672 + plasma ~$2,880–$6,720/yr (if sustained 2x/week — **note the health trade-off; do not plan on max frequency**) + gig/freelance income + possible scholarships ($0–$15,000). **Realistic 365-day cash: ~$12,000–$22,000** without scholarships, **$12,000–$37,000** with one scholarship. Zero debt; credit score rebuilt toward 650+; documented income ready for year-2 borrowing. | 12. Summer Pell. 13. Fall term. 14. 2026 tax return + Schedule C + EITC. 15. Year-2 borrowing from strength (microloan, 0% card, business lines). |
 
@@ -799,7 +807,7 @@ Each plan combines the best of Parts B–G. Each was tested against the sources 
 
 Plans 1 + 3 overlap almost entirely, and Plan 2's income work fits inside both. **Do not pick one plan — run the combined sequence:**
 
-1. **This week:** FAFSA + CCC application + SNAP/AHCCCS + GoFundMe launch + secured card + unclaimed property + scholarship applications (Perry + NAACP) + LLC/EIN/business account + FCRA block letters started. (All of Plans 1 + 3, plus Plan 2's foundation.)
+1. **This week:** FAFSA + CCC application + SNAP/AHCCCS + GoFundMe launch + secured card + unclaimed property + scholarship prep (NAACP 2027 + Davis-Putter) + LLC/EIN/business account + FCRA block letters started. (All of Plans 1 + 3, plus Plan 2's foundation.)
 2. **Days 30–90:** start CCC spring term; launch concierge + GEO outreach; document every dollar; apply for the microloan; apply for Freedom Rise at month 2–3.
 3. **Days 90–365:** summer Pell; keep the businesses selling; microloan funds deployed; file 2026 taxes + Schedule C; EITC; evaluate NAU/A2E transfer and the 0% card at month 12.
 
@@ -823,7 +831,7 @@ Plans 1 + 3 overlap almost entirely, and Plan 2's income work fits inside both. 
 9. ☐ LLC formation (Arizona, $50) + EIN (free, IRS online) + business bank account.
 10. ☐ D-U-N-S number request (free, D&B).
 11. ☐ Unclaimed property searches: MissingMoney.com + azdor.gov + claimit.ca.gov (CA).
-12. ☐ Perry Second Chances Scholarship ($10,000 — cycle opened Nov 15, 2026) + NAACP Empowering a Better Tomorrow ($5,000) — applications drafted for his review.
+12. ☐ NAACP Empowering a Better Tomorrow ($5,000 — 2027 cycle, prepare now) + Davis-Putter (up to $15,000/yr, deadline April 1, 2027) — applications drafted for his review. Perry does NOT qualify (women only) — do not apply.
 13. ☐ FCRA identity-theft block letters: pull all three bureau reports (AnnualCreditReport.com, free weekly); draft the §605B letters with the facility letterhead proof.
 14. ☐ Business plan + projections for the microloan (GEO + concierge + dead-lead + Missed-Call Rescue, one page each: what it sells, who buys, what it costs, what it earns).
 15. ☐ Ko-fi tip-jar page (free plan) linked in his bios.
@@ -888,7 +896,7 @@ Plans 1 + 3 overlap almost entirely, and Plan 2's income work fits inside both. 
 - LegalClarity, "Will FAFSA Reimburse You?" + "How to Access FAFSA Money" + "Do You Get a Federal Pell Grant Every Semester?" — credit-balance refunds within 14 days (34 CFR 668.164(h)); FAFSA 2026–27 federal deadline June 30, 2027; uses 2024 income; year-round Pell up to 150%.
 - Idaho State University, Summer Aid — 2026–27 FAFSA deadline June 30, 2027; summer Pell from the same award year.
 - The College Investor, "How to Appeal a Financial Aid Award" + SUNY Cortland + Concord University + WSU — professional judgment (HEA § 479A): aid administrator may adjust SAI data elements case-by-case with documentation; adjustments valid only at that college; colleges may not deny all requests.
-- Education Justice Project (Univ. of Illinois), "Guide for Incarcerated and Formerly Incarcerated Individuals" (June 2026) + ScholarshipsAndGrants.us — Perry "Second Chances" Scholarship $10,000 (2026 cycle closed; next opens Nov 15, 2026); NAACP Empowering a Better Tomorrow $5,000; Colson Scholarship full tuition + housing (Wheaton; deadline Jan 30); Davis-Putter up to $15,000/yr (deadline April); EJP $1,000 scholarships (Illinois IDOC only).
+- Education Justice Project (Univ. of Illinois), "Guide for Incarcerated and Formerly Incarcerated Individuals" (June 2026) + ScholarshipsAndGrants.us — Perry "Second Chances" Scholarship $10,000 — **CORRECTED Nov 21: women and girls only, he does NOT qualify**; NAACP Empowering a Better Tomorrow $5,000 (2026 cycle closed May 22, 2026; 2027 dates not published); Colson Scholarship full tuition + housing (Wheaton; deadline Jan 30); Davis-Putter up to $15,000/yr (deadline April 1, 2027); EJP $1,000 scholarships (Illinois IDOC only).
 - LegalClarity, "What Benefits Can I Get If My Grandfather Was in the Military?" + VA sources — GI Bill transfer: spouse/children only; Fry Scholarship: child/spouse of service member who died in the line of duty on/after Sept 11, 2001; Chapter 35 DEA: child/spouse of P&T or deceased veteran (~$1,574–$1,621/mo full-time). Grandchildren do not qualify except by legal adoption.
 
 ## Part E
