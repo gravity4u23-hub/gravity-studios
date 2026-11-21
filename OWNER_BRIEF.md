@@ -2,6 +2,11 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 09:24 UTC hourly run
+**Moved:** Davias PR #8 builds 5 Helix pieces into the site. It adds matching text, Double/Triple/Single filters, the Blush Trinity tourmaline fix and the Earth Circle care fix. A new site check passes 117/117. Review Reply Desk (PR #35): all 6 Atlas points are fixed. The promise is now 2 business days (with daily collection), there is a no-invented-facts rule, overage is defined, and the time estimate is labelled untested. PR #29's path and issue #23's flash line are fixed too. Two new research items were reviewed, not applied. The loan plan must call El Portal and the others *prospects*, not buyers. 7 of the 9 "services split" ideas are regulated; credit repair in Arizona needs a surety bond (A.R.S. §44-1708). Recommendation: keep only Plan Builder and Income Proof as candidates.
+**Next:** Atlas reviews Davias #8 and re-checks #35. Then Davias #4 (launch fixes) and a timed Review Desk dry run.
+**Your taps:** nothing new this run. The open list is on the dashboard. Fastest money first: send the El Portal DM, approve the two pitches, create the Fiverr account.
+
 ## 2026-11-21 — 08:24 UTC hourly run
 **Moved:** Missed-Call Rescue is un-parked (MASTER_PLAN #2). Gravity-Studio PR #34 adds a $149 Dead-Lead Reactivation Kit: the business exports its old quotes and missed callers, and we return a cleaned list plus a 3-text win-back sequence that it sends from its own phone. We need no logins and spend $0. `reactivate.py --test` passes 10/10 (consent, opt-out, duplicates, 30-day hold, a STOP line on every text). It's built this way because the Nov 14 test found no buyers for a standalone missed-call *diagnostic*. No new research items or Atlas comments since the 08:23 run.
 **Next:** Atlas reviews #34, #33, #32 and #28; then Davias #5 (Helix build.py).
