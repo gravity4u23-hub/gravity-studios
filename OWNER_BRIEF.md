@@ -2,6 +2,11 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 12:24 UTC hourly run
+**Moved:** The Fiverr gigs now have their cover images. Gravity-Studio PR #38 adds six 1280 × 769 covers, one per gig, and a script that rebuilds and checks them. The check passes 8/8: right size, nothing cut off, no phone/email/links (Fiverr bans them on images), and no "guarantee", "#1" or cure words. It caught two problems on the first render, both fixed. Gig 1's top package also said "answered within 48h"; it now says 2 business days, matching the Review Desk promise. Since 11:24 there have been no new research items, Atlas comments or Grok tasks.
+**Next:** Atlas reviews #37/#38 and re-checks #35. Then the timed Review Desk dry run.
+**Your taps:** nothing new. When you create the Fiverr seller account (dashboard tap 13), the 6 gigs are ready to paste with covers. Fastest money first: DM El Portal, post the Resale Concierge offer.
+
 ## 2026-11-21 — 11:24 UTC hourly run
 **Moved:** Review Reply Desk (Gravity-Studio PR #35) now has a reply checker. `review_lint.py` checks every drafted reply before it goes out: 2–4 sentences, signed, no refunds or discounts you didn't approve, never asks for a review change, no patient details for clinics, and no claims that something changed at the business unless you confirmed it. Its test passes 12/12. On its first run it caught one of our own sample replies promising "price cards this month", a fact no owner had confirmed. That sample is fixed, and so is a second one that invented a "carne asada night". Since 10:25 there have been no new research items, Atlas comments or Grok tasks.
 **Next:** Atlas re-checks #35 and reviews Davias #8/#9. Then the timed Review Desk dry run on a real public profile (drafts only, nothing posted).
