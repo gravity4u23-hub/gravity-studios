@@ -3,6 +3,7 @@
 Source: https://x.com/sirenpatriot/status/2123858843142586449
 Author: @sirenpatriot. Video ~1.5 min. Transcribed by Atlas local transcriber (faster-whisper base), Nov 21, 2026.
 Post text: not yet retrieved — X post page blocked in cloud browser (403); the video transcript below is the substance. Local transcript: `~/workspace/ai-leads/transcripts/2123858843142586449.txt`.
+Full test with sources: `research/loan-trust-verification-2026-11-21.md` (this repo).
 
 ## Transcript (verbatim, from video audio)
 
@@ -14,28 +15,31 @@ Post text: not yet retrieved — X post page blocked in cloud browser (403); the
 2. Get an EIN from the IRS website, create a trust with it, put the policy in the trust.
 3. Borrow $1M against the policy. Buy house/car cash, pay off debt, "be your own bank" — pay yourself back with interest.
 
-## Atlas first-pass verification (Nov 21 — now UNDER CHALLENGE, see status below)
+## Status — TESTED with real numbers (Nov 21). REFUTED 0/6. $0 accessible now.
 
-- Policy loans borrow against CASH VALUE, not the death benefit. A brand-new whole life policy has ~$0 cash value. In year 1 you could borrow roughly $0–500, not $1M. Cash value builds slowly over years.
-- $100/mo does not buy $1M of whole life. Realistic premium for a healthy adult is roughly $300–600+/mo. $100/mo buys ~$100–250k of whole life, or $1M of TERM life — term has no cash value and cannot be borrowed against.
-- The trust/EIN adds nothing to borrowing power. The trust's "value" is the policy's cash value.
-- "Be your own bank" (infinite banking) is a real concept but slow: 10–30 years of funded premiums. Loan interest (typically 5–8%) accrues; if loan + interest exceeds cash value the policy can lapse, and the outstanding loan balance can become taxable income.
-- Owner's situation: no/low documented income right now. Insurers require income to justify $1M coverage (typically 10–15x income). Approval is unlikely and premiums are unaffordable.
-- The "only a criminal would do that" framing is the video's joke/hook (reverse psychology). Policy loans themselves are legal; the video's instant-$1M version simply doesn't exist.
+Atlas's first pass said no; the owner challenged it — test every assumption, find the loopholes. Tested with real sources (full write-up in `loan-trust-verification-2026-11-21.md`):
 
-## Status (updated Nov 21) — UNDER TEST, do not close this
+1. **Policy loans borrow cash value, not death benefit.** Max loan 75–90% of cash surrender value. A new policy has ~$0 cash value.
+2. **$1M whole life is $700–$1,210/mo** (healthy male ~35; typical ~$870–950), not $100/mo. $100/mo buys ~$78–86k of whole life — or $1M of TERM, which has zero cash value and can't be borrowed against. That's the video's sleight of hand: term pricing + whole-life borrowing.
+3. **Cash value timeline kills it.** Real illustrations: year 1 $0 (traditional), year 5 ~$9–37k, year 10 ~$37–116k, year 20 ~$125–338k on a $1M policy. Even the best PUA-heavy "infinite banking" design only gets year-1 cash value to 56–85% of premiums PAID — at $100/mo that's ~$670–$1,020 cash value, ~$500–920 max loan.
+4. **The trust makes it worse, not better.** An ILIT (the trust type for holding life insurance) means the insured CANNOT borrow against the policy at all — borrowing would be "retaining incidents of ownership." A revocable trust changes nothing. The EIN is real and free — but it's just a tax ID, it creates no money.
+5. **Lenders use net cash surrender value, never face value** — 70–90% LTV on cash value. No legitimate lender lends $1M against ~$0 cash value.
+6. **Financial underwriting: 10–20x income justification.** At ~$0 documented income, justifiable coverage is ~$0. A $1M application would likely be declined before medical underwriting. (Damaged credit is NOT the binding constraint — insurer policy loans need no credit check.)
 
-Atlas's first-pass read said $0 accessible now. The owner challenged that: do NOT assume it's BS. Test every assumption with real numbers, hunt the loopholes, find the version that CAN work. Full crew test running:
+**What would have to be true for the $1M-now version: 0 of 6 are true.**
 
-- Atlas: live whole-life quotes + mechanics research (in progress).
-- Claude: Gravity-Studio issue — test every assumption, find the loopholes, find the working version.
-- Grok: same challenge, when credits return Sunday Nov 22.
+## Best LEGITIMATE version (tested)
 
-The first-pass Mill rating (✖ for money-now) is SUSPENDED pending the test. The verdict will be revised with tested numbers. If a working version exists — even a smaller/faster one — that becomes the build.
+Life insurance stores wealth; it doesn't create it. Fastest real path: get income first (GEO audit, concierge, dead-lead reactivation, Missed-Call Rescue), then fund a PUA-heavy policy at what's affordable.
+
+- $100/mo PUA-heavy policy (~$80–85k face): year 1 max loan ~$500–920; year 5 ~$3,150–$5,400; year 10 ~$8,000–$13,500.
+- To borrow $1M: need ~$1.1–1.3M cash value → paying ~$1.1–1.7M in premiums over decades, or a single premium of ~$1M+.
+- Premium financing is real but gated to $5–10M+ net worth — not accessible here.
+
+**Verdict: Mill rating ✖ for money-now. Do NOT build the $1M-now version. The small version is real but slow — it becomes relevant only after income exists.**
 
 ## Apply / build commands
 
-- HOLD: do not build anything around this until the crew test lands. No "$1M loan" product, no outreach.
-- Claude/Grok: post findings as comments on the Gravity-Studio issue + update this file. If the verdict changes, say so plainly with the numbers.
-- If a step requires misrepresenting value to a lender, that's fraud — do NOT build that. Legal lanes only. Find the legal loopholes.
+- Claude/Grok: challenge these numbers in the open (Gravity-Studio issue #30). If any number is wrong, correct it with a source. If you find a loophole the test missed, post it — the verdict changes on evidence, not on assertion.
+- Do NOT build any "$1M loan" product or outreach. If the Bridge ever covers infinite banking, it must lead with the cash-value timeline and real premium numbers, never the $1M-instant version.
 - Owner's money-now lanes stay live meanwhile: GEO audit $149, concierge, dead-lead reactivation, Missed-Call Rescue.
