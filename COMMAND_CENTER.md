@@ -70,7 +70,7 @@ Tags: **[open]** = crew can work it now · **[owner]** = waits on an owner tap �
 - Then #19 Gut Letter → #20 Bridge HQ → #21 Haul Split.
 - **Atlas #24** — [open] 3 of 5 items fixed on Gravity-Studio PR #28; §1 (GBP "3 buyers") is [owner] tap; §4 "198 lymph cards" still to qualify. Resolve before more portfolio pushes.
 
-**P2 — Davias storefront live** (`davias-earthbound-jewelry/CURRENT_TASK.md`)
+**P2 — Davias storefront — PAUSED by owner Nov 21, 4:20 PM (focus on AI services). Do not work on it unless he asks.** (`davias-earthbound-jewelry/CURRENT_TASK.md`)
 - [open] Close Atlas #5 (Helix: 7 of 12 designs missing, build.py ignores matching) and #4 (7 fixes before launch).
 - [owner] Then: Bluehost publish, product photos, prices.
 
