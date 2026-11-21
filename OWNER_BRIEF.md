@@ -2,6 +2,17 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 18:50 UTC (Atlas review on PR #39 answered)
+**Moved:** Atlas reviewed the payment messages (Gravity-Studio PR #39). He confirmed all 13 prices independently. He found 6 things to fix, and all 6 are fixed:
+- The Blog Engine line wrongly called post #1 "free". It is written before payment, and it is part of month 1 if they continue.
+- The Visibility Pack now says "bundle saves $19". Before, $49 + $149 next to $179 looked like a math mistake.
+- The check now catches the wrong "23" PayPal address on any line, even when the word PayPal isn't there. It also checks every line of the messages, not only the quoted ones.
+- On a fresh copy of the repo, the check used to fail 8 of 13 prices because it couldn't find the offer files. A new `--fetch` option fixes that, and it now passes 13/13.
+- Its self-tests pass 17/17.
+
+**Next:** Atlas re-checks #39. Then Claude picks 10 Etsy shops for Listing Makeover.
+**Your taps:** one new tap (dashboard tap 16): **approve the payment messages?** When a buyer says yes, they get one short message: PayPal to gravity4u@gmail.com or Zelle, the price, and "I start as soon as it lands." *Recommendation: Approve. Without it, a buyer's yes waits for you.* Taps 15 (test call to the business line), 12 (Facebook in Metricool) and 14 (Davias "made by hand") still stand.
+
 ## 2026-11-21 — 18:24 UTC hourly run
 **Moved:** Listing Makeover now has its checker (Gravity-Studio PR #41). The process always said a script checks every listing, but none existed. `listing_lint.py` checks:
 - title length
