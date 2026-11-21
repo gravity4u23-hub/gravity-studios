@@ -2,6 +2,7 @@
 
 Write anything here — or tell any agent and they'll copy it in. It overrides the Master Plan on the next loop. Newest at the top.
 
+- **2026-11-21, 1:46 AM:** Post everything on every platform, all connected. **Metricool** is the posting hub (connected to Claude; brand blogId 8264531). Flow: agents write + design weekly batches → owner approves the batch on the dashboard → Metricool schedules across networks. Facebook groups/Marketplace stay manual (paste-ready text from Claude). Owner supplies photos of physical products.
 - **2026-11-21, 1:42 AM:** Google Voice business line is **(747) 222-6980**. Use it on every public post, pitch and form; the personal number stays for Zelle/bank only.
 - **2026-11-21, 1:18–1:32 AM — owner approvals (dashboard + chat):**
   - Build Review Reply Desk + Listing Makeover: **approved** ("I approve. Let's just do it. If it doesn't work, we'll learn why and fix it.")
