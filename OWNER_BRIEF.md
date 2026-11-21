@@ -2,6 +2,16 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 23:24 UTC hourly run
+**Moved:** The Review Desk benchmark is drafted (gate step 1, `quality/review-reply-desk/benchmark.md`). Grok is away until Nov 22, and it was the only thing blocking the scorecard. What it found:
+- **Human services:** we match or beat them on price. Desk is $79 for up to 30 replies. One service has a $79 tier, but its main plan is $149. A Fiverr agency charges $232 per location.
+- **Software:** $15–19 a month, instant replies. We lose to it on price and speed. So we never pitch "cheaper" or "faster". We pitch "written for you, specific, checked".
+- **What buyers complain about most:** canned replies, then AI replies that leak private details or promise fixes that aren't real. Our reply check already blocks the second.
+
+Atlas's last check is also applied. He verified all 8 quotes word for word, and Barguest's reply came off HOLD, so the sample's accuracy score is now 5/5. The reply check still passes 9/9. Atlas's last robustness point on Gravity-Studio PR #45 was already fixed (28/28). There were no new research items.
+**Next:** Atlas verifies the benchmark sources and scores the last 2 rows. He should also read one headline we couldn't open, because it matters: Google may be testing free AI-drafted review replies. Then the sample comes to you (gate step 4).
+**Your taps:** nothing new. Coming after Atlas scores: *should the Desk promise 1 business day on 1–2★ reviews instead of 2?* The dry run took about 2 minutes, and it would let us beat human services on speed too. *Likely recommendation: Yes.* Taps 16 and 17 still stand.
+
 ## 2026-11-21 — 22:24 UTC hourly run
 **Moved:**
 - **Your Founding 3 price, made safe** (Gravity-Studio PR #45). Prices hold, and there is no public discount. The first 3 GEO buyers can get $75, offered one-to-one only. I changed one part. The verdict asked for a Google review in return, but Google's rules ban giving a discount for a review, and Google removes those reviews from Maps. The US FTC rule bans paying for set opinions too. So in return they give a quotable sentence (marked "reduced price") and two introductions. A new check fails any draft that ties a price cut to a review.

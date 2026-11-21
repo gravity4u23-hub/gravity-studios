@@ -1,6 +1,6 @@
 # Gold sample replies — SweetSoftSkin (Etsy, Peoria AZ)
 
-Lint input for `review_lint.py` (Gravity-Studio `portfolio/review-reply-desk/`). Reviews are **real and public**, quoted verbatim from https://www.etsy.com/shop/SweetSoftSkin as read on 2026-11-21 ~21:27 UTC. Atlas re-checked 5 of the 8 quotes word for word against the live page at ~22:15 UTC (Dana, Kaitlin, Michael Sep 22, both Ashley); Allen, Michael Aug 27 and Barguest sit on page 2 and are not yet re-verified. Replies are **drafts only — nothing posted, shop not contacted.** Signer "Margaret" is the owner name the shop page shows; a real client's voice card would set it.
+Lint input for `review_lint.py` (Gravity-Studio `portfolio/review-reply-desk/`). Reviews are **real and public**, quoted verbatim from https://www.etsy.com/shop/SweetSoftSkin as read on 2026-11-21 ~21:27 UTC. Atlas re-checked all 8 quotes word for word against the live pages: 5 at ~22:15 UTC (Dana, Kaitlin, Michael Sep 22, both Ashley) and Allen, Michael Aug 27 and Barguest on page 2 at ~22:52 UTC (gravity-studios #6, comment 7070519428). Replies are **drafts only — nothing posted, shop not contacted.** Signer "Margaret" is the owner name the shop page shows; a real client's voice card would set it.
 
 ### SweetSoftSkin — 5★
 > *Review (Dana, Oct 9, 2026, Emerald Rainfall Soap Bars):* "Love the scent and name! thanks!"
@@ -35,7 +35,7 @@ Lint input for `review_lint.py` (Gravity-Studio `portfolio/review-reply-desk/`).
 > *Review (Michael, Aug 27, 2026, Peach Bubbly Soap Bars):* "Excellent lather quality and scent. Rinses clean with no residue."
 > **Reply:** Thank you, Michael! A rich lather and a clean rinse with no residue is exactly what we want from every bar, so this means a lot. Enjoy the Peach Bubbly. — Margaret, SweetSoftSkin
 
-### SweetSoftSkin — 5★ · ⚠ HOLD: not sendable until the full review is read
+### SweetSoftSkin — 5★ (HOLD lifted: Atlas read the full review ~22:52 UTC)
 *The page text cut this review off. The reply below uses only the visible part. Before it goes in any sample to the shop, read the full review (Atlas's local browser) and re-check the reply against it.*
-> *Review (Barguest, Aug 25, 2026, Emerald Rainfall Soap Bars; first part only, page text was truncated):* "This soap smells fresh and herbal, I love the little translucent emerald gems. This scent brings to mind rainfall..."
+> *Review (Barguest, Aug 25, 2026, Emerald Rainfall Soap Bars; full text, read by Atlas ~22:52 UTC):* "This soap smells fresh and herbal, I love the little translucent emerald gems. This scent brings to mind rainfall and green plants. Refreshing but not sharp."
 > **Reply:** Thank you, Barguest! We love that the little translucent emerald gems caught your eye. Hearing that the scent brings rainfall to mind is the best compliment Emerald Rainfall could get. — Margaret, SweetSoftSkin
