@@ -18,6 +18,7 @@ L = [
  ("Wellness Blog Engine", "$150–$300/mo", 150, 3, "Messages approved; prospects' blogs not checked yet", "Claude sharpens the messages and checks 10 prospects"),
  ("Review Reply Desk", "$79–$149/mo", 79, 3, "Prospects' unanswered reviews not counted yet; pitch text needs your OK", "Claude counts review gaps; you approve the pitch"),
  ("Listing Makeover", "$79 per 20 listings", 79, 3, "Prospect shops not picked yet; pitch text needs your OK", "Claude picks 10 Etsy shops; you approve the pitch"),
+ ("Fiverr gigs", "$15–$199 per order", 15, 3, "Seller account not created yet", "Owner creates the account; we paste 6 gigs"),
  ("Paid diagnostic", "$250", 250, 2, "Ladder step after an audit", "Sell only to audit buyers"),
  ("Healing Guide PDF", "$39", 39, 2, "Manuscript lives on the owner's laptop (~/workspace/recipe-book)", "Owner shares the manuscript folder"),
  ("Rewire Packs", "$12 / $45 bundle", 12, 2, "Depends on Subliminal Rewire app (Windows blocker #1)", "Fix Windows launch blocker"),
@@ -32,6 +33,7 @@ T = [
  (2, "Connect Instagram Messages — or just DM El Portal", "El Portal's website form is broken, so Instagram is the only way to send the $149 audit pitch. Fastest: open ig.me/m/elportalmexicanphx, paste the approved pitch (in your chat with Claude), send, then tap Mark done.", "Mark done", "GEO audit", 149),
  (8, "Approve the two new pitches", "Review Reply Desk: 'I noticed [Business] has [N] Google reviews without a reply… $79/month, first week free, no passwords.' Listing Makeover: 'I'll redo two of your listings free so you can see the difference.' Approve and each goes out only to checked prospects.", "Approve", "Review Reply Desk + Listing Makeover", 158),
  (11, "Post the Resale Concierge offer", "Your business number is in. The post is ready: 'Flagstaff-area neighbors — got stuff sitting around you want gone? I'll sell it for you on Facebook Marketplace… You keep 70%, I take 30%… text (747) 222-6980.' Post it on your Facebook and in the biggest Flagstaff buy/sell group, then tap Mark done.", "Mark done", "Resale Concierge", 120),
+ (13, "Create your Fiverr seller account", "Fiverr checks your ID, so only you can open it: fiverr.com → Join → Become a Seller. Then tap Mark done; we hand you the 6 gig pages (titles, packages, descriptions) to paste — review replies, Etsy listings, wellness blogs, AI search checks, resumes, Spanish pages.", "Mark done", "Fiverr (6 gigs)", 15),
  (12, "Link your social accounts in Metricool", "Metricool is connected to Claude. Open app.metricool.com/brands/connections?blogId=8264531 and connect your Facebook Page, Instagram (Business or Creator), and any of TikTok, Threads, Pinterest, Google Business Profile. Then tap Mark done and we start scheduling posts.", "Mark done", "Posting everywhere", None),
  (10, "Flip the GitHub Pages switch (2 minutes)", "You approved free hosting, but only you can turn it on. On github.com: gravity-studios → Settings → Pages → Deploy from a branch → main / root → Save. Then tap Mark done.", "Mark done", "Sales site", None),
 ]
