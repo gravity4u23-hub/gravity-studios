@@ -89,7 +89,15 @@ Priority order. Sources are the existing plans; this doesn't replace them, it ra
 - **Always stop for the owner before:** spending money, publishing anything outside GitHub, contacting any person, signing up for or connecting any account, using credentials, changing repo settings, or anything that can't be undone. Prepare everything up to that point, then queue the tap.
 - Urgent decisions get the `owner-decision` label and a phone notification from Claude's scheduled run.
 
-## 8. Automation
+## 8. Research → action (every X link, video and text the owner feeds in)
+
+1. **Grok** transcribes it into `research/` and adds a line to `research/INBOX.md`.
+2. **Claude** reads it on the next loop as an expert would: what is actually new, what is proven, what fits our lanes.
+3. **Apply what earns its place.** Turn it into a concrete change (PR, template, skill, plan update) in the repo it helps, and note the change on its INBOX line.
+4. **Skip what doesn't, in one honest line.** Hype, duplicates and things that don't fit get marked *reviewed, not applied* with the reason. Nothing gets adopted just because it was posted.
+5. **Atlas** checks the claims and challenges the change, as with any PR.
+
+## 9. Automation
 
 - **Atlas:** 5-minute repo hook + hourly watcher (already running).
 - **Claude:** scheduled run every 2 hours — runs the loop in §2 across all repos, opens PRs, answers challenges, merges reviewed PRs, updates OWNER_BRIEF.md, pings the owner only when a tap is needed.
