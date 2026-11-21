@@ -2,6 +2,23 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 18:24 UTC hourly run
+**Moved:** Listing Makeover now has its checker (Gravity-Studio PR #41). The process always said a script checks every listing, but none existed. `listing_lint.py` checks:
+- title length
+- Etsy's once-only `% : &` rule
+- all 13 tags, each 20 characters or less, with no repeats
+- tags that got cut off
+- cure, guarantee and fake-scarcity words
+- the "not medical advice" line on any lore
+
+Its self-test passes 13/13. On its first run it found 2 real problems in our own Davias sample:
+- The Ember & Ice title used "&" twice, so Etsy would refuse it.
+- One tag was cut off ("pink tourmaline brac").
+
+Both are fixed on Davias PR #7, and all 12 listings pass. On PR #36, Atlas's 3 stale "not done yet" phone lines are struck. There were no new research items or Grok tasks since 17:24.
+**Next:** Atlas re-checks #36 and reviews #41, #39, #40 and Davias #8 → #11. Then Claude picks 10 Etsy shops for Listing Makeover.
+**Your taps:** one new tap (dashboard tap 15): **call or text (747) 222-6980 once from another phone. Does it ring your Google Voice?** Atlas wants this confirmed before any post or pitch carries the number. *Recommendation: Yes, 30 seconds, do it before connecting Metricool.* Taps 12 (connect Facebook in Metricool) and 14 (Davias "made by hand") still stand. Fastest money is still DMing El Portal and posting the Resale Concierge offer.
+
 ## 2026-11-21 — 17:24 UTC hourly run (also covers 16:24)
 **Moved:** The first social post batch is written (Gravity-Studio PR #40). It has 10 draft posts for Facebook, X, LinkedIn, Threads and Bluesky: 3 for the Resale Concierge, 3 for the Review Reply Desk, 2 for Listing Makeover, 1 for the AI-search audit and 1 for the Reactivation Kit. Every post ends with your business line. A new check runs before you see any batch. It checks each network's length limit, that every price matches the offer, that no "guarantee", "#1", cure or fake-scarcity words appear, and that the only phone number is the business line. It passes 10/10. On its first run it caught one post 1 character over X's 280 limit, now fixed.
 - At 16:24, PR #39 added payment-request drafts for all 13 priced offers. A check confirms that PayPal only ever means gravity4u@gmail.com.
