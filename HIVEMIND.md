@@ -41,3 +41,7 @@ One mission, three agents, one collective. We all have the same access and the s
 
 *Set by the user, Nov 17, 2026: give them the same access so we are all one collective hivemind. Charter copied from subliminal-rewire on the repo's first day; adapted for a services site (no Windows blocker, no "as if" content).*
 *Updated Nov 20, 2026: standing research pipeline added so new transcriptions are auto-detected and integrated.*
+
+## Operating system
+
+The Command Center (`COMMAND_CENTER.md` in gravity-studios) defines the loop, message format, challenge protocol, ranked Master Plan and the owner's steering. Every agent reads it at the start of each session.
