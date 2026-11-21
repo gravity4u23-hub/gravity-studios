@@ -48,6 +48,7 @@ REPORT   → one line in OWNER_BRIEF.md; owner taps queued in §7
 ## 4. Challenge protocol (auto-troubleshooting)
 
 - Every PR and plan lists its **assumptions**. The reviewer must challenge at least one, with evidence.
+- **Brakes before speed** (realmarvelx research, Nov 21): every merge passes automated checks (tests/scripts in the PR) → Atlas review → owner or live-session merge. Any challenge Atlas raises twice becomes a standing check (a test, a script or a QC line), so it cannot recur.
 - Bugs: reproduce → find root cause → fix → add a test or check so it can't come back. No guess-fixes.
 - Disagreement: each side posts its best evidence once. Still split? Label `owner-decision` with both options and a recommendation in two lines. The owner picks; the loser executes it fully.
 - Atlas may block a merge only with a specific, fixable reason. Once Atlas has reviewed a PR and every blocking point is fixed or answered, it is ready to merge (by Claude in a live session, or by the owner).
@@ -57,20 +58,25 @@ REPORT   → one line in OWNER_BRIEF.md; owner taps queued in §7
 
 Priority order. Sources are the existing plans; this doesn't replace them, it ranks them.
 
-**P1 — First dollars in the money engine** (`Gravity-Studio/README.md`)
-- GEO audit $149 / GBP $49 / Visibility Pack $179 — pipeline built; blocked on owner taps (Instagram DM, business phone).
-- Next builds, in this order: **#18 Wellness Blog Engine** ($150–300/mo recurring, best long-term value) → **#22 Healing Guide $39** (asset exists: Recipe Book) → **#23 Rewire Packs** (reuses Subliminal Rewire) → #19 Gut Letter → #20 Bridge HQ → #21 Haul Split.
-- Resolve Atlas #24 (GBP buyer contradiction, unsourced numbers) before more portfolio pushes.
+**P1 — First dollars in the money engine** (`Gravity-Studio/README.md`, ranked with `Gravity-Studio/MASTER_PLAN.md` "What is next")
+Tags: **[open]** = crew can work it now · **[owner]** = waits on an owner tap · **[after X]** = waits on another item.
+- **GEO audit $149** — [open] runbook fixes (denominator, 35-min header, Unknown evidence, tested scorer) → then [owner] confirm the PayPal address on file (payment step) and connect Instagram Messages (only route to El Portal; Rescue/Spigner outreach goes by email/form). GBP $49 / Visibility Pack $179 ride the same pipeline.
+- **Missed-Call Rescue / dead-lead reactivation** — MASTER_PLAN #2 ("first service dollars in weeks"). [open] write the one-page offer + sample from the parked lane; same Phoenix buyer list as the audits.
+- **#18 Wellness Blog Engine** ($150–300/mo recurring) — [owner] approve the three message drafts (order flow on Gravity-Studio PR #31).
+- **#22 Healing Guide $39** — closest to a first dollar of the product lanes (Recipe Book exists), but [owner] the manuscript is on the owner's laptop. Moves ahead of #18 the moment the manuscript lands.
+- **#23 Rewire Packs** — [after P4] needs a Subliminal Rewire build that launches on Windows (#1).
+- Then #19 Gut Letter → #20 Bridge HQ → #21 Haul Split.
+- **Atlas #24** — [open] 3 of 5 items fixed on Gravity-Studio PR #28; §1 (GBP "3 buyers") is [owner] tap; §4 "198 lymph cards" still to qualify. Resolve before more portfolio pushes.
 
 **P2 — Davias storefront live** (`davias-earthbound-jewelry/CURRENT_TASK.md`)
-- Close Atlas #5 (Helix: 7 of 12 designs missing, build.py ignores matching) and #4 (7 fixes before launch).
-- Then owner taps: Bluehost publish, product photos, prices.
+- [open] Close Atlas #5 (Helix: 7 of 12 designs missing, build.py ignores matching) and #4 (7 fixes before launch).
+- [owner] Then: Bluehost publish, product photos, prices.
 
 **P3 — Gravity Studios sales site** (`gravity-studios/index.html`)
-- Owner decision: where it's hosted (GitHub Pages vs domain). Confirm PayPal address. Copy-email button test.
+- [owner] Decision: where it's hosted (GitHub Pages vs domain). Confirm PayPal address. Copy-email button test.
 
 **P4 — Subliminal Rewire** (personal, owner-only app)
-- #1 Windows launch blocker first; nothing else ships until the owner has tested a `main` build. Then #3–#6.
+- [open] #1 Windows launch blocker first. Inside this app only, no other feature PR ships until the owner has tested a `main` build ([owner]); other lanes are not frozen. Then #3–#6.
 
 **P1b — New services (from `strategy/SERVICE_OPPORTUNITIES.md`, owner direction Nov 21):** Review Reply Desk, then Listing Makeover (sample on Davias first). Same buyer list as the audits.
 
@@ -79,9 +85,9 @@ Priority order. Sources are the existing plans; this doesn't replace them, it ra
 ## 6. Genius moves — cross-lane leverage (proposed; Atlas, challenge these)
 
 - **Rewire Packs ← Subliminal Rewire.** Same affirmation engine, exported as audio/visual packs. One build, two lanes.
-- **Blog Engine ← Davias + Gut Letter.** Davias's science-first crystal content and the Gut Letter are live demos of the Blog Engine — portfolio pieces that sell it.
-- **GEO audit → Davias.** Run our own $149 audit on Davias first: free proof, a case study, and a better storefront.
-- **One outreach playbook.** `outreach-workarounds.md` becomes the shared playbook for every lane that contacts anyone.
+- **Blog Engine ← Gut Letter (later Davias).** [after #19] Once Gut Letter Issue 1 exists it is the best sample for wellness-business buyers; Davias crystal content is a weaker fit (different niche) and only counts once the storefront is live. Neither is a live demo today.
+- **GEO audit → Davias.** [after P2 live] Run our own audit on the published storefront. It is a labelled self-audit demo, not a case study — proof needs a paying external buyer.
+- **One outreach playbook.** `Gravity-Studio/revenue-command-center/outreach-workarounds.md` becomes the shared playbook for every lane that contacts anyone.
 - **Templates compound.** Every delivered audit/post becomes a template; every repeated workflow becomes a Claude skill.
 
 ## 7. The owner's seat — check-ins and steering
@@ -89,7 +95,7 @@ Priority order. Sources are the existing plans; this doesn't replace them, it ra
 - **OWNER_STEERING.md** is the steering wheel. Anything the owner writes there (or tells any agent, who copies it in) overrides this plan on the next loop.
 - **OWNER_BRIEF.md** — one short daily brief: what moved, what's next, and **his tap list** (pre-filled, one tap each).
 - **Always stop for the owner before:** spending money, publishing anything outside GitHub, contacting any person, signing up for or connecting any account, using credentials, changing repo settings, or anything that can't be undone. Prepare everything up to that point, then queue the tap.
-- Urgent decisions get the `owner-decision` label and a phone notification from Claude's scheduled run.
+- Urgent decisions get the `owner-decision` label and a push notification from Claude's hourly scheduled run (the Claude app's own notification — the scheduled task "Hivemind loop — Claude builder run" has push on). This is not the Hivemind Dashboard push (#17, still parked); Atlas's chat alarm stays the backup.
 
 ## 8. Research → action (every X link, video and text the owner feeds in)
 
@@ -108,5 +114,5 @@ Priority order. Sources are the existing plans; this doesn't replace them, it ra
 ## 10. Automation
 
 - **Atlas:** 5-minute repo hook + hourly watcher (already running).
-- **Claude:** scheduled run every hour (the shortest schedule allowed); Atlas's 5-minute hook covers the gaps — runs the loop in §2 across all repos, opens PRs, answers challenges, updates OWNER_BRIEF.md (scheduled runs open and fix PRs but never merge; merges happen in a live session or by the owner), pings the owner only when a tap is needed.
+- **Claude:** scheduled task "Hivemind loop — Claude builder run", hourly at :24 (created Nov 21, 07:09 UTC; first firing 08:16 UTC; the run log is each run's OWNER_BRIEF entry); Atlas's 5-minute hook covers the gaps — runs the loop in §2 across all repos, opens PRs, answers challenges, updates OWNER_BRIEF.md (scheduled runs open and fix PRs but never merge; merges happen in a live session or by the owner), pings the owner only when a tap is needed.
 - **Grok:** research and tasks as the owner feeds them; reads this file and the INBOX on every session.

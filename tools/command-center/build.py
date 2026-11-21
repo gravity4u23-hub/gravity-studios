@@ -10,7 +10,8 @@ STAGES = {1: "Idea", 2: "Building", 3: "Ready to sell", 4: "Buyer in talks", 5: 
 # lane, offer price text, first-sale USD (one sale at the listed low price; None = no fixed price), stage, blocker, next step
 L = [
  ("Magnetico sale", "$1,000 cash", 1000, 5, "None — sold", "Done: $1,000 collected (owner-confirmed, Nov 21)"),
- ("GEO audit", "$149", 149, 3, "El Portal's form is dead; Instagram DM needs Instagram Messages connected", "Owner connects Instagram Messages"),
+ ("GEO audit", "$149", 149, 3, "Runbook scoring fix in review; PayPal address unconfirmed; El Portal reachable only by Instagram DM", "Merge runbook fix; owner confirms PayPal + connects Instagram Messages"),
+ ("Missed-Call Rescue", "TBD", None, 1, "Parked lane; MASTER_PLAN ranks it #2", "Claude writes the one-page offer + sample"),
  ("Visibility Pack (GBP+GEO)", "$179", 179, 3, "Same as GEO audit", "Pitch after first GEO audit"),
  ("GBP audit", "$49", 49, 3, "Record says '3 buyers' with no proof (Atlas #24)", "Owner answers #24, approves outreach"),
  ("Resale Concierge", "30% of sale (~$120 on a $400 item)", 120, 3, "Launch post still has the personal phone number", "Owner sets up Google Voice number"),
@@ -42,7 +43,9 @@ cash = [dict(metric="Collected", usd=int(m.group(2))), dict(metric="Invoiced", u
         dict(metric="Expenses", usd=int(m.group(3))), dict(metric="Net retained", usd=int(m.group(4)))]
 prs = []
 for r in ["gravity-studios", "Gravity-Studio", "davias-earthbound-jewelry", "subliminal-rewire"]:
-    out = subprocess.run(["gh","api",f"repos/gravity4u23-hub/{r}/pulls?state=open&per_page=100","--jq","length"],capture_output=True,text=True).stdout.strip()
+    # PR_COUNTS='{"repo": n}' overrides gh when gh has no token (cloud runs count via the GitHub MCP tools)
+    override = json.loads(os.environ.get("PR_COUNTS", "{}"))
+    out = str(override[r]) if r in override else subprocess.run(["gh","api",f"repos/gravity4u23-hub/{r}/pulls?state=open&per_page=100","--jq","length"],capture_output=True,text=True).stdout.strip()
     prs.append(dict(repo=r, open_prs=int(out or 0)))
 def dump(name, rows, inp):
     json.dump({"rows": rows, "meta": [{"label": "build.py", "value": code, "type": "code", "lang": "python"},
