@@ -34,7 +34,7 @@ Tracked per service on the dashboard:
 ## Services and where they stand (Nov 21)
 | Service | Steps passed |
 |---|---|
-| Review Reply Desk | 2 done (Nov 21: `quality/review-reply-desk/gold-sample.md`, 8 real public Etsy reviews of SweetSoftSkin, 9 messages incl. the two-step 4★, lint 9/9; Atlas's 5 points fixed; a Google-profile sample still to follow); 3 partial (Atlas: accuracy 4, specificity 5, usefulness 4, speed 5; price/value + complaint-fix wait on step 1); needs 1, 3 (rows 5–6), 4, 5 |
+| Review Reply Desk | 1 drafted by Claude (Nov 21 23:24 UTC, `quality/review-reply-desk/benchmark.md`, Grok/Atlas to verify; Grok was away); 2 done (SweetSoftSkin, 8 real Etsy reviews, quotes 8/8 verified by Atlas, lint 9/9; Google-profile sample still to follow); 3 partial (Atlas: accuracy 5, specificity 5, usefulness 4, speed 5; rows 5–6 now scorable); needs 1 verified, 3 (rows 5–6), 4, 5 |
 | Listing Makeover | 2 (Davias Helix listings = gold sample); needs 1, 3, 4, 5 |
 | Wellness Blog Engine | 2 partly (sample post needs its pre-sale fixes); needs 1, 3, 4, 5 |
 | GEO / AI search check | — |

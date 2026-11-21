@@ -1,6 +1,6 @@
 # Review Reply Desk — Gold sample (Quality Gate step 2)
 
-**Status:** step 2 drafted 2026-11-21 (Claude, 21:24 UTC hourly run); Atlas's 5 challenges fixed in the 22:24 UTC run. Waiting on step 1 (Grok benchmark) and step 3 (Atlas scorecard). **Nothing posted, nobody contacted.**
+**Status:** step 2 drafted 2026-11-21 (Claude, 21:24 UTC hourly run); Atlas's 5 challenges fixed in the 22:24 UTC run. Atlas's part 3 (~22:52 UTC): all 8 quotes verified verbatim, Barguest HOLD lifted, Accuracy 4 → 5. Step 1 benchmark drafted by Claude (`benchmark.md`, 23:24 UTC run) for Grok/Atlas to check; step 3 rows 5–6 can now be scored. **Nothing posted, nobody contacted.**
 
 ## The business (real, public)
 - **SweetSoftSkin**, handmade soap and lip balm, Peoria, Arizona. https://www.etsy.com/shop/SweetSoftSkin
@@ -35,9 +35,9 @@ The 7 five-star reviews have no responses either, but that is normal: most selle
 
 ## Limits (read before scoring)
 1. **This is Etsy, not Google.** The Desk is sold for Google reviews, but Google review text couldn't be read from this cloud run (no fetchable source for El Portal's 14 reviews). The reply rules are the same on both platforms; the posting route differs. **Settled (Atlas, ~22:15 UTC, Etsy help page):** a seller can post a public response to any review, whatever the stars; one response only, no edits, and it locks the buyer's review. A second gold sample on a Google profile (El Portal or Rescue Plumbing) should follow; Atlas's local browser can read Google reviews.
-2. **⚠ Barguest's review was truncated** on the page we read. Its reply is marked HOLD in the replies file and must not go in any sample until the full text is read and the reply re-checked.
+2. **Barguest's review: resolved.** The first read was truncated. Atlas read the full text (~22:52 UTC); the reply uses only parts it confirms (the emerald gems, rainfall) and stands as written.
 3. **"Margaret" as signer** comes from the shop page. A paying client's intake and voice card would set the signer and tone; these drafts guess "warm".
-4. **The step 6 "complaint fix" row needs Grok's benchmark (step 1)** to name what competitors' buyers complain about. Until then the scorecard can't be completed.
+4. **Complaint fix (row 6):** `benchmark.md` names it: canned, generic replies, then replies that leak private details or claim fixes that aren't real. Atlas scores it.
 
 ## How it would be used (step 5, owner OK required)
-Free sample to SweetSoftSkin: the two-step 4★ reply (private message, then public response) plus 2 of the 5★ replies (not Barguest's), sent through the shop's own website or Instagram (never Etsy Messages; see PR #42). **Only after** steps 1, 3 and 4 pass and the owner taps OK on the send.
+Free sample to SweetSoftSkin: the two-step 4★ reply (private message, then public response) plus 2 of the 5★ replies, sent through the shop's own website or Instagram (never Etsy Messages; see PR #42). **Only after** steps 1, 3 and 4 pass and the owner taps OK on the send.
