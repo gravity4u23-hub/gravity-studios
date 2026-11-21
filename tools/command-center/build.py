@@ -22,7 +22,7 @@ L = [
  ("Paid diagnostic", "$250", 250, 2, "Ladder step after an audit", "Sell only to audit buyers"),
  ("Healing Guide PDF", "$39", 39, 2, "Manuscript lives on the owner's laptop (~/workspace/recipe-book)", "Owner shares the manuscript folder"),
  ("Rewire Packs", "$12 / $45 bundle", 12, 2, "Depends on Subliminal Rewire app (Windows blocker #1)", "Fix Windows launch blocker"),
- ("Davias storefront", "Jewelry sales", None, 2, "All 12 Helix designs on the site (Davias PR #10: 7 new pieces + 12 stone profiles, 222 checks pass); Atlas #4 launch fixes on PR #9; waits on your 'made by hand' / Founders tap", "Atlas reviews Davias PRs #8, #9, #10; you answer the made-by-hand/Founders tap; then the Crystal Finder learns the new stones"),
+ ("Davias storefront", "Jewelry sales", None, 2, "All 12 Helix designs on the site (PR #10); Crystal Finder knows all 22 stones and suggests Helix designs by skin undertone (PR #11, 302 checks + 9 browser checks pass); Atlas #4 launch fixes on PR #9; waits on your 'made by hand' / Founders tap", "Atlas reviews Davias PRs #8 to #11; you answer the made-by-hand/Founders tap; then prices and photos"),
  ("The Gut Letter", "Free + affiliate", None, 2, "No send platform picked (Substack vs Beehiiv)", "Owner picks a platform"),
  ("The Bridge HQ", "Affiliate", None, 2, "Needs traffic first", "After Gut Letter"),
  ("Haul Partner Split", "50/50 split", None, 1, "Needs a partner", "Parked"),

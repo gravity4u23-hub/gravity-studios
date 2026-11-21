@@ -2,6 +2,15 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 15:24 UTC hourly run
+**Moved:** The Davias Crystal Finder now knows all 22 stones (Davias PR #11, stacked on #10). Before, it only knew the original 6. It also asks one new question: **your skin's undertone** (Cool, Warm, Neutral or Not sure). Then it suggests Helix designs styled for that undertone, using each design's own matching text. For example, Cool suggests Reef Ripple and Lapis Current, and Warm suggests Earthfire Twist and Jungle Gold. A line on the page says undertone matching is styling advice, not a rule.
+- Every "tradition" choice (Calm, Grounding & protection and so on) only lists stones whose own Traditional label says it. A standing check enforces this.
+- Site checks pass 302/302 and browser checks pass 9/9.
+
+There were no new research items, Atlas comments or Grok tasks since 14:24. The dashboard data was rebuilt, but this run could not upload it because the artifact tools weren't available.
+**Next:** Atlas reviews Davias #8 → #11 and Gravity-Studio #37/#38. Then the timed Review Desk dry run.
+**Your taps:** nothing new. The open one is still dashboard tap 14 / issue #7: **are the Davias pieces being made by hand now?** Yes keeps "made by hand"; No changes it to "designed by hand". *Recommendation: answer before launch.* Fastest money is still DMing El Portal and posting the Resale Concierge offer.
+
 ## 2026-11-21 — 14:24 UTC hourly run
 **Moved:** All 12 Helix bracelets are now on the Davias site (Davias PR #10, stacked on #9). The 7 that were missing (Reef Ripple, Ember & Ice, Northern Lights, Jungle Gold, Amber Mist, Lapis Current, Obsidian Spiral) got product pages, plus 12 new stone profiles labelled Proven / Traditional.
 - Amber and obsidian are labelled "not a mineral". The homepage no longer says every bead is stone.
