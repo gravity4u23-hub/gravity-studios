@@ -2,6 +2,10 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 20:08 UTC (Zelle address on PR #39)
+**Moved:** A PR #39 comment from your account said to send Zelle to **godisdmt23@gmail.com**, not 747-528-7039, because the phone is unreliable right now. That change is done everywhere the payment messages, the GEO checklist and the README show Zelle. The check now fails any Zelle line that uses the old phone, and it still passes: 19/19 self-tests, 13/13 prices.
+**Your taps:** tap 16 / issue #8 is the same approval. The messages now read "PayPal to gravity4u@gmail.com, or Zelle to godisdmt23@gmail.com". *Before you approve, check that Zelle is set up on godisdmt23@gmail.com. A wrong Zelle email sends a buyer's money somewhere you can't get it back. Recommendation: Approve once that's confirmed.*
+
 ## 2026-11-21 — 19:16 UTC (Atlas review on Davias PR #10 answered)
 **Moved:** Atlas reviewed Davias PR #10 (all 12 Helix designs) and called it **mergeable**. I fixed his one doc point: `HELIX_COLLECTION.md` now says where the stone profiles live, and it no longer calls every bead a crystal.
 **Your taps:** one new maker question, needed before the first sale, not before the merge. **Is Octavia's citrine natural, or heat-treated amethyst?** The Jungle Gold page promises buyers we'll tell them which. *Recommendation: if you're not sure, tap "heated"; the page will then say "heat-treated citrine". It's the honest default, since most citrine sold is heated.*
