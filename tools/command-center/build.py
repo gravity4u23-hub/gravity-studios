@@ -16,6 +16,8 @@ L = [
  ("GBP audit", "$49", 49, 3, "Record says '3 buyers' with no proof (Atlas #24)", "Owner answers #24 (PR #28 now flags the claim as unconfirmed), approves outreach"),
  ("Resale Concierge", "30% of sale (~$120 on a $400 item)", 120, 3, "Launch post still has the personal phone number", "Owner sets up Google Voice number"),
  ("Wellness Blog Engine", "$150–$300/mo", 150, 3, "Prospects' blogs not checked yet; message drafts need approval", "Claude checks 10 prospects; owner approves drafts"),
+ ("Review Reply Desk", "$79–$149/mo", 79, 3, "Prospects' unanswered reviews not counted yet; pitch text needs your OK", "Claude counts review gaps; you approve the pitch"),
+ ("Listing Makeover", "$79 per 20 listings", 79, 3, "Prospect shops not picked yet; pitch text needs your OK", "Claude picks 10 Etsy shops; you approve the pitch"),
  ("Paid diagnostic", "$250", 250, 2, "Ladder step after an audit", "Sell only to audit buyers"),
  ("Healing Guide PDF", "$39", 39, 2, "Manuscript lives on the owner's laptop (~/workspace/recipe-book)", "Owner shares the manuscript folder"),
  ("Rewire Packs", "$12 / $45 bundle", 12, 2, "Depends on Subliminal Rewire app (Windows blocker #1)", "Fix Windows launch blocker"),
@@ -27,7 +29,7 @@ L = [
 lanes = [dict(lane=a, price=b, first_sale_usd=c, stage=STAGES[d], stage_num=d, blocker=e, next_step=f) for a,b,c,d,e,f in L]
 # Owner approvals: n, tap, brief (why, in a sentence or two), button label, unlocks, first-sale USD
 T = [
- (1, "Build Review Reply Desk + Listing Makeover next", "Two new services, $0 to start: we reply to a business's Google reviews weekly ($79–149/mo), and rewrite online shop listings so they get found ($79 per 20). Recommended: yes.", "Approve", "New services", None),
+ (1, "Approve the two new pitches", "Review Reply Desk: 'I noticed [Business] has [N] Google reviews without a reply… $79/month, first week free, no passwords.' Listing Makeover: 'I'll redo two of your listings free so you can see the difference.' Approve and we send them to checked prospects as each one is ready.", "Approve", "Review Reply Desk + Listing Makeover", 158),
  (2, "Connect Instagram Messages", "El Portal's website form is broken, so Instagram DM is the only way to send them the $149 AI-search audit pitch you already approved. Tap 'Mark done' once it's connected.", "Mark done", "GEO audit", 149),
  (3, "Set up a free Google Voice business number", "The Resale Concierge post is ready, but it still shows your personal number. A free business number fixes that and lets it go live. Tap 'Mark done' once it exists, and add the number below.", "Mark done", "Resale Concierge", 120),
  (4, "Approve the Blog Engine messages", "Three short messages: topic list, first post (free until they like it), then a PayPal invoice. Once approved, we pitch the first checked prospects with your OK on each send.", "Approve", "Wellness Blog Engine", 150),
