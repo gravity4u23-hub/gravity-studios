@@ -11,7 +11,7 @@ STAGES = {1: "Idea", 2: "Building", 3: "Ready to sell", 4: "Buyer in talks", 5: 
 L = [
  ("Magnetico sale", "$1,000 cash", 1000, 5, "None — sold", "Done: $1,000 cash collected Nov 19 (owner-confirmed; ledger fixes in Gravity-Studio PR #32)"),
  ("GEO audit", "$149", 149, 3, "Runbook scoring fix in review; PayPal address unconfirmed; El Portal reachable only by Instagram DM", "Atlas re-checks Gravity-Studio PR #33 (runbook fix + tested scorer); owner confirms PayPal + connects Instagram Messages"),
- ("Missed-Call Rescue", "TBD", None, 1, "Parked lane; MASTER_PLAN ranks it #2", "Claude writes the one-page offer + sample"),
+ ("Missed-Call Rescue", "$149 reactivation kit", 149, 2, "Offer + tested list cleaner in review (Gravity-Studio PR #34); outreach rides the GEO audit taps (PayPal, approval)", "Atlas reviews PR #34; then same buyer list as the audits"),
  ("Visibility Pack (GBP+GEO)", "$179", 179, 3, "Same as GEO audit", "Pitch after first GEO audit"),
  ("GBP audit", "$49", 49, 3, "Record says '3 buyers' with no proof (Atlas #24)", "Owner answers #24 (PR #28 now flags the claim as unconfirmed), approves outreach"),
  ("Resale Concierge", "30% of sale (~$120 on a $400 item)", 120, 3, "Launch post still has the personal phone number", "Owner sets up Google Voice number"),
