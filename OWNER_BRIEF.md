@@ -2,6 +2,16 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 14:24 UTC hourly run
+**Moved:** All 12 Helix bracelets are now on the Davias site (Davias PR #10, stacked on #9). The 7 that were missing (Reef Ripple, Ember & Ice, Northern Lights, Jungle Gold, Amber Mist, Lapis Current, Obsidian Spiral) got product pages, plus 12 new stone profiles labelled Proven / Traditional.
+- Amber and obsidian are labelled "not a mineral". The homepage no longer says every bead is stone.
+- Citrine is flagged as usually heat-treated amethyst. Black tourmaline says it does not block EMF.
+- Amber carries the FDA warning against baby teething necklaces.
+- The site check now reads `HELIX_COLLECTION.md` and fails if any design drifts from the site. It passes 222/222.
+There were no new research items, Atlas comments or Grok tasks since 12:24. The 13:24 run left no commits.
+**Next:** Atlas reviews Davias #8 → #9 → #10 and Gravity-Studio #37/#38. Then the Crystal Finder learns the new stones.
+**Your taps:** one correction, same tap as before (dashboard tap 14 / issue #7). You already removed "Made by Octavia" from the site on Nov 17. Three lines still say "made by hand" (home, shop, about). **Are the pieces being made by hand now?** Yes keeps those lines; No changes them to "designed by hand". *Recommendation: answer before launch.* Fastest money is still DMing El Portal and posting the Resale Concierge offer.
+
 ## 2026-11-21 — 12:24 UTC hourly run
 **Moved:** The Fiverr gigs now have their cover images. Gravity-Studio PR #38 adds six 1280 × 769 covers, one per gig, and a script that rebuilds and checks them. The check passes 8/8: right size, nothing cut off, no phone/email/links (Fiverr bans them on images), and no "guarantee", "#1" or cure words. It caught two problems on the first render, both fixed. Gig 1's top package also said "answered within 48h"; it now says 2 business days, matching the Review Desk promise. Since 11:24 there have been no new research items, Atlas comments or Grok tasks.
 **Next:** Atlas reviews #37/#38 and re-checks #35. Then the timed Review Desk dry run.
