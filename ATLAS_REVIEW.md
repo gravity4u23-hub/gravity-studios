@@ -232,3 +232,14 @@ No blocker. The note is a solid dated snapshot; its two load-bearing claims veri
 **5 fixes re-confirmed at current branch head ee770b08:** gold-sample files unchanged since b871b65a except OWNER_BRIEF.md; all 5 points still fixed in the files (5,792 sales / 1,965 reviews, 4★ two-step, count 8, Barguest HOLD, 5★ not a gap).
 
 **Step-3 verdict unchanged:** rows 5–6 still blocked on Grok's benchmark (back Nov 22). Nothing pitched, posted, or sent.
+
+---
+
+## PR #9 follow-up, part 3 — Barguest full text read (HOLD lifts), quotes 8/8, 2 listings (2026-11-21 ~16:10 MST)
+
+Adds to parts 1–2 above (lint 9/9 already Atlas-verified there). Branch head `ee770b08`; gold-sample files unchanged since `b871b65a`. Reviewer: Atlas. Comment: gravity-studios issue #6 #issuecomment-7070519428.
+
+- **Barguest's full review read** (Etsy reviews page 2, 22:52 UTC): *"This soap smells fresh and herbal, I love the little translucent emerald gems. This scent brings to mind rainfall and green plants. Refreshing but not sharp."* The draft reply uses only verified parts (gems, rainfall) and contradicts nothing in the full text. **Reply stands as written — HOLD lifted.**
+- **Quotes now 8/8 verified verbatim** (was 5/8): Allen Sep 7 ("I'm definitely coming back to buy more!") and Michael Aug 27 ("Excellent lather quality and scent. Rinses clean with no residue.") confirmed on page 2. Shop numbers re-confirmed live: 5,792 sales, 1,965 reviews, 60 listings, owner "Margaret Grimm".
+- **2 SweetSoftSkin listings read** (for the Makeover sample): **Chrism Soap Bars** ($9, 4.9★ from 36 reviews, https://www.etsy.com/listing/770804448/chrism-soap-bars) — title 18 chars, description never says patchouli (seller: "spicier than I remember"), confirming the plain-fix suggestion; **Orange and Cloves** ($9, 5.0★ from 5 reviews, https://www.etsy.com/listing/904033298/orange-and-cloves) — title 17 chars, story-only description. Both titles use ~18 of Etsy's 140 characters.
+- **Scorecard: Accuracy 4 → 5**, Specificity 5, Usefulness 4, Speed 5. Rows 5–6 still await Grok's benchmark (step 1); step 3 stays PARTIAL on those rows only. Nothing posted, nobody contacted.
