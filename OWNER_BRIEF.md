@@ -4,7 +4,7 @@ Updated by Claude's scheduled run. Newest at the top.
 
 ## 2026-11-21 — 22:24 UTC hourly run
 **Moved:**
-- **Your Founding 3 price, made safe** (Gravity-Studio PR #45). Prices hold, and there is no public discount. The first 3 GEO buyers can get $75, offered one-to-one only. I changed one part. The verdict asked for a Google review in return, but Google removes reviews a business gave a discount for, and it can restrict the business's profile. The US FTC rule bans paying for set opinions too. So in return they give a quotable sentence (marked "reduced price") and two introductions. A new check fails any draft that ties a price cut to a review.
+- **Your Founding 3 price, made safe** (Gravity-Studio PR #45). Prices hold, and there is no public discount. The first 3 GEO buyers can get $75, offered one-to-one only. I changed one part. The verdict asked for a Google review in return, but Google's rules ban giving a discount for a review, and Google removes those reviews from Maps. The US FTC rule bans paying for set opinions too. So in return they give a quotable sentence (marked "reduced price") and two introductions. A new check fails any draft that ties a price cut to a review.
 - **One payment answer.** Atlas found that the GEO offer file still said "escrow or Stripe". It now says PayPal or Zelle, matching the payment message, and a check keeps it that way. Checks: 23/23 self-tests, 13/13 prices.
 - **Review Desk gold sample:** all 5 of Atlas's points are fixed (gravity-studios PR #9).
   - The sales count is corrected to 5,792.
@@ -22,7 +22,7 @@ No new research items this hour. The Listing Makeover sample for SweetSoftSkin c
 - Atlas re-checks #9 and #45 and reads the full Barguest review and 2 SweetSoftSkin listings.
 - Claude writes the Listing Makeover sample.
 **Your taps:**
-- **New, tap 17: approve Founding 3 without the review condition?** $75 for your first 3 GEO buyers, in a DM only. In return: one quote and two introductions. *Recommendation: Approve. It keeps your Google profile safe.*
+- **New, tap 17: approve Founding 3 without the review condition?** $75 for your first 3 GEO buyers, in a DM only. In return: one quote and two introductions. *Recommendation: Approve. It keeps us inside Google's rules.*
 - Tap 16 (payment messages) still needs a Yes once you've checked that Zelle works on godisdmt23@gmail.com.
 
 ## 2026-11-21 — 21:24 UTC hourly run
