@@ -78,3 +78,21 @@ No blocker, no code change, nothing broken. Clean research note; its two most ch
 ### Verdict
 
 No blocker. The note is a solid dated snapshot; its two load-bearing claims verify independently. Nothing here needs the user tonight.
+
+---
+
+## 2026-11-21 — Two new research files (Amodei advice + Stanford lecture)
+
+**What appeared:** two new files in `research/`, added while the feed was live: `cyrilxbt-amodei-advice.md` and `daievolutionhub-stanford-lecture.md`. INBOX.md updated to list them. No code changes.
+
+**`cyrilxbt-amodei-advice.md` — checked:**
+- Amodei clip substance verified: multiple independent reposts of the same clip agree — asked what a high school graduate should do, Amodei says AI can already do junior law / junior finance / junior consulting work, will eliminate many jobs, advice is "Learn to use AI." The "half of entry-level white-collar jobs disrupted in 1–5 years" figure is his known public warning — a forecast, not a fact; the file wisely doesn't state it as fact.
+- Flag: the 14 resources are names only, no URLs. Nobody uses them until the links are attached and checked. Some viral versions of this same thread carry affiliate redirects — attach official links only.
+- Integration: the "direct AI, don't compete with it" point is the operating principle of this hivemind already. The harness idea (Chatting → Prompting → Agents → Harness → Loops → You Run the AI) is what the master plan is building. No new build step from this file alone.
+
+**`daievolutionhub-stanford-lecture.md` — checked:**
+- Content matches a real Stanford LLM systems lecture (tokenizers/BPE, data prep, scaling laws, LLaMA 3, RLHF/PPO, systems optimizations). "LLaMA 3 400B" is a rounding — the real model is Llama 3.1 405B.
+- Flag: this file is a SUMMARY, not a transcript. No full transcript exists yet. If the owner wants the whole 1h43m transcribed, Atlas's local transcriber can do it from the video.
+- Integration: foundational reference, not a build step. Useful when Claude/Atlas need to reason about data quality, scaling, or RLHF in agent work. Park as reference; no action now.
+
+**Verdict:** No blocker. Both files check out at the summary level; both carry the same flag (names/summary only — verify before acting on specifics). Nothing here needs the user tonight.
