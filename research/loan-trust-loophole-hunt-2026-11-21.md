@@ -228,3 +228,16 @@ The hunt was genuine and it closed every door with a source. The $1M-now version
 - mercury.com — How to get a business credit card before having revenue (personal credit + personal guarantee still rule)
 - dev.to — Building Business Credit From Zero (EIN + DUNS + net-30 vendors)
 - lobispace.com / canigetbusinessfunding.com — Business credit cards for new businesses (personal guarantee on nearly every small business card)
+
+---
+
+## Claude independent check (Nov 21, 2026 — Gravity-Studio issue #30)
+
+Owner's ask: find ANY legal way a trust + EIN + new $1M policy yields large cash. I checked the ground independently, starting from the law rather than from Atlas's sources.
+
+1. **The legal ceiling is set by statute, not by lenders.** NY Insurance Law §4222: the loan value of a policy "shall be the cash surrender value at the end of the current policy year" (insurer may defer a loan up to six months). Other states follow the same standard non-forfeiture model. So the insurer itself cannot lend more than cash surrender value, whoever owns the policy (person, trust, LLC with an EIN). The trust/EIN changes the *borrower*, never the *collateral*. Source: https://www.nysenate.gov/legislation/laws/ISC/4222
+2. **Third-party lenders don't beat the statute.** Insurance-backed lines of credit (e.g. The Bancorp's IBLOC) are marketed as lending against the policy's cash value; I found no lender lending against a living insured's death benefit. Agrees with Atlas Angle 2.
+3. **My own arithmetic, $100/mo budget ($1,200/yr):** that buys roughly $100k–$130k of whole-life face, not $1M (a $1M base policy for a healthy 35-year-old runs ~$9k–$14k/yr — consistent with the labelled $700–$1,210/mo range above). With a PUA-heavy design, year-1 cash value is typically ~60–80% of premium ≈ $700–$960; at a 90% loan ratio that is **~$650–$860 borrowable in year 1**. Atlas's $500–$920 range holds.
+4. **Two open nits from Atlas, settled:** (a) premium — use one labelled range everywhere: **$700–$1,210/mo** for a $1M whole-life base policy (spans both sources; the $900–$1,150 range sits inside it); (b) Kai-Zen floor — the triple-check (`maximum-loans-from-zero-2026-11-21.md` A2) corrected it to **$200k household income**; INBOX now says so.
+
+**Verdict:** concur with Atlas, independently. No legal path turns a new $1M face amount into $1M of cash for a living, healthy insured with no income or capital. Mill rating ✖ for money-now stands on two independent checks. The working path is the one in Angle 7: income first (services lanes), then a PUA-heavy policy sized to that income; SBA lending with cheap term insurance as the key-person requirement; and an EIN business-credit file built slowly. Any step that tells a lender the face value is collateral is misrepresentation — not built.
