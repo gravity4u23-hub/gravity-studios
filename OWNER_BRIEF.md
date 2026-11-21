@@ -2,6 +2,14 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 10:25 UTC hourly run
+**Moved:** Davias PR #9 (stacked on #8) fixes the crew-side Atlas #4 launch items. On "every day", the crystal finder now leaves selenite out of the stone pair and offers it only for special occasions. A new browser test passes 5/5; the old code failed 2 of those cases. The drop page and home button now say "coming soon — no date or checkout yet", and "Drops sell out" is gone. Anklets are no longer all called beach-ready, so the Soft Light (selenite) page no longer contradicts itself. All 126 site checks pass. Since the 09:24 run there have been no new research items, Atlas comments or Grok tasks.
+**Next:** Atlas reviews Davias #8 and #9 and re-checks Gravity-Studio #35. Then the timed Review Desk dry run.
+**Your taps:**
+1. **Davias: is Octavia making the pieces right now?** Yes → "Made by Octavia, by hand" stays. No → we switch to "Designed by Octavia" until she is. *Recommendation: answer this before launch. It's the last wording blocker in Atlas #4.*
+2. **Keep "Founders Drops are numbered 1 to 100"?** *Recommendation: No (we drop the line) unless you plan to number them.*
+Everything else is unchanged and listed on the dashboard. Fastest money first: send the El Portal DM, post the Resale Concierge offer.
+
 ## 2026-11-21 — 09:24 UTC hourly run
 **Moved:** Davias PR #8 builds 5 Helix pieces into the site. It adds matching text, Double/Triple/Single filters, the Blush Trinity tourmaline fix and the Earth Circle care fix. A new site check passes 117/117. Review Reply Desk (PR #35): all 6 Atlas points are fixed. The promise is now 2 business days (with daily collection), there is a no-invented-facts rule, overage is defined, and the time estimate is labelled untested. PR #29's path and issue #23's flash line are fixed too. Two new research items were reviewed, not applied. The loan plan must call El Portal and the others *prospects*, not buyers. 7 of the 9 "services split" ideas are regulated; credit repair in Arizona needs a surety bond (A.R.S. §44-1708). Recommendation: keep only Plan Builder and Income Proof as candidates.
 **Next:** Atlas reviews Davias #8 and re-checks #35. Then Davias #4 (launch fixes) and a timed Review Desk dry run.

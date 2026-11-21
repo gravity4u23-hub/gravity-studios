@@ -14,7 +14,7 @@ L = [
  ("Missed-Call Rescue", "$149 reactivation kit", 149, 2, "Offer + tested list cleaner in review (Gravity-Studio PR #34); outreach rides the GEO audit taps (PayPal, approval)", "Atlas reviews PR #34; then same buyer list as the audits"),
  ("Visibility Pack (GBP+GEO)", "$179", 179, 3, "Same as GEO audit", "Pitch after first GEO audit"),
  ("GBP audit", "$49", 49, 3, "Needs its first real buyer (owner confirmed no earlier buyers)", "Pitch alongside GEO and Review Desk"),
- ("Resale Concierge", "30% of sale (~$120 on a $400 item)", 120, 3, "Launch post still has the personal phone number", "Owner sets up Google Voice number"),
+ ("Resale Concierge", "30% of sale (~$120 on a $400 item)", 120, 3, "Post is ready with the business number (747) 222-6980", "You post it (tap 11)"),
  ("Wellness Blog Engine", "$150–$300/mo", 150, 3, "Messages approved; prospects' blogs not checked yet", "Claude sharpens the messages and checks 10 prospects"),
  ("Review Reply Desk", "$79–$149/mo", 79, 3, "Atlas's 6 points fixed (Gravity-Studio PR #35: 2-business-day cycle, no invented facts, overage); review gaps not counted yet; pitch needs your OK", "Atlas re-checks PR #35; one timed dry run; you approve the pitch"),
  ("Listing Makeover", "$79 per 20 listings", 79, 3, "Prospect shops not picked yet; pitch text needs your OK", "Claude picks 10 Etsy shops; you approve the pitch"),
@@ -22,7 +22,7 @@ L = [
  ("Paid diagnostic", "$250", 250, 2, "Ladder step after an audit", "Sell only to audit buyers"),
  ("Healing Guide PDF", "$39", 39, 2, "Manuscript lives on the owner's laptop (~/workspace/recipe-book)", "Owner shares the manuscript folder"),
  ("Rewire Packs", "$12 / $45 bundle", 12, 2, "Depends on Subliminal Rewire app (Windows blocker #1)", "Fix Windows launch blocker"),
- ("Davias storefront", "Jewelry sales", None, 2, "5 Helix pieces now built into the site (Davias PR #8, 117 checks pass); 7 designs need stone profiles; Atlas #4 launch fixes", "Atlas reviews Davias PR #8; Claude does #4 next"),
+ ("Davias storefront", "Jewelry sales", None, 2, "Helix built (Davias PR #8); Atlas #4 launch fixes done on PR #9 (126 checks + finder browser test pass); waits on your Octavia wording tap", "Atlas reviews Davias PRs #8 and #9; you answer the Octavia/Founders tap"),
  ("The Gut Letter", "Free + affiliate", None, 2, "No send platform picked (Substack vs Beehiiv)", "Owner picks a platform"),
  ("The Bridge HQ", "Affiliate", None, 2, "Needs traffic first", "After Gut Letter"),
  ("Haul Partner Split", "50/50 split", None, 1, "Needs a partner", "Parked"),
@@ -35,6 +35,7 @@ T = [
  (11, "Post the Resale Concierge offer", "Your business number is in. The post is ready: 'Flagstaff-area neighbors — got stuff sitting around you want gone? I'll sell it for you on Facebook Marketplace… You keep 70%, I take 30%… text (747) 222-6980.' Post it on your Facebook and in the biggest Flagstaff buy/sell group, then tap Mark done.", "Mark done", "Resale Concierge", 120),
  (13, "Create your Fiverr seller account", "Fiverr checks your ID, so only you can open it: fiverr.com → Join → Become a Seller. Then tap Mark done; we hand you the 6 gig pages (titles, packages, descriptions) to paste — review replies, Etsy listings, wellness blogs, AI search checks, resumes, Spanish pages.", "Mark done", "Fiverr (6 gigs)", 15),
  (12, "Link your social accounts in Metricool", "Metricool is connected to Claude. Open app.metricool.com/brands/connections?blogId=8264531 and connect your Facebook Page, Instagram (Business or Creator), and any of TikTok, Threads, Pinterest, Google Business Profile. Then tap Mark done and we start scheduling posts.", "Mark done", "Posting everywhere", None),
+ (14, "Davias: is Octavia making pieces now?", "The site says 'Made by Octavia, by hand' on every page. If she is making them now, tap Yes and it stays. If not yet, tap No and we change it to 'Designed by Octavia' until she is. Same tap: Founders Drops are numbered 1 to 100. Keep that line (Yes) or we drop it (No).", "Yes / No", "Davias launch", None),
  (10, "Flip the GitHub Pages switch (2 minutes)", "You approved free hosting, but only you can turn it on. On github.com: gravity-studios → Settings → Pages → Deploy from a branch → main / root → Save. Then tap Mark done.", "Mark done", "Sales site", None),
 ]
 taps = [dict(n=n, tap=t, brief=br, button=bt, unlocks=u, first_sale_usd=v) for n,t,br,bt,u,v in T]
