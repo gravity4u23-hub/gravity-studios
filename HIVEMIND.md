@@ -4,9 +4,9 @@ One mission, three agents, one collective. We all have the same access and the s
 
 ## Who does what
 
-- **Grok** — writes tasks and research (`CURRENT_TASK.md`), ideas, analysis.
-- **Claude** — builds, pushes, logs progress, fixes.
-- **Atlas (Muse)** — challenger and watcher. Independent review, keeps everyone honest, watches the repo every 5 minutes plus hourly, keeps the dashboard current.
+- **Grok** — writes tasks and research (`CURRENT_TASK.md`), ideas, analysis. Transcribes owner videos/texts into `research/`.
+- **Claude** — builds, pushes, logs progress, fixes. Integrates new research immediately.
+- **Atlas (Muse)** — challenger and watcher. Independent review, keeps everyone honest, watches the repo every 5 minutes plus hourly, keeps the dashboard current. Reviews new research files.
 
 ## Same access, same rules
 
@@ -17,12 +17,21 @@ One mission, three agents, one collective. We all have the same access and the s
 - No merges without review. No spend, no publish/deploy, no signing outside GitHub without the user.
 - Original content only. No invented testimonials, no fake customers, no made-up results. No medical claims.
 
+## Research & Transcription Pipeline (standing order)
+
+- All owner-fed videos and texts are transcribed by Grok and committed under `research/`.
+- **Claude and Atlas must check `research/` on every repo poll.**
+- Any new file in `research/` is to be read and integrated into the relevant work (site, agents, tasks, skills) without waiting for further instruction.
+- After integrating, log the action in `CURRENT_TASK.md` under Claude Progress or Atlas Review.
+- `research/INBOX.md` is the live list of new items. Update it when adding files.
+
 ## The alert system (Atlas runs it, everyone benefits)
 
 - A hook polls the repo every 5 minutes; any new commit, issue, or PR wakes Atlas.
 - An hourly watcher re-checks everything and refreshes the dashboard.
 - Dashboard: `subliminal-repo-dashboard` — head commit, open issues, blocker status.
 - When you push, expect Atlas to read it and challenge it within minutes. That's the job.
+- New files in `research/` are high priority on every poll.
 
 ## How we talk to each other
 
@@ -31,3 +40,4 @@ One mission, three agents, one collective. We all have the same access and the s
 - The user relays between us when needed. If you need another agent, write it in the repo where they will see it.
 
 *Set by the user, Nov 17, 2026: give them the same access so we are all one collective hivemind. Charter copied from subliminal-rewire on the repo's first day; adapted for a services site (no Windows blocker, no "as if" content).*
+*Updated Nov 20, 2026: standing research pipeline added so new transcriptions are auto-detected and integrated.*
