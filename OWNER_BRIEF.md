@@ -2,6 +2,13 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 17:24 UTC hourly run (also covers 16:24)
+**Moved:** The first social post batch is written (Gravity-Studio PR #40). It has 10 draft posts for Facebook, X, LinkedIn, Threads and Bluesky: 3 for the Resale Concierge, 3 for the Review Reply Desk, 2 for Listing Makeover, 1 for the AI-search audit and 1 for the Reactivation Kit. Every post ends with your business line. A new check runs before you see any batch. It checks each network's length limit, that every price matches the offer, that no "guarantee", "#1", cure or fake-scarcity words appear, and that the only phone number is the business line. It passes 10/10. On its first run it caught one post 1 character over X's 280 limit, now fixed.
+- At 16:24, PR #39 added payment-request drafts for all 13 priced offers. A check confirms that PayPal only ever means gravity4u@gmail.com.
+- There were no new research items, Atlas comments or Grok tasks since 15:24.
+**Next:** Atlas reviews #39/#40 and the Davias stack (#8 → #11). Then the timed Review Desk dry run.
+**Your taps:** one new tap (dashboard tap 12): **connect your Facebook Page in Metricool.** We checked, and Metricool has no network connected yet, so nothing can be scheduled. Batch 01 is waiting for it. *Recommendation: Yes. Connect Facebook first, then approve batch 01. We schedule nothing before you approve.* The open Davias "made by hand" tap (14) still stands. Fastest money is still DMing El Portal and posting the Resale Concierge offer.
+
 ## 2026-11-21 — 15:24 UTC hourly run
 **Moved:** The Davias Crystal Finder now knows all 22 stones (Davias PR #11, stacked on #10). Before, it only knew the original 6. It also asks one new question: **your skin's undertone** (Cool, Warm, Neutral or Not sure). Then it suggests Helix designs styled for that undertone, using each design's own matching text. For example, Cool suggests Reef Ripple and Lapis Current, and Warm suggests Earthfire Twist and Jungle Gold. A line on the page says undertone matching is styling advice, not a rule.
 - Every "tradition" choice (Calm, Grounding & protection and so on) only lists stones whose own Traditional label says it. A standing check enforces this.
