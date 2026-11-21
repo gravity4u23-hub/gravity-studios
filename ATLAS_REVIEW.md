@@ -156,3 +156,29 @@ No blocker. The note is a solid dated snapshot; its two load-bearing claims veri
 - Post text still pending (browser read running); update attribution if the speaker's name arrives.
 
 **Verdict:** Short, on-theme, needs nothing from the user.
+
+---
+
+## 2026-11-21 — Research triage (PR #2)
+
+**What appeared:** Claude review on all 9 INBOX items + an independent loan/trust check (`research/INBOX.md` review lines, `research/loan-trust-loophole-hunt-2026-11-21.md` "Claude independent check").
+
+**Checked — verified (Atlas re-checked the checkable claims):**
+- Loan math reproduces: $10k at 10% over 84 months = $166.01/mo — matches the pack's ~$166/mo.
+- Fix (1) is real: the execution pack calls El Portal, Rescue Plumbing and Spigner DDS "buyers" — they are researched *prospects*; nobody has bought. A loan application must say prospects.
+- Fix (2) is real: the pack still carries the old model in three places — "20% revenue share on recovered revenue" (lines 33, 49, 87). Gravity-Studio PR #34 makes Rescue a $149 one-time kit, so those lines are stale until #34 merges and the pack is updated.
+- Fix (3) is real: the pack names the Magnetico buyer ("buyer Robert Blackstone") in the proof paragraph. That name should not travel in anything sent outside the repo.
+- Services-split challenge checks out against the statute: A.R.S. §44-1708 is real (azleg.gov) — a credit services organization charging before full performance must hold a surety bond (5% of fees, $5k min / $25k max). Credit Fix is not a $0-to-start lane; "park 7 of 9 until revenue + a lawyer's read" follows.
+- Number challenges check out against official sources: SSI 2026 federal benefit rate is $994/mo for an individual (ssa.gov) — the ~$967 in the money map is wrong; Pell $7,395 × 150% = $11,092.50 arithmetic holds.
+- Loan/trust independent check is correctly sourced: NY Insurance Law §4222 sets the policy loan value at the cash surrender value — no structure turns a new $1M face amount into $1M of loan. Concurs with Atlas's ✖.
+- The "reviewed, not applied" calls are sound: every INBOX item gets a reason; the brakes rule landed in COMMAND_CENTER §4 on PR #3 as claimed.
+
+**Challenges / open points:**
+1. Fold the number corrections into the money map now — SSI $994, SNAP 18–64 ABAWD, the student half-time SNAP rule, and the Plan 3 / D3 refund disagreement. Until that edit lands, the money map on main still says ~$967 SSI and still stacks Pell + SNAP as if they combine freely.
+2. The student SNAP rule changes the plans, not just a footnote. If half-time-or-more enrollment generally blocks SNAP (unless an exemption applies), Plan 1 and Plan 3 double-count Pell refund + SNAP. The correction should say which plan survives and what the student does for food money instead.
+3. "Other states follow the same cash-value loan standard as NY" is still an assumption (flagged as such in the PR body). Keep the label until a second state is cited.
+4. The Kai-Zen floor correction is applied in one place only. The sirenpatriot INBOX line now says $200k — check the loan-trust hunt file itself still says $100k anywhere.
+
+**Not verified by this review:** I did not re-verify the SNAP ABAWD 18–64 age change or the student half-time rule against fns.usda.gov directly — Claude cites the source; treat those two as Claude-verified, not Atlas-verified, until the fold-in edit cites them. No owner filing exists for any step; the reviews are about documents, not outcomes.
+
+**Verdict:** Mergeable. The triage is careful and the corrections are real — the follow-up that matters is challenge 1: fold the four number corrections into the money map itself, or the map on main keeps teaching the wrong numbers.
