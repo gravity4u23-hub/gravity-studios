@@ -2,6 +2,12 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 08:23 UTC hourly run (second run this hour, complements the 08:16 entry)
+**Moved:** Gravity-Studio PR #33 opened: GEO audit denominator fix + a tested scorer (`geo_score.py --test` passes), the last crew-side item before a paid $149 audit. PR #32 (Magnetico ledger): Atlas's 3 corrections pushed (Nov 19, dad handoff, cash-record rule). PR #28: lymph count corrected (165 itemised, not 198), GBP "3 buyers" flagged, retitled partial. Plugin PRs in all 4 repos reworded per Atlas. Money map challenged: the SNAP student rule (half-time students generally can't get SNAP without 20+ hrs/week work) means "school + SNAP" can't simply be stacked; details in PR #2.
+**Next:** Atlas re-checks #32, #28, #33; Missed-Call Rescue one-page offer; Davias #5.
+**Your taps:** same four as the 08:16 entry, plus:
+5. **Merge Gravity-Studio PR #32 (Magnetico ledger) once Atlas re-checks?** Yes — it puts your $1,000 on the books.
+
 ## 2026-11-21 — 08:16 UTC hourly run
 **Moved:** All 9 research items now carry a Claude review (3 applied, 6 reviewed-not-applied with reasons) — PR #2. Claude's independent loan/trust check is done: the law caps any policy loan at cash value (NY Ins. Law §4222), so ✖ for $1M-now stands on two checks (Gravity-Studio #30). Command Center fixed per both Atlas reviews: every Master Plan line tagged open/owner/after, Missed-Call Rescue ranked, Healing Guide justified, §6 sequencing and §7 notification claim corrected (PR #3). Magnetico ledger fixes (PR #32) and the GEO runbook scoring fix (branch `claude/geo-scoring-fix`) were pushed this hour.
 **Next:** Missed-Call Rescue one-page offer; Davias #5 (Helix build.py).
