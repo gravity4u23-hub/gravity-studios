@@ -10,12 +10,12 @@ STAGES = {1: "Idea", 2: "Building", 3: "Ready to sell", 4: "Buyer in talks", 5: 
 # lane, offer price text, first-sale USD (one sale at the listed low price; None = no fixed price), stage, blocker, next step
 L = [
  ("Magnetico sale", "$1,000 cash", 1000, 5, "None — sold", "Done: $1,000 cash collected Nov 19 (owner-confirmed; ledger fixes in Gravity-Studio PR #32)"),
- ("GEO audit", "$149", 149, 3, "Runbook scoring fix in review; PayPal address unconfirmed; El Portal reachable only by Instagram DM", "Atlas re-checks Gravity-Studio PR #33 (runbook fix + tested scorer); owner confirms PayPal + connects Instagram Messages"),
+ ("GEO audit", "$149", 149, 3, "Runbook scoring fix in review; El Portal reachable only by Instagram DM", "Atlas re-checks Gravity-Studio PR #33 (runbook fix + tested scorer); owner confirms PayPal + connects Instagram Messages"),
  ("Missed-Call Rescue", "$149 reactivation kit", 149, 2, "Offer + tested list cleaner in review (Gravity-Studio PR #34); outreach rides the GEO audit taps (PayPal, approval)", "Atlas reviews PR #34; then same buyer list as the audits"),
  ("Visibility Pack (GBP+GEO)", "$179", 179, 3, "Same as GEO audit", "Pitch after first GEO audit"),
- ("GBP audit", "$49", 49, 3, "Record says '3 buyers' with no proof (Atlas #24)", "Owner answers #24 (PR #28 now flags the claim as unconfirmed), approves outreach"),
+ ("GBP audit", "$49", 49, 3, "Needs its first real buyer (owner confirmed no earlier buyers)", "Pitch alongside GEO and Review Desk"),
  ("Resale Concierge", "30% of sale (~$120 on a $400 item)", 120, 3, "Launch post still has the personal phone number", "Owner sets up Google Voice number"),
- ("Wellness Blog Engine", "$150–$300/mo", 150, 3, "Prospects' blogs not checked yet; message drafts need approval", "Claude checks 10 prospects; owner approves drafts"),
+ ("Wellness Blog Engine", "$150–$300/mo", 150, 3, "Messages approved; prospects' blogs not checked yet", "Claude sharpens the messages and checks 10 prospects"),
  ("Review Reply Desk", "$79–$149/mo", 79, 3, "Prospects' unanswered reviews not counted yet; pitch text needs your OK", "Claude counts review gaps; you approve the pitch"),
  ("Listing Makeover", "$79 per 20 listings", 79, 3, "Prospect shops not picked yet; pitch text needs your OK", "Claude picks 10 Etsy shops; you approve the pitch"),
  ("Paid diagnostic", "$250", 250, 2, "Ladder step after an audit", "Sell only to audit buyers"),
@@ -29,13 +29,10 @@ L = [
 lanes = [dict(lane=a, price=b, first_sale_usd=c, stage=STAGES[d], stage_num=d, blocker=e, next_step=f) for a,b,c,d,e,f in L]
 # Owner approvals: n, tap, brief (why, in a sentence or two), button label, unlocks, first-sale USD
 T = [
- (1, "Approve the two new pitches", "Review Reply Desk: 'I noticed [Business] has [N] Google reviews without a reply… $79/month, first week free, no passwords.' Listing Makeover: 'I'll redo two of your listings free so you can see the difference.' Approve and we send them to checked prospects as each one is ready.", "Approve", "Review Reply Desk + Listing Makeover", 158),
- (2, "Connect Instagram Messages", "El Portal's website form is broken, so Instagram DM is the only way to send them the $149 AI-search audit pitch you already approved. Tap 'Mark done' once it's connected.", "Mark done", "GEO audit", 149),
- (3, "Set up a free Google Voice business number", "The Resale Concierge post is ready, but it still shows your personal number. A free business number fixes that and lets it go live. Tap 'Mark done' once it exists, and add the number below.", "Mark done", "Resale Concierge", 120),
- (4, "Approve the Blog Engine messages", "Three short messages: topic list, first post (free until they like it), then a PayPal invoice. Once approved, we pitch the first checked prospects with your OK on each send.", "Approve", "Wellness Blog Engine", 150),
- (5, "Correct the GBP record: no 3 buyers yet", "An old commit claimed 3 paying GBP buyers, but nothing backs it. Recommended: approve to correct the record to 'needs first buyer'. If they were real, write who below instead.", "Approve", "GBP audit", 49),
- (6, "Host the sales site free on GitHub Pages", "Your Gravity Studios page has no home on the web yet. GitHub Pages is free and uses the repo you already have; a custom domain can come later.", "Approve", "Sales site", None),
- (7, "Confirm gravity4u@gmail.com is your PayPal", "The sales page sends payments to gravity4u@gmail.com while contact goes to gravity4u23@gmail.com. Approve if the PayPal address is right; if not, write the correct one below.", "Approve", "Sales site", None),
+ (2, "Connect Instagram Messages — or just DM El Portal", "El Portal's website form is broken, so Instagram is the only way to send the $149 audit pitch. Fastest: open ig.me/m/elportalmexicanphx, paste the approved pitch (in your chat with Claude), send, then tap Mark done.", "Mark done", "GEO audit", 149),
+ (8, "Approve the two new pitches", "Review Reply Desk: 'I noticed [Business] has [N] Google reviews without a reply… $79/month, first week free, no passwords.' Listing Makeover: 'I'll redo two of your listings free so you can see the difference.' Approve and each goes out only to checked prospects.", "Approve", "Review Reply Desk + Listing Makeover", 158),
+ (9, "Add your Google Voice number", "You set it up — great. Type the number in the box below and tap Save, so we can swap it into the Resale Concierge post and your other pitches.", "Save", "Resale Concierge", 120),
+ (10, "Flip the GitHub Pages switch (2 minutes)", "You approved free hosting, but only you can turn it on. On github.com: gravity-studios → Settings → Pages → Deploy from a branch → main / root → Save. Then tap Mark done.", "Mark done", "Sales site", None),
 ]
 taps = [dict(n=n, tap=t, brief=br, button=bt, unlocks=u, first_sale_usd=v) for n,t,br,bt,u,v in T]
 led = open(os.environ.get("LEDGER", "../Gravity-Studio/revenue-command-center/ledger.md")).read()
