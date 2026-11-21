@@ -7,6 +7,8 @@ Written Nov 21, 2026 from the owner's order: *take all the info, integrate it, b
 
 ---
 
+**Quality gate:** no service launches until it passes `QUALITY_GATE.md` (benchmark → gold sample → side-by-side → owner read → free trial).
+
 ## 1. Core principles (the ones every decision is checked against)
 
 1. **Revenue first, then scale.** First dollar in each lane beats a tenth lane on paper. Finish > start.

@@ -2,6 +2,7 @@
 
 Write anything here — or tell any agent and they'll copy it in. It overrides the Master Plan on the next loop. Newest at the top.
 
+- **2026-11-21, 2:08 PM:** Add a quality gate. No service is pitched, posted or listed until it passes `QUALITY_GATE.md`.
 - **2026-11-21, ~1:08 PM MST (relayed in a Gravity-Studio PR #39 comment, owner account):** Zelle goes to **godisdmt23@gmail.com**, not 747-528-7039 (phone unreliable right now). Applied on PR #39. Owner confirms the address when he answers tap 16 / issue #8.
 - **2026-11-21, 1:58 AM:** Sell on Fiverr too — volume plus upgrades, many services. "Let's get to work. Handle it all, have the other agents help." Sprint issue: gravity-studios #6. Entry gigs $15–25 (not $5: 20% fee + buyer small-order fee), upgrades $49–199.
 - **2026-11-21, 1:46 AM:** Post everything on every platform, all connected. **Metricool** is the posting hub (connected to Claude; brand blogId 8264531). Flow: agents write + design weekly batches → owner approves the batch on the dashboard → Metricool schedules across networks. Facebook groups/Marketplace stay manual (paste-ready text from Claude). Owner supplies photos of physical products.
