@@ -34,7 +34,7 @@ Tracked per service on the dashboard:
 ## Services and where they stand (Nov 21)
 | Service | Steps passed |
 |---|---|
-| Review Reply Desk | — (samples exist but are invented examples; needs a real gold sample) |
+| Review Reply Desk | 2 drafted (Nov 21: `quality/review-reply-desk/gold-sample.md`, 8 replies to real public Etsy reviews of SweetSoftSkin, lint 8/8; a Google-profile sample still to follow); needs 1, 3, 4, 5 |
 | Listing Makeover | 2 (Davias Helix listings = gold sample); needs 1, 3, 4, 5 |
 | Wellness Blog Engine | 2 partly (sample post needs its pre-sale fixes); needs 1, 3, 4, 5 |
 | GEO / AI search check | — |

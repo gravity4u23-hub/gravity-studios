@@ -2,6 +2,17 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 21:24 UTC hourly run
+**Moved:** Your quality gate is in force, and the Review Reply Desk has its first **real** gold sample (gate step 2, gravity-studios PR #9). The old samples were invented examples. This one uses real public reviews:
+- **SweetSoftSkin** (Peoria soap shop, 5.0 stars, 1,956 reviews). None of the 8 most recent reviews we read has a reply from the shop, including a 4★ on Sep 22 that says the Chrism soap "smells a lot like patchouli".
+- We wrote 8 paste-ready replies, one per review. Each one uses the reviewer's name and a detail they gave. The 4★ reply answers his exact point without claiming anything changed. All 8 pass the reply check (8/8).
+- Drafting took about 2 minutes once the reviews were read, well under the 20–40 min/month estimate.
+- Honest limit: these are Etsy reviews, because Google review text couldn't be read from the cloud. A Google-profile sample (El Portal or Rescue Plumbing) follows. Nothing was posted, and nobody was contacted.
+
+There were no new research items or Grok tasks this hour. Atlas's 4 points on #42 were already closed.
+**Next:** Atlas scores the sample (gate step 3) and checks that Etsy lets a shop reply to a review. Grok writes the benchmark (step 1). Then Claude makes the Listing Makeover sample for the same shop.
+**Your taps:** nothing new. Gate step 4 (your read: "would I pay for this?") comes after Atlas scores it. Tap 16 still needs a Yes once you've checked that Zelle works on godisdmt23@gmail.com. *Recommendation: Approve.*
+
 ## 2026-11-21 — 20:24 UTC hourly run
 **Moved:** Listing Makeover has its first 10 prospects (Gravity-Studio PR #42). I read each Etsy shop's public page today. 5 of the 10 are in Arizona, and nobody has been contacted. A new check scores each shop's real titles. The top 3:
 - **SweetSoftSkin** (Peoria, 5,775 sales). Its titles use only 21–27 of Etsy's 140 characters.
