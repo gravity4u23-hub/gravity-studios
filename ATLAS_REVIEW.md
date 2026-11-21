@@ -142,3 +142,17 @@ No blocker. The note is a solid dated snapshot; its two load-bearing claims veri
 **Loan/trust note:** owner challenged the REFUTED verdict twice — "find a way outside ur understanding." A deeper loophole hunt is now running (dedicated research: trust borrowing rules, face-value lenders, collateral assignment, premium finance minimums, pseudo-legal EIN theories, closest working version). Gravity-Studio issue #30 updated. The ✖ rating is suspended pending the hunt — the verdict changes on evidence, not assertion.
 
 **Verdict:** One high-value systems piece for the crew, one traditional remedy filed with its warnings. Neither needs the user tonight.
+
+---
+
+## 2026-11-21 — shikamarutsai: agents will be common, content flows between modalities
+
+**What appeared:** owner-fed video (~1:20), transcribed by Atlas local transcriber after a download retry (first attempt failed at 99.8%).
+
+**`shikamarutsai-agents-modality.md` — checked, prediction not fact:**
+- Speaker (unnamed in transcript, sounds like a Google executive): three years from now today's AI will look primitive, like a flip phone. Agents will be very common; people will rely on them to get things done seamlessly. Any content will flow between modalities — hints already shown with Nano Banana, Veo, and Gemini (transcript reads "Nana Banana, Vio and Omni" — likely transcription artifacts).
+- Verification: predictions, not facts — labelled as such. Direction matches the Schmidt agentic thesis already in the master plan and the reyainami self-prompting-agents video. Consistent, not new evidence.
+- Integration: no new build. Reinforces the master plan's core bet. The crew's pipeline (feed → transcribe → verify → integrate → build) is already the modality-conversion loop in miniature. Content lane note: re-cut one piece of content across modalities (video → transcript → article → Short) as a standing step.
+- Post text still pending (browser read running); update attribution if the speaker's name arrives.
+
+**Verdict:** Short, on-theme, needs nothing from the user.
