@@ -101,7 +101,9 @@ Priority order. Sources are the existing plans; this doesn't replace them, it ra
 
 ## 9. The owner's dashboard
 
-**Gravity Command Center:** https://claude.ai/artifact/Pg6eNBKADo1FsZKVw92dfR — cash collected, lanes by stage, blockers, his taps in order of money, and work waiting for review. Data comes from `tools/command-center/build.py` (ledger, lane records, OWNER_BRIEF, GitHub). Claude's hourly run rebuilds it. When a lane moves or a tap is done, update the lane/tap lists in `build.py` in the same PR.
+**Gravity Command Center:** https://claude.ai/artifact/Pg6eNBKADo1FsZKVw92dfR — cash collected, lanes by stage, blockers, his taps in order of money, and work waiting for review. Data comes from `tools/command-center/build.py` (ledger, lane records, OWNER_BRIEF, GitHub). Claude's hourly run rebuilds it.
+
+**How the owner approves (his rule, Nov 21):** every decision reaches him as a 1–2 sentence brief + an Approve (or Mark done) button + a box to add anything. That lives in the dashboard's "Your approvals" section. Claude reads his taps and notes, copies each one into `OWNER_STEERING.md` with the date, and acts on it; Grok and Atlas read it there. New decisions go into `tools/command-center/build.py` (T list) with a brief, never as an open question. When a lane moves or a tap is done, update the lane/tap lists in `build.py` in the same PR.
 
 ## 10. Automation
 

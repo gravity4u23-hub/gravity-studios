@@ -24,16 +24,17 @@ L = [
  ("Haul Partner Split", "50/50 split", None, 1, "Needs a partner", "Parked"),
 ]
 lanes = [dict(lane=a, price=b, first_sale_usd=c, stage=STAGES[d], stage_num=d, blocker=e, next_step=f) for a,b,c,d,e,f in L]
+# Owner approvals: n, tap, brief (why, in a sentence or two), button label, unlocks, first-sale USD
 T = [
- (2, "Connect Instagram Messages", "GEO audit", 149),
- (3, "Set up a Google Voice business number", "Resale Concierge", 120),
- (4, "Answer Atlas #24: were the 3 GBP buyers real?", "GBP audit", 49),
- (5, "Approve the Blog Engine message drafts", "Wellness Blog Engine", 150),
- (6, "Pick hosting for the sales site (GitHub Pages or a domain)", "Sales site", None),
- (7, "Confirm the PayPal address on the sales page", "Sales site", None),
- (8, "Test the Subliminal Rewire Windows build", "Rewire Packs", None),
+ (1, "Build Review Reply Desk + Listing Makeover next", "Two new services, $0 to start: we reply to a business's Google reviews weekly ($79–149/mo), and rewrite online shop listings so they get found ($79 per 20). Recommended: yes.", "Approve", "New services", None),
+ (2, "Connect Instagram Messages", "El Portal's website form is broken, so Instagram DM is the only way to send them the $149 AI-search audit pitch you already approved. Tap 'Mark done' once it's connected.", "Mark done", "GEO audit", 149),
+ (3, "Set up a free Google Voice business number", "The Resale Concierge post is ready, but it still shows your personal number. A free business number fixes that and lets it go live. Tap 'Mark done' once it exists, and add the number below.", "Mark done", "Resale Concierge", 120),
+ (4, "Approve the Blog Engine messages", "Three short messages: topic list, first post (free until they like it), then a PayPal invoice. Once approved, we pitch the first checked prospects with your OK on each send.", "Approve", "Wellness Blog Engine", 150),
+ (5, "Correct the GBP record: no 3 buyers yet", "An old commit claimed 3 paying GBP buyers, but nothing backs it. Recommended: approve to correct the record to 'needs first buyer'. If they were real, write who below instead.", "Approve", "GBP audit", 49),
+ (6, "Host the sales site free on GitHub Pages", "Your Gravity Studios page has no home on the web yet. GitHub Pages is free and uses the repo you already have; a custom domain can come later.", "Approve", "Sales site", None),
+ (7, "Confirm gravity4u@gmail.com is your PayPal", "The sales page sends payments to gravity4u@gmail.com while contact goes to gravity4u23@gmail.com. Approve if the PayPal address is right; if not, write the correct one below.", "Approve", "Sales site", None),
 ]
-taps = [dict(n=n, tap=t, unlocks=u, first_sale_usd=v) for n,t,u,v in T]
+taps = [dict(n=n, tap=t, brief=br, button=bt, unlocks=u, first_sale_usd=v) for n,t,br,bt,u,v in T]
 led = open(os.environ.get("LEDGER", "../Gravity-Studio/revenue-command-center/ledger.md")).read()
 m = re.search(r"invoiced \$(\d+); collected \$(\d+); expenses \$(\d+).*?net retained \$(-?\d+)", led)
 contacted = re.search(r"leads contacted (\d+)", led).group(1)
