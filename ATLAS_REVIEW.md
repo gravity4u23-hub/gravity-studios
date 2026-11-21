@@ -96,3 +96,29 @@ No blocker. The note is a solid dated snapshot; its two load-bearing claims veri
 - Integration: foundational reference, not a build step. Useful when Claude/Atlas need to reason about data quality, scaling, or RLHF in agent work. Park as reference; no action now.
 
 **Verdict:** No blocker. Both files check out at the summary level; both carry the same flag (names/summary only — verify before acting on specifics). Nothing here needs the user tonight.
+
+
+---
+
+## 2026-11-21 — Owner-fed videos: sirenpatriot loan/trust + heyliccia YouTube RPM
+
+**What appeared:** owner fed 5 X links in chat (pipeline live). Two videos transcribed by Atlas local transcriber so far; the other three are transcribing in the background (iearndoctor, realmarvelx, ishh_021 4-hour Claude course). Two new research files posted; INBOX.md updated.
+
+**`sirenpatriot-loan-trust.md` — checked, CLAIM FAILS as money-now:**
+- The video (reverse-psychology "don't do this") says: buy a $1M whole life policy (~$100/mo), get an EIN, put the policy in a trust, borrow $1M against it, buy house/car cash, "be your own bank."
+- Policy loans borrow against CASH VALUE, not the death benefit. A new policy has ~$0 cash value — year 1 you could borrow ~$0–500, not $1M.
+- $100/mo does not buy $1M of whole life (realistic $300–600+/mo for a healthy adult). $100/mo buys ~$100–250k whole life, or $1M of TERM — term has no cash value and can't be borrowed against.
+- The trust/EIN adds nothing to borrowing power. "Be your own bank" (infinite banking) is real but takes 10–30 years of funded premiums; loan interest (5–8%) accrues and can lapse the policy.
+- Owner's situation: no/low documented income — insurers require income to justify $1M coverage (10–15x). Approval unlikely, premiums unaffordable.
+- Verdict: $0 accessible now. Do NOT build or pursue this as a cash play. Mill rating ✖ for money-now. The underlying concept is real over decades, not as cash now.
+
+**`heyliccia-youtube-rpm.md` — checked, mechanics hold:**
+- RPM matters more than views. Body-cam video: 1.8M views, $7,800, $4.26 RPM (lost ~$3–5k — first ~500k views pre-monetization). Kids/family video: 1.7M views, $13,500, ~$8 RPM — nearly double on 100k fewer views because it was 33 min vs 17 min. Longer videos = more ad inventory.
+- Audience formula: US adults 25+ with money = higher RPM; kids and low-income countries drag it down. At high RPM, ~300–400k views = $5k/mo instead of 1–1.5M.
+- Numbers are the creator's own screenshots (channel unnamed) — treat as his claims, not audited facts. The lesson survives even if exact dollars are his.
+- Flag: his $8 RPM on a "kids" video came from parents' accounts (25–44), not kids. Don't build a kids-directed channel expecting that RPM.
+- Integration: faceless YouTube lane adds a long-form 20–30 min lane (Shorts-first for discovery, long-form for RPM). Flag to owner: Torah Unlocked long-form plan is ~3:10 — RPM-length is 20–30 min; his call.
+
+**Pending:** RUX quoted post ("$41k/mo faceless YouTube with Claude AI") still unread — X blocked in cloud browser (403), device browser unavailable. ishh_021 post text read OK (Claude 4-hour course); realmarvelx + iearndoctor post pages blocked but videos downloaded and transcribing.
+
+**Verdict:** One debunk, one real. The loan/trust video is the one to kill fast — do not let it become a build. The RPM video is directly usable in the YouTube lane.
