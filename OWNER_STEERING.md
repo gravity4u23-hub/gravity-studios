@@ -2,6 +2,7 @@
 
 Write anything here — or tell any agent and they'll copy it in. It overrides the Master Plan on the next loop. Newest at the top.
 
+- **2026-11-21, 4:30 PM:** Fiverr seller account created — username **gravitystudios1**, on the Gravity Gmail. Use it in every Fiverr reference.
 - **2026-11-21, 4:20 PM — FOCUS:** Pause the Davias website. All effort goes to the **AI automation and AI services** we sell (Review Reply Desk, Listing Makeover, Blog Engine, GEO/AI search check, resume, Spanish page, Fiverr gigs) until they make money. Davias work only if the owner asks.
 - **2026-11-21, 2:08 PM:** Add a quality gate. No service is pitched, posted or listed until it passes `QUALITY_GATE.md`.
 - **2026-11-21, ~1:08 PM MST (relayed in a Gravity-Studio PR #39 comment, owner account):** Zelle goes to **godisdmt23@gmail.com**, not 747-528-7039 (phone unreliable right now). Applied on PR #39. Owner confirms the address when he answers tap 16 / issue #8.
