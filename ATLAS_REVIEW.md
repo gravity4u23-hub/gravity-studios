@@ -122,3 +122,23 @@ No blocker. The note is a solid dated snapshot; its two load-bearing claims veri
 **Pending:** RUX quoted post ("$41k/mo faceless YouTube with Claude AI") still unread — X blocked in cloud browser (403), device browser unavailable. ishh_021 post text read OK (Claude 4-hour course); realmarvelx + iearndoctor post pages blocked but videos downloaded and transcribing.
 
 **Verdict:** One debunk, one real. The loan/trust video is the one to kill fast — do not let it become a build. The RPM video is directly usable in the YouTube lane.
+
+---
+
+## 2026-11-21 — Two more owner-fed videos: realmarvelx software factory + iearndoctor garlic remedy
+
+**What appeared:** two more videos transcribed by Atlas local transcriber. Two new research files posted; INBOX.md updated. The reyainami video (Anthropic self-prompting agents, 32:30) and the ishh_021 video (Claude 4-hour course) are still transcribing.
+
+**`realmarvelx-software-factory-brakes.md` — checked, high value:**
+- Conference talk (~20 min): "code is cheap" is wrong — code is the agent's environment. The software factory = accelerators (auto-triggered work) vs BRAKES (quality gates): (1) automated checks — deterministic, cheap, max out lint/typecheck/tests, agents benefit from friction; bad tests are tautological, structure-sensitive, or cannot fail; (2) deep modules (Ousterhout) + centralized state (reducers/state machines) make checks harder to cheat; (3) automated review — separate reviewer agent with fresh context imposes coding standards, don't put standards in AGENTS.md (implementer ignores them under load), don't outsource to generic review tools; (4) human review — review the SYSTEM, never write the same PR comment twice, upstream taste into checks/review ("retro"); "leading words" (domain vocabulary) steer agents.
+- Verification: concepts match established software engineering; the brakes framing is the speaker's own model. Skills repo (AIHero.dev) is a commercial product — noted, not endorsed.
+- Integration: the hivemind already runs this model — Atlas challenger = review brakes, Superpowers tests-first = checks brake. Name it in HIVEMIND.md (accelerators vs brakes). Claude's builds need checks + reviewer pass before merge; the Windows blocker (issue #1) is what happens without brakes. Every Atlas challenge must upstream into a standing check.
+
+**`iearndoctor-garlic-wart-remedy.md` — checked, TRADITIONAL only:**
+- German video (~3 min): DIY wart/skin-tag mixture — 2 grated garlic cloves + baking soda + white toothpaste + brandy vinegar + alcohol, applied to the spot. Video itself warns: not every nodule is a wart; garlic/vinegar/alcohol can irritate and burn skin.
+- Verification: garlic (allicin) is antimicrobial with long traditional use on warts — TRADITIONAL, not proven; no trial supports this mixture. Topical garlic burns are documented. Safety must travel with it: patch test, never face/genitals/broken skin, never children, stop on burning/blistering, clinician if the spot is new/changing/bleeding/uncertain.
+- Integration: Recipe Book card, TRADITIONAL label, burn warning prominent. No medical claims, no recommendation to use it.
+
+**Loan/trust note:** owner challenged the REFUTED verdict twice — "find a way outside ur understanding." A deeper loophole hunt is now running (dedicated research: trust borrowing rules, face-value lenders, collateral assignment, premium finance minimums, pseudo-legal EIN theories, closest working version). Gravity-Studio issue #30 updated. The ✖ rating is suspended pending the hunt — the verdict changes on evidence, not assertion.
+
+**Verdict:** One high-value systems piece for the crew, one traditional remedy filed with its warnings. Neither needs the user tonight.
