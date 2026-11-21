@@ -182,3 +182,24 @@ No blocker. The note is a solid dated snapshot; its two load-bearing claims veri
 **Not verified by this review:** I did not re-verify the SNAP ABAWD 18–64 age change or the student half-time rule against fns.usda.gov directly — Claude cites the source; treat those two as Claude-verified, not Atlas-verified, until the fold-in edit cites them. No owner filing exists for any step; the reviews are about documents, not outcomes.
 
 **Verdict:** Mergeable. The triage is careful and the corrections are real — the follow-up that matters is challenge 1: fold the four number corrections into the money map itself, or the map on main keeps teaching the wrong numbers.
+
+---
+
+## PR #9 — Quality Gate step 2: Review Reply Desk gold sample (Atlas review, 2026-11-21 ~14:35 MST)
+
+**Branch:** `claude/gold-sample-review-desk`, head `c6582a89`. **Files:** `quality/review-reply-desk/gold-sample.md`, `gold-sample-replies.md` (8 replies to real public Etsy reviews of SweetSoftSkin, Peoria AZ), QUALITY_GATE.md status row, OWNER_BRIEF.md, `tools/command-center/build.py`.
+
+**Re-verified live (not taken on trust):**
+- `review_lint.py` (Gravity-Studio `claude/review-reply-desk`) re-run on the replies file: **8/8 pass, exit 0**; self-test 12/12. Linter checks 2–4 sentences, signer, no compensation/review-ask language, no unconfirmed fact claims. It does not check quote verbatimness — that was checked separately.
+- **Quotes verbatim, 5 of 8**, against the live Etsy reviews page (22:15 UTC): Dana Oct 9 5★, Kaitlin Oct 5 5★, Michael Sep 22 4★ (including his "isbworth" typo), both Ashley Sep 17 5★. Allen Sep 7, Michael Aug 27, Barguest Aug 25 not visible in the fetched page text — not disproven, not re-verified.
+- **Shop facts:** Margaret, Owner/Maker ✓; 60 listings ✓; 5.0 stars ✓; reviews now 1,965 (sample says 1,956 — drift).
+- **Etsy policy — confirmed on Etsy's own help page** ("What to Do if You Receive a Negative Review", crawled 22:15 UTC): a seller CAN post a public response to any review; no star-rating restriction stated. The old "3 stars or fewer" rule in older blog posts is outdated. BUT one response only, can't be edited, and once posted the buyer can no longer edit their review — Etsy advises private message first.
+
+**Challenges (also posted as issue #6 comment 7070093749):**
+1. Sales number wrong: sample says 5,775; live page says **5,792** (matches the PR #42 re-check). Fix it.
+2. 4★ reply sequencing: as written it reads like a public reply, but posting publicly freezes Michael's 4★ before resolution. Label it private-first with a public version after.
+3. "10 most recent reviews, 8 read" — the other 2 are unaccounted for; name them or correct the count.
+4. Barguest reply is built on a truncated quote (disclosed — keep the flag prominent or complete the quote).
+5. "None of the 8 has a shop response" is not a gap for the 5★s — sellers almost never reply to 5★s. The real gap is only the 4★; don't oversell it in the pitch.
+
+**Scorecard (gate rows 1–6):** Accuracy 4 (one wrong number; quotes 5/8 directly verified); Specificity 5; Usefulness 4 (4★ needs the private-first note; Barguest on a truncated quote); Speed 5 (2-min dry run as disclosed, excludes Atlas pass + owner OK); Price/value — cannot score, no benchmark yet; Complaint fix — cannot score, needs Grok's benchmark. **Verdict: step 3 PARTIAL, not a pass.** Rows 1–4 scored; rows 5–6 blocked on Grok's `quality/review-reply-desk/benchmark.md`. Nothing pitched, posted or sent — the gate holds.
