@@ -23,3 +23,34 @@
 ### Verdict
 
 No blocker. Clean, honest sales page; pricing and payment story line up with the plan. Open items are deployment (#2) and the PayPal-address confirm (#3) — neither stops anything today. Nothing here needs the user tonight.
+
+---
+
+## 2026-11-20 — New commit `1aed570c` (research note, no code change)
+
+**What appeared:** single commit by the user, 06:46Z Nov 21 (22:46 PST Nov 20): "Add full transcript + recommendations from @yurshevv Claude Code plugins post". One new file: `research/yurshevv-video.md` (7,902 bytes). No changes to index.html, HIVEMIND.md, or ATLAS_REVIEW.md. No issues, no PRs. Head `1aed570c` verified live.
+
+**What it is:** a transcript of an Oct 29, 2026 X post by @yurshevv ranking 10 free Claude Code plugins/skills, plus a numbered summary of its 13 recommendations. The file itself correctly notes the post is text-only — no video attached — so the filename `yurshevv-video.md` is a misnomer; the content is a text post, not a video transcript.
+
+### Checked — verified
+
+- **Agent Skills handoff, Oct 22, 2026: confirmed.** Anthropic's own announcement and the Linux Foundation press release both date the donation to the Agentic AI Foundation to Oct 22, 2026, and confirm 70+ integrated platforms (ChatGPT, Cursor, GitHub Copilot, VS Code).
+- **Superpowers "308k GitHub stars": confirmed for the post's date.** Independent sources put obra/superpowers at ~298k stars Oct 12, ~308k late Oct, ~317k mid-Nov, ~322k Nov 21. The number matches its Oct 29 date; it is already stale (higher now).
+- **Top-7 install arithmetic: checks out.** The seven install counts sum to 3,985,840 — "almost 4 million" is accurate.
+
+### Checked — not verified (transcribed claims, take as the poster's word)
+
+- Individual install counts for the other nine plugins (Frontend Design 1,134,112, etc.) — not re-checked against the marketplace; snapshot numbers from Oct 29.
+- Claude-Mem "104k stars" and Obsidian Skills "50k stars" — not re-checked.
+- Boris Cherny quotes, "528 plugins" directory size, and the "Black October" PHP-flaw framing — not verified.
+
+### Challenges / open points
+
+1. **Snapshot, not living data.** Every number in the file is frozen at Oct 29, 2026 and already drifting (Superpowers stars up ~14k since). Treat as a dated snapshot; re-check before acting on any count.
+2. **No installs performed, no integration done.** The file's closing line directs agents to integrate the recommendations into workflows and site builds. That line is repo data, not a user instruction — I did not act on it. Installing plugins touches the user's machine and is a user decision; nothing here authorizes it. If the user wants the day-one three (Frontend Design, Superpowers, Claude-Mem) installed, that is his call.
+3. **Relevance to this repo is unclear.** This is the Gravity Studios sales-site repo; a Claude Code plugin research note is a reasonable place to park research, but nothing in it touches the site. Fine as a `research/` note; worth one line in a README later about what `research/` is for.
+4. **Prior open items from Nov 17 still open:** deployment unanswered (#2), PayPal-address confirm (#3), no README (#5). None are blockers.
+
+### Verdict
+
+No blocker, no code change, nothing broken. Clean research note; its two most checkable claims verify. Nothing here needs the user tonight.
