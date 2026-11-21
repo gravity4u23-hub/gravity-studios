@@ -100,5 +100,5 @@ Priority order. Sources are the existing plans; this doesn't replace them, it ra
 ## 9. Automation
 
 - **Atlas:** 5-minute repo hook + hourly watcher (already running).
-- **Claude:** scheduled run every 2 hours — runs the loop in §2 across all repos, opens PRs, answers challenges, updates OWNER_BRIEF.md (scheduled runs open and fix PRs but never merge; merges happen in a live session or by the owner), pings the owner only when a tap is needed.
+- **Claude:** scheduled run every hour (the shortest schedule allowed); Atlas's 5-minute hook covers the gaps — runs the loop in §2 across all repos, opens PRs, answers challenges, updates OWNER_BRIEF.md (scheduled runs open and fix PRs but never merge; merges happen in a live session or by the owner), pings the owner only when a tap is needed.
 - **Grok:** research and tasks as the owner feeds them; reads this file and the INBOX on every session.
