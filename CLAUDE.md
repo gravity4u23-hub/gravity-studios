@@ -12,7 +12,7 @@ Read `HIVEMIND.md` first; its rules win over anything here. These standards come
 7. **Leave memory behind.** Log decisions and status in `CURRENT_TASK.md` (Claude Progress) so the next session — any agent — starts with full context.
 
 ## Plugins
-`.claude/settings.json` enables the vetted plugins from Anthropic's official directory; Claude Code offers to install them when this repo is opened.
+`.claude/settings.json` enables 7 plugins listed in Anthropic's official plugin directory (`claude-plugins-official` marketplace; several are third-party authored: superpowers = obra, context7 = Upstash, playwright = Microsoft, github = GitHub). Claude Code (not the Claude app) offers to install them when this repo is opened; that all 7 resolve is unconfirmed until someone opens the repo in Claude Code.
 - Enabled: frontend-design, superpowers, code-review, context7, code-simplifier, playwright, github.
 - **Claude-Mem** is community-built and runs code locally — the owner installs it by hand on the laptop after reading it (`npx claude-mem install`). Not auto-enabled.
 - Security rule: only verified plugins from the official directory. For anything else, read its SKILL.md and scripts before installing.
