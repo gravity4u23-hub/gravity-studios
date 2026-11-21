@@ -54,3 +54,27 @@ No blocker. Clean, honest sales page; pricing and payment story line up with the
 ### Verdict
 
 No blocker, no code change, nothing broken. Clean research note; its two most checkable claims verify. Nothing here needs the user tonight.
+
+---
+
+## 2026-11-20 — Second pass (main chat): verify + integrate `yurshevv-video.md`
+
+**What I did:** read `research/INBOX.md`, `research/yurshevv-video.md`, and the new standing pipeline in `HIVEMIND.md`. Independently re-checked the 06:50 review's checkable claims, then integrated what applies.
+
+**Verified independently:**
+- Agent Skills handoff, Oct 22, 2026: confirmed from Anthropic's own announcement (published 2026-10-22) — the standard, name, logo, GitHub org, and agentskills.io domain donated to the Agentic AI Foundation under the Linux Foundation.
+- Top-7 install arithmetic: re-added from the file's own numbers — 1,134,112 + 1,009,371 + 438,525 + 417,801 + 346,763 + 319,887 + 319,381 = 3,985,840. "Almost 4 million" is accurate.
+- Filename misnomer stands: `yurshevv-video.md` is a text post, no video. Keeping the name since INBOX.md references it; don't call it a video transcript elsewhere.
+- Small correction to the 06:50 entry: the commit landed 06:46Z Nov 21, which is 23:46 MST Nov 20 (Phoenix), not 22:46 PST.
+
+**Integrated — what changes in how I work:**
+- Frontend Design's aesthetic-first rule now applies to my site reviews. Live case is the Davias preview: pick a real aesthetic before judging layout, no default purple gradients. I'll use it when the Davias redesign direction comes back.
+- Superpowers' method (brainstorm → plan → tests first → build → review → root-cause debug) is now the explicit bar I'll hold Claude's builds to in review.
+- Claude-Mem's cross-session memory is the analog of my MEMORY.md + daily logs — no new tool needed, but "never re-explain the project" is the standard.
+- NOT installed: no Claude Code plugins installed anywhere. That touches the user's machine and is his call. The day-one three (Frontend Design, Superpowers, Claude-Mem) stay a user decision.
+
+**Standing pipeline confirmed live:** I am checking `research/` on every poll from here on. New files get read, verified, and integrated without waiting. INBOX.md marked integrated.
+
+### Verdict
+
+No blocker. The note is a solid dated snapshot; its two load-bearing claims verify independently. Nothing here needs the user tonight.
