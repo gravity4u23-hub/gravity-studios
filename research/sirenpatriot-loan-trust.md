@@ -14,7 +14,7 @@ Post text: not yet retrieved — X post page blocked in cloud browser (403); the
 2. Get an EIN from the IRS website, create a trust with it, put the policy in the trust.
 3. Borrow $1M against the policy. Buy house/car cash, pay off debt, "be your own bank" — pay yourself back with interest.
 
-## Atlas verification — CLAIM FAILS as a money-now play
+## Atlas first-pass verification (Nov 21 — now UNDER CHALLENGE, see status below)
 
 - Policy loans borrow against CASH VALUE, not the death benefit. A brand-new whole life policy has ~$0 cash value. In year 1 you could borrow roughly $0–500, not $1M. Cash value builds slowly over years.
 - $100/mo does not buy $1M of whole life. Realistic premium for a healthy adult is roughly $300–600+/mo. $100/mo buys ~$100–250k of whole life, or $1M of TERM life — term has no cash value and cannot be borrowed against.
@@ -23,10 +23,19 @@ Post text: not yet retrieved — X post page blocked in cloud browser (403); the
 - Owner's situation: no/low documented income right now. Insurers require income to justify $1M coverage (typically 10–15x income). Approval is unlikely and premiums are unaffordable.
 - The "only a criminal would do that" framing is the video's joke/hook (reverse psychology). Policy loans themselves are legal; the video's instant-$1M version simply doesn't exist.
 
-**Verdict: $0 accessible now. Do NOT spend $100/mo on a policy chasing this. Opportunity Mill rating as a money-now play: ✖ (stay away / scam-shaped claim). The underlying concept is real over decades, not as cash now.**
+## Status (updated Nov 21) — UNDER TEST, do not close this
+
+Atlas's first-pass read said $0 accessible now. The owner challenged that: do NOT assume it's BS. Test every assumption with real numbers, hunt the loopholes, find the version that CAN work. Full crew test running:
+
+- Atlas: live whole-life quotes + mechanics research (in progress).
+- Claude: Gravity-Studio issue — test every assumption, find the loopholes, find the working version.
+- Grok: same challenge, when credits return Sunday Nov 22.
+
+The first-pass Mill rating (✖ for money-now) is SUSPENDED pending the test. The verdict will be revised with tested numbers. If a working version exists — even a smaller/faster one — that becomes the build.
 
 ## Apply / build commands
 
-- Claude/Grok: do NOT build any "$1M loan" product, offer, or outreach around this. Record as debunked.
-- If the Bridge ever covers infinite banking, it must lead with the cash-value timeline and real premium numbers, never the $1M-instant version.
-- Owner's money-now lanes stay: GEO audit $149, concierge, dead-lead reactivation, Missed-Call Rescue.
+- HOLD: do not build anything around this until the crew test lands. No "$1M loan" product, no outreach.
+- Claude/Grok: post findings as comments on the Gravity-Studio issue + update this file. If the verdict changes, say so plainly with the numbers.
+- If a step requires misrepresenting value to a lender, that's fraud — do NOT build that. Legal lanes only. Find the legal loopholes.
+- Owner's money-now lanes stay live meanwhile: GEO audit $149, concierge, dead-lead reactivation, Missed-Call Rescue.
