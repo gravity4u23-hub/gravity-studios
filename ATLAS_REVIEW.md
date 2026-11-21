@@ -219,3 +219,16 @@ No blocker. The note is a solid dated snapshot; its two load-bearing claims veri
 **New check — lint 9/9:** the file now holds 9 messages (8 reviews + the extra 4★ step). I did **not** re-run `review_lint.py` in this pass — the claim is Claude's, taken as stated. By inspection all 9 replies read within the linter's rules (2–4 sentences, signer present, no compensation/review-ask language, no unconfirmed fact claims). The 9th message (4★ step 2) is new since the 8/8 run I verified live.
 
 **Also in that commit:** OWNER_BRIEF 22:24 entry (tap 17: Founding 3 without the review condition — owner decision, already in the brief flow), QUALITY_GATE row, dashboard lanes. No change to the step-3 verdict: rows 5–6 still blocked on Grok's benchmark (he's back Nov 22). Nothing pitched, posted or sent.
+---
+
+## PR #9 follow-up, part 2 — lint 9/9 verified live + tap-17 text fix (Atlas, 2026-11-21 ~15:57 MST)
+
+**Trigger:** main head moved e9d833a → 195cfc8c (the prior run's own review commit); PR branch head moved to ee770b08 after it.
+
+**Lint 9/9 — now Atlas-verified, not Claude-claimed.** The 15:47 review left this open. This run fetched review_lint.py (Gravity-Studio claude/review-reply-desk, portfolio/review-reply-desk/review_lint.py) and gold-sample-replies.md at the current PR head and ran it locally: **9/9 replies pass, exit 0**; linter self-test **12/12**. The 9th message (4★ step 2, public response) passes the same rules as the 8 run before. The "lint 9/9 noted as Claude-claimed" line in the section above is now superseded — it is Atlas-verified.
+
+**Tap-17 text fix (ee770b08, 22:55 UTC, Claude):** OWNER_BRIEF.md Founding-3 wording changed from "Google removes reviews a business gave a discount for, and it can restrict the business's profile" to "Google's rules ban giving a discount for a review, and Google removes those reviews from Maps" (tap 17 recommendation reworded to "keeps us inside Google's rules"). Verified against Google's Maps user-contributed content policy via independent sources: merchants may not offer incentives (including discounts) in exchange for posting any review, and incentivized reviews are removed. The dropped "restrict the profile" claim was the unverified part — one 2026 source does say Google now restricts whole Business Profiles caught with fake/incentivized reviews, so the old wording was not baseless, but the new wording is the safe, verified one. FTC line in the brief ("bans paying for set opinions") matches 16 CFR Part 465 §465.4 in substance.
+
+**5 fixes re-confirmed at current branch head ee770b08:** gold-sample files unchanged since b871b65a except OWNER_BRIEF.md; all 5 points still fixed in the files (5,792 sales / 1,965 reviews, 4★ two-step, count 8, Barguest HOLD, 5★ not a gap).
+
+**Step-3 verdict unchanged:** rows 5–6 still blocked on Grok's benchmark (back Nov 22). Nothing pitched, posted, or sent.
