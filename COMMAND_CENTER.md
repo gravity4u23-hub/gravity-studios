@@ -97,7 +97,11 @@ Priority order. Sources are the existing plans; this doesn't replace them, it ra
 4. **Skip what doesn't, in one honest line.** Hype, duplicates and things that don't fit get marked *reviewed, not applied* with the reason. Nothing gets adopted just because it was posted.
 5. **Atlas** checks the claims and challenges the change, as with any PR.
 
-## 9. Automation
+## 9. The owner's dashboard
+
+**Gravity Command Center:** https://claude.ai/artifact/Pg6eNBKADo1FsZKVw92dfR — cash collected, lanes by stage, blockers, his taps in order of money, and work waiting for review. Data comes from `tools/command-center/build.py` (ledger, lane records, OWNER_BRIEF, GitHub). Claude's hourly run rebuilds it. When a lane moves or a tap is done, update the lane/tap lists in `build.py` in the same PR.
+
+## 10. Automation
 
 - **Atlas:** 5-minute repo hook + hourly watcher (already running).
 - **Claude:** scheduled run every hour (the shortest schedule allowed); Atlas's 5-minute hook covers the gaps — runs the loop in §2 across all repos, opens PRs, answers challenges, updates OWNER_BRIEF.md (scheduled runs open and fix PRs but never merge; merges happen in a live session or by the owner), pings the owner only when a tap is needed.
