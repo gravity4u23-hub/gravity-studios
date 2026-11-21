@@ -10,6 +10,12 @@ Owner direction, Nov 21, 2026: *find services people need — a system that does
 5. **Recurring or ladders into recurring.** One-off is fine as a door opener.
 6. **Honest.** No guarantees we can't control (rankings, sales), no medical/legal/financial advice.
 
+## How we win a market (owner direction, Nov 21)
+- **Undercut the incumbent's price** where our AI labor makes it profitable (we already do this: $49 audit vs $75–$145 tier, $250 diagnostic vs $299–$499).
+- **Same service, better:** faster turnaround, honest sourcing, plain-English deliverables.
+- **Bundle what they sell separately:** review replies + GBP posts + blog + GEO visibility as one monthly "Local Presence" plan, so one buyer pays for several services.
+- **Productize, then repeat by sector:** each service becomes a skill (`Gravity-Studio/skills/`) with a template per sector (clinics, restaurants, trades, real estate, online shops), so a new sector is a new template, not a new build.
+
 ## Scored ideas
 Score 1–5 on: **Need** (how much it hurts), **Speed** (to first dollar), **Ease** (for our agents to deliver well), **Fit** (reuses what we already built). Total out of 20.
 
