@@ -16,7 +16,7 @@ L = [
  ("GBP audit", "$49", 49, 3, "Needs its first real buyer (owner confirmed no earlier buyers)", "Pitch alongside GEO and Review Desk"),
  ("Resale Concierge", "30% of sale (~$120 on a $400 item)", 120, 3, "Post is ready with the business number (747) 222-6980", "You post it (tap 11)"),
  ("Wellness Blog Engine", "$150–$300/mo", 150, 3, "Messages approved; prospects' blogs not checked yet", "Claude sharpens the messages and checks 10 prospects"),
- ("Review Reply Desk", "$79–$149/mo", 79, 3, "Atlas's 6 points fixed (Gravity-Studio PR #35: 2-business-day cycle, no invented facts, overage); review gaps not counted yet; pitch needs your OK", "Atlas re-checks PR #35; one timed dry run; you approve the pitch"),
+ ("Review Reply Desk", "$79–$149/mo", 79, 3, "Atlas's 6 points fixed + reply linter added (Gravity-Studio PR #35, review_lint.py 12/12; caught and fixed 2 sample replies that stated unconfirmed facts); review gaps not counted yet; pitch needs your OK", "Atlas re-checks PR #35; one timed dry run on a real public profile; you approve the pitch"),
  ("Listing Makeover", "$79 per 20 listings", 79, 3, "Prospect shops not picked yet; pitch text needs your OK", "Claude picks 10 Etsy shops; you approve the pitch"),
  ("Fiverr gigs", "$15–$199 per order", 15, 3, "Seller account not created yet", "Owner creates the account; we paste 6 gigs"),
  ("Paid diagnostic", "$250", 250, 2, "Ladder step after an audit", "Sell only to audit buyers"),

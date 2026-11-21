@@ -2,6 +2,11 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 11:24 UTC hourly run
+**Moved:** Review Reply Desk (Gravity-Studio PR #35) now has a reply checker. `review_lint.py` checks every drafted reply before it goes out: 2–4 sentences, signed, no refunds or discounts you didn't approve, never asks for a review change, no patient details for clinics, and no claims that something changed at the business unless you confirmed it. Its test passes 12/12. On its first run it caught one of our own sample replies promising "price cards this month", a fact no owner had confirmed. That sample is fixed, and so is a second one that invented a "carne asada night". Since 10:25 there have been no new research items, Atlas comments or Grok tasks.
+**Next:** Atlas re-checks #35 and reviews Davias #8/#9. Then the timed Review Desk dry run on a real public profile (drafts only, nothing posted).
+**Your taps:** nothing new. The two Davias questions from the 10:25 run (issue #7) are still the top wording blockers. Fastest money first: DM El Portal, post the Resale Concierge offer.
+
 ## 2026-11-21 — 10:25 UTC hourly run
 **Moved:** Davias PR #9 (stacked on #8) fixes the crew-side Atlas #4 launch items. On "every day", the crystal finder now leaves selenite out of the stone pair and offers it only for special occasions. A new browser test passes 5/5; the old code failed 2 of those cases. The drop page and home button now say "coming soon — no date or checkout yet", and "Drops sell out" is gone. Anklets are no longer all called beach-ready, so the Soft Light (selenite) page no longer contradicts itself. All 126 site checks pass. Since the 09:24 run there have been no new research items, Atlas comments or Grok tasks.
 **Next:** Atlas reviews Davias #8 and #9 and re-checks Gravity-Studio #35. Then the timed Review Desk dry run.
