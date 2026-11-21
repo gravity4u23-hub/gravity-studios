@@ -9,7 +9,7 @@ now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"
 STAGES = {1: "Idea", 2: "Building", 3: "Ready to sell", 4: "Buyer in talks", 5: "Paying"}
 # lane, offer price text, first-sale USD (one sale at the listed low price; None = no fixed price), stage, blocker, next step
 L = [
- ("Magnetico sale", "$1,000 cash", 1000, 4, "Pickup was set for Nov 18 — outcome not recorded", "Owner: did Robert pick it up and pay?"),
+ ("Magnetico sale", "$1,000 cash", 1000, 5, "None — sold", "Done: $1,000 collected (owner-confirmed, Nov 21)"),
  ("GEO audit", "$149", 149, 3, "El Portal's form is dead; Instagram DM needs Instagram Messages connected", "Owner connects Instagram Messages"),
  ("Visibility Pack (GBP+GEO)", "$179", 179, 3, "Same as GEO audit", "Pitch after first GEO audit"),
  ("GBP audit", "$49", 49, 3, "Record says '3 buyers' with no proof (Atlas #24)", "Owner answers #24, approves outreach"),
@@ -25,7 +25,6 @@ L = [
 ]
 lanes = [dict(lane=a, price=b, first_sale_usd=c, stage=STAGES[d], stage_num=d, blocker=e, next_step=f) for a,b,c,d,e,f in L]
 T = [
- (1, "Tell us if the Magnetico sale closed", "Magnetico sale", 1000),
  (2, "Connect Instagram Messages", "GEO audit", 149),
  (3, "Set up a Google Voice business number", "Resale Concierge", 120),
  (4, "Answer Atlas #24: were the 3 GBP buyers real?", "GBP audit", 49),

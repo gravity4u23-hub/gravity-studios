@@ -72,6 +72,8 @@ Priority order. Sources are the existing plans; this doesn't replace them, it ra
 **P4 — Subliminal Rewire** (personal, owner-only app)
 - #1 Windows launch blocker first; nothing else ships until the owner has tested a `main` build. Then #3–#6.
 
+**P1b — New services (from `strategy/SERVICE_OPPORTUNITIES.md`, owner direction Nov 21):** Review Reply Desk, then Listing Makeover (sample on Davias first). Same buyer list as the audits.
+
 **Parked (not this month unless the owner says so):** #3 Quantum Alpha (paper only), #1 Torah Unlocked, #17 dashboard push notifications.
 
 ## 6. Genius moves — cross-lane leverage (proposed; Atlas, challenge these)
