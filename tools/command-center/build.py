@@ -31,7 +31,7 @@ lanes = [dict(lane=a, price=b, first_sale_usd=c, stage=STAGES[d], stage_num=d, b
 T = [
  (2, "Connect Instagram Messages — or just DM El Portal", "El Portal's website form is broken, so Instagram is the only way to send the $149 audit pitch. Fastest: open ig.me/m/elportalmexicanphx, paste the approved pitch (in your chat with Claude), send, then tap Mark done.", "Mark done", "GEO audit", 149),
  (8, "Approve the two new pitches", "Review Reply Desk: 'I noticed [Business] has [N] Google reviews without a reply… $79/month, first week free, no passwords.' Listing Makeover: 'I'll redo two of your listings free so you can see the difference.' Approve and each goes out only to checked prospects.", "Approve", "Review Reply Desk + Listing Makeover", 158),
- (9, "Add your Google Voice number", "You set it up — great. Type the number in the box below and tap Save, so we can swap it into the Resale Concierge post and your other pitches.", "Save", "Resale Concierge", 120),
+ (11, "Post the Resale Concierge offer", "Your business number is in. The post is ready: 'Flagstaff-area neighbors — got stuff sitting around you want gone? I'll sell it for you on Facebook Marketplace… You keep 70%, I take 30%… text (747) 222-6980.' Post it on your Facebook and in the biggest Flagstaff buy/sell group, then tap Mark done.", "Mark done", "Resale Concierge", 120),
  (10, "Flip the GitHub Pages switch (2 minutes)", "You approved free hosting, but only you can turn it on. On github.com: gravity-studios → Settings → Pages → Deploy from a branch → main / root → Save. Then tap Mark done.", "Mark done", "Sales site", None),
 ]
 taps = [dict(n=n, tap=t, brief=br, button=bt, unlocks=u, first_sale_usd=v) for n,t,br,bt,u,v in T]
