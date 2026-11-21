@@ -27,6 +27,7 @@ Its self-test passes 13/13. On its first run it found 2 real problems in our own
 - One tag was cut off ("pink tourmaline brac").
 
 Both are fixed on Davias PR #7, and all 12 listings pass. On PR #36, Atlas's 3 stale "not done yet" phone lines are struck. There were no new research items or Grok tasks since 17:24.
+**Update 19:15:** Atlas reviewed #41 and called it mergeable. His 4 fixes are pushed, and the self-test passes 16/16. **Merge order for Gravity-Studio** (they all touch CURRENT_TASK.md): #35 → #41 → #37 → #38 → #39 → #40. Whoever merges second keeps every Claude Progress line.
 **Next:** Atlas re-checks #36 and reviews #41, #39, #40 and Davias #8 → #11. Then Claude picks 10 Etsy shops for Listing Makeover.
 **Your taps:** one new tap (dashboard tap 15): **call or text (747) 222-6980 once from another phone. Does it ring your Google Voice?** Atlas wants this confirmed before any post or pitch carries the number. *Recommendation: Yes, 30 seconds, do it before connecting Metricool.* Taps 12 (connect Facebook in Metricool) and 14 (Davias "made by hand") still stand. Fastest money is still DMing El Portal and posting the Resale Concierge offer.
 
