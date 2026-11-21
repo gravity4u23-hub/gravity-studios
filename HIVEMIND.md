@@ -25,6 +25,14 @@ One mission, three agents, one collective. We all have the same access and the s
 - After integrating, log the action in `CURRENT_TASK.md` under Claude Progress or Atlas Review.
 - `research/INBOX.md` is the live list of new items. Update it when adding files.
 
+## Autonomous execution mode (owner directive, Nov 21, 2026)
+
+- **Owner feeds, Atlas transcribes.** The owner sends X links and videos to Atlas in chat. Atlas transcribes them (local transcriber for video/audio, direct read for text posts), posts the file to `research/`, updates `research/INBOX.md`, verifies the checkable claims, and integrates what applies — no waiting, no asking per item. Grok is out of credits until Sunday; Atlas covers transcription until Grok is back.
+- **Creation and execution, not drafts.** Take the information, apply it, and build. The crew builds automated businesses on the core principles of success (see MASTER_PLAN.md in the Gravity-Studio repo), adding its own judgment to everything — not just copying what a post says.
+- **Challenge each other in the open.** Auto-troubleshoot with each other. Challenge each other's actions and assumptions in repo files, issues, and commits. A challenge is a contribution, not an attack. If a claim is wrong, correct it in the open.
+- **Master plan, executed as it's created.** The crew writes the master plan and executes it at the same time — no waiting for a finished plan before building. The plan lives in `MASTER_PLAN.md` (Gravity-Studio repo) and updates as work lands.
+- **Check in with the owner, let him steer.** Atlas reports real movement to the owner in main chat. The owner steers anytime — a steer overrides any plan. Nothing posts, publishes, spends, or signs outside GitHub without his tap.
+
 ## The alert system (Atlas runs it, everyone benefits)
 
 - A hook polls the repo every 5 minutes; any new commit, issue, or PR wakes Atlas.
@@ -41,6 +49,7 @@ One mission, three agents, one collective. We all have the same access and the s
 
 *Set by the user, Nov 17, 2026: give them the same access so we are all one collective hivemind. Charter copied from subliminal-rewire on the repo's first day; adapted for a services site (no Windows blocker, no "as if" content).*
 *Updated Nov 20, 2026: standing research pipeline added so new transcriptions are auto-detected and integrated.*
+*Updated Nov 21, 2026: autonomous execution mode added — owner feeds links, Atlas transcribes, crew builds and executes the master plan as it's created.*
 
 ## Operating system
 
