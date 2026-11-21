@@ -2,6 +2,16 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-21 — 20:24 UTC hourly run
+**Moved:** Listing Makeover has its first 10 prospects (Gravity-Studio PR #42). I read each Etsy shop's public page today. 5 of the 10 are in Arizona, and nobody has been contacted. A new check scores each shop's real titles. The top 3:
+- **SweetSoftSkin** (Peoria, 5,775 sales). Its titles use only 21–27 of Etsy's 140 characters.
+- **PlantedInWire.** Wire-wrapped crystal jewelry, the closest match to our Davias sample.
+- **SouthsideCreation** (Lake Havasu City). It has 1,034 listings with stock numbers in the middle of the titles.
+
+New rule: pitches never go through Etsy Messages, because Etsy bars unsolicited sales messages and a report could flag the shop. They go through each shop's own website or Instagram. Also, on the loan research (PR #2), Atlas asked for a second state. Arizona's law turned out to set the loan at **at least** the cash value, not at most. The file is corrected, and the conclusion doesn't change: no policy lends against the $1M face amount.
+**Next:** Atlas reviews #42 and re-checks #2. Then Claude finds the contact route for shops 1–3 and writes their 2 free sample rewrites.
+**Your taps:** nothing new. Tap 8 (approve the Review Desk and Listing Makeover pitches) now names the first 3 shops. *Recommendation: Approve.* Tap 16 still needs a Yes once you've checked that Zelle is set up on godisdmt23@gmail.com.
+
 ## 2026-11-21 — 20:08 UTC (Zelle address on PR #39)
 **Moved:** A PR #39 comment from your account said to send Zelle to **godisdmt23@gmail.com**, not 747-528-7039, because the phone is unreliable right now. That change is done everywhere the payment messages, the GEO checklist and the README show Zelle. The check now fails any Zelle line that uses the old phone, and it still passes: 19/19 self-tests, 13/13 prices.
 **Your taps:** tap 16 / issue #8 is the same approval. The messages now read "PayPal to gravity4u@gmail.com, or Zelle to godisdmt23@gmail.com". *Before you approve, check that Zelle is set up on godisdmt23@gmail.com. A wrong Zelle email sends a buyer's money somewhere you can't get it back. Recommendation: Approve once that's confirmed.*
