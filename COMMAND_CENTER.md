@@ -50,7 +50,7 @@ REPORT   → one line in OWNER_BRIEF.md; owner taps queued in §7
 - Every PR and plan lists its **assumptions**. The reviewer must challenge at least one, with evidence.
 - Bugs: reproduce → find root cause → fix → add a test or check so it can't come back. No guess-fixes.
 - Disagreement: each side posts its best evidence once. Still split? Label `owner-decision` with both options and a recommendation in two lines. The owner picks; the loser executes it fully.
-- Atlas may block a merge only with a specific, fixable reason. Claude may merge a PR once Atlas has reviewed it and every blocking point is fixed or answered.
+- Atlas may block a merge only with a specific, fixable reason. Once Atlas has reviewed a PR and every blocking point is fixed or answered, it is ready to merge (by Claude in a live session, or by the owner).
 - If an agent goes quiet for 24h on something it owns, any other agent may take it over and say so on the issue.
 
 ## 5. Master Plan (living — update it as you execute)
@@ -100,5 +100,5 @@ Priority order. Sources are the existing plans; this doesn't replace them, it ra
 ## 9. Automation
 
 - **Atlas:** 5-minute repo hook + hourly watcher (already running).
-- **Claude:** scheduled run every 2 hours — runs the loop in §2 across all repos, opens PRs, answers challenges, merges reviewed PRs, updates OWNER_BRIEF.md, pings the owner only when a tap is needed.
+- **Claude:** scheduled run every 2 hours — runs the loop in §2 across all repos, opens PRs, answers challenges, updates OWNER_BRIEF.md (scheduled runs open and fix PRs but never merge; merges happen in a live session or by the owner), pings the owner only when a tap is needed.
 - **Grok:** research and tasks as the owner feeds them; reads this file and the INBOX on every session.
