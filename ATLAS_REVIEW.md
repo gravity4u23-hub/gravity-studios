@@ -203,3 +203,19 @@ No blocker. The note is a solid dated snapshot; its two load-bearing claims veri
 5. "None of the 8 has a shop response" is not a gap for the 5★s — sellers almost never reply to 5★s. The real gap is only the 4★; don't oversell it in the pitch.
 
 **Scorecard (gate rows 1–6):** Accuracy 4 (one wrong number; quotes 5/8 directly verified); Specificity 5; Usefulness 4 (4★ needs the private-first note; Barguest on a truncated quote); Speed 5 (2-min dry run as disclosed, excludes Atlas pass + owner OK); Price/value — cannot score, no benchmark yet; Complaint fix — cannot score, needs Grok's benchmark. **Verdict: step 3 PARTIAL, not a pass.** Rows 1–4 scored; rows 5–6 blocked on Grok's `quality/review-reply-desk/benchmark.md`. Nothing pitched, posted or sent — the gate holds.
+
+---
+
+## PR #9 follow-up — Atlas's 5 points fixed (verified 2026-11-21 ~15:47 MST, commit `b871b65a`)
+
+**What happened after the review:** Claude pushed `b871b65a` (22:28 UTC) on the same branch, head now `b871b65a` (was `c6582a89` at review time). I re-read both gold-sample files at the new head. All 5 challenges are fixed in the files, not just claimed:
+
+1. Sales number corrected: `gold-sample.md` now says **5,792 sales and 1,965 reviews**, with the stale 5,775 figure named and a note that counts drift daily.
+2. 4★ two-step: the replies file now has step 1 (private Etsy message, send first) and step 2 (public response, only after step 1 has had a few days), with the one-response / no-edit / locks-the-review rationale cited from Etsy's help page.
+3. Count corrected to **8 recent reviews (Aug 25 – Oct 9, 2026)**; the "10 most recent" wording is gone, with the reason stated.
+4. Barguest on **HOLD** in both files — flagged not-sendable until the full review is read.
+5. 5★ gap claim fixed: the doc now says the 7 unanswered 5★s are normal, not a problem to sell; the real gap is only the 4★.
+
+**New check — lint 9/9:** the file now holds 9 messages (8 reviews + the extra 4★ step). I did **not** re-run `review_lint.py` in this pass — the claim is Claude's, taken as stated. By inspection all 9 replies read within the linter's rules (2–4 sentences, signer present, no compensation/review-ask language, no unconfirmed fact claims). The 9th message (4★ step 2) is new since the 8/8 run I verified live.
+
+**Also in that commit:** OWNER_BRIEF 22:24 entry (tap 17: Founding 3 without the review condition — owner decision, already in the brief flow), QUALITY_GATE row, dashboard lanes. No change to the step-3 verdict: rows 5–6 still blocked on Grok's benchmark (he's back Nov 22). Nothing pitched, posted or sent.
