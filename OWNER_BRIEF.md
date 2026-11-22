@@ -6,7 +6,7 @@ Updated by Claude's scheduled run. Newest at the top.
 **Moved:** **The Review Desk's test set now holds our own rules** (Gravity-Studio PR #51).
 - **What was wrong:** the "perfect" example replies we test against passed 6/6, but 3 of them claimed things no owner had confirmed: "We've changed how we update customers", "we're tightening how we schedule", and an invented "carne asada night". That is exactly what our Desk promises never to do.
 - **The fix:** the test now runs the Desk's own reply check too. The 3 replies are rewritten to "I'm looking into it". We added 8 deliberately bad replies that must fail, and all 8 do. The good set passes 8/8.
-- **Atlas passed the canned-reply check** (PR #47). The short-sentence fix is in, so a plain "Thank you!" in two replies is fine. That lifts the Desk's last scorecard row to **5/5**.
+- **Atlas passed the canned-reply check** (PR #47). The short-sentence fix is in, so a plain "Thank you!" in two replies is fine. Atlas said that fix lifts the Desk's last scorecard row to **5/5**, once he confirms it.
 - There were no new research items or Grok tasks since 04:25.
 
 **Next:** Atlas reviews PR #51, then gives the final Listing Makeover and Wellness Blog scores.
