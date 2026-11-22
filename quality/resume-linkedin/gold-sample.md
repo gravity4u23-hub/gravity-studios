@@ -11,6 +11,7 @@
 | `job-post.txt` | The real target post, exact quotes + source URL, read 2026-11-22 |
 | `rewrite.txt` | The "after": the resume we deliver |
 | `linkedin.txt` | Headline (120 chars) + About (666 chars) |
+| `rewrite.docx`, `rewrite.pdf` | The Word + PDF files the buyer receives, built from `rewrite.txt` by `render_resume.py` (added 15:25 UTC run) |
 | `known-bad-rewrite.txt` | The kind of rewrite buyers complain about (invented %, $ and headcounts, "results-driven"). It must fail |
 
 **Check:** `python3 quality/resume-linkedin/gold_check.py` → **8/8**. Both deliverables pass `resume_lint.py` with zero errors and zero warnings; the known-bad rewrite is caught on 6 invented numbers and 8 stock phrases. A mutation test (adding "Results-driven; grew sales 20%." to the rewrite) makes it fail 7/8, so it isn't rubber-stamping.
@@ -28,8 +29,9 @@
 ## What we did NOT claim (the complaint fix, shown)
 The post wants "sales, payroll, shrink, and conversion" results and "a proven track record for driving sales". The buyer gave no sales, shrink or conversion numbers, so the rewrite has none. **The delivery note tells the buyer:** "If your manager can give you your store's shrink or your sign-up numbers, send them and we'll add them free." That is the visible difference from complaints 1–3 and "wrong or invented details" in `benchmark.md`.
 
+**Files check:** `python3 quality/resume-linkedin/file_check.py` → **6/6**: the Word and PDF text match `rewrite.txt` word for word, the PDF text is selectable (not an image), the .docx has no tables, images, text boxes or header/footer text (the things applicant-tracking systems skip), the PDF is 1 page with fonts embedded, and the text pulled out of the PDF passes `resume_lint`. `file_check.py --test` → **4/4**: a file with "Grew sales 20%" slipped in during formatting fails, a 2-page file fails, a .docx with a table fails, the gold files pass.
+
 ## Not in this sample yet
-- **Word + PDF files.** The gig promises both; this sample is text only. Next run: render `rewrite.txt` to .docx and .pdf with the same checks.
 - **Cover letter template** (Premium, $89).
 - **Limit of the check:** `resume_lint` can't catch an invented *word* fact (e.g. "managed a team of associates"). Atlas should read each After line against `original.txt` + `buyer-answers.txt`.
 

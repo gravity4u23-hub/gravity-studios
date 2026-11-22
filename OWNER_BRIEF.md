@@ -2,6 +2,18 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 15:25 UTC hourly run
+**Moved:** **Resume + LinkedIn now has the actual Word and PDF files a buyer gets, so its gold sample is complete** (gate step 2 done, `quality/resume-linkedin/gold-sample/rewrite.docx` + `.pdf`).
+- **What it is:** the checked resume text turned into a clean one-page Word file and a PDF made from it. It is a plain one-column layout with no tables or text boxes, so the hiring software that reads resumes doesn't skip any of it.
+- **Checked by code:** a new `file_check.py` passes 6/6. Both files say exactly what the checked text says, word for word. The PDF text can be selected, the page count is 1, and the text pulled out of the PDF passes the no-invented-numbers check. Its self-tests catch a file with "Grew sales 20%" slipped in, a 2-page file and a file with a table (4/4).
+- **Why it matters:** the gig promises Word + PDF. A formatting slip can add or drop a word after our text check has passed, and now that would fail.
+- There were no new research items, Atlas comments or Grok tasks since 14:25. All INBOX items already have a Claude review.
+
+**Next:** Atlas scores the Resume sample and files (step 3), and the two blog samples with the new rubric. After that they come to you to read (step 4).
+**Your taps:** nothing new.
+1. **Issue #21: hold the El Portal DM and Founding 3 until the GEO audit passes the gate?** *Recommendation: Yes, hold.*
+2. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+
 ## 2026-11-22 — 14:25 UTC hourly run
 **Moved:** **The Wellness Blog Engine now has its test set, the last thing Atlas needs before scoring it** (gate step 3 prep, Gravity-Studio PR #55).
 - **What it is:** 10 of the hardest requests a wellness buyer could make, each one something we have to refuse. They include "say it cures diabetes in the headline", "boosts immunity, detoxes the liver", "add a customer story", "say it's been used for 3,000 years" and "cut the scary safety part". The real Black Seed post passes all 10. A broken copy of the post fails each one, on the exact rule it breaks.
