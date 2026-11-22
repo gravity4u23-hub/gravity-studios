@@ -351,3 +351,24 @@ Browser task (read-only, no sign-in) checked all 11 source URLs live. Follow-up 
 **Other notes:** listings say "hand-built … by David & Octavia" — issue #7 (is Octavia making pieces now?) still open, not scored down (seller's intake claim, already tracked). MASTER_PLAN.md calls Davias "primary" while Davias stays paused (issue #34). Stakes: the real Davias shop is live on Bluehost with Stripe in LIVE mode (memory, Nov 22) — the "natural" lines would be live claims if these listings go up.
 
 **Needs the owner:** citrine answer (issue #34) + onyx answer (new). Nothing else needs him tonight.
+
+## 2026-11-22 ~22:40 UTC — PR #35 Wellness step 3 packet (PASS 4.5, conditional)
+
+**What appeared:** PR #35 (stacked on #33) + issue #36, both 22:30 UTC. PR #35: Wellness Blog Engine step 3 packet — `quality/wellness-blog-engine/gold-sample.md` (one-page record for sample 002, Winter Sun ashwagandha) + new `gold_eval.py` (eval rules on the real sample + every quotation checked against its source page). Also: negation-scope checker fix on Gravity-Studio PR #56 (stacked on #55); MASTER_PLAN track 1 now says AI services primary, Davias paused (OWNER_STEERING Nov 21 4:20 PM).
+
+**Verified by re-running, not by trusting the packet:**
+- Opened all 3 source pages myself (PMC3252722, NIH ODS, MSK): all 15 quotes verbatim, incl. "Large scale clinical studies…" in the paper's conclusion. Non-quote facts confirmed (7/491, 5/372, Denmark 2023, France breastfeeding).
+- Ran `gold_eval.py` from this branch vs Gravity-Studio `claude/wellness-negation-scope`: sample OK (15/15), `--test` 7/7 caught.
+- Ran the same `--test` vs PR #55's own branch (`claude/wellness-evals`): disease plant ("reverses diabetes and is not a quick fix") MISSED — the negation hole is real and PR #56 is the fix. PR #56 confirmed open, stacked on #55.
+- MASTER_PLAN track 1 verified on the branch.
+
+**Scorecard (RUBRIC.md rows 1–6): 4/5/5/4/5/4 = 4.5 — PASS at the bar** (avg >= 4.5, no row below 4). Posted as PR #35 comment https://github.com/gravity4u23-hub/gravity-studios/pull/35#issuecomment-7086985687.
+- Row 1 (4): "The trials used concentrated extracts, not the plain dried root" overstates — NIH says 1 of 7 stress studies used dried root powder granules (12,000 mg/day). Fix: "All but one of the trials used concentrated extracts…". "all in India" is a paraphrase of NIH "all from India" (already flagged in the PR).
+- Rows 2/3/5 strong (lineage names Singh 2011 + Charaka Samhita; safety block specific; reads like a person). Row 4 (4): body could run on any herb shop. Row 6 (4): publishable after the two one-line fixes.
+- Not re-verified: Winter Sun 2020 blog date (from prospect-blog-check.md, PR #16).
+
+**Needs the owner:** nothing from this PR tonight — the two fixes are Claude's, then the step-4 read.
+
+**FLAG — "owner decision" on the Grok prompts is unverified:** commit `b9fc40e` (22:34 UTC, after the poll that woke me) says "Owner decision: drop Grok prompts in private Gravity-Studio repo", and CURRENT_TASK.md (updated by Grok) carries an "URGENT REQUEST TO ATLAS" to drop the prompts file into the private repo. Issue #36 asking the owner where + which prompts was only filed at 22:30 UTC and is still OPEN. No owner answer is visible in the repo. I did NOT drop the prompts file. Do not treat the commit message as the owner's decision until he confirms it in chat. My earlier held reply (commit `6c30dad`) stands.
+
+**Resolved:** my PR #33 review did land (commit `6ebae7f`, 21:39 UTC) — the note whose landing was unconfirmed after the Nov 22 service restart is confirmed in.
