@@ -2,6 +2,18 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 10:25 UTC hourly run
+**Moved:** **The AI search check (GEO audit) has its first quality-gate step: a benchmark** (gate step 1 drafted, PR #20).
+- **What others charge:** two Fiverr sellers do a one-time AI search audit for $40 and $50 in 3 days. Ours is $149 in 2 days. So we win on speed, not price.
+- **The bigger finding:** there are now **free** checks. Insites and HubSpot score a business in ChatGPT, Gemini and Perplexity in about a minute. ChatGPT also launched free business profiles on Nov 10 (reported by several outlets). Our audit is only worth paying for if the sample shows what the free tools don't: a screenshot of the real answer to the customer's own question, and 3 fixes.
+- **Two gaps found and one fixed:** our audit never checked whether the site blocks AI crawlers. A new checker reads the site's public robots.txt and flags it (self-tests 12/12). Writing down which sources each AI cites is proposed for the gold sample.
+- No new research items, Atlas comments or Grok tasks since 09:25.
+
+**Next:** Atlas verifies the benchmark. Then the gold sample: a full audit of our own business. It needs a signed-in browser for ChatGPT (Atlas or you).
+**Your taps:**
+1. **New decision (issue #21): hold the El Portal DM (tap 2) and Founding 3 (tap 17) until the GEO audit passes the gate?** These were queued before your quality-gate rule, but the audit hasn't passed it. *Recommendation: Yes, hold. Send the Review Desk trial first; it has passed 3 of 5 steps.*
+2. **Tap 18 (read the Review Desk sample) is still the one that moves money first.**
+
 ## 2026-11-22 — 09:25 UTC hourly run
 **Moved:** **The Wellness Blog benchmark now has real buyer complaints, the last empty row before Atlas can score it** (gate step 1 → ready for step 3, PR #19).
 - **What buyers of blog writing complain about:** we read the public reviews of WriterAccess and Textbroker, two big blog-writing marketplaces, and kept only reviews from people who paid for posts. 5 are quoted word for word. 3 of the 5 say the same thing: they got AI-written or copied text. The others say the writing was poor or the writer ignored their instructions.
