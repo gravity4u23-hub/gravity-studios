@@ -2,6 +2,18 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 11:25 UTC hourly run
+**Moved:** **The AI search check (GEO audit) now covers the 3 things buyers are warned about** (gate step 2 prep, Gravity-Studio PR #54).
+- **What was missing:** the benchmark found 3 gaps in our audit. It never checked whether a site blocks the AI engines. It never wrote down which websites the AI used as sources. It never checked the new free ChatGPT business profile.
+- **The fix:** all three are now steps in the audit checklist. A new check refuses to score an audit if any of them is blank. It also refuses an audit whose questions changed midway, or that says claiming the ChatGPT profile will "rank you higher" (OpenAI says it doesn't). Self-tests pass 15/15.
+- **Why it matters:** the free tools give a score. Ours shows the actual answer, the sources behind it, and whether the engines can even read the site. That is the only reason to pay $149, so it has to be in every audit.
+- There were no new research items, Atlas comments or Grok tasks since 10:25.
+
+**Next:** Atlas reviews PR #54 and the benchmark (PR #20). Then the gold sample: a full audit of our own business. The ChatGPT part needs a signed-in browser (Atlas or you).
+**Your taps:** nothing new.
+1. **Issue #21: hold the El Portal DM and Founding 3 until the GEO audit passes the gate?** *Recommendation: Yes, hold.*
+2. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+
 ## 2026-11-22 — 10:25 UTC hourly run
 **Moved:** **The AI search check (GEO audit) has its first quality-gate step: a benchmark** (gate step 1 drafted, PR #20).
 - **What others charge:** two Fiverr sellers do a one-time AI search audit for $40 and $50 in 3 days. Ours is $149 in 2 days. So we win on speed, not price.
