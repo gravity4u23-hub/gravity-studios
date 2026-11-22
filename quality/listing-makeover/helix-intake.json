@@ -1,0 +1,99 @@
+{
+ "source": "davias-earthbound-jewelry HELIX_COLLECTION.md @ 005b877 (verbatim) + README.md line on the makers",
+ "designs": [
+  {
+   "name": "Violet Vortex",
+   "stones": [
+    "Amethyst",
+    "Clear Quartz"
+   ],
+   "text": "Violet Vortex. Stones: Amethyst + Clear Quartz Construction: Double Helix Complements: Cool & neutral skin · Blue or green eyes · Dark or silver hair."
+  },
+  {
+   "name": "Earthfire Twist",
+   "stones": [
+    "Tiger's Eye",
+    "Onyx"
+   ],
+   "text": "Earthfire Twist. Stones: Tiger’s Eye + Onyx Construction: Double Helix Complements: Warm & olive skin · Brown or hazel eyes · Warm brown or black hair."
+  },
+  {
+   "name": "Blush Trinity",
+   "stones": [
+    "Rose Quartz",
+    "Pink Tourmaline"
+   ],
+   "text": "Blush Trinity. Stones: Rose Quartz + Pink Tourmaline Construction: Triple Helix Complements: Fair to medium skin · Light eyes · Blonde or light brown hair."
+  },
+  {
+   "name": "Reef Ripple",
+   "stones": [
+    "Amazonite",
+    "Aquamarine"
+   ],
+   "text": "Reef Ripple. Stones: Amazonite + Aquamarine Construction: Double Helix Complements: Cool skin tones · Blue eyes · Ash or dark hair."
+  },
+  {
+   "name": "Ember & Ice",
+   "stones": [
+    "Carnelian",
+    "Clear Quartz"
+   ],
+   "text": "Ember & Ice. Stones: Carnelian + Clear Quartz Construction: Double Helix Complements: Warm skin tones · Amber or brown eyes · Red or warm brown hair."
+  },
+  {
+   "name": "Northern Lights",
+   "stones": [
+    "Labradorite",
+    "Moonstone"
+   ],
+   "text": "Northern Lights. Stones: Labradorite + Moonstone Construction: Double Helix Complements: Cool & neutral tones · Any eye color · Dark or silver hair."
+  },
+  {
+   "name": "Jungle Gold",
+   "stones": [
+    "Citrine",
+    "Green Aventurine"
+   ],
+   "text": "Jungle Gold. Stones: Citrine + Green Aventurine Construction: Double Helix Complements: Warm & golden skin · Brown or green eyes · Warm hair colors."
+  },
+  {
+   "name": "Amber Mist",
+   "stones": [
+    "Amber",
+    "Smoky Quartz"
+   ],
+   "text": "Amber Mist. Stones: Amber + Smoky Quartz Construction: Double Helix Complements: Warm, olive, and medium skin · Brown eyes and hair."
+  },
+  {
+   "name": "Lapis Current",
+   "stones": [
+    "Lapis Lazuli"
+   ],
+   "text": "Lapis Current. Stones: Lapis Lazuli Construction: Double Helix Complements: Cool and neutral skin · Blue eyes · Dark hair."
+  },
+  {
+   "name": "Obsidian Spiral",
+   "stones": [
+    "Black Tourmaline",
+    "Obsidian"
+   ],
+   "text": "Obsidian Spiral. Stones: Black Tourmaline + Obsidian Construction: Triple Helix Complements: All skin tones. Striking against warm complexions and light eyes."
+  },
+  {
+   "name": "Amethyst Strand",
+   "stones": [
+    "Amethyst"
+   ],
+   "text": "Amethyst Strand. Stones: Amethyst Construction: Single Strand Complements: Cool skin tones · Blue or violet eyes."
+  },
+  {
+   "name": "Tiger’s Eye Strand",
+   "stones": [
+    "Tiger's Eye"
+   ],
+   "text": "Tiger’s Eye Strand. Stones: Tiger’s Eye Construction: Single Strand Complements: Warm and olive skin · Brown eyes · Warm hair."
+  }
+ ],
+ "notes": "- Feature these on the Home and Shop pages. - Add filters: All / Double Helix / Triple Helix / Single Strand. - Show the matching text on every product card and product page. - Crystal Finder / quiz should recommend from this list based on Cool / Warm / Neutral undertone. - Prices: leave as Ask for price until owner sets them. - Construction: nylon-coated stainless beading wire with solid metal clasp (per existing FINISH rules). All-natural crystal jewelry — bracelets, earrings, necklaces, everything — handmade with love by David & Octavia. \"Davia\" = David + Octavia. All pieces are real natural crystals."
+}

@@ -2,6 +2,21 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 21:25 UTC hourly run
+**Moved:** **Listing Makeover's test set was run on our real listings, and it caught one claim we can't back yet** (gate step 3 prep, `quality/listing-makeover/gold_eval.py`).
+- **What ran:** the same checks that guard every Listing Makeover delivery, run on the 12 real Davias listings. The source of truth is the shop's own product file. Every number must be the seller's or a sourced hardness value. Nothing may say sterling, hypoallergenic or "heals", and an unknown size stays a question. **11 of 12 pass.** Planting "8 mm beads, sterling silver clasp" fails all 12, so the check isn't rubber-stamping.
+- **The one that fails, Jungle Gold:** every listing says "Every stone is natural." GIA says *most citrine on the market is the result of heat treatment* (it starts as amethyst). The FTC's jewelry guidance says sellers should disclose a treatment that significantly affects value. Atlas asked the same question on davias earlier, and it's still open.
+- **Atlas closed the 2 hardness values** (Tiger's Eye, Obsidian) in his browser: 18/18 sourced, 0 open.
+- **Repair:** Atlas's fixes to the Listing Makeover benchmark (PR #14) had never reached the stacked branches. They're merged in now, so the gate page and the sample point at the corrected numbers (8 of 12 titles, not 10; the lowest active price is Uri B. at $5.00 a listing, sourced).
+- **Update 21:45 UTC — Atlas scored it (step 3): FAIL, blocked on one row.** Scores 3/4/4/5/4/5 (accuracy, specificity, usefulness, speed, price, complaint fix), average 4.17. He also found a second stone with the same problem: **onyx** (Earthfire Twist). Most black onyx sold is dyed chalcedony (International Gem Society; GIA). The check now covers onyx too and reads **10/12**. Once both stones are answered or carry a question line, accuracy goes to 5, the average hits 4.5, and it passes.
+- There were no new research items, for-claude issues or Grok tasks since 20:25. All INBOX items already have a Claude review.
+
+**Next:** once the citrine and onyx lines are settled, `gold_eval.py` reads 12/12 and Atlas re-scores accuracy, which passes step 3. Review Desk Trial 1 still waits on the Facebook Page check.
+**Your taps:**
+1. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+2. **New (issue #34): is the Jungle Gold citrine natural or heat-treated, and is the Earthfire Twist onyx natural or dyed?** Ask Octavia or check the supplier's listing. *Recommendation: if you don't know today, OK the two question lines ("[Citrine: natural or heat-treated? confirm with the maker]", same for onyx). That passes Listing Makeover step 3 without guessing, and do this before any of these listings goes on the live shop.*
+3. **Issue #27 (hold the Spanish gig) and issue #21 (hold El Portal + Founding 3).** *Recommendation: Hold both.*
+
 ## 2026-11-22 — 20:25 UTC hourly run
 **Moved:** **Listing Makeover's gold sample is now one page Atlas can score and you can read** (gate step 2 filed, `quality/listing-makeover/gold-sample.md`). It's the second service closest to passing, and Review Desk is waiting on you (tap 18) and a browser check, so this run worked on Listing Makeover.
 - **What it is:** the 12 Davias Helix listings (title, description, 13 tags each) in the gate folder, with their checks and sources next to them. Titles pass Etsy's current guidance, 12/12.
@@ -191,6 +206,15 @@ Updated by Claude's scheduled run. Newest at the top.
 **Your taps:** nothing new. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
 **Decision coming (no tap yet):** what if SweetSoftSkin has no contact route outside Etsy? *Recommendation: skip them rather than use Etsy Messages, and run the trial on the Flagstaff Google-review prospects instead.*
 
+## 2026-11-22 — 05:30 UTC (Atlas review on PR #14 answered)
+**Moved:** Atlas passed the Listing Makeover benchmark, on condition of 5 fixes. All 5 are made:
+- **The flaw count is corrected:** 8 of the old 12 Davias titles (not 10) were 15+ words.
+- **4 Fiverr gigs and one article are marked unverified.** Fiverr and that site blocked his check.
+- **The price claim is restated on verified rows only:** we charge $2.98–$5 a listing, and the verified competitors charge $15. "Cheapest" is not claimed until a browser confirms the Fiverr prices.
+- **Two smaller fixes:** the PeoplePerHour row now matches the page, and the "140 characters" point covers that gig only.
+
+**Next:** Atlas sets the final step-3 scores. Then the sample comes to you.
+**Your taps:** nothing new. One question is already known: **what wrist size should the bracelets list?** The listings can't be called ready to paste until it's filled in.
 ## 2026-11-22 — 05:25 UTC hourly run
 **Moved:** **The Review Desk's test set now holds our own rules** (Gravity-Studio PR #51).
 - **What was wrong:** the "perfect" example replies we test against passed 6/6, but 3 of them claimed things no owner had confirmed: "We've changed how we update customers", "we're tightening how we schedule", and an invented "carne asada night". That is exactly what our Desk promises never to do.
@@ -243,8 +267,8 @@ Updated by Claude's scheduled run. Newest at the top.
 
 ## 2026-11-22 — 00:25 UTC hourly run
 **Moved:** **The Listing Makeover has its benchmark** (gate step 1, `quality/listing-makeover/benchmark.md`). It also caught a real flaw in our own sample, and that flaw is now fixed.
-- **Price and speed:** the cheapest active rewriter with real reviews charges about $5 a listing in 3 days. Our Fiverr Basic matches that at $5 and delivers in 1 day. Our bigger packages are $2.98–$3.95 a listing.
-- **The flaw:** Etsy now tells sellers to keep titles **under 15 words** and **not repeat words**. 10 of our 12 Davias titles were 15+ words, and all 12 said "Bracelet" twice. Every competitor gig we read still sells the old long style.
+- **Price and speed:** the verified competitors charge $15 for one listing in 2–4 days (PeoplePerHour), or from $50 in 3 days (Contra). We charge $2.98–$5 a listing, and Basic delivers in 1 day. *Update, 05:45 UTC: Atlas's live browser check confirmed the Fiverr prices. The lowest active per-listing price is Uri B.'s $50 for 10 listings, or $5 each. The cheapest package is Natalia's $15, but it covers only 2 listings, $7.50 each. Our Basic matches the $5, and our bigger packages beat it.*
+- **The flaw:** Etsy now tells sellers to keep titles **under 15 words** and **not repeat words**. 8 of our 12 Davias titles were 15+ words (corrected from 10 after Atlas's recount), and all 12 said "Bracelet" twice. The one verified competitor still sells the old long style.
 - **The fix:** all 12 titles are rewritten (davias PR #7), e.g. *"Violet Vortex Amethyst & Clear Quartz Crystal Bracelet — Double Helix, Handmade Steel Wire"*. A new check fails any title that breaks the rule: old titles 0/12, new 12/12, self-tests 21/21 (Gravity-Studio PR #46).
 - **Lapis Lazuli** is a rock, not a crystal, so its title and tag now say "natural stone", like Amber and Obsidian.
 - **Research:** the DMSO item is reviewed. It isn't used for any service; see the INBOX note on PR #2.
