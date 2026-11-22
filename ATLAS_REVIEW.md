@@ -272,3 +272,24 @@ Adds to parts 1–2 above (lint 9/9 already Atlas-verified there). Branch head `
 - **Radiology story:** Hinton's 2016 "stop training radiologists" VERIFIED; US radiologist headcount +~12% (34,328 → 38,306, 2010–2022) VERIFIED in direction; "100% right / AI caused hiring" PARTIAL (hyperbole; causality contested by a practicing radiologist).
 - **Hoodie 6 levels:** Prompt → Context → Harness → Loop → DAG → Graph VERIFIED via repo wilsonwu-ai/harness-loop-dag-graph (19 tests, builds on Livsun's 5 levels from the reyainami file). "Proves its own done" = an outside-model check (tests/schema) wired as a gate + one human approval on an exact digest. Hoodie's article URL + 5 ready prompts NOT captured.
 - **Integration:** crew already runs all 6 levels (MEMORY.md = Context; watch cron/hooks = Harness; hourly watch + dreaming = Loop; owner's tap = DAG; hivemind = Graph). Two $0 upgrades proposed (Stop-hook done-gate; digest-bound approvals) — need one owner tap. Huang language line is NOT the user's paused language-code project — do not resume on this clip. Nothing posted, nobody contacted.
+
+
+---
+
+## PR #11 — Benchmark review: sources verified, rows 5–6 scored, step 3 PASS with fixes (2026-11-21 ~17:25 MST)
+
+Branch `claude/benchmark-review-desk` @ `6ec5fb84`. Reviewer: Atlas. Comment: gravity-studios PR #11 #issuecomment-7071513122. All 10 source pages re-opened independently (fetched 2026-11-22 00:17 UTC); offer cross-checked against Gravity-Studio PR #35 branch `claude/review-reply-desk`.
+
+- **Verified:** BRW $149/mo with inclusions; $79 tier name verified, contents not shown; $100 tune-up verified. AI Review Response Generator $14.99/mo unlimited, no free trial, 0 reviews. RightResponse $19/$29/$44 tiers verified ("100 responses with auto-publish" NOT on the G2 page). Birdeye 4.7 stars from 4,327 G2 reviews; ~1 month to implement. All 3 complaint sources verified verbatim/in substance: G2 Birdeye canned-replies quote; Walton/JPP&M 2026 medical-details + "Non-disclosure might be a non-starter."; BrightLocal 46% (reviews, correctly scoped) + 58% blind-test preference (2024 and 2025). Search Engine Land: Google IS testing "Reply to reviews with AI" in GBP, limited test only. Offer prices match — but the offer is on unmerged PR #35, not main. Gold-sample diffs only record my part-3 verification; accurate.
+- **Challenges (fix before merge):** (1) Marqii tiers wrong — $100/50, $150/100, $250/250 per-brand tiers are NOT on marqii.com/pricing; live page is Base $90, Growth $145/mo/location annual incl. review response on Yelp/Google/Facebook, Scale $180, Package $250. Desk Plus $149 vs Growth $145 is a match, not a beat. (2) "Free" unsupported — SEL never says free, no pricing; temper "biggest substitute" to potential future substitute. (3) Smith & Floyd unverified — Fiverr refused to load; $695/mo, +$195/mo, "2448hr" unchecked; Grok to add from a browser Nov 22. (4) BRW $79-tier "match" fails — contents unknown; honest line is Desk $79 beats BRW $149, Plus $149 matches it with more included. (5) Benchmark cites `portfolio/review-reply-desk/offer.md` — path does not exist on main; cite the PR #35 branch. (6) OWNER_BRIEF "28/28" vs my verified PR #45 fix (27/27 + 13/13) — correct or cite. (7) Flag: row 4 Speed recorded as 5 contradicts the benchmark's own "we do not beat the best on speed" — revisit; verdict unaffected (price carries the beat).
+- **Scores: Row 5 Price/value 4/5, Row 6 Complaint fix 4/5. Scorecard now 5 / 5 / 4 / 5 / 4 / 4.** Row 6 deducted for the unenforced "no two replies share a sentence" check.
+- **Verdict: Step 1 verified CONDITIONAL on fixes 1–3; Step 3 PASS conditional on those fixes + pitch constraint (never cheaper/faster than software).** Claude to fold scores into QUALITY_GATE.md on the branch. The 1-business-day 1–2 star promise stays an owner decision (queued tap). Nothing posted, nobody contacted.
+
+---
+
+## Research commits `bd712ea5` + `218d4540` — Atlas challenger read (2026-11-21 ~17:35 MST)
+
+Claude's own ATLAS_REVIEW.md entries above (DMSO, cookbooks, Jensen Huang) already record the verdicts. I read all three research files in full plus INBOX.md and concur — no challenge raised on substance. Two nits for the record:
+
+- The cookbooks file title still says "91 Notebooks" while its own verified count is 98 (registry.yaml, counted entry by entry); the body corrects it, but a skim reader takes 91 from the title. Rename the title to 98.
+- DMSO file's integration line (owner "already experimenting with DMSO… per the Pineal detox side chat") is side-chat context I did not re-verify here; the file itself gives no dosage and says "not medical advice" — that restraint is the right call, keep it.
