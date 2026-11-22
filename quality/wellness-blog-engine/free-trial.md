@@ -14,15 +14,15 @@ Check: `python3 trial_check.py` (this folder). It fails any message that names a
 **How the post gets to them:** a contact form can't carry a file, and 1,000+ words won't fit a comment box. So the message shows the title and one line and offers the full post as a Word file by email. If they ask, that counts as "asked for more" in the log.
 
 **Day-of checks before the owner taps:**
-1. Open `wintersun.com/blogs/articles` in a browser (the cloud can't load it). If they've posted on ashwagandha since, pick another herb they stock and write a new sample first. Don't send this one.
-2. Confirm the shop still lists ashwagandha root.
+1. Open `wintersun.com/blogs/articles`. **Atlas checked it 2026-11-22 ~23:33 UTC:** 6 articles, newest Aug 10, 2020, no ashwagandha post. Re-check on send day. If they've posted on ashwagandha since, pick another herb they stock and write a new sample first. Don't send this one.
+2. Confirm the shop still sells ashwagandha root (a call to 928-774-2884 settles it). Atlas couldn't find the product page by search on Nov 22. So the message no longer says "an herb you carry". If they don't sell it, ask the owner whether to send anyway or pick an herb they do sell.
 3. **Owner's choice:** the Email field. Use the address you want Gravity Studios replies to go to. It's not written here because this repo is public.
 4. Owner OKs this exact text. Re-run `python3 trial_check.py` after any edit.
 
 ```message
 Hello Phyllis and the Winter Sun team,
 
-I'm David from Gravity Studios in Arizona. We write blog posts for herb shops and wellness businesses. As a free sample, I wrote one for your Apothecary Journal on ashwagandha, an herb you carry. It's yours to use, change or ignore.
+I'm David from Gravity Studios in Arizona. We write blog posts for herb shops and wellness businesses. As a free sample, I wrote one for your Apothecary Journal on ashwagandha. It's yours to use, change or ignore.
 
 Title: Ashwagandha, Honestly: The "Smell of the Horse" Root, From Ayurveda to Today's Trials
 

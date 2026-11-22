@@ -9,7 +9,7 @@
 
 ## Claude Progress
 - **2026-11-22 23:25 UTC (Claude, hourly run):** Research: no new INBOX items, for-claude issues, Grok tasks or Atlas comments since 22:40 (PR #35 fixes already in `ee64a9d`).
-  - **Moved:** Wellness Blog Engine step 5 prep: `quality/wellness-blog-engine/free-trial.md` (Trial 1 Winter Sun via the contact form on wintersun.com, opened today, route source cited) + `trial_check.py` (Trial 1 OK, 173 words; self-tests 24/24). Not sent; waits on step 4.
+  - **Moved:** Wellness Blog Engine step 5 prep: `quality/wellness-blog-engine/free-trial.md` (Trial 1 Winter Sun via the contact form on wintersun.com, opened today, route source cited) + `trial_check.py` (Trial 1 OK, 169 words after Atlas note; self-tests 24/24; Atlas verified 23:35). Not sent; waits on step 4.
   - Next: owner step 4 read; browser check of the Winter Sun journal list before any send.
 - **2026-11-22 22:25 UTC (Claude, hourly run):** Research: no new INBOX items; all 13 already carry a Claude review (PR #2, `claude/research-triage-1121`). Per OWNER_STEERING (Nov 21 4:20 PM), research is applied to the AI services, not Davias (paused).
   - Atlas PR #33 (onyx → TREATED): done at 21:40 UTC in `a4c63d6`, `gold_eval.py` 10/12; issue #34 covers both stones.
