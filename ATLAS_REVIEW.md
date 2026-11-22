@@ -331,3 +331,23 @@ Browser task (read-only, no sign-in) checked all 11 source URLs live. Follow-up 
 **New findings on PR #14:** (1) Sakib's 2-star review DOES have visible text ("Seller talked me into a $106 upgrade…" — greetingpurpose, 4 years ago, plus seller response) — the benchmark's "has no visible text" claim is wrong; the review is useful complaint evidence, not a gap. (2) "Within 140 characters" proven overreach — no Fiverr gig page mentions "140"; only PeoplePerHour states it. (3) PeoplePerHour is self-contradictory live: body "£10 / 4 days" vs buy box "$15 / 2 days" vs banner "2-day delivery" — benchmark must show both, not pick one. "0 sales" NOT shown (bare "0" beside a heart/favourites icon). (4) Natalia's FAQ says 1-day delivery vs package 2-day. (5) OWNER_BRIEF "cheapest active rewriter… about $5" still unsourced — cheapest confirmed ACTIVE gig is Natalia $15 (Sakib $10 is on hold); cite the $5 source or correct to $15. Row 5 stays 4/5 conditional until the $5 claim is sourced or corrected. Remaining fix-before-merge: #1 (8/12), #4, #5, plus new items 1, 4, 5.
 
 **PR #15 — challenge #4 (Fiverr unverified) CLOSED.** wafa_94 $30 confirmed (1,000 words, 3-day, 5.0/22, 241 orders); brightleaf_w $35 confirmed; traviseric17 $40 confirmed and ON HOLD. The "matches, doesn't beat the best freelancer" conclusion now stands on verified ground. Remaining fix-before-merge: #1 (BKA $6 vs $13), #2 (mis-attributed "No AI"/auto-renew/"within a few weeks"), #3 (Blawgy G2 review has text). Step 3 still not scored (sample DRAFT + row 6 PARTIAL pending Grok).
+
+---
+
+## 2026-11-22 — Listing Makeover step 3 scored: PR #33 FAIL (blocked) + new onyx finding (21:40 UTC)
+
+**What appeared:** 3 commits on main (`5046efa` MASTER_PLAN.md, `a00419e` CURRENT_TASK.md, `cdbc318` HIVEMIND update: Grok back online), new issue #34 (owner decision: Jungle Gold citrine natural or heat-treated?), new PR #33 (Listing Makeover step 3 prep: `gold_eval.py` 11/12, citrine finding; stacked on #32).
+
+**What I did:** re-ran every check locally on PR #33's branch instead of taking the PR text on trust; re-opened every source in the browser. Full scorecard posted as a comment on PR #33 (comment 7086206181).
+
+**Reproduced exactly:** `mohs_check.py` 18/18 exit 0, `--test` 8/8; `gold_eval.py` 11/12 exit 1 (Jungle Gold citrine), `--test` 8/8; `listing_lint.py --strict-titles` 12/12 (12 WARN `[size]`); `listing_lint.py --test` 25/25. Intake verbatim vs davias `HELIX_COLLECTION.md` @ `005b877` (12/12 designs + notes + maker line). Listings verbatim vs davias `HELIX_LISTINGS.md` (branch `claude/helix-listings`) except one trailing blank line. PR #14 merge verified: `d688eb3` + `ae7026e` are ancestors. Tiger's Eye ~7 (Wikipedia infobox 6.5–7) and Obsidian 5–5.5 (IGI verbatim) re-verified in browser. GIA citrine quote and FTC Loupe / 16 CFR 23.24(c) re-opened verbatim.
+
+**Scorecard — step 3 FAIL:** 1 Accuracy 3/5, 2 Specificity 4/5, 3 Usefulness 4/5, 4 Speed 5/5, 5 Price/value 4/5 (condition met: $5 = Uri $50/10), 6 Complaint fix 5/5. Average 4.17 < 4.5, row 1 = 3 < 4, code checks exit 1. Path to pass: owner answers citrine + onyx (or question lines in), `gold_eval.py` 12/12 → row 1 becomes 5, average 4.5 exactly → pass. `[size]` can stay open.
+
+**NEW FINDING — onyx belongs in TREATED:** GIA: "What many call 'black onyx' is actually dyed black chalcedony. Natural black chalcedony is rare, so virtually all black chalcedony is treated." Same FTC 23.24 duty as citrine. Earthfire Twist currently PASSES `gold_eval.py` while carrying the same unverified "natural" claim as Jungle Gold — a false pass. Recommended adding `onyx` to `TREATED`; then the eval reads 10/12 until both answers land. Issue #34 asks about citrine only — the onyx question needs adding.
+
+**Caveat on row 6:** the PR #46 stopword fix passes 25/25 on its branch (head `dddcb18`), but PR #46 is still open/unmerged and `portfolio/listing-makeover/` does not exist on Gravity-Studio main. The fix is in the stack, not on main — say so plainly wherever row 6 is quoted.
+
+**Other notes:** listings say "hand-built … by David & Octavia" — issue #7 (is Octavia making pieces now?) still open, not scored down (seller's intake claim, already tracked). MASTER_PLAN.md calls Davias "primary" while Davias stays paused (issue #34). Stakes: the real Davias shop is live on Bluehost with Stripe in LIVE mode (memory, Nov 22) — the "natural" lines would be live claims if these listings go up.
+
+**Needs the owner:** citrine answer (issue #34) + onyx answer (new). Nothing else needs him tonight.
