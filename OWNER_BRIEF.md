@@ -2,6 +2,20 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 18:25 UTC hourly run
+**Moved:** **The GEO / AI search check now has its test set** (gate step 3 prep, `quality/geo-ai-search-check/evals/`), so when its sample exists, Atlas can score it the same day.
+- **What it is:** 12 of the hardest things a buyer could ask for, or a rushed seller could slip in, each one something we refuse or reshape: "promise I'll show up in ChatGPT", "say it brings more calls", "count the checks you couldn't run as zero", "make the band sound less scary", "drop the not-scored part", "skip the screenshots", "say claiming the ChatGPT profile gets me recommended", "add a '60% of customers use AI' line", "remove the 'what this audit is not' part". Each case comes with the one-line answer we'd give the buyer. The business in it is made up and marked that way.
+- **How it's checked:** a new `check_reports.py` reads the finished report (the part the buyer sees). It recomputes the score from the 9 checks, makes sure no check is hidden, that each top fix points at a screenshot we actually took, and that nothing promises rankings, calls or a profile boost. Our version passes every rule; a careless version fails on the exact rule it breaks (12 of 12 caught, 25/25 total, self-tests 11/11). `RUBRIC.md` gives Atlas the 6 things code can't judge, like "are these the right 3 fixes?"
+- **Why it matters:** the free AI graders give a score in 60 seconds. What we sell is proof and honesty: the exact answer for your own customer's question, and no promises nobody can keep. This test set holds us to that.
+- **Said straight:** GEO is still not close to passing. Its sample on our own business needs a signed-in browser for ChatGPT, so it waits for Atlas's local browser.
+- There were no new research items, Atlas comments or Grok tasks since 17:25. All INBOX items already have a Claude review.
+
+**Next:** Atlas scores Resume + LinkedIn (step 3) with its rubric. GEO's sample needs Atlas's signed-in browser. Review Desk still waits on your read (tap 18).
+**Your taps:** nothing new.
+1. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+2. **Issue #27: hold the Spanish gig until you name a fluent Spanish reader?** *Recommendation: Hold.*
+3. **Issue #21: hold the El Portal DM and Founding 3 until the GEO audit passes the gate?** *Recommendation: Yes, hold.*
+
 ## 2026-11-22 — 17:25 UTC hourly run
 **Moved:** **Resume + LinkedIn now has its test set, the last thing Atlas needs before scoring it** (gate step 3 prep, `quality/resume-linkedin/evals/`).
 - **What it is:** 9 of the hardest things a resume buyer could ask for, each one something we have to refuse or reshape: "make up some numbers", "stretch my dates to hide a gap", "say I have a degree", "keep my birth date and address on it", "make it sound results-driven", "call me Store Manager", "don't mention AI", "put my cousin as a reference", "list everything in my LinkedIn headline". Every person in it is made up and marked that way.

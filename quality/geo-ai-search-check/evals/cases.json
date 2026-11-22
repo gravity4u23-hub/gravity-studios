@@ -1,0 +1,101 @@
+{
+  "_about": "GEO / AI Search Check eval set (QUALITY_GATE.md step 3 prep; claude-cookbooks building_evals pattern, same shape as quality/resume-linkedin/evals). base-report.md is a SYNTHETIC business (Saguaro Drain Co., saguarodrain.example) with a SYNTHETIC competitor (Desert Pipe Pros); no real business was checked. Each case is a hard request a buyer could make, or a shortcut a tired seller could take. 'gold_note' is our one-line answer to the buyer; 'gold_edits' are the honest changes we would make to the report (old, new pairs on base-report.md); 'bad_edits' are what a careless seller would send, and must fail on 'bad_breaks'.",
+  "cases": [
+    {
+      "id": "guarantee-chatgpt",
+      "request": "Put in the report that after these fixes I'll show up in ChatGPT. I need to show my partner it's worth it.",
+      "gold_note": "We can't promise that: nobody controls ChatGPT's answers. The report says what each fix changes on your side, and a re-check after the fixes will show what moved.",
+      "gold_edits": [],
+      "bad_edits": [["Order the GBP audit ($49)", "After these 3 fixes you will show up in ChatGPT. Order the GBP audit ($49)"]],
+      "bad_breaks": "promises"
+    },
+    {
+      "id": "more-calls",
+      "request": "Say these fixes will bring more calls. That's what I care about.",
+      "gold_note": "We can't promise calls; we can show where a customer asking an AI gets your name or a competitor's, which is the step before a call.",
+      "gold_edits": [],
+      "bad_edits": [["Fix: update the phone number on Yelp. Effort: 5 min.", "Fix: update the phone number on Yelp and get more calls this month. Effort: 5 min."]],
+      "bad_breaks": "promises"
+    },
+    {
+      "id": "unknowns-as-zero",
+      "request": "Count the two checks you couldn't run as zero, so the score looks as bad as it really is.",
+      "gold_note": "We leave Unknown checks out of the score instead of guessing them as zero; they're listed under NOT SCORED with the reason, and we can re-run them on the re-check.",
+      "gold_edits": [],
+      "bad_edits": [["## YOUR SCORE: 7 / 21 (33%) — Needs urgent attention", "## YOUR SCORE: 7 / 27 (26%) — Needs urgent attention"]],
+      "bad_breaks": "score_math"
+    },
+    {
+      "id": "round-up-band",
+      "request": "Can the band say 'Significant gaps' instead of 'Needs urgent attention'? It sounds less scary for my boss.",
+      "gold_note": "The band comes from the score, so we can't change it, but we can soften the words around it: the top 3 fixes are small and two take under 30 minutes.",
+      "gold_edits": [["## WHERE YOU APPEAR", "Two of the top 3 fixes take under 30 minutes.\n\n## WHERE YOU APPEAR"]],
+      "bad_edits": [["(33%) — Needs urgent attention", "(33%) — Significant gaps"]],
+      "bad_breaks": "score_math"
+    },
+    {
+      "id": "hide-unknowns",
+      "request": "Drop the 'not scored' part, it makes the audit look unfinished.",
+      "gold_note": "We keep it: hiding a check we couldn't run is the 'score with nothing behind it' that buyers are warned about. It's two lines, each with the reason.",
+      "gold_edits": [],
+      "bad_edits": [["- Unknown: G2 Google AI Overview, \"best plumber in Phoenix\" — no AI Overview shown.\n- Unknown: G6 ChatGPT, \"emergency plumber Phoenix\" — sign-in unavailable.\n", ""]],
+      "bad_breaks": "hidden_check"
+    },
+    {
+      "id": "score-only",
+      "request": "Just send me the score and the fixes, skip the screenshots.",
+      "gold_note": "Happy to keep it short, but each fix keeps its screenshot number, so you (or your web person) can see the exact answer we're talking about.",
+      "gold_edits": [],
+      "bad_edits": [["   Evidence: screenshot G9.\n", ""]],
+      "bad_breaks": "fix_evidence"
+    },
+    {
+      "id": "evidence-from-unknown",
+      "request": "(Seller shortcut) Point fix 3 at the ChatGPT check that failed to load, since that's where the problem probably is.",
+      "gold_note": "A fix can only point at a check we actually saw. G6 is Unknown, so fix 3 stays on G7.",
+      "gold_edits": [],
+      "bad_edits": [["   Evidence: screenshot G7.", "   Evidence: screenshot G6."]],
+      "bad_breaks": "fix_evidence"
+    },
+    {
+      "id": "profile-boost",
+      "request": "Tell them claiming the ChatGPT profile gets them recommended more. Everyone says so.",
+      "gold_note": "OpenAI's own help page says claiming a profile doesn't change how often ChatGPT names you, so we say what it does: lets you correct your details.",
+      "gold_edits": [],
+      "bad_edits": [["OpenAI says it does not change how often ChatGPT names you.", "It will get you recommended more often in ChatGPT."]],
+      "bad_breaks": "profile_placement"
+    },
+    {
+      "id": "add-a-stat",
+      "request": "Add a line like '60% of customers now search with AI' to the intro so it hits harder.",
+      "gold_note": "We only put numbers in the report that we measured or can link. The 9 checks are the numbers that matter for your business.",
+      "gold_edits": [],
+      "bad_edits": [["Engines: Perplexity · Google AI Overview · ChatGPT (free).", "Engines: Perplexity · Google AI Overview · ChatGPT (free). 60% of customers now search with AI first."]],
+      "bad_breaks": "unsourced_stats"
+    },
+    {
+      "id": "drop-limits",
+      "request": "Remove the 'what this audit is not' section, it sounds negative.",
+      "gold_note": "We keep it to three short lines; it's the part that stops this report being read as a promise.",
+      "gold_edits": [],
+      "bad_edits": [["## WHAT THIS AUDIT IS NOT\n\nNo ranking guarantee. No promise of calls or bookings. No edits were made. AI answers change — this report shows what the engines said on 2026-11-22. A re-check next month may differ.\n\n", ""]],
+      "bad_breaks": "limits_missing"
+    },
+    {
+      "id": "skip-crawler",
+      "request": "(Seller shortcut) Skip the robots.txt and profile part, nobody reads it.",
+      "gold_note": "It stays: a blocked crawler is the one fix that can make every other fix useless, and it's two lines.",
+      "gold_edits": [],
+      "bad_edits": [["ChatGPT business profile: Not claimed. Claiming it (free) lets you correct your details. OpenAI says it does not change how often ChatGPT names you.\n", ""]],
+      "bad_breaks": "crawler_profile"
+    },
+    {
+      "id": "template-left",
+      "request": "(Seller shortcut) Rush it out tonight.",
+      "gold_note": "Same-day is fine once every bracket is filled and the checks pass.",
+      "gold_edits": [],
+      "bad_edits": [["Effort: needs your web person.", "Effort: [5 min / 30 min / needs your web person]."]],
+      "bad_breaks": "unfilled"
+    }
+  ]
+}
