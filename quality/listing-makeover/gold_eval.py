@@ -13,7 +13,7 @@ So "no invented numbers" here means: every number in a listing is either the sel
 sourced Mohs value. It adds one rule the synthetic set did not have:
 
   TREATMENT: a listing that says "Every stone is natural" while naming a stone that is usually
-  treated must carry a treatment note or a [placeholder] question. Source for citrine:
+  treated (citrine: heated; onyx: dyed) must carry a note or [question] about THAT stone. Source for citrine:
   GIA, gia.edu/citrine-description ("Since natural citrine is rare, most of the citrine on the
   market is the result of heat treatment"), opened 2026-11-22. FTC: sellers should disclose a
   treatment "if it significantly affects the value of the gemstone" (ftc.gov "Loupe" guidance
@@ -33,12 +33,26 @@ sys.path.insert(0, HERE)
 import mohs_check  # noqa: E402
 
 # Stones a seller must answer for before "natural" stands alone. Only stones with an opened
-# source are listed; black onyx dyeing is common trade knowledge but NOT sourced yet (Atlas).
+# source are listed. Each entry: (what is usually done to it, source).
 TREATED = {
-    "citrine": "GIA citrine-description: 'most of the citrine on the market is the result of heat treatment'",
+    "citrine": ("heat-treated", "GIA citrine-description: 'most of the citrine on the market is the result of heat treatment'"),
+    "onyx": ("dyed", "gemsociety.org black-onyx article (opened 2026-11-22): 'Most solid black pieces sold today is actually "
+                     "dyed black chalcedony'; GIA (Atlas, browser, PR #33): 'What many call \u2018black onyx\u2019 is actually dyed black chalcedony'"),
 }
 NATURAL_LINE = re.compile(r"every stone is natural", re.I)
-TREATMENT_NOTE = re.compile(r"heat[- ]treated|treated|\[[^\]]*(treat|heat|natural)[^\]]*\]", re.I)
+TREAT_WORD = r"(treat|heat|dye|natural|untreated)"
+
+
+def has_note(block, stone):
+    """The answer must be about THIS stone: a line naming it with a treatment word, or a [question] naming it."""
+    st = re.escape(stone)
+    bracket = re.compile(r"\[[^\]]*" + st + r"[^\]]*" + TREAT_WORD + r"[^\]]*\]|\[[^\]]*" + TREAT_WORD + r"[^\]]*" + st + r"[^\]]*\]", re.I)
+    if bracket.search(block):
+        return True
+    for line in block.splitlines():
+        if re.search(st, line, re.I) and re.search(r"(heat[- ]?treated|dyed|treated|untreated)", line, re.I):
+            return True
+    return False
 
 
 def load_check_listings(gs_root):
@@ -66,10 +80,11 @@ def treatment_errors(block, stones):
     if not NATURAL_LINE.search(block):
         return errs
     for s in stones:
-        why = TREATED.get(s.lower())
-        if why and not TREATMENT_NOTE.search(block):
-            errs.append(f"says 'Every stone is natural' but {s} is usually heat-treated ({why}); "
-                        f"needs the seller's answer or a [natural or heat-treated?] question")
+        hit = TREATED.get(s.lower())
+        if hit and not has_note(block, s):
+            how, why = hit
+            errs.append(f"says 'Every stone is natural' but {s} is usually {how} ({why}); "
+                        f"needs the seller's answer or a [{s}: natural or {how}?] question")
     return errs
 
 
@@ -109,8 +124,9 @@ def run(listing_path, gs_root, intake_path=os.path.join(HERE, "helix-intake.json
 
 
 def self_test():
-    ok_block = "Citrine & Aventurine.\nEvery stone is natural. Citrine: [natural or heat-treated? ask the maker]\n"
+    ok_block = "Citrine & Aventurine.\nEvery stone is natural. [Citrine: natural or heat-treated? ask the maker]\n"
     bad_block = "Citrine & Aventurine.\nEvery stone is natural, so color varies.\n"
+    both_bad = "Tiger's Eye & Onyx.\nEvery stone is natural.\n"
     cases = [
         ("citrine + 'every stone is natural' with no note fails", len(treatment_errors(bad_block, ["Citrine"])) == 1),
         ("citrine with a [placeholder] question passes", treatment_errors(ok_block, ["Citrine"]) == []),
@@ -118,6 +134,10 @@ def self_test():
          treatment_errors("Every stone is natural. Citrine (heat-treated amethyst).", ["Citrine"]) == []),
         ("amethyst alone passes (not on the treated list)", treatment_errors(bad_block, ["Amethyst"]) == []),
         ("no 'natural' line, no rule", treatment_errors("Citrine bead.", ["Citrine"]) == []),
+        ("onyx + 'every stone is natural' fails (Atlas, PR #33)", len(treatment_errors(both_bad, ["Tiger's Eye", "Onyx"])) == 1),
+        ("onyx stated as dyed passes", treatment_errors("Every stone is natural.\n- Onyx: dyed black chalcedony.", ["Onyx"]) == []),
+        ("a citrine note does not clear onyx", len(treatment_errors(
+            "Every stone is natural.\n- Citrine: heat-treated amethyst.\n- Onyx: black.", ["Citrine", "Onyx"])) == 1),
         ("Mohs facts come from mohs_check SOURCES", {"5", "5.5"} <= set(mohs_facts(["Obsidian"]))),
         ("a value quoted from an opened page counts (USGS lapis 5-5.5)", "5.5" in mohs_facts(["Lapis Lazuli"])),
         ("a value outside the sourced range never counts", "8" not in mohs_facts(["Amethyst"])),

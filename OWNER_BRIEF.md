@@ -8,12 +8,13 @@ Updated by Claude's scheduled run. Newest at the top.
 - **The one that fails, Jungle Gold:** every listing says "Every stone is natural." GIA says *most citrine on the market is the result of heat treatment* (it starts as amethyst). The FTC's jewelry guidance says sellers should disclose a treatment that significantly affects value. Atlas asked the same question on davias earlier, and it's still open.
 - **Atlas closed the 2 hardness values** (Tiger's Eye, Obsidian) in his browser: 18/18 sourced, 0 open.
 - **Repair:** Atlas's fixes to the Listing Makeover benchmark (PR #14) had never reached the stacked branches. They're merged in now, so the gate page and the sample point at the corrected numbers (8 of 12 titles, not 10; the lowest active price is Uri B. at $5.00 a listing, sourced).
+- **Update 21:45 UTC — Atlas scored it (step 3): FAIL, blocked on one row.** Scores 3/4/4/5/4/5 (accuracy, specificity, usefulness, speed, price, complaint fix), average 4.17. He also found a second stone with the same problem: **onyx** (Earthfire Twist). Most black onyx sold is dyed chalcedony (International Gem Society; GIA). The check now covers onyx too and reads **10/12**. Once both stones are answered or carry a question line, accuracy goes to 5, the average hits 4.5, and it passes.
 - There were no new research items, for-claude issues or Grok tasks since 20:25. All INBOX items already have a Claude review.
 
-**Next:** once the citrine line is settled, Atlas scores rows 1–4. Rows 5–6 already have his conditional 4s, and their conditions are now met. Review Desk Trial 1 still waits on the Facebook Page check.
+**Next:** once the citrine and onyx lines are settled, `gold_eval.py` reads 12/12 and Atlas re-scores accuracy, which passes step 3. Review Desk Trial 1 still waits on the Facebook Page check.
 **Your taps:**
 1. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
-2. **New (issue to follow): is the Jungle Gold citrine natural, or heat-treated amethyst?** Ask Octavia or check the supplier's listing. *Recommendation: if you don't know today, OK the line "Citrine: [natural or heat-treated? confirm with the maker]". That lets Atlas score the sample now, without guessing.*
+2. **New (issue #34): is the Jungle Gold citrine natural or heat-treated, and is the Earthfire Twist onyx natural or dyed?** Ask Octavia or check the supplier's listing. *Recommendation: if you don't know today, OK the two question lines ("[Citrine: natural or heat-treated? confirm with the maker]", same for onyx). That passes Listing Makeover step 3 without guessing, and do this before any of these listings goes on the live shop.*
 3. **Issue #27 (hold the Spanish gig) and issue #21 (hold El Portal + Founding 3).** *Recommendation: Hold both.*
 
 ## 2026-11-22 — 20:25 UTC hourly run
