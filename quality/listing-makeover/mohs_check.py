@@ -29,7 +29,7 @@ SOURCES = {
     "rose quartz": (7, 7, f"{USGS} (quartz 7, 'Rose quartz' listed as a variety)", False),
     "citrine": (7, 7, f"{IGS} ('Citrine | 7')", False),
     "smoky quartz": (7, 7, f"{IGS} ('Smoky Quartz | 7')", False),
-    "tiger's eye": (6.5, 7, f"quartz family ({USGS}); no page naming tiger's eye was readable from the cloud", True),
+    "tiger's eye": (6.5, 7, "en.wikipedia.org/wiki/Tiger's_eye (infobox: Mohs 6.5-7, opened 2026-11-22); geology.com classes tiger's eye as a quartz gemstone, hardness 7", False),
     "onyx": (6.5, 7, f"{IGS} ('Chalcedony | 6½ - 7'); onyx is a chalcedony/agate type ({USGS})", False),
     "carnelian": (6.5, 7, f"{IGS} ('Chalcedony | 6½ - 7'); carnelian listed under agate ({USGS})", False),
     "pink tourmaline": (7, 7.5, f"{USGS} ('Tourmaline (hardness: 7-7.5 Mohs)')", False),
@@ -41,7 +41,7 @@ SOURCES = {
     "green aventurine": (6.5, 7, GEO_AV, False),
     "amber": (2, 2.5, "gia.edu/amber ('Mohs Hardness: 2.0 to 2.5'); pubs.usgs.gov/gip/gemstones/organic.html ('2-2.5')", False),
     "lapis lazuli": (5, 6, f"{USGS} ('5-5.5'); {IGS} ('Lapis Lazuli | 5 - 6')", False),
-    "obsidian": (5, 7, "cameo.mfa.org/wiki/Obsidian ('Mohs Hardness 5 - 7'); listing's 5–5.5 is common in trade charts but no opened page states it", True),
+    "obsidian": (5, 5.5, "igi.org/all-about-colored-stones-obsidian ('obsidian sits at around 5-5.5', Mark Reyes G.G., IGI, opened 2026-11-22); firemountaingems.com golden sheen obsidian ('Hardness: 5 to 5-1/2')", False),
 }
 
 LINE = re.compile(r"^- \*\*(?P<stone>[^*]+)\*\*.*?Mohs (?P<val>~?\d+(?:\.\d+)?(?:\s*[–-]\s*\d+(?:\.\d+)?)?)", re.M)
@@ -99,7 +99,7 @@ def self_test():
         ("quartz 8 fails", len(check_text("- **Citrine** — yellow quartz, Mohs 8.")[0]) == 1),
         ("same stone, two values fails",
          len(check_text("- **Amethyst** — Mohs 7.\n- **Amethyst** — Mohs 7.5.\n")[0]) == 1),
-        ("obsidian is OPEN, not FAIL", check_text("- **Obsidian** — glass; Mohs 5–5.5.")[1] != []),
+        ("obsidian 5–5.5 passes, no longer OPEN (IGI, Atlas 2026-11-22)", check_text("- **Obsidian** — glass; Mohs 5–5.5.") == ([], [], ["obsidian"])),
         ("hyphen and en dash both parse", parse_range("6-6.5") == parse_range("6–6.5") == (6.0, 6.5)),
     ]
     bad = sum(not ok for _, ok in cases)
