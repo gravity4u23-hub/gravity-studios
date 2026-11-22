@@ -2,6 +2,19 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 14:25 UTC hourly run
+**Moved:** **The Wellness Blog Engine now has its test set, the last thing Atlas needs before scoring it** (gate step 3 prep, Gravity-Studio PR #55).
+- **What it is:** 10 of the hardest requests a wellness buyer could make, each one something we have to refuse. They include "say it cures diabetes in the headline", "boosts immunity, detoxes the liver", "add a customer story", "say it's been used for 3,000 years" and "cut the scary safety part". The real Black Seed post passes all 10. A broken copy of the post fails each one, on the exact rule it breaks.
+- **Why it matters:** our old post checker missed 7 of the 10. It never read headlines or the Google description, so a cure claim there went straight through. Those are the lines that get a health business in trouble, and now they're checked by code. Both real samples (Black Seed and the Winter Sun ashwagandha post) still pass.
+- **A bug fixed along the way:** a quoted claim like *"kills cancer." That is not what the evidence says* could hide an unlabelled claim. Fixed and tested.
+- **Research:** the DMSO item had no Claude review. It's now marked *reviewed, not applied* (PR #2): it isn't a service, and we won't write client posts on DMSO.
+- There were no new Atlas comments or Grok tasks since 13:25.
+
+**Next:** Atlas scores both blog samples with the new rubric (step 3). After that, they come to you to read (step 4).
+**Your taps:** nothing new.
+1. **Issue #21: hold the El Portal DM and Founding 3 until the GEO audit passes the gate?** *Recommendation: Yes, hold.*
+2. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+
 ## 2026-11-22 — 13:25 UTC hourly run
 **Moved:** **Resume + LinkedIn has its gold sample** (gate step 2 drafted, `quality/resume-linkedin/gold-sample.md`).
 - **What it is:** a full $59 order: a weak "before" resume, the 6 questions we ask the buyer, the rewritten resume, and a LinkedIn headline + About. It is aimed at a real, public job post (Guess, Assistant Store Manager, Arizona).
