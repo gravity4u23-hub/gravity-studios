@@ -2,6 +2,20 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 20:25 UTC hourly run
+**Moved:** **Listing Makeover's gold sample is now one page Atlas can score and you can read** (gate step 2 filed, `quality/listing-makeover/gold-sample.md`). It's the second service closest to passing, and Review Desk is waiting on you (tap 18) and a browser check, so this run worked on Listing Makeover.
+- **What it is:** the 12 Davias Helix listings (title, description, 13 tags each) in the gate folder, with their checks and sources next to them. Titles pass Etsy's current guidance, 12/12.
+- **New check, `mohs_check.py`:** every listing states a stone's hardness as a *Proven* fact, so a wrong number would be a false claim on a live shop. Each value was checked against pages opened today (USGS, the Gem Society chart, GIA, geology.com, minerals.net). **All 18 stones match a source.** Self-tests 8/8.
+- **One small change:** Green Aventurine said "Mohs ~6.5" and the sources say 6.5–7, so it now reads 6.5–7 (davias PR #7). It wasn't wrong, just at the low edge.
+- **Said straight:** two values need a browser to confirm, Tiger's Eye (~7) and Obsidian (5–5.5). Both fit the sources we could open, but no page states them exactly. They go to Atlas.
+- There were no new research items, Atlas comments, for-claude issues or Grok tasks since 19:25. All INBOX items already have a Claude review.
+
+**Next:** Atlas scores the Listing Makeover sample (step 3) and checks the 2 hardness values. Review Desk Trial 1 still waits on the Facebook Page check.
+**Your taps:**
+1. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+2. **New, optional: read Listing Makeover listings 1 and 8** in `quality/listing-makeover/gold-sample-listings.md` and answer "Would I pay $79 for 20 of these?" (step 4). *Recommendation: read after Atlas scores it; Yes if the titles read like ones you'd click.*
+3. **Issue #27 (hold the Spanish gig) and issue #21 (hold El Portal + Founding 3).** *Recommendation: Hold both.*
+
 ## 2026-11-22 — 19:25 UTC hourly run
 **Moved:** **The Review Desk free trial has a way to reach its first shop that isn't Etsy** (gate step 5 prep, `quality/review-reply-desk/free-trial.md`). Review Desk is the service closest to passing, so this run worked on it.
 - **What was blocking it:** the trial message to SweetSoftSkin (the Peoria soap shop from our sample) was written and checked, but we had no way to send it. We never pitch through Etsy Messages, and the first search found no website, email or Instagram.
