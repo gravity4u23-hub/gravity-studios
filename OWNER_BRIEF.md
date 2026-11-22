@@ -2,6 +2,36 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 05:30 UTC (Atlas review on PR #14 answered)
+**Moved:** Atlas passed the Listing Makeover benchmark, on condition of 5 fixes. All 5 are made:
+- **The flaw count is corrected:** 8 of the old 12 Davias titles (not 10) were 15+ words.
+- **4 Fiverr gigs and one article are marked unverified.** Fiverr and that site blocked his check.
+- **The price claim is restated on verified rows only:** we charge $2.98–$5 a listing, and the verified competitors charge $15. "Cheapest" is not claimed until a browser confirms the Fiverr prices.
+- **Two smaller fixes:** the PeoplePerHour row now matches the page, and the "140 characters" point covers that gig only.
+
+**Next:** Atlas sets the final step-3 scores. Then the sample comes to you.
+**Your taps:** nothing new. One question is already known: **what wrist size should the bracelets list?** The listings can't be called ready to paste until it's filled in.
+
+## 2026-11-22 — 01:25 UTC hourly run
+**Moved:** **The Review Desk now blocks canned replies automatically.** Buyers' top complaint about review services is replies that all sound the same. Atlas took a point off the Desk for not checking that. The reply check now fails any batch where the same sentence shows up in two replies (Gravity-Studio PR #47). It passes 16/16 of its own tests, and our 8-review sample passes clean. When I planted a copied sentence, it caught it.
+- **Research:** both new items are reviewed. The Jensen Huang clip says "go deep, not broad", which is already your focus order. The Claude cookbooks gave us the official skill-file limits, and all 4 of our skills fit them.
+- **Issue #12** (transcribe the mentalium video): Atlas found it's a silent slideshow with nothing to transcribe. Its content is already in `research/mentalium-claude-cookbooks.md`.
+
+**Next:** Atlas re-scores the Desk's complaint row, then scores the Listing Makeover sample (PR #14). Grok is back today for the Fiverr checks.
+**Your taps:** nothing new. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: read the 4★ two-step reply first; if it reads like something you'd want for your own shop, tap Yes.* Issue #12 can be closed; *recommendation: close it.*
+
+## 2026-11-22 — 00:25 UTC hourly run
+**Moved:** **The Listing Makeover has its benchmark** (gate step 1, `quality/listing-makeover/benchmark.md`). It also caught a real flaw in our own sample, and that flaw is now fixed.
+- **Price and speed:** the verified competitors charge $15 for one listing in 2–4 days (PeoplePerHour), or from $50 in 3 days (Contra). We charge $2.98–$5 a listing, and Basic delivers in 1 day. *Update, 05:45 UTC: Atlas's live browser check confirmed the Fiverr prices. The lowest active per-listing price is Uri B.'s $50 for 10 listings, or $5 each. The cheapest package is Natalia's $15, but it covers only 2 listings, $7.50 each. Our Basic matches the $5, and our bigger packages beat it.*
+- **The flaw:** Etsy now tells sellers to keep titles **under 15 words** and **not repeat words**. 8 of our 12 Davias titles were 15+ words (corrected from 10 after Atlas's recount), and all 12 said "Bracelet" twice. The one verified competitor still sells the old long style.
+- **The fix:** all 12 titles are rewritten (davias PR #7), e.g. *"Violet Vortex Amethyst & Clear Quartz Crystal Bracelet — Double Helix, Handmade Steel Wire"*. A new check fails any title that breaks the rule: old titles 0/12, new 12/12, self-tests 21/21 (Gravity-Studio PR #46).
+- **Lapis Lazuli** is a rock, not a crystal, so its title and tag now say "natural stone", like Amber and Obsidian.
+- **Research:** the DMSO item is reviewed. It isn't used for any service; see the INBOX note on PR #2.
+
+**Next:** Atlas verifies the benchmark sources and scores the Davias sample (step 3). Then it comes to you (step 4). The Review Desk still waits on your read (tap 18).
+**Your taps:** nothing new.
+- **Please hold the "Etsy listing sample — would you pay?" read** until Atlas scores it. When you do read it, use the new titles on davias PR #7. *Recommendation: answer tap 18 (Review Desk) first; it is one step further along.*
+
 ## 2026-11-22 — 00:24 UTC (Atlas review on PR #11 answered)
 **Moved:** **The Review Reply Desk passed gate steps 1–3.** Atlas checked every source and scored the sample **5/5/4/5/4/4**. His fixes are made:
 - The Marqii prices are corrected. The plan at our $149 level is $145, so Desk Plus matches it rather than beating it.

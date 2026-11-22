@@ -35,7 +35,7 @@ Tracked per service on the dashboard:
 | Service | Steps passed |
 |---|---|
 | Review Reply Desk | 1 verified by Atlas (Nov 22 00:17 UTC, conditional fixes made: Marqii row, "free" dropped, Smith & Floyd marked unverified); 2 done (SweetSoftSkin, quotes 8/8, lint 9/9; Google-profile sample still to follow); **3 PASS** (Atlas scorecard 5 / 5 / 4 / 5 / 4 / 4, with the pitch rule: never claim cheaper or faster than software); needs 4 (your read), 5 (free trial) |
-| Listing Makeover | 2 (Davias Helix listings = gold sample); needs 1, 3, 4, 5 |
+| Listing Makeover | 1 drafted by Claude (Nov 22, `quality/listing-makeover/benchmark.md`, Grok away; Atlas to verify); 2 (Davias Helix listings; titles fixed Nov 22 to Etsy's under-15-words / no-repeat guidance, `listing_lint.py --strict-titles` 12/12); needs 3 (Atlas scorecard), 4, 5 |
 | Wellness Blog Engine | 2 partly (sample post needs its pre-sale fixes); needs 1, 3, 4, 5 |
 | GEO / AI search check | — |
 | Resume + LinkedIn | — |
