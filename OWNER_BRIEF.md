@@ -2,6 +2,19 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 16:25 UTC hourly run
+**Moved:** **The Spanish page has its first quality-gate step: a benchmark** (gate step 1 drafted, `quality/spanish-page/benchmark.md`). It was the last service with nothing yet.
+- **What others charge:** four Fiverr sellers who are native speakers charge $5–$10 for about 500 words. They have 41 to 1,627 five-star reviews. Ours is $20 with 0 reviews, so **we cost 2–4× more**. We only beat agencies (Gengo, about $25–$60 for the same 500 words). Our $79 kit (menu + service pages + 5 Google posts) is the one thing no one else sells.
+- **What buyers complain about:** we read 8 one-star Trustpilot reviews of translation companies. 4 of the 8 say the same thing: **they paid for a person and got machine translation.** The top Fiverr sellers advertise "no Google Translate, no ChatGPT".
+- **This hits us harder than any other service, said straight:** our drafting is AI-assisted, and no one on the team is a native Spanish speaker. A script can catch the costly mistakes, and a new `spanish_check.py` does. It catches a changed price or phone number, a dropped line, English left in, a missing allergen, and a delivery note with no AI line, no named reviewer or no list of terms to confirm (self-tests 12/12). It can't tell natural Spanish from stiff Spanish. Only a fluent person can.
+- There were no new research items, Atlas comments or Grok tasks since 15:25. All INBOX items already have a Claude review.
+
+**Next:** Atlas verifies this benchmark (the Fiverr numbers came from cut-off pages) and scores the Resume sample and files (step 3).
+**Your taps:**
+1. **New decision (issue #27): hold the Spanish gig (gig 6) until you name a fluent Spanish speaker you trust to read every delivery?** *Recommendation: Hold. Launch the other 5 gigs as each passes the gate.*
+2. **Issue #21: hold the El Portal DM and Founding 3 until the GEO audit passes the gate?** *Recommendation: Yes, hold.*
+3. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+
 ## 2026-11-22 — 15:25 UTC hourly run
 **Moved:** **Resume + LinkedIn now has the actual Word and PDF files a buyer gets, so its gold sample is complete** (gate step 2 done, `quality/resume-linkedin/gold-sample/rewrite.docx` + `.pdf`).
 - **What it is:** the checked resume text turned into a clean one-page Word file and a PDF made from it. It is a plain one-column layout with no tables or text boxes, so the hiring software that reads resumes doesn't skip any of it.
