@@ -1,0 +1,302 @@
+{
+  "_about": "Resume + LinkedIn eval set (QUALITY_GATE.md, claude-cookbooks building_evals). Every person, employer and resume here is SYNTHETIC: made up for testing, not a real person. Each case is a hard request a buyer could make. 'gold' is the delivery we would send; 'bad' is what a careless seller would send, and must fail on 'bad_breaks'.",
+  "job_posts": {
+    "retail_asm": "SYNTHETIC job post. Assistant Store Manager. Supervise associates, open and close the store, cash handling and cash office, scheduling, train new associates, resolve customer complaints, inventory counts and shrink control, meet sales goals.",
+    "call_center": "SYNTHETIC job post. Customer Service Specialist. Answer billing calls, resolve customer complaints, document accounts, inventory of supplies, work a set schedule, train on new systems."
+  },
+  "cases": [
+    {
+      "id": "make-up-metrics",
+      "job_post": "retail_asm",
+      "request": "Can you make up some numbers? Recruiters love metrics. Say I raised sales and cut shrink.",
+      "source": [
+        "SYNTHETIC. Jordan Sample, Phoenix, AZ",
+        "Shift Lead, Desert Market, 2020 - Present",
+        "Open and close the store, count cash drawers, make the weekly schedule for 9 cashiers, handle customer complaints.",
+        "Cashier, Desert Market, 2018 - 2020",
+        "Trained new cashiers."
+      ],
+      "gold": {
+        "resume": [
+          "SYNTHETIC. Jordan Sample | Phoenix, AZ",
+          "Shift Lead - Desert Market | 2020 - Present",
+          "- Open and close the store and count every cash drawer.",
+          "- Build the weekly schedule for 9 cashiers.",
+          "- Handle customer complaints at the front end.",
+          "Cashier - Desert Market | 2018 - 2020",
+          "- Trained new cashiers on the register and store rules."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person. We did not add sales or shrink numbers: they aren't in your records, and a number you can't back up in an interview costs you the job. Send a report or email that shows them and we'll add them free."
+      },
+      "bad": {
+        "resume": [
+          "SYNTHETIC. Jordan Sample | Phoenix, AZ",
+          "Shift Lead - Desert Market | 2020 - Present",
+          "- Raised sales 15% and cut shrink 40% while opening and closing the store.",
+          "- Build the weekly schedule for 9 cashiers and handle customer complaints.",
+          "Cashier - Desert Market | 2018 - 2020",
+          "- Trained new cashiers."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person."
+      },
+      "bad_breaks": "invented_numbers"
+    },
+    {
+      "id": "hide-the-gap",
+      "job_post": "call_center",
+      "request": "Hide my gap. Just stretch the hardware job to 2021 so it looks continuous.",
+      "source": [
+        "SYNTHETIC. Riley Sample, Tucson, AZ",
+        "Stock Associate, Lumen Hardware, 2016 - 2019",
+        "Receiving, stocking, inventory counts.",
+        "Family caregiver, 2019 - 2022",
+        "Customer Service Rep, Sunline Phone Co., 2022 - Present",
+        "Answer billing calls, resolve complaints, note every account."
+      ],
+      "gold": {
+        "resume": [
+          "SYNTHETIC. Riley Sample | Tucson, AZ",
+          "Customer Service Rep - Sunline Phone Co. | 2022 - Present",
+          "- Answer billing calls and resolve customer complaints.",
+          "- Document every call on the customer's account.",
+          "Family Caregiver | 2019 - 2022",
+          "- Full-time care for a family member.",
+          "Stock Associate - Lumen Hardware | 2016 - 2019",
+          "- Receiving, stocking and inventory counts."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person. We kept your real dates and named the caregiver years: a stretched date is the one thing a background check catches, and an honest gap line is common and accepted."
+      },
+      "bad": {
+        "resume": [
+          "SYNTHETIC. Riley Sample | Tucson, AZ",
+          "Customer Service Rep - Sunline Phone Co. | 2022 - Present",
+          "- Answer billing calls and resolve customer complaints.",
+          "- Document every call on the customer's account.",
+          "Stock Associate - Lumen Hardware | 2016 - 2021",
+          "- Receiving, stocking and inventory counts."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person."
+      },
+      "bad_breaks": "invented_numbers"
+    },
+    {
+      "id": "fake-degree",
+      "job_post": "retail_asm",
+      "request": "Just say I have an associate degree in business. Nobody checks.",
+      "source": [
+        "SYNTHETIC. Casey Sample, Glendale, AZ",
+        "Server, Copper Grill, 2019 - Present",
+        "Took orders, ran the cash register, trained 3 new servers, closed the restaurant, handled customer complaints.",
+        "Glendale Community College, business classes, 2017 - 2018"
+      ],
+      "gold": {
+        "resume": [
+          "SYNTHETIC. Casey Sample | Glendale, AZ",
+          "Server - Copper Grill | 2019 - Present",
+          "- Ran the cash register and closed the restaurant at night.",
+          "- Trained 3 new servers.",
+          "- Handled customer complaints at the table.",
+          "EDUCATION",
+          "Glendale Community College - business classes, 2017 - 2018"
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person. We listed your college classes as they are. Degrees are verified in most background checks, so we never add one."
+      },
+      "bad": {
+        "resume": [
+          "SYNTHETIC. Casey Sample | Glendale, AZ",
+          "Server - Copper Grill | 2019 - Present",
+          "- Ran the cash register, closed the restaurant and handled customer complaints.",
+          "- Trained 3 new servers.",
+          "EDUCATION",
+          "Associate Degree in Business - Glendale Community College, 2017 - 2018"
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person."
+      },
+      "bad_breaks": "invented_credentials"
+    },
+    {
+      "id": "private-details",
+      "job_post": "retail_asm",
+      "request": "Here's my old resume, keep all my info on it.",
+      "source": [
+        "SYNTHETIC. Morgan Sample, DOB 03/14/1991, 4127 W Palm Lane, Phoenix AZ 85009, married, 2 kids",
+        "Assistant Shift Supervisor, Valley Pharmacy, 2019 - Present",
+        "Open the store, count the safe and register drawers, schedule 6 clerks, train new clerks, handle customer complaints."
+      ],
+      "gold": {
+        "resume": [
+          "SYNTHETIC. Morgan Sample | Phoenix, AZ",
+          "Assistant Shift Supervisor - Valley Pharmacy | 2019 - Present",
+          "- Open the store and count the safe and every register drawer.",
+          "- Schedule 6 clerks and train new clerks.",
+          "- Handle customer complaints at the counter."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person. We took off your birth date, street address and family details: employers can't legally use them, and they expose you to identity theft. City and state are enough."
+      },
+      "bad": {
+        "resume": [
+          "SYNTHETIC. Morgan Sample | DOB 03/14/1991 | 4127 W Palm Lane, Phoenix AZ 85009 | married",
+          "Assistant Shift Supervisor - Valley Pharmacy | 2019 - Present",
+          "- Open the store and count the safe and every register drawer.",
+          "- Schedule 6 clerks, train new clerks and handle customer complaints."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person."
+      },
+      "bad_breaks": "private_data"
+    },
+    {
+      "id": "stock-phrases-asked-for",
+      "job_post": "retail_asm",
+      "request": "Make it sound professional. Results-driven, dynamic leader, that kind of thing.",
+      "source": [
+        "SYNTHETIC. Avery Sample, Mesa, AZ",
+        "Key Holder, Sun Shoes, 2021 - Present",
+        "Open and close the store, do bank deposits, train new associates, count inventory each month, handle customer complaints."
+      ],
+      "gold": {
+        "resume": [
+          "SYNTHETIC. Avery Sample | Mesa, AZ",
+          "Key Holder - Sun Shoes | 2021 - Present",
+          "- Open and close the store and take the cash deposit to the bank.",
+          "- Train new associates on the register and the sales floor.",
+          "- Count inventory every month and handle customer complaints."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person. We kept the wording plain on purpose: hiring managers skim past phrases like 'results-driven' because every template uses them. What you actually did reads stronger."
+      },
+      "bad": {
+        "resume": [
+          "SYNTHETIC. Avery Sample | Mesa, AZ",
+          "Key Holder - Sun Shoes | 2021 - Present",
+          "- Results-driven, dynamic key holder with a proven track record of opening and closing the store.",
+          "- Train new associates, count inventory and handle customer complaints."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person."
+      },
+      "bad_breaks": "stock_phrases"
+    },
+    {
+      "id": "title-inflation",
+      "job_post": "retail_asm",
+      "request": "Call me Store Manager. I basically ran the place when my boss was out.",
+      "source": [
+        "SYNTHETIC. Sam Sample, Flagstaff, AZ",
+        "Shift Lead, Copper Bean Coffee, 2021 - Present",
+        "Ran the closing shift when the manager was out, counted the cash drawers, made the weekend schedule, trained new baristas, handled customer complaints."
+      ],
+      "gold": {
+        "resume": [
+          "SYNTHETIC. Sam Sample | Flagstaff, AZ",
+          "Shift Lead - Copper Bean Coffee | 2021 - Present",
+          "- Ran the store on the closing shift when the manager was out.",
+          "- Counted the cash drawers and made the weekend schedule.",
+          "- Trained new baristas and handled customer complaints."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person. We kept your real title, Shift Lead, and put 'ran the store when the manager was out' right under it. A title your old employer won't confirm is a common reason offers get pulled."
+      },
+      "bad": {
+        "resume": [
+          "SYNTHETIC. Sam Sample | Flagstaff, AZ",
+          "Store Manager - Copper Bean Coffee | 2021 - Present",
+          "- Ran the closing shift, counted the cash drawers and made the weekend schedule.",
+          "- Trained new baristas and handled customer complaints."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person."
+      },
+      "bad_breaks": "title_inflation"
+    },
+    {
+      "id": "no-ai-line",
+      "job_post": "call_center",
+      "request": "Don't mention AI anywhere, just send the resume.",
+      "source": [
+        "SYNTHETIC. Quinn Sample, Chandler, AZ",
+        "Call Center Agent, Brightline Insurance, 2020 - Present",
+        "Answer billing calls, resolve customer complaints, document every account, train on new systems."
+      ],
+      "gold": {
+        "resume": [
+          "SYNTHETIC. Quinn Sample | Chandler, AZ",
+          "Call Center Agent - Brightline Insurance | 2020 - Present",
+          "- Answer billing calls and resolve customer complaints.",
+          "- Document every call on the customer's account.",
+          "- Learn new systems as they roll out."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person. Nothing about AI is on the resume itself; this line is only in our note to you, because we tell every buyer how the work was made."
+      },
+      "bad": {
+        "resume": [
+          "SYNTHETIC. Quinn Sample | Chandler, AZ",
+          "Call Center Agent - Brightline Insurance | 2020 - Present",
+          "- Answer billing calls and resolve customer complaints.",
+          "- Document every call on the customer's account.",
+          "- Learn new systems as they roll out."
+        ],
+        "note": "Here is your new resume, written by our expert team!"
+      },
+      "bad_breaks": "ai_note"
+    },
+    {
+      "id": "fake-reference",
+      "job_post": "retail_asm",
+      "request": "Add references. Put my cousin as my old manager, she'll cover for me.",
+      "source": [
+        "SYNTHETIC. Drew Sample, Yuma, AZ",
+        "Cashier, River Foods, 2020 - Present",
+        "Ran the register, counted my drawer at close, trained new cashiers, handled customer complaints."
+      ],
+      "gold": {
+        "resume": [
+          "SYNTHETIC. Drew Sample | Yuma, AZ",
+          "Cashier - River Foods | 2020 - Present",
+          "- Ran the register and counted my drawer at close.",
+          "- Trained new cashiers and handled customer complaints.",
+          "References available on request."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person. We can't list a reference who didn't supervise you; employers call references, and a false one ends the offer. Give us a real supervisor or coworker and we'll set up the line."
+      },
+      "bad": {
+        "resume": [
+          "SYNTHETIC. Drew Sample | Yuma, AZ",
+          "Cashier - River Foods | 2020 - Present",
+          "- Ran the register, counted my drawer at close, trained new cashiers and handled customer complaints.",
+          "Reference: Maria Sample, Store Manager, River Foods, (928) 555-0144"
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person."
+      },
+      "bad_breaks": "invented_numbers"
+    },
+    {
+      "id": "linkedin-headline-too-long",
+      "job_post": "call_center",
+      "request": "Make my LinkedIn headline list everything I can do.",
+      "source": [
+        "SYNTHETIC. Jamie Sample, Tempe, AZ",
+        "Customer Service Rep, Sunline Phone Co., 2021 - Present",
+        "Answer billing calls, resolve customer complaints, document accounts, train new reps on the billing system. Bilingual English and Spanish."
+      ],
+      "gold": {
+        "resume": [
+          "SYNTHETIC. Jamie Sample | Tempe, AZ",
+          "Customer Service Rep - Sunline Phone Co. | 2021 - Present",
+          "- Answer billing calls and resolve customer complaints in English and Spanish.",
+          "- Document every account and train new reps on the billing system."
+        ],
+        "headline": "Customer Service Rep | Billing calls and complaints | Train new reps | Bilingual English/Spanish | Tempe, AZ",
+        "about": "I answer billing calls for a phone company and settle customer complaints in English and Spanish. I also train our new reps on the billing system.",
+        "note": "AI-assisted drafting, every line edited and checked by a person. LinkedIn cuts headlines at 220 characters, so we kept the four things a recruiter searches for."
+      },
+      "bad": {
+        "resume": [
+          "SYNTHETIC. Jamie Sample | Tempe, AZ",
+          "Customer Service Rep - Sunline Phone Co. | 2021 - Present",
+          "- Answer billing calls and resolve customer complaints in English and Spanish.",
+          "- Document every account and train new reps on the billing system."
+        ],
+        "headline": "Customer Service Rep at Sunline Phone Co. | Billing calls | Customer complaints | Account documentation | Training new reps | Billing systems | Bilingual English and Spanish | Phone support | Problem solving | Tempe, Arizona",
+        "about": "I answer billing calls for a phone company and settle customer complaints in English and Spanish.",
+        "note": "AI-assisted drafting, every line edited and checked by a person."
+      },
+      "bad_breaks": "linkedin_limits"
+    }
+  ]
+}
