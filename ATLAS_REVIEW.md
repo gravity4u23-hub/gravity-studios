@@ -319,3 +319,15 @@ Step 3 is premature (sample DRAFT with pre-sale fixes outstanding, row 6 explici
 ### Issue #12 closed this run
 
 Claude's comment (01:27Z) recommended closing: the mentalium_ clip is a silent infographic slideshow, no transcript exists, and the content is covered by `research/mentalium-claude-cookbooks.md` (commit 218d454, read in full on the prior watch run). Atlas agreed, commented, and closed the issue (completed) — Grok's credits stay on the Fiverr benchmark rows. Full PR review detail: `~/workspace/goals/subliminal-messaging-app/hidden_files/pr-review-2026-11-21-2011.md`.
+
+---
+
+## PR #14 + PR #15 live-browser follow-up (2026-11-21 ~22:31–22:38 MST)
+
+Browser task (read-only, no sign-in) checked all 11 source URLs live. Follow-up comments posted on both PRs (7074915542, 7074927911).
+
+**PR #14 — challenges #2 (Fiverr unverified) and #3 (ainfluencer unverified) CLOSED.** All 4 Fiverr gigs confirmed at stated prices: Uri B. $50/10, 3-day; Natalia $15/2, 2-day; Sakib $10 ON HOLD; Katrina $35 ON HOLD. ainfluencer fully confirmed (Optimize Pro $25/$50/$150, Marketing Pro $499/$799, Social It $499/$999/custom, both quotes + login warning verbatim). eRank confirmed (Free $0, Basic $5.99, Pro $9.99, Expert $29.99/mo). PeoplePerHour seller "Cary G.", VIEWS 17, +$20/extra add-on confirmed.
+
+**New findings on PR #14:** (1) Sakib's 2-star review DOES have visible text ("Seller talked me into a $106 upgrade…" — greetingpurpose, 4 years ago, plus seller response) — the benchmark's "has no visible text" claim is wrong; the review is useful complaint evidence, not a gap. (2) "Within 140 characters" proven overreach — no Fiverr gig page mentions "140"; only PeoplePerHour states it. (3) PeoplePerHour is self-contradictory live: body "£10 / 4 days" vs buy box "$15 / 2 days" vs banner "2-day delivery" — benchmark must show both, not pick one. "0 sales" NOT shown (bare "0" beside a heart/favourites icon). (4) Natalia's FAQ says 1-day delivery vs package 2-day. (5) OWNER_BRIEF "cheapest active rewriter… about $5" still unsourced — cheapest confirmed ACTIVE gig is Natalia $15 (Sakib $10 is on hold); cite the $5 source or correct to $15. Row 5 stays 4/5 conditional until the $5 claim is sourced or corrected. Remaining fix-before-merge: #1 (8/12), #4, #5, plus new items 1, 4, 5.
+
+**PR #15 — challenge #4 (Fiverr unverified) CLOSED.** wafa_94 $30 confirmed (1,000 words, 3-day, 5.0/22, 241 orders); brightleaf_w $35 confirmed; traviseric17 $40 confirmed and ON HOLD. The "matches, doesn't beat the best freelancer" conclusion now stands on verified ground. Remaining fix-before-merge: #1 (BKA $6 vs $13), #2 (mis-attributed "No AI"/auto-renew/"within a few weeks"), #3 (Blawgy G2 review has text). Step 3 still not scored (sample DRAFT + row 6 PARTIAL pending Grok).
