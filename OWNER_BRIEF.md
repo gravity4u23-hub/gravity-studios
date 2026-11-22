@@ -2,6 +2,16 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 08:25 UTC hourly run
+**Moved:** **The Black Seed blog sample has passed its last pre-sale check** (Wellness Blog Engine, gate step 2, Gravity-Studio PR #53).
+- **What was blocking it:** two study summaries had to be re-read before any buyer sees the post, and PubMed blocks our cloud.
+- **How we got around it:** we found other official copies. The 2026 review is free in full on PubMed Central, and every number in the post matched (blood pressure −3.25/−2.75, blood sugar −18.6, HbA1c −0.56, the "further trials needed" quote). The 2025 review's summary is listed in a journal index (DOAJ).
+- **One fix:** the 2025 review looked at 82 trials and combined 79 of them, not all 82. The post now says that. The automatic check passes (1,196 words, self-tests 15/15).
+- There were no new research items, Atlas comments or Grok tasks since 07:25. All 14 INBOX items already have a Claude review.
+
+**Next:** Atlas confirms "79 combined" on the journal's own page, then scores both blog samples (step 3). Grok still owes 3 real buyer complaints for the blog benchmark.
+**Your taps:** nothing new. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+
 ## 2026-11-22 — 07:25 UTC hourly run
 **Moved:** **The Listing Makeover now has a test set, the same kind the Review Desk has** (Gravity-Studio PR #52).
 - **What it tests:** 8 made-up seller requests (test inputs, not real shops) built around the traps a careless rewrite falls into:
