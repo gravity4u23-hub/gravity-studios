@@ -2,6 +2,8 @@
 
 **Status (2026-11-22, 06:25 UTC hourly run):** prepared, **not sent**. Step 5 opens only after step 4 (owner read, tap 18) is "Yes". Each send needs its own owner OK on the exact text below. **Nobody has been contacted.**
 
+**Update (2026-11-22, 19:25 UTC hourly run):** Trial 1 now has a **route candidate outside Etsy**: the shop's own Facebook Page, `facebook.com/sweetsoftskin`, which the shop itself listed (with its Etsy shop and Pinterest) in a Soap Queen interview. The cloud can't open Facebook (robots.txt refusal), and the interview is from June 1, 2015, so the Page may be inactive. Trial 1 stays **HOLD** until someone opens the Page in a browser and sees it is live. The message is now in Messenger form (no subject line). `trial_check.py` gained two rules: every route must cite where it was found, and a DM route can't carry an email subject line (self-tests 18/18).
+
 Check: `python3 trial_check.py` (this folder): Trial 1 prints **HOLD** until its route is verified. It fails any message that names a price, compares us to software, sells "no replies" as the gap, edits a verified reply, skips the business line, or goes through Etsy Messages. Self-tests: `python3 trial_check.py --self-test`.
 
 ## What step 5 needs (from QUALITY_GATE.md)
@@ -11,15 +13,15 @@ Check: `python3 trial_check.py` (this folder): Trial 1 prints **HOLD** until its
 - Our rule (Gravity-Studio PR #42): **never Etsy Messages.** Etsy's messaging policy bars unsolicited sales messages, and a report could flag the shop.
 - A web search on 2026-11-22 (~06:30 UTC, "SweetSoftSkin Peoria Arizona handmade soap website Instagram") found only the Etsy shop page. No website, email or Instagram showed up. That is a search miss, not proof there is none: the shop's Etsy "About" section may link one, and the cloud can't read it.
 - **Until Atlas's browser finds a route on the shop's own pages, Trial 1 can't be sent.** The message is ready, so the send is one tap once a route exists.
+- **19:25 UTC run, second search** (`"Sweet Soft Skin" handmade soap Peoria Arizona Margaret`) found two more public pages: the shop's Facebook Page (`facebook.com/sweetsoftskin`) and a Soap Queen interview, *Interview with Margaret of Sweet Soft Skin Handmade Soaps* (Anne-Marie Faiola, June 1, 2015), whose "Find Sweet Soft Skin Handmade Soaps" section links exactly three places: Etsy, that Facebook Page and a Pinterest board. No website, email or Instagram is listed. So the Facebook Page is the shop's own channel, but it is 11 years old as evidence. **Before the owner taps:** open the Page, check it posted or answered something in 2025–2026 and that Messages are on. If not, we skip this shop.
 
 ## Trial 1 — SweetSoftSkin (Peoria, AZ, Etsy soap shop)
-**Route:** UNVERIFIED: the shop's own website, email or Instagram, whichever its Etsy "About" page links (Atlas to check). If there is none, we skip this shop.
+**Route:** UNVERIFIED: a Facebook Page message to facebook.com/sweetsoftskin, sent by the owner. Confirm in a browser that the Page is active (a post or reply in 2025–2026) and has Messages on; if not, skip this shop.
+**Route source:** https://soapqueen.com/business/interview-with-margaret-of-sweet-soft-skin-handmade-soaps/ (June 1, 2015: the shop lists Etsy, this Facebook Page and Pinterest; no website or email)
 **Why them:** the gold sample (`gold-sample-replies.md`) was written on their real reviews, and every quote was verified by Atlas. The one real gap is Michael's 4★ review on the Chrism bars, which has no shop response.
 **Day-of checks before the owner taps:** (1) re-read the shop: is Michael's Sep 22 review still without a response? If one has been posted, drop item 1 and send only the two 5★ replies; (2) don't quote any sales or review counts; (3) owner OKs this exact text.
 
 ```message
-Subject: Three free review replies for SweetSoftSkin
-
 Hi Margaret,
 
 I'm David from Gravity Studios in Arizona. We write review replies for small shops, in the owner's voice. I read your recent Etsy reviews and drafted replies to three of them. They're free and yours to use, change or ignore.

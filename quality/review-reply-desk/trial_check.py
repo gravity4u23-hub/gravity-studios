@@ -11,6 +11,9 @@ Hard rules (code, not judgment):
   5. Signed "Gravity Studios" with the business line (747) 222-6980 (OWNER_STEERING Nov 21).
   6. A route marked UNVERIFIED passes the text rules but prints HOLD (not sendable).
   7. Says plainly that no reply is needed (no pressure), and stays under 320 words.
+  8. Every route cites where it was found ('**Route source:** <URL> ...'), so the owner
+     can see the business itself published that channel (added Nov 22, 19:25 UTC).
+  9. A DM route (Facebook / Messenger / Instagram) carries no email 'Subject:' line.
 
 Usage:  python3 trial_check.py [free-trial.md] [gold-sample-replies.md]
         python3 trial_check.py --self-test
@@ -34,6 +37,8 @@ BANNED = [
 ]
 NO_PRESSURE = re.compile(r"no reply needed|no need to reply|no strings", re.I)
 ETSY_ROUTE = re.compile(r"etsy\s*(messages?|conversations?|convo|inbox)", re.I)
+DM_ROUTE = re.compile(r"facebook|messenger|instagram|\bDM\b", re.I)
+URL = re.compile(r"https?://\S+")
 
 
 def norm(s):
@@ -46,22 +51,27 @@ def gold_replies(text):
 
 
 def parse_trials(text):
-    """Yield (name, route, message) for each '## Trial' section."""
+    """Yield (name, route, source, message) for each '## Trial' section."""
     for sec in re.split(r"^## ", text, flags=re.M)[1:]:
         if not sec.startswith("Trial"):
             continue
         name = sec.splitlines()[0].strip()
         route = re.search(r"^\*\*Route:\*\*\s*(.+)$", sec, re.M)
+        source = re.search(r"^\*\*Route source:\*\*\s*(.+)$", sec, re.M)
         msg = re.search(r"```message\n(.*?)```", sec, re.S)
-        yield name, (route.group(1) if route else ""), (msg.group(1) if msg else "")
+        yield name, (route.group(1) if route else ""), (source.group(1) if source else ""), (msg.group(1) if msg else "")
 
 
-def check(name, route, message, gold):
+def check(name, route, message, gold, source="https://example.com/contact"):
     errs = []
     if not message.strip():
         return [f"{name}: no ```message block"]
     if not route or ETSY_ROUTE.search(route):
         errs.append(f"{name}: route must be the shop's own site/email/Instagram, not Etsy Messages (got {route!r})")
+    if not URL.search(source or ""):
+        errs.append(f"{name}: '**Route source:**' must give the URL where the business published this channel")
+    if DM_ROUTE.search(route or "") and re.search(r"^\s*Subject:", message, re.M | re.I):
+        errs.append(f"{name}: DM route ({route[:40]}...) can't carry an email 'Subject:' line")
     for pat, why in BANNED:
         m = re.search(pat, message, re.I)
         if m:
@@ -89,8 +99,8 @@ def run(trial_path, gold_path):
         print("ERROR: no '## Trial' sections found")
         return 1
     bad = held = 0
-    for name, route, msg in trials:
-        errs = check(name, route, msg, gold)
+    for name, route, source, msg in trials:
+        errs = check(name, route, msg, gold, source)
         if errs:
             bad += 1
             for e in errs:
@@ -125,9 +135,17 @@ def self_test():
         ("too long fails", route, good + ("word " * 330), 1),
         ("empty message fails", route, "", 1),
     ]
+    fb = "UNVERIFIED: Facebook Page message"
+    src = "https://soapqueen.com/x (2015)"
+    cases = [(l, r, m, w, src) for l, r, m, w in cases] + [
+        ("Facebook route with source passes", fb, good, 0, src),
+        ("missing route source fails", route, good, 1, ""),
+        ("route source without a URL fails", route, good, 1, "found it on Google"),
+        ("Subject: line on a Facebook DM fails", fb, "Subject: Free replies\n\n" + good, 1, src),
+    ]
     passed = 0
-    for label, r, m, want_errs in cases:
-        got = 1 if check("t", r, m, gold) else 0
+    for label, r, m, want_errs, s in cases:
+        got = 1 if check("t", r, m, gold, s) else 0
         ok = got == want_errs
         passed += ok
         print(("PASS " if ok else "FAIL ") + label)

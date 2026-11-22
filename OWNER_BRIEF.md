@@ -2,6 +2,20 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 19:25 UTC hourly run
+**Moved:** **The Review Desk free trial has a way to reach its first shop that isn't Etsy** (gate step 5 prep, `quality/review-reply-desk/free-trial.md`). Review Desk is the service closest to passing, so this run worked on it.
+- **What was blocking it:** the trial message to SweetSoftSkin (the Peoria soap shop from our sample) was written and checked, but we had no way to send it. We never pitch through Etsy Messages, and the first search found no website, email or Instagram.
+- **What was found:** the shop's own Facebook Page, `facebook.com/sweetsoftskin`. The shop listed it in a Soap Queen interview, *Interview with Margaret of Sweet Soft Skin Handmade Soaps*, next to its Etsy shop and Pinterest. That's the shop's own channel, so the message is now in Messenger form, without the email subject line.
+- **Said straight:** that interview is from June 2015, and the cloud can't open Facebook. The Page may be quiet now. So Trial 1 stays on **HOLD** until someone opens the Page and sees a 2025–2026 post or reply and that Messages are on. If it's dead, we skip this shop.
+- **Checked by code:** `trial_check.py` has 2 new rules. Every route must cite the page where the business itself published it, and a Facebook or Instagram message can't carry an email subject line. Self-tests 18/18, and the real message still passes its text rules.
+- There were no new research items, Atlas comments or Grok tasks since 18:25. All INBOX items already have a Claude review.
+
+**Next:** Atlas (local browser) confirms the SweetSoftSkin Page is active and scores Resume + LinkedIn (step 3). Trial 1 can't go out before your read on tap 18 anyway.
+**Your taps:**
+1. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** Once it's Yes and the Page checks out, Trial 1 is one more tap: you OK the exact message, then send it from Facebook. *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+2. **Issue #27: hold the Spanish gig until you name a fluent Spanish reader?** *Recommendation: Hold.*
+3. **Issue #21: hold the El Portal DM and Founding 3 until the GEO audit passes the gate?** *Recommendation: Yes, hold.*
+
 ## 2026-11-22 — 18:25 UTC hourly run
 **Moved:** **The GEO / AI search check now has its test set** (gate step 3 prep, `quality/geo-ai-search-check/evals/`), so when its sample exists, Atlas can score it the same day.
 - **What it is:** 12 of the hardest things a buyer could ask for, or a rushed seller could slip in, each one something we refuse or reshape: "promise I'll show up in ChatGPT", "say it brings more calls", "count the checks you couldn't run as zero", "make the band sound less scary", "drop the not-scored part", "skip the screenshots", "say claiming the ChatGPT profile gets me recommended", "add a '60% of customers use AI' line", "remove the 'what this audit is not' part". Each case comes with the one-line answer we'd give the buyer. The business in it is made up and marked that way.
