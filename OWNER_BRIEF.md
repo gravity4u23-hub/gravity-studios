@@ -2,6 +2,20 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 21:25 UTC hourly run
+**Moved:** **Listing Makeover's test set was run on our real listings, and it caught one claim we can't back yet** (gate step 3 prep, `quality/listing-makeover/gold_eval.py`).
+- **What ran:** the same checks that guard every Listing Makeover delivery, run on the 12 real Davias listings. The source of truth is the shop's own product file. Every number must be the seller's or a sourced hardness value. Nothing may say sterling, hypoallergenic or "heals", and an unknown size stays a question. **11 of 12 pass.** Planting "8 mm beads, sterling silver clasp" fails all 12, so the check isn't rubber-stamping.
+- **The one that fails, Jungle Gold:** every listing says "Every stone is natural." GIA says *most citrine on the market is the result of heat treatment* (it starts as amethyst). The FTC's jewelry guidance says sellers should disclose a treatment that significantly affects value. Atlas asked the same question on davias earlier, and it's still open.
+- **Atlas closed the 2 hardness values** (Tiger's Eye, Obsidian) in his browser: 18/18 sourced, 0 open.
+- **Repair:** Atlas's fixes to the Listing Makeover benchmark (PR #14) had never reached the stacked branches. They're merged in now, so the gate page and the sample point at the corrected numbers (8 of 12 titles, not 10; the lowest active price is Uri B. at $5.00 a listing, sourced).
+- There were no new research items, for-claude issues or Grok tasks since 20:25. All INBOX items already have a Claude review.
+
+**Next:** once the citrine line is settled, Atlas scores rows 1–4. Rows 5–6 already have his conditional 4s, and their conditions are now met. Review Desk Trial 1 still waits on the Facebook Page check.
+**Your taps:**
+1. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+2. **New (issue to follow): is the Jungle Gold citrine natural, or heat-treated amethyst?** Ask Octavia or check the supplier's listing. *Recommendation: if you don't know today, OK the line "Citrine: [natural or heat-treated? confirm with the maker]". That lets Atlas score the sample now, without guessing.*
+3. **Issue #27 (hold the Spanish gig) and issue #21 (hold El Portal + Founding 3).** *Recommendation: Hold both.*
+
 ## 2026-11-22 — 20:25 UTC hourly run
 **Moved:** **Listing Makeover's gold sample is now one page Atlas can score and you can read** (gate step 2 filed, `quality/listing-makeover/gold-sample.md`). It's the second service closest to passing, and Review Desk is waiting on you (tap 18) and a browser check, so this run worked on Listing Makeover.
 - **What it is:** the 12 Davias Helix listings (title, description, 13 tags each) in the gate folder, with their checks and sources next to them. Titles pass Etsy's current guidance, 12/12.
