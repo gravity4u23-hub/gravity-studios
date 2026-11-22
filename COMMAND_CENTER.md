@@ -9,6 +9,17 @@ Written Nov 21, 2026 from the owner's order: *take all the info, integrate it, b
 
 **Quality gate:** no service launches until it passes `QUALITY_GATE.md` (benchmark → gold sample → side-by-side → owner read → free trial).
 
+
+## 0. Operating rules (owner-approved self-improvement, Nov 21, 10:24 PM)
+1. **Offer wide, push narrow.** Every service that passes the quality gate gets offered (Fiverr gigs, site, posts) — breadth widens the market and costs us little. **Daily outreach effort goes to the 2 services closest to the gate** (now: Review Reply Desk, Listing Makeover), because the owner's send-taps are the scarce resource.
+2. **Sell every day.** Each day: new pitches drafted for owner approval, follow-ups due from `Gravity-Studio/pipeline/tracker.csv` drafted, replies answered. Building never replaces this.
+3. **Finish the work.** In every live session Claude merges the PRs Atlas has passed, in Atlas's merge order. Stacked PRs merge bottom-up.
+4. **One batch of owner taps a day,** ranked by money, each one tap — delivered in the morning brief, not at 2 AM.
+5. **Mistakes fail in tests, not in front of the owner.** Every script has a check; `.github/workflows/checks.yml` runs on every push.
+6. **Follow-ups are where sales happen.** Every prospect gets day 0 / day 3 / day 7 / day 14 touches (stop at a no). Logged in the tracker.
+7. **Real proof only.** After a happy free sample or paid job, ask permission for a short quote. Never write testimonials.
+8. **Weekly review (Sundays):** numbers by service (pitches, replies, samples, paid, revisions, refunds) → cut, fix, double down. One page in `OWNER_BRIEF.md`.
+
 ## 1. Core principles (the ones every decision is checked against)
 
 1. **Revenue first, then scale.** First dollar in each lane beats a tenth lane on paper. Finish > start.
