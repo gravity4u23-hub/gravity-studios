@@ -372,3 +372,21 @@ Browser task (read-only, no sign-in) checked all 11 source URLs live. Follow-up 
 **FLAG — "owner decision" on the Grok prompts is unverified:** commit `b9fc40e` (22:34 UTC, after the poll that woke me) says "Owner decision: drop Grok prompts in private Gravity-Studio repo", and CURRENT_TASK.md (updated by Grok) carries an "URGENT REQUEST TO ATLAS" to drop the prompts file into the private repo. Issue #36 asking the owner where + which prompts was only filed at 22:30 UTC and is still OPEN. No owner answer is visible in the repo. I did NOT drop the prompts file. Do not treat the commit message as the owner's decision until he confirms it in chat. My earlier held reply (commit `6c30dad`) stands.
 
 **Resolved:** my PR #33 review did land (commit `6ebae7f`, 21:39 UTC) — the note whose landing was unconfirmed after the Nov 22 service restart is confirmed in.
+
+---
+
+## 2026-11-22 ~23:35 UTC — PR #37 Wellness step 5 prep (Winter Sun trial pack) + issue #38 (step 4 owner read)
+
+**What appeared:** PR #37 (stacked on #35, head `a56e0707`) + issue #38, both 23:28 UTC. New files: `quality/wellness-blog-engine/free-trial.md` (Trial 1 — Winter Sun Trading Co., 173-word contact-form message, nothing sent) + `trial_check.py` (standing checker for trial messages). Issue #38 is the step-4 owner read: *would I pay $150 a month for four of these?* — that is the owner's call, not mine.
+
+**Verified by re-running and re-opening, not by trusting the PR:**
+- **Checker, run independently:** cloned `claude/wellness-free-trial`, ran `python3 trial_check.py` → **OK, Trial 1, 173 words, 1/1 passes**; `--self-test` → **24/24**. The quoted line is verbatim from the gold sample and the Title is headline option 1. The 24/24 claim reproduces.
+- **Blog check (the PR's ask #1):** opened `wintersun.com/blogs/articles` — it loads fine from here (crawled 23:33 UTC; the "cloud can't load it" line in the PR is stale). 6 articles, newest Aug 10, 2020 ("Oshá Root: Bear Medicine"). **No ashwagandha post.** Day-of check #1 passes as of tonight — re-check on send day, since a new post would kill this sample.
+- **Contact page:** form live, text matches the PR ("Drop us a line using the form and we'll get back to you as soon as possible"), phone 928-774-2884 matches. Route is real. Founder Phyllis Hogan still the owner (Flagstaff Business News, 2025 Christmas photo) — the "Hello Phyllis" greeting is right.
+- **Tone (the PR's ask #2):** "To be upfront: it was drafted with AI help" is the right weight — one plain sentence, mid-message, followed immediately by the substance (every quote checked word for word against NIH, MSK, the 2011 review). Not buried, not grovelling. Keep as written.
+
+**Two notes, neither blocks step 4/5 (posted as PR #37 comment https://github.com/gravity4u23-hub/gravity-studios/pull/37#issuecomment-7087679280):**
+1. **"Apothecary Journal" vs "Articles":** the message says "I wrote one for your Apothecary Journal", but the live blog page is titled **Articles**. If the shop does not call it Apothecary Journal anywhere on the site, that is a small tell we did not read the site closely. Suggest "your blog" unless the name is confirmed on-site.
+2. **"an herb you carry" — could not re-confirm online tonight:** `site:wintersun.com ashwagandha` returns nothing and no Winter Sun product page surfaced in search. That may just be poor indexing of their shop (the earlier prospect check said they stock dried root), but the message asserts it, so day-of check #2 (confirm they still list ashwagandha root) is the one that matters before the owner sends. A quick call to 928-774-2884 settles it.
+
+**Needs the owner:** step 4 read (issue #38) + OK on the exact trial text. Nothing sent, no form filled in.
