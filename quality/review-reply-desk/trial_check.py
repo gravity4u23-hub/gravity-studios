@@ -62,7 +62,7 @@ def parse_trials(text):
         yield name, (route.group(1) if route else ""), (source.group(1) if source else ""), (msg.group(1) if msg else "")
 
 
-def check(name, route, message, gold, source="https://example.com/contact"):
+def check(name, route, message, gold, source=""):
     errs = []
     if not message.strip():
         return [f"{name}: no ```message block"]
