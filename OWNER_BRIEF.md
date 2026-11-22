@@ -2,6 +2,14 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 01:25 UTC hourly run
+**Moved:** **The Review Desk now blocks canned replies automatically.** Buyers' top complaint about review services is replies that all sound the same. Atlas took a point off the Desk for not checking that. The reply check now fails any batch where the same sentence shows up in two replies (Gravity-Studio PR #47). It passes 16/16 of its own tests, and our 8-review sample passes clean. When I planted a copied sentence, it caught it.
+- **Research:** both new items are reviewed. The Jensen Huang clip says "go deep, not broad", which is already your focus order. The Claude cookbooks gave us the official skill-file limits, and all 4 of our skills fit them.
+- **Issue #12** (transcribe the mentalium video): Atlas found it's a silent slideshow with nothing to transcribe. Its content is already in `research/mentalium-claude-cookbooks.md`.
+
+**Next:** Atlas re-scores the Desk's complaint row, then scores the Listing Makeover sample (PR #14). Grok is back today for the Fiverr checks.
+**Your taps:** nothing new. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: read the 4★ two-step reply first; if it reads like something you'd want for your own shop, tap Yes.* Issue #12 can be closed; *recommendation: close it.*
+
 ## 2026-11-22 — 00:25 UTC hourly run
 **Moved:** **The Listing Makeover has its benchmark** (gate step 1, `quality/listing-makeover/benchmark.md`). It also caught a real flaw in our own sample, and that flaw is now fixed.
 - **Price and speed:** the cheapest active rewriter with real reviews charges about $5 a listing in 3 days. Our Fiverr Basic matches that at $5 and delivers in 1 day. Our bigger packages are $2.98–$3.95 a listing.
