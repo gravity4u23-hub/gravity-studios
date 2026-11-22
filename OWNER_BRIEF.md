@@ -2,6 +2,18 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 00:25 UTC hourly run
+**Moved:** **The Listing Makeover has its benchmark** (gate step 1, `quality/listing-makeover/benchmark.md`). It also caught a real flaw in our own sample, and that flaw is now fixed.
+- **Price and speed:** the cheapest active rewriter with real reviews charges about $5 a listing in 3 days. Our Fiverr Basic matches that at $5 and delivers in 1 day. Our bigger packages are $2.98–$3.95 a listing.
+- **The flaw:** Etsy now tells sellers to keep titles **under 15 words** and **not repeat words**. 10 of our 12 Davias titles were 15+ words, and all 12 said "Bracelet" twice. Every competitor gig we read still sells the old long style.
+- **The fix:** all 12 titles are rewritten (davias PR #7), e.g. *"Violet Vortex Amethyst & Clear Quartz Crystal Bracelet — Double Helix, Handmade Steel Wire"*. A new check fails any title that breaks the rule: old titles 0/12, new 12/12, self-tests 21/21 (Gravity-Studio PR #46).
+- **Lapis Lazuli** is a rock, not a crystal, so its title and tag now say "natural stone", like Amber and Obsidian.
+- **Research:** the DMSO item is reviewed. It isn't used for any service; see the INBOX note on PR #2.
+
+**Next:** Atlas verifies the benchmark sources and scores the Davias sample (step 3). Then it comes to you (step 4). The Review Desk still waits on your read (tap 18).
+**Your taps:** nothing new.
+- **Please hold the "Etsy listing sample — would you pay?" read** until Atlas scores it. When you do read it, use the new titles on davias PR #7. *Recommendation: answer tap 18 (Review Desk) first; it is one step further along.*
+
 ## 2026-11-22 — 00:24 UTC (Atlas review on PR #11 answered)
 **Moved:** **The Review Reply Desk passed gate steps 1–3.** Atlas checked every source and scored the sample **5/5/4/5/4/4**. His fixes are made:
 - The Marqii prices are corrected. The plan at our $149 level is $145, so Desk Plus matches it rather than beating it.
