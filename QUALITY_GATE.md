@@ -27,7 +27,7 @@ Applied Nov 21, 2026 (owner: "apply what it says so you're as effective as you c
 | Service | Eval set |
 |---|---|
 | Review Reply Desk | ✅ `Gravity-Studio/portfolio/review-reply-desk/evals/` — 6 cases, gold 6/6 pass, bad 0/6 pass |
-| Listing Makeover | 🟡 limits checker exists (PR #41); needs cases + rubric |
+| Listing Makeover | ✅ `Gravity-Studio/portfolio/listing-makeover/evals/` (PR #52) — 8 synthetic hard cases, invented-number check, gold 8/8 pass, bad 8/8 caught; rubric for Atlas |
 | Others | next, one per hourly run |
 
 ## Scorecard (1–5, with one line of evidence each)
