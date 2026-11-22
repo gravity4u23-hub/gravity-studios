@@ -1,0 +1,20 @@
+name: checks
+on: [push, pull_request]
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Every Python file compiles
+        run: python -m py_compile $(git ls-files '*.py')
+      - name: Dashboard builder parses and its lane/tap lists load
+        run: |
+          python - <<'PY'
+          import ast, re
+          src = open('tools/command-center/build.py').read()
+          ast.parse(src)
+          assert 'L = [' in src and 'T = [' in src, 'lane or tap list missing'
+          print('build.py OK')
+          PY

@@ -1,0 +1,131 @@
+# Owner Brief
+
+Updated by Claude's scheduled run. Newest at the top.
+
+## 2026-11-21 — 20:24 UTC hourly run
+**Moved:** Listing Makeover has its first 10 prospects (Gravity-Studio PR #42). I read each Etsy shop's public page today. 5 of the 10 are in Arizona, and nobody has been contacted. A new check scores each shop's real titles. The top 3:
+- **SweetSoftSkin** (Peoria, 5,775 sales). Its titles use only 21–27 of Etsy's 140 characters.
+- **PlantedInWire.** Wire-wrapped crystal jewelry, the closest match to our Davias sample.
+- **SouthsideCreation** (Lake Havasu City). It has 1,034 listings with stock numbers in the middle of the titles.
+
+New rule: pitches never go through Etsy Messages, because Etsy bars unsolicited sales messages and a report could flag the shop. They go through each shop's own website or Instagram. Also, on the loan research (PR #2), Atlas asked for a second state. Arizona's law turned out to set the loan at **at least** the cash value, not at most. The file is corrected, and the conclusion doesn't change: no policy lends against the $1M face amount.
+**Next:** Atlas reviews #42 and re-checks #2. Then Claude finds the contact route for shops 1–3 and writes their 2 free sample rewrites.
+**Your taps:** nothing new. Tap 8 (approve the Review Desk and Listing Makeover pitches) now names the first 3 shops. *Recommendation: Approve.* Tap 16 still needs a Yes once you've checked that Zelle is set up on godisdmt23@gmail.com.
+
+## 2026-11-21 — 20:08 UTC (Zelle address on PR #39)
+**Moved:** A PR #39 comment from your account said to send Zelle to **godisdmt23@gmail.com**, not 747-528-7039, because the phone is unreliable right now. That change is done everywhere the payment messages, the GEO checklist and the README show Zelle. The check now fails any Zelle line that uses the old phone, and it still passes: 19/19 self-tests, 13/13 prices.
+**Your taps:** tap 16 / issue #8 is the same approval. The messages now read "PayPal to gravity4u@gmail.com, or Zelle to godisdmt23@gmail.com". *Before you approve, check that Zelle is set up on godisdmt23@gmail.com. A wrong Zelle email sends a buyer's money somewhere you can't get it back. Recommendation: Approve once that's confirmed.*
+
+## 2026-11-21 — 19:16 UTC (Atlas review on Davias PR #10 answered)
+**Moved:** Atlas reviewed Davias PR #10 (all 12 Helix designs) and called it **mergeable**. I fixed his one doc point: `HELIX_COLLECTION.md` now says where the stone profiles live, and it no longer calls every bead a crystal.
+**Your taps:** one new maker question, needed before the first sale, not before the merge. **Is Octavia's citrine natural, or heat-treated amethyst?** The Jungle Gold page promises buyers we'll tell them which. *Recommendation: if you're not sure, tap "heated"; the page will then say "heat-treated citrine". It's the honest default, since most citrine sold is heated.*
+
+## 2026-11-21 — 18:50 UTC (Atlas review on PR #39 answered)
+**Moved:** Atlas reviewed the payment messages (Gravity-Studio PR #39). He confirmed all 13 prices independently. He found 6 things to fix, and all 6 are fixed:
+- The Blog Engine line wrongly called post #1 "free". It is written before payment, and it is part of month 1 if they continue.
+- The Visibility Pack now says "bundle saves $19". Before, $49 + $149 next to $179 looked like a math mistake.
+- The check now catches the wrong "23" PayPal address on any line, even when the word PayPal isn't there. It also checks every line of the messages, not only the quoted ones.
+- On a fresh copy of the repo, the check used to fail 8 of 13 prices because it couldn't find the offer files. A new `--fetch` option fixes that, and it now passes 13/13.
+- Its self-tests pass 17/17.
+
+**Next:** Atlas re-checks #39. Then Claude picks 10 Etsy shops for Listing Makeover.
+**Your taps:** one new tap (dashboard tap 16): **approve the payment messages?** When a buyer says yes, they get one short message: PayPal to gravity4u@gmail.com or Zelle, the price, and "I start as soon as it lands." *Recommendation: Approve. Without it, a buyer's yes waits for you.* Taps 15 (test call to the business line), 12 (Facebook in Metricool) and 14 (Davias "made by hand") still stand.
+
+## 2026-11-21 — 18:24 UTC hourly run
+**Moved:** Listing Makeover now has its checker (Gravity-Studio PR #41). The process always said a script checks every listing, but none existed. `listing_lint.py` checks:
+- title length
+- Etsy's once-only `% : &` rule
+- all 13 tags, each 20 characters or less, with no repeats
+- tags that got cut off
+- cure, guarantee and fake-scarcity words
+- the "not medical advice" line on any lore
+
+Its self-test passes 13/13. On its first run it found 2 real problems in our own Davias sample:
+- The Ember & Ice title used "&" twice, so Etsy would refuse it.
+- One tag was cut off ("pink tourmaline brac").
+
+Both are fixed on Davias PR #7, and all 12 listings pass. On PR #36, Atlas's 3 stale "not done yet" phone lines are struck. There were no new research items or Grok tasks since 17:24.
+**Update 19:15:** Atlas reviewed #41 and called it mergeable. His 4 fixes are pushed, and the self-test passes 16/16. **Merge order for Gravity-Studio** (they all touch CURRENT_TASK.md): #35 → #41 → #37 → #38 → #39 → #40. Whoever merges second keeps every Claude Progress line.
+**Next:** Atlas re-checks #36 and reviews #41, #39, #40 and Davias #8 → #11. Then Claude picks 10 Etsy shops for Listing Makeover.
+**Your taps:** one new tap (dashboard tap 15): **call or text (747) 222-6980 once from another phone. Does it ring your Google Voice?** Atlas wants this confirmed before any post or pitch carries the number. *Recommendation: Yes, 30 seconds, do it before connecting Metricool.* Taps 12 (connect Facebook in Metricool) and 14 (Davias "made by hand") still stand. Fastest money is still DMing El Portal and posting the Resale Concierge offer.
+
+## 2026-11-21 — 17:24 UTC hourly run (also covers 16:24)
+**Moved:** The first social post batch is written (Gravity-Studio PR #40). It has 10 draft posts for Facebook, X, LinkedIn, Threads and Bluesky: 3 for the Resale Concierge, 3 for the Review Reply Desk, 2 for Listing Makeover, 1 for the AI-search audit and 1 for the Reactivation Kit. Every post ends with your business line. A new check runs before you see any batch. It checks each network's length limit, that every price matches the offer, that no "guarantee", "#1", cure or fake-scarcity words appear, and that the only phone number is the business line. It passes 10/10. On its first run it caught one post 1 character over X's 280 limit, now fixed.
+- At 16:24, PR #39 added payment-request drafts for all 13 priced offers. A check confirms that PayPal only ever means gravity4u@gmail.com.
+- There were no new research items, Atlas comments or Grok tasks since 15:24.
+**Next:** Atlas reviews #39/#40 and the Davias stack (#8 → #11). Then the timed Review Desk dry run.
+**Your taps:** one new tap (dashboard tap 12): **connect your Facebook Page in Metricool.** We checked, and Metricool has no network connected yet, so nothing can be scheduled. Batch 01 is waiting for it. *Recommendation: Yes. Connect Facebook first, then approve batch 01. We schedule nothing before you approve.* The open Davias "made by hand" tap (14) still stands. Fastest money is still DMing El Portal and posting the Resale Concierge offer.
+
+## 2026-11-21 — 15:24 UTC hourly run
+**Moved:** The Davias Crystal Finder now knows all 22 stones (Davias PR #11, stacked on #10). Before, it only knew the original 6. It also asks one new question: **your skin's undertone** (Cool, Warm, Neutral or Not sure). Then it suggests Helix designs styled for that undertone, using each design's own matching text. For example, Cool suggests Reef Ripple and Lapis Current, and Warm suggests Earthfire Twist and Jungle Gold. A line on the page says undertone matching is styling advice, not a rule.
+- Every "tradition" choice (Calm, Grounding & protection and so on) only lists stones whose own Traditional label says it. A standing check enforces this.
+- Site checks pass 302/302 and browser checks pass 9/9.
+
+There were no new research items, Atlas comments or Grok tasks since 14:24. The dashboard data was rebuilt, but this run could not upload it because the artifact tools weren't available.
+**Next:** Atlas reviews Davias #8 → #11 and Gravity-Studio #37/#38. Then the timed Review Desk dry run.
+**Your taps:** nothing new. The open one is still dashboard tap 14 / issue #7: **are the Davias pieces being made by hand now?** Yes keeps "made by hand"; No changes it to "designed by hand". *Recommendation: answer before launch.* Fastest money is still DMing El Portal and posting the Resale Concierge offer.
+
+## 2026-11-21 — 14:24 UTC hourly run
+**Moved:** All 12 Helix bracelets are now on the Davias site (Davias PR #10, stacked on #9). The 7 that were missing (Reef Ripple, Ember & Ice, Northern Lights, Jungle Gold, Amber Mist, Lapis Current, Obsidian Spiral) got product pages, plus 12 new stone profiles labelled Proven / Traditional.
+- Amber and obsidian are labelled "not a mineral". The homepage no longer says every bead is stone.
+- Citrine is flagged as usually heat-treated amethyst. Black tourmaline says it does not block EMF.
+- Amber carries the FDA warning against baby teething necklaces.
+- The site check now reads `HELIX_COLLECTION.md` and fails if any design drifts from the site. It passes 222/222.
+There were no new research items, Atlas comments or Grok tasks since 12:24. The 13:24 run left no commits.
+**Next:** Atlas reviews Davias #8 → #9 → #10 and Gravity-Studio #37/#38. Then the Crystal Finder learns the new stones.
+**Your taps:** one correction, same tap as before (dashboard tap 14 / issue #7). You already removed "Made by Octavia" from the site on Nov 17. Three lines still say "made by hand" (home, shop, about). **Are the pieces being made by hand now?** Yes keeps those lines; No changes them to "designed by hand". *Recommendation: answer before launch.* Fastest money is still DMing El Portal and posting the Resale Concierge offer.
+
+## 2026-11-21 — 12:24 UTC hourly run
+**Moved:** The Fiverr gigs now have their cover images. Gravity-Studio PR #38 adds six 1280 × 769 covers, one per gig, and a script that rebuilds and checks them. The check passes 8/8: right size, nothing cut off, no phone/email/links (Fiverr bans them on images), and no "guarantee", "#1" or cure words. It caught two problems on the first render, both fixed. Gig 1's top package also said "answered within 48h"; it now says 2 business days, matching the Review Desk promise. Since 11:24 there have been no new research items, Atlas comments or Grok tasks.
+**Next:** Atlas reviews #37/#38 and re-checks #35. Then the timed Review Desk dry run.
+**Your taps:** nothing new. When you create the Fiverr seller account (dashboard tap 13), the 6 gigs are ready to paste with covers. Fastest money first: DM El Portal, post the Resale Concierge offer.
+
+## 2026-11-21 — 11:24 UTC hourly run
+**Moved:** Review Reply Desk (Gravity-Studio PR #35) now has a reply checker. `review_lint.py` checks every drafted reply before it goes out: 2–4 sentences, signed, no refunds or discounts you didn't approve, never asks for a review change, no patient details for clinics, and no claims that something changed at the business unless you confirmed it. Its test passes 12/12. On its first run it caught one of our own sample replies promising "price cards this month", a fact no owner had confirmed. That sample is fixed, and so is a second one that invented a "carne asada night". Since 10:25 there have been no new research items, Atlas comments or Grok tasks.
+**Next:** Atlas re-checks #35 and reviews Davias #8/#9. Then the timed Review Desk dry run on a real public profile (drafts only, nothing posted).
+**Your taps:** nothing new. The two Davias questions from the 10:25 run (issue #7) are still the top wording blockers. Fastest money first: DM El Portal, post the Resale Concierge offer.
+
+## 2026-11-21 — 10:25 UTC hourly run
+**Moved:** Davias PR #9 (stacked on #8) fixes the crew-side Atlas #4 launch items. On "every day", the crystal finder now leaves selenite out of the stone pair and offers it only for special occasions. A new browser test passes 5/5; the old code failed 2 of those cases. The drop page and home button now say "coming soon — no date or checkout yet", and "Drops sell out" is gone. Anklets are no longer all called beach-ready, so the Soft Light (selenite) page no longer contradicts itself. All 126 site checks pass. Since the 09:24 run there have been no new research items, Atlas comments or Grok tasks.
+**Next:** Atlas reviews Davias #8 and #9 and re-checks Gravity-Studio #35. Then the timed Review Desk dry run.
+**Your taps:**
+1. **Davias: is Octavia making the pieces right now?** Yes → "Made by Octavia, by hand" stays. No → we switch to "Designed by Octavia" until she is. *Recommendation: answer this before launch. It's the last wording blocker in Atlas #4.*
+2. **Keep "Founders Drops are numbered 1 to 100"?** *Recommendation: No (we drop the line) unless you plan to number them.*
+Everything else is unchanged and listed on the dashboard. Fastest money first: send the El Portal DM, post the Resale Concierge offer.
+
+## 2026-11-21 — 09:24 UTC hourly run
+**Moved:** Davias PR #8 builds 5 Helix pieces into the site. It adds matching text, Double/Triple/Single filters, the Blush Trinity tourmaline fix and the Earth Circle care fix. A new site check passes 117/117. Review Reply Desk (PR #35): all 6 Atlas points are fixed. The promise is now 2 business days (with daily collection), there is a no-invented-facts rule, overage is defined, and the time estimate is labelled untested. PR #29's path and issue #23's flash line are fixed too. Two new research items were reviewed, not applied. The loan plan must call El Portal and the others *prospects*, not buyers. 7 of the 9 "services split" ideas are regulated; credit repair in Arizona needs a surety bond (A.R.S. §44-1708). Recommendation: keep only Plan Builder and Income Proof as candidates.
+**Next:** Atlas reviews Davias #8 and re-checks #35. Then Davias #4 (launch fixes) and a timed Review Desk dry run.
+**Your taps:** nothing new this run. The open list is on the dashboard. Fastest money first: send the El Portal DM, approve the two pitches, create the Fiverr account.
+
+## 2026-11-21 — 08:24 UTC hourly run
+**Moved:** Missed-Call Rescue is un-parked (MASTER_PLAN #2). Gravity-Studio PR #34 adds a $149 Dead-Lead Reactivation Kit: the business exports its old quotes and missed callers, and we return a cleaned list plus a 3-text win-back sequence that it sends from its own phone. We need no logins and spend $0. `reactivate.py --test` passes 10/10 (consent, opt-out, duplicates, 30-day hold, a STOP line on every text). It's built this way because the Nov 14 test found no buyers for a standalone missed-call *diagnostic*. No new research items or Atlas comments since the 08:23 run.
+**Next:** Atlas reviews #34, #33, #32 and #28; then Davias #5 (Helix build.py).
+**Your taps:** nothing new. The open list is in the 08:16 and 08:23 entries below and on the dashboard. The top one is still: **is gravity4u@gmail.com your PayPal?** It now unlocks two $149 offers.
+
+## 2026-11-21 — 08:23 UTC hourly run (second run this hour, complements the 08:16 entry)
+**Moved:** Gravity-Studio PR #33 opened: GEO audit denominator fix + a tested scorer (`geo_score.py --test` passes), the last crew-side item before a paid $149 audit. PR #32 (Magnetico ledger): Atlas's 3 corrections pushed (Nov 19, dad handoff, cash-record rule). PR #28: lymph count corrected (165 itemised, not 198), GBP "3 buyers" flagged, retitled partial. Plugin PRs in all 4 repos reworded per Atlas. Money map challenged: the SNAP student rule (half-time students generally can't get SNAP without 20+ hrs/week work) means "school + SNAP" can't simply be stacked; details in PR #2.
+**Next:** Atlas re-checks #32, #28, #33; Missed-Call Rescue one-page offer; Davias #5.
+**Your taps:** same four as the 08:16 entry, plus:
+5. **Merge Gravity-Studio PR #32 (Magnetico ledger) once Atlas re-checks?** Yes — it puts your $1,000 on the books.
+
+## 2026-11-21 — 08:16 UTC hourly run
+**Moved:** All 9 research items now carry a Claude review (3 applied, 6 reviewed-not-applied with reasons) — PR #2. Claude's independent loan/trust check is done: the law caps any policy loan at cash value (NY Ins. Law §4222), so ✖ for $1M-now stands on two checks (Gravity-Studio #30). Command Center fixed per both Atlas reviews: every Master Plan line tagged open/owner/after, Missed-Call Rescue ranked, Healing Guide justified, §6 sequencing and §7 notification claim corrected (PR #3). Magnetico ledger fixes (PR #32) and the GEO runbook scoring fix (branch `claude/geo-scoring-fix`) were pushed this hour.
+**Next:** Missed-Call Rescue one-page offer; Davias #5 (Helix build.py).
+**Your taps (one each, recommendation first):**
+1. **Merge gravity-studios PR #3 (Command Center)?** Yes — Atlas's blocking points are fixed.
+2. **Is the PayPal address on the sales page right?** Yes/No — it's the last step before a $149 audit can be paid.
+3. **Connect Instagram Messages?** Yes — only route to El Portal.
+4. **Close Gravity-Studio #30 as answered?** Yes — two independent checks agree; no $1M-now path.
+
+## 2026-11-21 (earlier)
+**Moved:** Command Center written (operating loop, challenge protocol, ranked Master Plan). Plugin standards PRs open in all 4 repos. Research inbox triaged.
+**Also moved:** Atlas #24 fixes (Gravity-Studio PR #28) and the skills library foundation (PR #29: geo-audit, research-to-action).
+**Next:** #18 Wellness Blog Engine build; Davias #5/#4 in parallel.
+**Your taps (when you're ready):**
+1. Instagram Messages connected → El Portal GEO pitch can go out.
+2. Business phone (Google Voice) → unlocks the Concierge post.
+3. Where should gravity-studios be hosted (GitHub Pages or a domain)?
+4. Is gravity4u@gmail.com the right PayPal address on the sales page?
+5. Windows test of the Subliminal Rewire `main` build when one is ready.
+6. Were there really 3 paying GBP buyers (Atlas #24)? If yes, who; if not, the record stays "needs 1 buyer".

@@ -1,0 +1,63 @@
+"""Builds the Gravity Command Center data files from the hivemind repos.
+Lanes and taps are taken from Gravity-Studio/README.md, the lane folders and
+gravity-studios/OWNER_BRIEF.md (Nov 21, 2026); cash from revenue-command-center/ledger.md;
+open pull requests from the GitHub REST API."""
+import json, re, subprocess, datetime, os
+here = os.path.dirname(os.path.abspath(__file__))
+code = open(os.path.join(here, "build.py")).read()
+now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+STAGES = {1: "Idea", 2: "Building", 3: "Ready to sell", 4: "Buyer in talks", 5: "Paying"}
+# lane, offer price text, first-sale USD (one sale at the listed low price; None = no fixed price), stage, blocker, next step
+L = [
+ ("Magnetico sale", "$1,000 cash", 1000, 5, "None — sold", "Done: $1,000 cash collected Nov 19 (owner-confirmed; ledger fixes in Gravity-Studio PR #32)"),
+ ("GEO audit", "$149", 149, 3, "Runbook scoring fix in review; El Portal reachable only by Instagram DM", "Atlas re-checks Gravity-Studio PR #33 (runbook fix + tested scorer); payment messages for every offer ready (PR #39, Atlas's 6 points fixed, tap 16); you DM El Portal"),
+ ("Missed-Call Rescue", "$149 reactivation kit", 149, 2, "Offer + tested list cleaner in review (Gravity-Studio PR #34); outreach rides the GEO audit taps (PayPal, approval)", "Atlas reviews PR #34; then same buyer list as the audits"),
+ ("Visibility Pack (GBP+GEO)", "$179", 179, 3, "Same as GEO audit", "Pitch after first GEO audit"),
+ ("GBP audit", "$49", 49, 3, "Needs its first real buyer (owner confirmed no earlier buyers)", "Pitch alongside GEO and Review Desk"),
+ ("Resale Concierge", "30% of sale (~$120 on a $400 item)", 120, 3, "Post is ready with the business number (747) 222-6980", "You post it (tap 11)"),
+ ("Wellness Blog Engine", "$150–$300/mo", 150, 3, "Messages approved; prospects' blogs not checked yet", "Claude sharpens the messages and checks 10 prospects"),
+ ("Review Reply Desk", "$79–$149/mo", 79, 3, "Quality gate step 1 of 5 (needs benchmark + real gold sample)", "Atlas re-checks PR #35; one timed dry run on a real public profile; you approve the pitch"),
+ ("Listing Makeover", "$79 per 20 listings", 79, 3, "Quality gate: gold sample done (Davias); needs benchmark, scorecard, your read, free trial", "Atlas reviews PR #42; Claude finds the contact route for shops 1-3 and drafts their 2 free sample rewrites; you approve the pitch (tap 8)"),
+ ("Fiverr gigs", "$15–$199 per order", 15, 3, "Account live (gravitystudios1); profile + first gig next, each gig waits on its quality gate", "Owner pastes profile text; reads the Listing Makeover sample"),
+ ("Social posting (Metricool)", "Free reach for every lane", None, 3, "Batch 01 ready: 10 draft posts for Concierge, Review Desk, Listing Makeover, GEO, Reactivation (Gravity-Studio PR #40, social_check 10/10); Metricool has no network connected (checked Nov 21 17:24 UTC)", "You connect your Facebook Page in Metricool (tap 12) and approve batch 01; Atlas reviews PR #40"),
+ ("Paid diagnostic", "$250", 250, 2, "Ladder step after an audit", "Sell only to audit buyers"),
+ ("Healing Guide PDF", "$39", 39, 2, "Manuscript lives on the owner's laptop (~/workspace/recipe-book)", "Owner shares the manuscript folder"),
+ ("Rewire Packs", "$12 / $45 bundle", 12, 2, "Depends on Subliminal Rewire app (Windows blocker #1)", "Fix Windows launch blocker"),
+ ("Davias storefront", "Jewelry sales", None, 1, "Paused by owner (Nov 21) — focus is AI services", "None until the owner restarts it"),
+ ("The Gut Letter", "Free + affiliate", None, 2, "No send platform picked (Substack vs Beehiiv)", "Owner picks a platform"),
+ ("The Bridge HQ", "Affiliate", None, 2, "Needs traffic first", "After Gut Letter"),
+ ("Haul Partner Split", "50/50 split", None, 1, "Needs a partner", "Parked"),
+]
+lanes = [dict(lane=a, price=b, first_sale_usd=c, stage=STAGES[d], stage_num=d, blocker=e, next_step=f) for a,b,c,d,e,f in L]
+# Owner approvals: n, tap, brief (why, in a sentence or two), button label, unlocks, first-sale USD
+T = [
+ (2, "Connect Instagram Messages — or just DM El Portal", "El Portal's website form is broken, so Instagram is the only way to send the $149 audit pitch. Fastest: open ig.me/m/elportalmexicanphx, paste the approved pitch (in your chat with Claude), send, then tap Mark done.", "Mark done", "GEO audit", 149),
+ (8, "Approve the two new pitches", "Review Reply Desk: 'I noticed [Business] has [N] Google reviews without a reply… $79/month, first week free, no passwords.' Listing Makeover: 'I'll redo two of your listings free so you can see the difference.' Approve and each goes out only to checked prospects. First Listing Makeover prospects (PR #42): SweetSoftSkin (Peoria), PlantedInWire, SouthsideCreation (Lake Havasu City), reached through their own website or Instagram, never Etsy Messages, which bars sales pitches. Recommendation: Approve.", "Approve", "Review Reply Desk + Listing Makeover", 158),
+ (11, "Post the Resale Concierge offer", "Your business number is in. The post is ready: 'Flagstaff-area neighbors — got stuff sitting around you want gone? I'll sell it for you on Facebook Marketplace… You keep 70%, I take 30%… text (747) 222-6980.' Post it on your Facebook and in the biggest Flagstaff buy/sell group, then tap Mark done.", "Mark done", "Resale Concierge", 120),
+ (17, "Read one Etsy listing sample — would you pay?", "Quality gate step 4 for the Listing Makeover. Open github.com/gravity4u23-hub/davias-earthbound-jewelry/pull/7, read 1–2 bracelet listings, and answer: would you pay $15 for 3 of these? Approve = yes, and your first Fiverr gig goes live. Not now = tell us what's missing in the box.", "Approve", "Fiverr gig #1 (Etsy listings)", 15),
+ (12, "Link your social accounts in Metricool", "Checked Nov 21: Metricool still has no network connected, so nothing can be scheduled. The first batch is written: 10 posts for the Concierge, Review Desk, Listing Makeover, AI-search audit and Reactivation Kit (Gravity-Studio PR #40, every post checked). Open app.metricool.com/brands/connections?blogId=8264531, connect your Facebook Page first (then X, LinkedIn, Threads, Bluesky if you have them), and tap Mark done. We schedule batch 01 only after you approve it.", "Mark done", "Posting everywhere", None),
+ (14, "Davias: is Octavia making pieces now?", "You already took 'Made by Octavia' off the site on Nov 17. Three lines still say 'made by hand' (home, shop, about). If the pieces are being made by hand now, tap Yes and they stay. If not yet, tap No and we change them to 'designed by hand' until they are. Same tap: Founders Drops are numbered 1 to 100. Keep that line (Yes) or we drop it (No). Also before launch: have Octavia read the 12 Crystal Finder undertone picks (Davias PR #11, e.g. Reef Ripple = cool, Jungle Gold = warm) and tell us any she'd change.", "Yes / No", "Davias launch", None),
+ (15, "Call your business line once", "Before anything posts with (747) 222-6980, call or text it once from another phone and check it rings your Google Voice. Atlas asked for this on PR #36, because GitHub can't prove the number is live. Tap Yes if it rings.", "Yes / No", "Every post and pitch", None),
+ (16, "Approve the payment messages", "When a buyer says yes, we send one short message: 'PayPal to gravity4u@gmail.com, or Zelle to godisdmt23@gmail.com. [price] for [offer]. As soon as it lands I start.' Monthly plans get one reminder a month and can stop any time. A check confirms all 13 prices match the offers (Gravity-Studio PR #39, reviewed by Atlas, his fixes done). Approve it and we can answer a yes the same hour. Recommendation: Approve.", "Approve", "Every paid offer", 149),
+ (10, "Flip the GitHub Pages switch (2 minutes)", "You approved free hosting, but only you can turn it on. On github.com: gravity-studios → Settings → Pages → Deploy from a branch → main / root → Save. Then tap Mark done.", "Mark done", "Sales site", None),
+]
+taps = [dict(n=n, tap=t, brief=br, button=bt, unlocks=u, first_sale_usd=v) for n,t,br,bt,u,v in T]
+led = open(os.environ.get("LEDGER", "../Gravity-Studio/revenue-command-center/ledger.md")).read()
+m = re.search(r"invoiced \$(\d+); collected \$(\d+); expenses \$(\d+).*?net retained \$(-?\d+)", led)
+contacted = re.search(r"leads contacted (\d+)", led).group(1)
+cash = [dict(metric="Collected", usd=int(m.group(2))), dict(metric="Invoiced", usd=int(m.group(1))),
+        dict(metric="Expenses", usd=int(m.group(3))), dict(metric="Net retained", usd=int(m.group(4)))]
+prs = []
+for r in ["gravity-studios", "Gravity-Studio", "davias-earthbound-jewelry", "subliminal-rewire"]:
+    # PR_COUNTS='{"repo": n}' overrides gh when gh has no token (cloud runs count via the GitHub MCP tools)
+    override = json.loads(os.environ.get("PR_COUNTS", "{}"))
+    out = str(override[r]) if r in override else subprocess.run(["gh","api",f"repos/gravity4u23-hub/{r}/pulls?state=open&per_page=100","--jq","length"],capture_output=True,text=True).stdout.strip()
+    prs.append(dict(repo=r, open_prs=int(out or 0)))
+def dump(name, rows, inp):
+    json.dump({"rows": rows, "meta": [{"label": "build.py", "value": code, "type": "code", "lang": "python"},
+              {"label": "Input", "value": inp}, {"label": "Built", "value": now}]}, open(os.path.join(here, name), "w"), indent=1)
+dump("lanes.json", lanes, "Gravity-Studio README lane table + lane folders, Atlas reviews")
+dump("taps.json", taps, "gravity-studios/OWNER_BRIEF.md tap list")
+dump("cash.json", cash, f"revenue-command-center/ledger.md (leads contacted: {contacted})")
+dump("prs.json", prs, "GitHub REST: open pull requests per repo")
+print(now, cash, prs)
