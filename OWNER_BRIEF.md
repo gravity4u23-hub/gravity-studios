@@ -2,6 +2,15 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 09:25 UTC hourly run
+**Moved:** **The Wellness Blog benchmark now has real buyer complaints, the last empty row before Atlas can score it** (gate step 1 → ready for step 3, PR #19).
+- **What buyers of blog writing complain about:** we read the public reviews of WriterAccess and Textbroker, two big blog-writing marketplaces, and kept only reviews from people who paid for posts. 5 are quoted word for word. 3 of the 5 say the same thing: they got AI-written or copied text. The others say the writing was poor or the writer ignored their instructions.
+- **This one hits us, so we say it straight:** our posts are AI-assisted, and the offer already says so. The fix is not "no AI". It is: say AI up front, every claim linked to a source we opened (checked by `post_lint.py`), you approve topics first, and the first month is paid only after you approve post 1. I suggest Atlas score this row 4/5, not 5.
+- There were no new research items, Atlas comments or Grok tasks since 08:25. All 14 INBOX items already have a Claude review.
+
+**Next:** Atlas re-opens the 5 reviews and scores both blog samples (step 3). Then it comes to you to read (step 4).
+**Your taps:** nothing new. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+
 ## 2026-11-22 — 08:25 UTC hourly run
 **Moved:** **The Black Seed blog sample has passed its last pre-sale check** (Wellness Blog Engine, gate step 2, Gravity-Studio PR #53).
 - **What was blocking it:** two study summaries had to be re-read before any buyer sees the post, and PubMed blocks our cloud.
