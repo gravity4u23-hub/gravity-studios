@@ -191,6 +191,15 @@ Updated by Claude's scheduled run. Newest at the top.
 **Your taps:** nothing new. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
 **Decision coming (no tap yet):** what if SweetSoftSkin has no contact route outside Etsy? *Recommendation: skip them rather than use Etsy Messages, and run the trial on the Flagstaff Google-review prospects instead.*
 
+## 2026-11-22 — 05:30 UTC (Atlas review on PR #14 answered)
+**Moved:** Atlas passed the Listing Makeover benchmark, on condition of 5 fixes. All 5 are made:
+- **The flaw count is corrected:** 8 of the old 12 Davias titles (not 10) were 15+ words.
+- **4 Fiverr gigs and one article are marked unverified.** Fiverr and that site blocked his check.
+- **The price claim is restated on verified rows only:** we charge $2.98–$5 a listing, and the verified competitors charge $15. "Cheapest" is not claimed until a browser confirms the Fiverr prices.
+- **Two smaller fixes:** the PeoplePerHour row now matches the page, and the "140 characters" point covers that gig only.
+
+**Next:** Atlas sets the final step-3 scores. Then the sample comes to you.
+**Your taps:** nothing new. One question is already known: **what wrist size should the bracelets list?** The listings can't be called ready to paste until it's filled in.
 ## 2026-11-22 — 05:25 UTC hourly run
 **Moved:** **The Review Desk's test set now holds our own rules** (Gravity-Studio PR #51).
 - **What was wrong:** the "perfect" example replies we test against passed 6/6, but 3 of them claimed things no owner had confirmed: "We've changed how we update customers", "we're tightening how we schedule", and an invented "carne asada night". That is exactly what our Desk promises never to do.
@@ -243,8 +252,8 @@ Updated by Claude's scheduled run. Newest at the top.
 
 ## 2026-11-22 — 00:25 UTC hourly run
 **Moved:** **The Listing Makeover has its benchmark** (gate step 1, `quality/listing-makeover/benchmark.md`). It also caught a real flaw in our own sample, and that flaw is now fixed.
-- **Price and speed:** the cheapest active rewriter with real reviews charges about $5 a listing in 3 days. Our Fiverr Basic matches that at $5 and delivers in 1 day. Our bigger packages are $2.98–$3.95 a listing.
-- **The flaw:** Etsy now tells sellers to keep titles **under 15 words** and **not repeat words**. 10 of our 12 Davias titles were 15+ words, and all 12 said "Bracelet" twice. Every competitor gig we read still sells the old long style.
+- **Price and speed:** the verified competitors charge $15 for one listing in 2–4 days (PeoplePerHour), or from $50 in 3 days (Contra). We charge $2.98–$5 a listing, and Basic delivers in 1 day. *Update, 05:45 UTC: Atlas's live browser check confirmed the Fiverr prices. The lowest active per-listing price is Uri B.'s $50 for 10 listings, or $5 each. The cheapest package is Natalia's $15, but it covers only 2 listings, $7.50 each. Our Basic matches the $5, and our bigger packages beat it.*
+- **The flaw:** Etsy now tells sellers to keep titles **under 15 words** and **not repeat words**. 8 of our 12 Davias titles were 15+ words (corrected from 10 after Atlas's recount), and all 12 said "Bracelet" twice. The one verified competitor still sells the old long style.
 - **The fix:** all 12 titles are rewritten (davias PR #7), e.g. *"Violet Vortex Amethyst & Clear Quartz Crystal Bracelet — Double Helix, Handmade Steel Wire"*. A new check fails any title that breaks the rule: old titles 0/12, new 12/12, self-tests 21/21 (Gravity-Studio PR #46).
 - **Lapis Lazuli** is a rock, not a crystal, so its title and tag now say "natural stone", like Amber and Obsidian.
 - **Research:** the DMSO item is reviewed. It isn't used for any service; see the INBOX note on PR #2.
