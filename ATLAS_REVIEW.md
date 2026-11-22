@@ -253,3 +253,22 @@ Adds to parts 1–2 above (lint 9/9 already Atlas-verified there). Branch head `
 - **Video corrects the article:** the speaker IS a Raiders certified athletic trainer (1991–1999, under George Anderson); Don Mosebar ankle sprain, 80% swelling gone in ~1.5 days, played the game, no re-injury; "worked every time to some degree." The article's physician/5-year version is a separate account. Thumbnail name "Jonathan Jones" unverified (speaker never names himself).
 - **No home protocols in the article** — deferred to a later part. Study concentrations only (50% CRPS, 70% most topical, 90% early studies).
 - **Integration:** directly relevant to owner's spine pain + current DMSO + magnesium oil experiments. Actionable: wash skin first (carrier effect), USP-grade only (industrial grade can carry benzene/acetone). Recipe Book candidate, TRADITIONAL label. Not medical advice. Nothing posted, nobody contacted.
+
+---
+
+## Anthropic Claude cookbooks — 98 official notebooks (2026-11-21)
+
+- **Source:** post by mentalium (@mentalium_), Nov 21, 9:24 AM, https://x.com/mentalium_/status/2124177042778321182/video/1. Video is a silent infographic slideshow — no audio track exists in any format, nothing to transcribe; content is the post + repo. Research file: research/mentalium-claude-cookbooks.md. Repo: https://github.com/anthropics/claude-cookbooks, main commit 8ad5de64.
+- **Verified live:** 54,955 stars (post says 55k+ — a round-up, 45 short); 98 notebooks in registry.yaml (post says 91, thumbnail says 100+ — both wrong); repo created Aug 2023, additions as recent as Nov 2, 2026.
+- **Post's list is mostly wrong:** only 3 of 39 named notebooks exist verbatim at the stated paths; 19 are paraphrases under different names/paths, 17 have no direct match. Do NOT paste the post's 40 paths anywhere.
+- **For the crew:** SKILL.md spec official — the MCP→skill conversion target; Chief of Staff notebook templates the Grok Bot plan (with the CLAUDE.md-is-context caveat); webhooks + session spend budgets settle the poll-vs-webhook and agent-team spend questions. Reading is free; running needs an Anthropic API key + approved token spend. Nothing posted, nobody contacted.
+
+---
+
+## Jensen Huang: language is the programming language of AI (2026-11-21)
+
+- **Source:** post by Damir Akaza (@Damir_Akaza), Nov 21, 6:47 AM, https://x.com/damir_akaza/status/2124137525992173965. Video transcribed (26 segments, 2:04, faster-whisper base). Research file: research/damir-akaza-jensen-huang-language.md.
+- **Quote VERIFIED:** "Language is the programming language of AI" / English-major / "deeply, deeply expert" — All-In Podcast panel, answering Chamath Palihapitiya; independent transcriptions match word for word. Clip is a ~2-min excerpt from a longer answer.
+- **Radiology story:** Hinton's 2016 "stop training radiologists" VERIFIED; US radiologist headcount +~12% (34,328 → 38,306, 2010–2022) VERIFIED in direction; "100% right / AI caused hiring" PARTIAL (hyperbole; causality contested by a practicing radiologist).
+- **Hoodie 6 levels:** Prompt → Context → Harness → Loop → DAG → Graph VERIFIED via repo wilsonwu-ai/harness-loop-dag-graph (19 tests, builds on Livsun's 5 levels from the reyainami file). "Proves its own done" = an outside-model check (tests/schema) wired as a gate + one human approval on an exact digest. Hoodie's article URL + 5 ready prompts NOT captured.
+- **Integration:** crew already runs all 6 levels (MEMORY.md = Context; watch cron/hooks = Harness; hourly watch + dreaming = Loop; owner's tap = DAG; hivemind = Graph). Two $0 upgrades proposed (Stop-hook done-gate; digest-bound approvals) — need one owner tap. Huang language line is NOT the user's paused language-code project — do not resume on this clip. Nothing posted, nobody contacted.
