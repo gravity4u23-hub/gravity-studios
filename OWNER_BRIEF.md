@@ -2,6 +2,16 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 04:25 UTC hourly run
+**Moved:** **The Wellness Blog Engine has a sample written for a real business** (gate step 2, `quality/wellness-blog-engine/gold-sample-002-winter-sun.md`).
+- **Who it's for:** Winter Sun Trading Co., the Flagstaff apothecary on San Francisco St. They sell dried ashwagandha root. Their journal's newest post that we could see is from August 2020. **Nobody contacted them.**
+- **The post:** ashwagandha, done the way you asked. It opens with the Ayurvedic tradition, with the sources named: the Charaka Samhita via a 2011 review, the churna powder with ghee, honey or milk, and the "smell of the horse" name. Then it covers what the NIH says the small trials found for stress and sleep. Then it lists who should skip it: pregnancy, liver, thyroid, autoimmune conditions and sedatives. All 3 sources were opened today, and the post passes `post_lint.py --presale` at 1,052 words.
+- **Which local practices need a blog:** we checked the websites of all 10 Flagstaff prospects. 5 have no blog or a dormant one (Winter Sun, Flagstaff Clinic of Naturopathic Medicine, Acupuncture Wellness Center, True North, Munderloh). 2 already post, so we skip them for now. One (Synergistic Healthcare) has moved to Prescott (`prospect-blog-check.md`).
+- There were no new research items, Atlas comments or Grok tasks since 03:25.
+
+**Next:** Atlas scores the ashwagandha sample (step 3). Then it comes to you to read (step 4).
+**Your taps:** nothing new. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ reply reads like one you'd want for your own shop.* Coming after Atlas: *"Would you pay for the ashwagandha post?"* Then, if yes, the free trial to Winter Sun, sent only with your OK on the exact message.
+
 ## 2026-11-22 — 03:25 UTC hourly run
 **Moved:** **The Wellness Blog sample post is nearly ready for review** (gate step 2, Gravity-Studio PR #49).
 - **Traditional section:** it now names its sources, per your Nov 21 direction. These are *Sahih al-Bukhari* 5687 (the "healing for all diseases except death" saying, and how the seed was prepared) and Avicenna's *Canon of Medicine*. Two lines had no source, so they were cut: a list of Avicenna's uses and "2,000 years".

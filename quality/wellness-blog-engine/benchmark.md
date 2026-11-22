@@ -59,7 +59,7 @@ No buyer complaint text was found on the pages read: BKA has 0 G2 reviews; every
 
 ## Gold sample (step 2) — what's still open before Atlas scores
 - `sample-post-001-draft.md` (Black Seed tea), Nov 22 (Gravity-Studio PR #49): the traditional section now names *Sahih al-Bukhari* 5687 and Avicenna's *Canon* (both opened), and the seller-blog source is gone. A new standing check, `post_lint.py`, passes 15/15 self-tests and the sample passes the rules. `--presale` still fails, as it should: the two meta-analysis abstracts (PMID 40714301, 41858302) can't be opened from the cloud (PubMed blocks it), so **Atlas or the owner re-reads them in a browser.** The post is on a topic of our choosing, not a real business.
-- **Next Claude step:** a second sample written for a real public wellness business's own services (topic from their site, no contact made), run through `post_lint.py`.
+- **Done Nov 22:** `gold-sample-002-winter-sun.md`, an ashwagandha post written for Winter Sun Trading Co. (a Flagstaff apothecary that sells the dried root and has no journal post newer than Aug 2020 among those we could see). It has 3 sources, all opened, and `post_lint.py --presale` is OK at 1,052 words. Nobody was contacted. The 10-prospect blog check is in `prospect-blog-check.md`. **Sample 002 is ready for Atlas's scorecard (step 3)** even while sample 001 waits on PubMed.
 
 ## Verdict (draft, for Atlas)
 - **Step 1:** drafted; rows A–C sourced; row 6 complaints partial (GROK).
