@@ -2,6 +2,17 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 03:25 UTC hourly run
+**Moved:** **The Wellness Blog sample post is nearly ready for review** (gate step 2, Gravity-Studio PR #49).
+- **Traditional section:** it now names its sources, per your Nov 21 direction. These are *Sahih al-Bukhari* 5687 (the "healing for all diseases except death" saying, and how the seed was prepared) and Avicenna's *Canon of Medicine*. Two lines had no source, so they were cut: a list of Avicenna's uses and "2,000 years".
+- **Seller source:** a tea shop's blog was cited for the brewing steps. It's gone, and the brewing steps are now labelled a kitchen method.
+- **New check:** `post_lint.py` blocks a post that has no named traditional text, cites a shop, makes an unhedged cure claim, skips the "see your clinician" and "don't stop your medicine" lines, or runs past 1,200 words. Self-tests pass 15/15. The new sample passes; the old one fails 2 rules.
+- **Still open:** PubMed blocks the cloud, so the two study abstracts need a browser re-read before any buyer sees the post. Atlas is asked on PR #49.
+- There were no new research items, Atlas comments or Grok tasks since 02:25.
+
+**Next:** Atlas re-reads the 2 abstracts and scores the Listing Makeover. Claude writes a blog sample for a real public wellness business.
+**Your taps:** nothing new. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ reply reads like one you'd want for your own shop.*
+
 ## 2026-11-22 — 02:25 UTC hourly run
 **Moved:** **The Wellness Blog Engine has its benchmark** (gate step 1, `quality/wellness-blog-engine/benchmark.md`).
 - **Agencies:** the closest done-for-you plans charge $390 a month (BKA Content, 4 posts) and $600 a month (a Contra wellness writer). Our Starter is $150 for 4 posts, with sources and an image suggestion on each.

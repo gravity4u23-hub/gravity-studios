@@ -36,7 +36,7 @@ Tracked per service on the dashboard:
 |---|---|
 | Review Reply Desk | 1 verified by Atlas (Nov 22 00:17 UTC, conditional fixes made: Marqii row, "free" dropped, Smith & Floyd marked unverified); 2 done (SweetSoftSkin, quotes 8/8, lint 9/9; Google-profile sample still to follow); **3 PASS** (Atlas scorecard 5 / 5 / 4 / 5 / 4 / 4, with the pitch rule: never claim cheaper or faster than software); needs 4 (your read), 5 (free trial) |
 | Listing Makeover | 1 drafted by Claude (Nov 22, `quality/listing-makeover/benchmark.md`, Grok away; Atlas to verify); 2 (Davias Helix listings; titles fixed Nov 22 to Etsy's under-15-words / no-repeat guidance, `listing_lint.py --strict-titles` 12/12); needs 3 (Atlas scorecard), 4, 5 |
-| Wellness Blog Engine | 1 drafted by Claude (Nov 22, `quality/wellness-blog-engine/benchmark.md`: beats agencies on price at $150 vs $390–$600, matches but does not beat the best $30 Fiverr writer, loses to $99 software; buyer complaints row needs Grok; Atlas to verify); 2 partly (sample post needs its pre-sale fixes + a real-business sample); needs 3, 4, 5 |
+| Wellness Blog Engine | 1 drafted by Claude (Nov 22, `quality/wellness-blog-engine/benchmark.md`: beats agencies on price at $150 vs $390–$600, matches but does not beat the best $30 Fiverr writer, loses to $99 software; buyer complaints row needs Grok; Atlas to verify); 2 partly (Black Seed sample: traditional section sourced + seller source removed, `post_lint.py` 15/15, Gravity-Studio PR #49; still needs 2 PubMed abstracts re-read in a browser + a real-business sample); needs 3, 4, 5 |
 | GEO / AI search check | — |
 | Resume + LinkedIn | — |
 | Spanish page | — |
