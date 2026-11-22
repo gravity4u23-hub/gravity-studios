@@ -16,6 +16,20 @@ Our own checks (Atlas review, honesty rules, scripted limits) prove the work is 
 
 **Gate status lives on the dashboard** (lane blocker reads "Quality gate: step N").
 
+## Every service gets an eval set (from Anthropic's claude-cookbooks, `misc/building_evals.ipynb`)
+Applied Nov 21, 2026 (owner: "apply what it says so you're as effective as you can be").
+- **Fixed test cases** (5–10) that include the hard cases: angry customer, privacy trap, wrong language, abusive input that must be escalated, edge-of-limit lengths.
+- **Code-graded checks** for every hard rule (limits, banned claims, privacy, required elements). Code, not judgment — the cookbook's lesson that instructions in a CLAUDE.md are *guidance*, not *constraints*, so anything that must never happen gets a check that fails loudly.
+- **Model-graded rubric** for what code can't judge (specific, voice, calm, would-the-owner-post-it), scored by Atlas.
+- **Gold outputs** that pass, plus **known-bad outputs** that must fail — proves the checker isn't rubber-stamping.
+- **Run it:** before launch (step 3), after any change to the service's rules or skill, and on every 10th live batch.
+
+| Service | Eval set |
+|---|---|
+| Review Reply Desk | ✅ `Gravity-Studio/portfolio/review-reply-desk/evals/` — 6 cases, gold 6/6 pass, bad 0/6 pass |
+| Listing Makeover | 🟡 limits checker exists (PR #41); needs cases + rubric |
+| Others | next, one per hourly run |
+
 ## Scorecard (1–5, with one line of evidence each)
 1. **Accuracy** — every fact true and sourced; zero invented claims.
 2. **Specificity** — about *this* business, not a template.
