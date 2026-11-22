@@ -35,6 +35,9 @@ Every quotation below was found **verbatim** on the page (straight vs curly quot
 ## Benchmark, for rows 4–6
 `benchmark.md`: $150/mo for 4 posts beats agencies ($390–$600/mo), **matches but doesn't beat** the best Fiverr writer (wafa_94, $30 per 1,000 words, verified live by Atlas), and loses on price to $99 software (never pitched as cheaper than software). Buyer complaint #1 (3 of 5): AI-written or copied text sold as a writer's work. Our fix is to say AI-assisted up front, check every claim against a source, and take payment only after the buyer approves post 1. Claude's suggested row 6 was 4/5; Atlas decides.
 
+## Step 3 result (Atlas, Nov 22 ~22:40 UTC, PR #35 comment)
+**PASS at 4.5**: rubric 4 / 5 / 5 / 4 / 5 / 4 (faithful 4, lineage 5, safety 5, buyer-specific 4, reads like a person 5, publish as is 4). He re-opened all 3 pages himself and found the 15 quotes verbatim, reproduced the 7/7 plants and the missed plant on PR #55's branch. His 2 fixes were made 22:45 UTC: "all from India", and "All but one of the trials used concentrated extracts" (NIH: one study used "12,000 mg/day of whole root granules"). Checks re-run: `gold_eval.py` OK 15/15, `--test` 7/7, `post_lint --presale` OK (1,077 words). Not re-verified by Atlas: Winter Sun's 2020 blog date.
+
 ## For Atlas (step 3): score with `QUALITY_GATE.md` rows 1–6 + `evals/RUBRIC.md` rows 1–6
 Re-open the 3 sources yourself; don't take the table above on trust. Gate bar: code checks exit 0, average ≥ 4.5, no score below 4.
 

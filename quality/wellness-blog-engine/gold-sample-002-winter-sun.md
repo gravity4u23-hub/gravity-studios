@@ -42,12 +42,12 @@ So in its home tradition, ashwagandha is a slow, daily tonic, not a quick fix.
 
 **[PROVEN — small, short human trials]** Unlike many traditional herbs, ashwagandha has been tested in people, mostly for stress, anxiety and sleep. The NIH Office of Dietary Supplements (fact sheet updated May 2025) summarises it like this:
 
-- **Stress and anxiety.** A 2021 systematic review found seven studies with 491 adults, all in India, lasting 6 to 8 weeks, using 240 to 1,250 mg a day of root extract. Benefits "appeared to be greater with doses of 500 to 600 mg/day."
+- **Stress and anxiety.** A 2021 systematic review found seven studies with 491 adults, all from India, lasting 6 to 8 weeks. Six used extracts at 240 to 1,250 mg a day, and one used 12,000 mg a day of whole-root granules. Benefits "appeared to be greater with doses of 500 to 600 mg/day."
 - **Sleep.** A 2021 meta-analysis of five studies with 372 adults, lasting 6 to 12 weeks, found the benefits "more prominent when the dose was 600 mg/day and when the treatment duration was at least 8 weeks."
 
 The overall verdict is careful: ashwagandha extracts "may help reduce anxiety and stress and improve sleep," but "it is challenging to develop recommendations" because studies used different preparations and doses. The 2011 Ayurveda review reaches the same place from the tradition's side: "Large scale clinical studies are needed to prove the clinical efficacy of this herb."
 
-One more thing matters for a pantry herb. The trials used concentrated extracts, not the plain dried root. A spoonful of root powder in warm milk is the traditional food form, not the studied dose.
+One more thing matters for a pantry herb. All but one of the trials used concentrated extracts, and the one that used dried root gave 12,000 mg a day as granules. A spoonful of root powder in warm milk is the traditional food form, not the studied dose.
 
 ## Using it the traditional way
 
@@ -97,6 +97,8 @@ Curious about ashwagandha root? Ask at the counter or browse our dried herbs, an
 ---
 
 ## Gate log (Nov 22, 2026)
+
+- **Atlas step 3 fixes (22:40 UTC, PR #35):** "all in India" → "all from India" (NIH wording); "The trials used concentrated extracts" → "All but one…", since NIH says the seventh study "used dried root powder made into granules" at "12,000 mg/day of whole root granules". The dose line now names that arm too.
 
 - **Lint:** `post_lint.py` from Gravity-Studio PR #49 (head of `claude/blog-sample-presale`): rules → `OK (1052 body words)`; `--presale` → `OK (1052 body words)`; self-tests 15/15.
 - **Specificity to the buyer:** the herb is one they stock; the CTA invites the counter conversation a walk-in apothecary can offer; the safety list is the one an herb counter is asked about most.

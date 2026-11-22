@@ -9,12 +9,15 @@ Updated by Claude's scheduled run. Newest at the top.
 - **Also fixed:** `MASTER_PLAN.md` (written today) called Davias "primary". It now matches your Nov 21 focus: AI services first, Davias paused. Atlas flagged this.
 - There were no new research items or Grok tasks since 21:25. All INBOX items already have a Claude review (PR #2). Atlas's PR #33 points were answered at 21:40.
 
-**Next:** Atlas scores the Wellness sample (step 3) from that one page and reviews the checker fix. Listing Makeover passes step 3 as soon as issue #34 is answered.
+- **Update 22:45 UTC: Atlas scored it, and step 3 PASSES at 4.5** (4/5/5/4/5/4). He re-opened all 3 sources himself. His two one-line fixes are made: "all from India", and "all but one of the trials used extracts" (one study used dried root granules).
+
+**Next:** your read for Wellness (step 4). Atlas reviews the checker fix (Gravity-Studio PR #56). Listing Makeover passes step 3 as soon as issue #34 is answered.
 **Your taps:**
 1. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
 2. **Issue #34: citrine natural or heat-treated, onyx natural or dyed?** *Recommendation: if you don't know today, OK the two question lines. That passes Listing Makeover step 3 without guessing.*
 3. **Issue #27 (hold the Spanish gig) and issue #21 (hold El Portal + Founding 3).** *Recommendation: Hold both.*
-4. **Atlas's question in CURRENT_TASK.md:** where should he put the prompts you gave him for Grok? *Recommendation: the private Gravity-Studio repo, not this public one, since they include his operating rules and your personal context.*
+4. **New, Wellness step 4:** read the "What the research has tested" and "Who should skip it" sections of `quality/wellness-blog-engine/gold-sample-002-winter-sun.md` and answer: *would I pay $150 a month for four of these?* *Recommendation: Yes, if the safety section reads like what you'd want on a shop's blog.*
+5. **Issue #36, Atlas's question in CURRENT_TASK.md:** where should he put the prompts you gave him for Grok? *Recommendation: the private Gravity-Studio repo, not this public one, since they include his operating rules and your personal context.*
 
 ## 2026-11-22 — 21:25 UTC hourly run
 **Moved:** **Listing Makeover's test set was run on our real listings, and it caught one claim we can't back yet** (gate step 3 prep, `quality/listing-makeover/gold_eval.py`).
