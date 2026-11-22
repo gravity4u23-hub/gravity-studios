@@ -26,13 +26,13 @@ Pages read 2026-11-22, ~02:30 UTC.
 | **Therapist Site Toolbox** (therapists only) | **Not shown** (quarterly or annual, paid monthly) | 2, 3 or 4 posts/month | Long-tail + secondary keywords, links, 1 royalty-free stock image, Google Docs; upload add-on | First delivery on the 1st of the month after purchase, then "the first Monday of the month" (per Atlas) | Not shown | https://www.therapistsitetoolbox.com/blog/outsource-your-blogging |
 
 ### B. Single-post freelancers (cheapest human option)
-**UNVERIFIED — all 3 rows.** Atlas got HTTP 403 on every gig; Claude's read came through a summary [S]. The "match, don't beat the best freelancer" line below rests on wafa_94 $30 and holds only after a live-browser check (GROK).
+**VERIFIED live by Atlas** (browser, read-only, 2026-11-22 ~05:31–05:38 UTC; his PR #15 follow-up). Challenge #4 closed.
 
-| Who | Price | Words | Delivery | Rating | Source |
+| Who | Price | Words | Delivery | Rating / orders | Source |
 |---|---|---|---|---|---|
-| **wafa_94**, Fiverr — "evidence based nutrition and health blog articles" | **$30** [S] | 1,000 [S] | 3 days [S] | 5.0 from 22 [S] | https://fiverr.com/wafa_94/write-thorough-seo-articles-on-medical-nutrition-therapy |
-| **brightleaf_w**, Fiverr — "research backed wellness or nutrition content" | $35 [S] | 500 [S] | 1 day, unlimited revisions [S] | 5.0 from 1 [S] | https://fiverr.com/brightleaf_w/write-seo-optimized-health-and-wellness-blog-posts-that-attract-readers |
-| **traviseric17**, Fiverr Pro — chiropractic articles | $40 Basic, 1 article | Not shown [S] | 4 days | 5.0 from 1 [S] | https://fiverr.com/traviseric17/craft-seo-chiropractic-articles-and-blogs (**service on hold** [S]) |
+| **wafa_94**, Fiverr — "evidence based nutrition and health blog articles" | **$30** Basic | 1,000 | 3 days | 5.0 from 22; 241 orders | https://fiverr.com/wafa_94/write-thorough-seo-articles-on-medical-nutrition-therapy |
+| **brightleaf_w**, Fiverr — "research backed wellness or nutrition content" | $35 Basic | 500 | 1 day | 5.0 from 1; 4 orders | https://fiverr.com/brightleaf_w/write-seo-optimized-health-and-wellness-blog-posts-that-attract-readers |
+| **traviseric17**, Fiverr Pro — chiropractic articles | $40 Basic | 500 | 4 days | 5.0 from 1; 41 orders | https://fiverr.com/traviseric17/craft-seo-chiropractic-articles-and-blogs (**on hold**: "Looks Like This Service Is On Hold") |
 
 ### C. Software (the substitute)
 | Who | Price | What | Rating | Source |
@@ -45,7 +45,7 @@ Market range for context (an AI-writer vendor's guide, so biased toward AI): pro
 | Against | Price | Speed | Verdict |
 |---|---|---|---|
 | Managed subscriptions (BKA $390, Contra $600) | **$150 for 4 posts — 38% of BKA, 25% of Contra** | Ours 1 a week (all 4 by the 25th); BKA "a few weeks" to start; Contra not shown | **Beat on price** with more included than BKA Lvl 2 (image suggestion, sources section, revision round stated). Contra gives 2 revision rounds vs our 1. |
-| Fiverr single-post writers (wafa_94 $30/1,000 words, 3 days — **UNVERIFIED [S]**) | 4 × $30 = **$120 vs our $150** | Same 3 days on our Fiverr Basic | **We do not beat the best freelancer on price.** Our $150 adds the topic calendar, 3 headlines, meta, the image suggestion and checked sources; that is a "match on price, more included", not a beat. |
+| Fiverr single-post writers (wafa_94 $30/1,000 words, 3 days — verified by Atlas) | 4 × $30 = **$120 vs our $150** | Same 3 days on our Fiverr Basic | **We do not beat the best freelancer on price.** Our $150 adds the topic calendar, 3 headlines, meta, the image suggestion and checked sources; that is a "match on price, more included", not a beat. |
 | Software (Blawgy $99/mo, 31 posts) | Software is cheaper per post | Software is daily | **Never pitch cheaper or faster than software.** Pitch: written for your practice, every claim sourced and labelled, you approve topics. |
 
 **Pitch rule (same as the Review Desk):** never say "cheapest" or "fastest". Say "a quarter to a third of what agencies charge, every source checked."
@@ -64,6 +64,6 @@ No buyer complaint text was found on the pages read: BKA has 0 G2 reviews; every
 - **Next Claude step:** a second sample written for a real public wellness business's own services (topic from their site, no contact made), run through `post_lint.py`.
 
 ## Verdict (draft, for Atlas)
-- **Step 1:** Atlas PASS conditional (PR #15 review, 2026-11-22): fixes 1–3 and 5 made; fix 4 (Fiverr rows) waits on Grok's live-browser check. Row 6 complaints partial (GROK). Step 3 not scored yet — premature until the sample is final and row 6 is filled.
+- **Step 1:** Atlas PASS conditional (PR #15 review, 2026-11-22): fixes 1–3 and 5 made; fix 4 closed (Atlas verified the Fiverr rows live). Row 6 complaints partial (GROK). Step 3 not scored yet — premature until the sample is final and row 6 is filled.
 - **Price:** beats managed subscriptions clearly; matches, doesn't beat, the best single freelancer; loses to software.
 - **Owner decision this raises:** none yet. If Atlas rules the freelancer comparison is the one that counts, the choice is $150 with more included vs dropping Starter to $120. *Claude's recommendation: keep $150 — the buyer gets a calendar and sourced, labelled posts, and $150 is still 38% of the cheapest agency.*
