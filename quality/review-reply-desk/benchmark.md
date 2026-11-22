@@ -4,7 +4,7 @@
 
 Pages read 2026-11-21, ~23:30 UTC. "Not shown" means the page didn't say.
 
-## What we sell (Gravity-Studio `portfolio/review-reply-desk/offer.md`)
+## What we sell (Gravity-Studio `portfolio/review-reply-desk/offer.md`, on PR #35 branch `claude/review-reply-desk` until it merges)
 - **Desk:** $79/mo. Every new Google review answered, up to 30 a month. Turnaround is 2 business days, with a same-day alert on 1–2★.
 - **Desk Plus:** $149/mo. Adds Yelp and Facebook drafts and a monthly "what customers say" page with 3 fixes.
 - First week free. No passwords. Every reply goes through `review_lint.py`.
@@ -14,17 +14,17 @@ Pages read 2026-11-21, ~23:30 UTC. "Not shown" means the page didn't say.
 | Who | Price | What's included | Turnaround | Source |
 |---|---|---|---|---|
 | **Business Reputation Works** (signup form) | **$149/mo**, 1 location; also "Monthly Review Care" **$79/mo** (contents not shown); $100 one-time tune-up | Up to 30 Google review replies/mo, approved by the owner before posting; monthly GBP check; up to 2 profile updates; review link/QR; monthly summary. Google only. | not shown | https://form.jotform.com/262750900294154 |
-| **Smith & Floyd LLC** (Fiverr, Erin Smith) | **$695/mo for 3 locations** ($232/location); +$195/mo per extra location | Responses to all ratings, monthly report, quarterly strategy. Aimed at multi-location businesses. | Page text reads "2448hr" (likely 24–48h, unclear) | https://fiverr.com/erinfloydsmith/manage-gmb-reputation-for-multi-location-businesses |
-| **Marqii** "Managed Review Response" (restaurants) | **$100/mo for 50 reviews**, $150/100, $250/250 (per brand; a platform fee applies if bought alone). Growth plan **$145/mo per location** (annual contract) for monitoring + responses on Yelp, Google, Facebook | Responses across Google, Yelp, Facebook | not shown | https://marqii.com/pricing |
+| **Smith & Floyd LLC** (Fiverr, Erin Smith) — **UNVERIFIED** (Atlas couldn't load Fiverr; Grok re-checks from a browser) | $695/mo for 3 locations ($232/location); +$195/mo per extra location | Responses to all ratings, monthly report, quarterly strategy. Aimed at multi-location businesses. | Page text read "2448hr" (24–48h is a guess) | https://fiverr.com/erinfloydsmith/manage-gmb-reputation-for-multi-location-businesses |
+| **Marqii** (restaurants) | Base $90; **Growth $145/mo per location, annual contract**, adds review monitoring + response on Yelp, Google, Facebook; Scale $180; Package $250 (100 automated responses/location) | Responses across Google, Yelp, Facebook | not shown | https://marqii.com/pricing (Claude's first fetch also reported per-brand "managed" tiers of $100/50 reviews; Atlas's re-read at 00:17 UTC found no such tiers, so they are dropped) |
 
 ### B. Software (cheap, but the owner does the work or replies are auto-posted)
 | Who | Price | Notes | Source |
 |---|---|---|---|
-| **RightResponse AI** | $19/location/mo for 100 responses with auto-publish; $29 Pro; $44 Pro+ | Software, not a person. Auto-publishes. | https://g2.com/products/rightresponse-ai/pricing |
+| **RightResponse AI** | $19 Core / $29 Pro / $44 Pro+ per location per month | Software, not a person. ("100 responses, auto-publish" was in Claude's fetch but Atlas didn't find it on the page, so it's dropped.) | https://g2.com/products/rightresponse-ai/pricing |
 | **AI Review Response Generator** | $14.99/mo, unlimited | AI suggestions; the owner posts them. No free trial. 0 reviews on Capterra. | https://www.capterra.com/p/10033946/AI-Review-Response-Generator/ |
 | **Birdeye** | Price not on the page read | Enterprise/multi-location platform, 4.7★ from 4,327 G2 reviews; G2 says about 1 month to implement | https://g2.com/products/birdeye/reviews |
 
-**Not verified, flag for Atlas:** a Search Engine Land headline says *"Google Business Profile test: reply to reviews with AI"* (https://searchengineland.com/google-business-profile-test-reply-to-reviews-with-ai-472167). The page wouldn't load from the cloud run. If Google gives owners free AI-drafted replies inside the profile, that is the biggest substitute for the Desk. It changes the pitch from "we write replies" to "we write replies that are accurate, specific and safe, and we catch the angry ones the same day". **Atlas: please read it in your browser.**
+**Google's own AI replies (Atlas read it, 00:17 UTC):** Search Engine Land reports Google is **testing** "Reply to reviews with AI" inside Google Business Profile. It is a limited test with patchy availability (seen in the US, Brazil and India). The article gives **no price and never says free**. It is a *potential future* substitute. If it rolls out widely, the pitch leans harder on what a built-in drafter can't do: accurate, specific, checked, and the angry ones flagged to the owner the same day. https://searchengineland.com/google-business-profile-test-reply-to-reviews-with-ai-472167
 
 ## What buyers complain about (evidence, not opinions)
 1. **Canned replies.** Birdeye user Terry Lind S. (Business Manager, G2, Jul 31, 2026, 5★, tagged "Incentivized"), under "What do you dislike": *"The canned feedback responses and having to disable so many automations at the beginning."* https://www.g2.com/survey_responses/birdeye-review-13192521
@@ -34,7 +34,7 @@ Pages read 2026-11-21, ~23:30 UTC. "Not shown" means the page didn't say.
 **Not found:** no buyer complaint text on the Fiverr or managed-service pages (none show review sections in the fetched text). Two Upwork review-response listings wouldn't load. Grok can add Fiverr buyer reviews from a browser.
 
 ## How we compare (input for Atlas's rows 5–6; Atlas scores)
-- **Price vs human services:** **matches the cheapest, beats the rest.** Desk $79 for up to 30 replies = Business Reputation Works' $79 tier (contents unknown), about half its $149 plan, and well under Smith & Floyd's $232/location. Marqii's $100/50 is cheaper per reply at volume, but it adds a platform fee if bought alone and is built for restaurants.
+- **Price vs human services (verified rows only):** Desk $79 **beats** Business Reputation Works' $149 plan at about half the price, for the same up-to-30 Google replies. Desk Plus $149 **matches** BRW $149 with more included (Yelp and Facebook drafts, monthly fixes page). It also matches Marqii Growth at $145/location, and we are month-to-month where Marqii needs an annual contract. BRW's $79 tier can't be compared because its contents aren't shown. Smith & Floyd ($232/location) would be the priciest, but it's unverified.
 - **Price vs software:** **loses.** $15–19/mo tools are 4–5× cheaper. We should not compete on price there. We compete on the complaints above: software is where the canned replies come from.
 - **Speed:** software is instant; we promise 2 business days, plus a same-day alert on 1–2★. Smith & Floyd says 24–48h (unclear). **We do not beat the best on speed.** The dry run took about 2 minutes of agent time (gold sample), so a 1-business-day promise for 1–2★ reviews looks possible. That is a pricing/promise change, so it is the owner's decision, not made here.
 - **The complaint fix (row 6):** the #1 complaint is canned, generic replies, and the next is replies that leak private details or claim fixes that aren't real. `review_lint.py` blocks the second one mechanically: patient details for clinics, unconfirmed "we changed X" claims, review-asks and compensation. The gold sample shows the first: each of the 8 replies names the reviewer and one detail from their review, and the same reviewer's two reviews got two different replies. **Not yet enforced by a check:** "no two replies share a sentence". Suggested standing check for Atlas to weigh.

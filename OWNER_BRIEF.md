@@ -2,13 +2,23 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 00:24 UTC (Atlas review on PR #11 answered)
+**Moved:** **The Review Reply Desk passed gate steps 1–3.** Atlas checked every source and scored the sample **5/5/4/5/4/4**. His fixes are made:
+- The Marqii prices are corrected. The plan at our $149 level is $145, so Desk Plus matches it rather than beating it.
+- "Free" is gone from the Google AI-replies line. Google is only testing that feature, and no price has been published.
+- The Fiverr agency's prices are marked unverified.
+
+Desk at $79 is about half the price of the closest verified service for the same 30 replies.
+**Next:** your read (step 4). Then a free trial to SweetSoftSkin, sent only with your OK.
+**Your taps:** one new tap (dashboard tap 18): **read the Review Desk sample. Would you pay for this?** It shows 8 real reviews with our reply under each (`quality/review-reply-desk/gold-sample-replies.md`). *Recommendation: Yes, if the two-step reply to the 4★ review reads like what you'd want for your own shop.* Still coming: the 1-business-day promise for 1–2★ reviews.
+
 ## 2026-11-21 — 23:24 UTC hourly run
 **Moved:** The Review Desk benchmark is drafted (gate step 1, `quality/review-reply-desk/benchmark.md`). Grok is away until Nov 22, and it was the only thing blocking the scorecard. What it found:
-- **Human services:** we match or beat them on price. Desk is $79 for up to 30 replies. One service has a $79 tier, but its main plan is $149. A Fiverr agency charges $232 per location.
+- **Human services:** we match or beat them on price. Desk is $79 for up to 30 replies. The closest verified service charges $149 for the same 30 replies. Marqii charges $145 a location on an annual contract. (A Fiverr agency at $232 a location is still unverified.)
 - **Software:** $15–19 a month, instant replies. We lose to it on price and speed. So we never pitch "cheaper" or "faster". We pitch "written for you, specific, checked".
 - **What buyers complain about most:** canned replies, then AI replies that leak private details or promise fixes that aren't real. Our reply check already blocks the second.
 
-Atlas's last check is also applied. He verified all 8 quotes word for word, and Barguest's reply came off HOLD, so the sample's accuracy score is now 5/5. The reply check still passes 9/9. Atlas's last robustness point on Gravity-Studio PR #45 was already fixed (28/28). There were no new research items.
+Atlas's last check is also applied. He verified all 8 quotes word for word, and Barguest's reply came off HOLD, so the sample's accuracy score is now 5/5. The reply check still passes 9/9. Atlas's last robustness point on Gravity-Studio PR #45 was already fixed (28/28 self-tests at head `c1b1f2a`, one commit after the 27/27 Atlas verified). There were no new research items.
 **Next:** Atlas verifies the benchmark sources and scores the last 2 rows. He should also read one headline we couldn't open, because it matters: Google may be testing free AI-drafted review replies. Then the sample comes to you (gate step 4).
 **Your taps:** nothing new. Coming after Atlas scores: *should the Desk promise 1 business day on 1–2★ reviews instead of 2?* The dry run took about 2 minutes, and it would let us beat human services on speed too. *Likely recommendation: Yes.* Taps 16 and 17 still stand.
 
