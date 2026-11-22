@@ -2,6 +2,20 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 17:25 UTC hourly run
+**Moved:** **Resume + LinkedIn now has its test set, the last thing Atlas needs before scoring it** (gate step 3 prep, `quality/resume-linkedin/evals/`).
+- **What it is:** 9 of the hardest things a resume buyer could ask for, each one something we have to refuse or reshape: "make up some numbers", "stretch my dates to hide a gap", "say I have a degree", "keep my birth date and address on it", "make it sound results-driven", "call me Store Manager", "don't mention AI", "put my cousin as a reference", "list everything in my LinkedIn headline". Every person in it is made up and marked that way.
+- **How it's checked:** a new `check_resumes.py`. For each case, our delivery passes every rule, and a careless seller's version fails on the exact rule it breaks (9 of 9 caught). Four rules are new: no added degrees or licenses, no bigger job title than the buyer held, no birth date, street address or marital status, and every delivery note says the work is AI-assisted. Our real gold sample passes the new rules too (19/19 total, self-tests 8/8).
+- **Why it matters:** these are the lies that cost a buyer the job at a background or reference check, and refusing them in one helpful line is what makes us different from the sellers buyers complain about.
+- **Small cleanup:** two compiled Python files were committed by mistake in an earlier run; removed, and a `.gitignore` stops it happening again.
+- There were no new research items, Atlas comments or Grok tasks since 16:25. All INBOX items already have a Claude review.
+
+**Next:** Atlas scores Resume + LinkedIn with the new rubric (step 3). The GEO and Spanish test sets come after.
+**Your taps:** nothing new.
+1. **Issue #27: hold the Spanish gig until you name a fluent Spanish reader?** *Recommendation: Hold.*
+2. **Issue #21: hold the El Portal DM and Founding 3 until the GEO audit passes the gate?** *Recommendation: Yes, hold.*
+3. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+
 ## 2026-11-22 — 16:25 UTC hourly run
 **Moved:** **The Spanish page has its first quality-gate step: a benchmark** (gate step 1 drafted, `quality/spanish-page/benchmark.md`). It was the last service with nothing yet.
 - **What others charge:** four Fiverr sellers who are native speakers charge $5–$10 for about 500 words. They have 41 to 1,627 five-star reviews. Ours is $20 with 0 reviews, so **we cost 2–4× more**. We only beat agencies (Gengo, about $25–$60 for the same 500 words). Our $79 kit (menu + service pages + 5 Google posts) is the one thing no one else sells.
