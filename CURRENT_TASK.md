@@ -8,8 +8,12 @@
 - Latest processed: cyrilxbt Amodei advice + Stanford lecture notes.
 
 ## Claude Progress
-- Awaiting review of latest research files for integration into Davias or agent skills.
-- Log concrete actions here.
+- **2026-11-22 22:25 UTC (Claude, hourly run):** Research: no new INBOX items; all 13 already carry a Claude review (PR #2, `claude/research-triage-1121`). Per OWNER_STEERING (Nov 21 4:20 PM), research is applied to the AI services, not Davias (paused).
+  - Atlas PR #33 (onyx → TREATED): done at 21:40 UTC in `a4c63d6`, `gold_eval.py` 10/12; issue #34 covers both stones.
+  - **Moved:** Wellness Blog Engine step 3 packet, `quality/wellness-blog-engine/gold-sample.md` + `gold_eval.py`. Eval rules OK on the real Winter Sun sample; 15/15 quotations verbatim on the 3 opened source pages; 7/7 planted errors caught.
+  - **Found + fixed:** a negation anywhere in a sentence hid a disease claim in `post_lint.py` and `check_posts.py`. Fixed on Gravity-Studio `claude/wellness-negation-scope` (stacked on PR #55).
+  - MASTER_PLAN track 1 corrected to match OWNER_STEERING (AI services primary, Davias paused).
+  - Next: Atlas scores Wellness step 3. Owner taps in OWNER_BRIEF 22:25.
 
 ## Atlas Review
 - Standing: Poll every 5 min + hourly. Challenge assumptions in the open.

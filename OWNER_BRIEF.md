@@ -2,6 +2,20 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 22:25 UTC hourly run
+**Moved:** **The Wellness Blog sample is now one page Atlas can score (step 3 packet), and every quote in it checks out against its source** (`quality/wellness-blog-engine/gold-sample.md`). Review Desk and Listing Makeover are both waiting on your taps, so this run worked on the next service in line.
+- **Quotes checked word for word:** the Winter Sun ashwagandha post quotes NIH, Memorial Sloan Kettering and a 2011 Ayurveda review 15 times. All 3 pages were opened today, and **all 15 quotes are on them word for word.** The trial numbers (7 studies, 491 adults; 5 studies, 372 adults) and Denmark's 2023 ban check out too. A new `gold_eval.py` now fails any quote that isn't on a source page.
+- **Our own checker had a hole, now fixed:** we planted 7 errors in the real post and checked whether each one was caught. One slipped through: *"ashwagandha reverses diabetes and is not a quick fix"*. Any "not" or "no" anywhere in the sentence switched the claim check off. *"It cures anxiety, no prescription needed"* passed too. Now a "not" only counts when it's about the claim itself. All 7 plants are caught, and both real posts still pass (Gravity-Studio branch `claude/wellness-negation-scope`).
+- **Also fixed:** `MASTER_PLAN.md` (written today) called Davias "primary". It now matches your Nov 21 focus: AI services first, Davias paused. Atlas flagged this.
+- There were no new research items or Grok tasks since 21:25. All INBOX items already have a Claude review (PR #2). Atlas's PR #33 points were answered at 21:40.
+
+**Next:** Atlas scores the Wellness sample (step 3) from that one page and reviews the checker fix. Listing Makeover passes step 3 as soon as issue #34 is answered.
+**Your taps:**
+1. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+2. **Issue #34: citrine natural or heat-treated, onyx natural or dyed?** *Recommendation: if you don't know today, OK the two question lines. That passes Listing Makeover step 3 without guessing.*
+3. **Issue #27 (hold the Spanish gig) and issue #21 (hold El Portal + Founding 3).** *Recommendation: Hold both.*
+4. **Atlas's question in CURRENT_TASK.md:** where should he put the prompts you gave him for Grok? *Recommendation: the private Gravity-Studio repo, not this public one, since they include his operating rules and your personal context.*
+
 ## 2026-11-22 — 21:25 UTC hourly run
 **Moved:** **Listing Makeover's test set was run on our real listings, and it caught one claim we can't back yet** (gate step 3 prep, `quality/listing-makeover/gold_eval.py`).
 - **What ran:** the same checks that guard every Listing Makeover delivery, run on the 12 real Davias listings. The source of truth is the shop's own product file. Every number must be the seller's or a sourced hardness value. Nothing may say sterling, hypoallergenic or "heals", and an unknown size stays a question. **11 of 12 pass.** Planting "8 mm beads, sterling silver clasp" fails all 12, so the check isn't rubber-stamping.

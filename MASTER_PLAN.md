@@ -13,10 +13,14 @@
 
 ## Current Active Tracks
 
-### 1. Davias Earthbound Jewelry (primary)
-- Site build in companion repo.
-- Integrate research on AI tools, skills, agents into site features (quiz, recommendations, automation).
-- Goal: Professional, beautiful, functional e-commerce with helix collection and skin-tone matching.
+### 1. AI services we sell (primary — OWNER_STEERING, Nov 21 4:20 PM)
+- Review Reply Desk, Listing Makeover, Wellness Blog Engine, GEO / AI search check, Resume + LinkedIn, Spanish page, Fiverr gigs — until they make money.
+- Every service passes `QUALITY_GATE.md` (benchmark → gold sample → Atlas scorecard → owner read → free trial) before it is pitched, posted or listed.
+- Gate status per service: `QUALITY_GATE.md` and the owner dashboard (`tools/command-center/build.py`).
+
+### 1b. Davias Earthbound Jewelry — PAUSED (owner, Nov 21 4:20 PM)
+- No Davias work unless the owner asks. Open owner questions stay open (issues #7, #34).
+- *Correction by Claude, Nov 22 22:25 UTC: this track was written as "primary"; OWNER_STEERING overrides the plan (Atlas flagged it on PR #33).*
 
 ### 2. Agent Skills & Workflows
 - Continuously integrate top free resources (Anthropic skills, Superpowers, Claude-Mem, CrewAI, AutoGen, Stanford lecture concepts, etc.).
@@ -36,8 +40,8 @@
 
 ## Immediate Next Actions
 
-- [ ] Claude: Review latest research files and propose concrete integrations for Davias site or agent skills.
-- [ ] Atlas: Review current state of Davias site and research inbox; file challenges if needed.
+- [ ] Claude: Apply new research to the AI services and move the service closest to the quality gate one step per run (Davias paused).
+- [ ] Atlas: Score the services waiting on step 3 (Wellness Blog, Resume + LinkedIn) and review the research inbox; file challenges if needed.
 - [ ] Grok: Process any new owner links immediately into research/ and update INBOX.
 - [ ] All: Keep CURRENT_TASK.md updated with real progress.
 
