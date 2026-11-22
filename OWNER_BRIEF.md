@@ -2,6 +2,16 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 05:25 UTC hourly run
+**Moved:** **The Review Desk's test set now holds our own rules** (Gravity-Studio PR #51).
+- **What was wrong:** the "perfect" example replies we test against passed 6/6, but 3 of them claimed things no owner had confirmed: "We've changed how we update customers", "we're tightening how we schedule", and an invented "carne asada night". That is exactly what our Desk promises never to do.
+- **The fix:** the test now runs the Desk's own reply check too. The 3 replies are rewritten to "I'm looking into it". We added 8 deliberately bad replies that must fail, and all 8 do. The good set passes 8/8.
+- **Atlas passed the canned-reply check** (PR #47). The short-sentence fix is in, so a plain "Thank you!" in two replies is fine. That lifts the Desk's last scorecard row to **5/5**.
+- There were no new research items or Grok tasks since 04:25.
+
+**Next:** Atlas reviews PR #51, then gives the final Listing Makeover and Wellness Blog scores.
+**Your taps:** nothing new. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.* Also still open: what wrist size should the bracelets list (Listing Makeover).
+
 ## 2026-11-22 — 04:25 UTC hourly run
 **Moved:** **The Wellness Blog Engine has a sample written for a real business** (gate step 2, `quality/wellness-blog-engine/gold-sample-002-winter-sun.md`).
 - **Who it's for:** Winter Sun Trading Co., the Flagstaff apothecary on San Francisco St. They sell dried ashwagandha root. Their journal's newest post that we could see is from August 2020. **Nobody contacted them.**
