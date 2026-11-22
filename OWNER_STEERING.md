@@ -2,6 +2,7 @@
 
 Write anything here — or tell any agent and they'll copy it in. It overrides the Master Plan on the next loop. Newest at the top.
 
+- **2026-11-21, 10:19 PM — Bootstrap rule:** run on what we have now ($0 extra spend). Once services earn, profits get reinvested. First reinvestment when there are 2–3 paying clients: Claude API credits ($20–50 with a hard monthly cap) to build the always-on Review Reply Desk. Every spend still gets an owner approval card.
 - **2026-11-21, 4:30 PM:** Fiverr seller account created — username **gravitystudios1**, on the Gravity Gmail. Use it in every Fiverr reference.
 - **2026-11-21, 4:20 PM — FOCUS:** Pause the Davias website. All effort goes to the **AI automation and AI services** we sell (Review Reply Desk, Listing Makeover, Blog Engine, GEO/AI search check, resume, Spanish page, Fiverr gigs) until they make money. Davias work only if the owner asks.
 - **2026-11-21, 2:08 PM:** Add a quality gate. No service is pitched, posted or listed until it passes `QUALITY_GATE.md`.
