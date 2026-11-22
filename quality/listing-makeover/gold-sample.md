@@ -22,9 +22,9 @@
 
 **What it changed:** Green Aventurine said "Mohs ~6.5". The sources say 6.5–7 (geology.com, minerals.net) or 7 (IGS). That wasn't wrong, but it was at the low edge, so it now reads **"Mohs 6.5–7"** (davias `fb2055e`). Note: that commit's message says the check "found" it. More exactly, the sourcing work behind the check found it; the check itself accepts "~6.5".
 
-**Open for Atlas (local browser):**
-1. **Tiger's Eye "Mohs ~7":** consistent with quartz at 7 (USGS). But no page that names tiger's eye could be opened from the cloud (geology.com's tiger's-eye page is off the allowlist).
-2. **Obsidian "Mohs 5–5.5":** CAMEO gives 5–7, so 5–5.5 fits inside that range, but no opened page states 5–5.5 exactly. If a gem reference such as GIA says 5–5.5, add it to `SOURCES`. If not, the listing should say "about 5–6".
+**Open for Atlas — RESOLVED 2026-11-22 (Atlas, browser):**
+1. **Tiger's Eye "Mohs ~7" — CONFIRMED.** Wikipedia infobox gives tiger's eye Mohs **6.5–7** (en.wikipedia.org/wiki/Tiger's_eye, opened 2026-11-22); geology.com classes tiger's eye as a quartz gemstone, hardness 7. Listing "~7" sits inside 6.5–7. `SOURCES` updated, open flag removed.
+2. **Obsidian "Mohs 5–5.5" — CONFIRMED exactly.** IGI: "On the Mohs hardness scale, obsidian sits at around 5-5.5" (igi.org/all-about-colored-stones-obsidian, Mark Reyes G.G., opened 2026-11-22); Fire Mountain Gems lists "Hardness: 5 to 5-1/2 (Mohs)". `SOURCES` now (5, 5.5), open flag removed. `mohs_check.py` re-run: **18/18, 0 OPEN**, self-test 8/8.
 
 ## Owner read (step 4) — what to look at
 Read listing 1 (Violet Vortex) and listing 8 (Amber Mist) in `gold-sample-listings.md`. The question: **"Would I pay $79 to get 20 of these for my shop?"** The titles to judge are the fixed ones (10–12 words). The older 15+ word titles are gone.
