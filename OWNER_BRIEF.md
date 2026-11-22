@@ -2,6 +2,23 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 23:25 UTC hourly run
+**Moved:** **The Wellness Blog free trial is written and checked, so the day you say "Yes" on step 4, Trial 1 is one tap away** (gate step 5 prep, `quality/wellness-blog-engine/free-trial.md`). Wellness passed step 3 last hour, and Review Desk and Listing Makeover are both waiting on your taps, so this run prepared Wellness's next step.
+- **The route is the shop's own:** Winter Sun's website has a contact form ("Drop us a line using the form and we'll get back to you as soon as possible"). It was opened today. The site lists no email and no rule against sales messages. Its About page names the founder, Phyllis Hogan (1976).
+- **The message (173 words)** gives the post's title and one line from it, says plainly the post was drafted with AI help and every quote was checked against NIH, Memorial Sloan Kettering and a 2011 Ayurveda review, and offers the full post as a Word file. It names no price, makes no health claim and doesn't comment on their blog. "No reply needed."
+- **Checked by code:** a new `trial_check.py` fails a price, a traffic or ranking promise, a health-claim word (cure, heal, treat, prevent, detox), a misquoted line, a title that isn't one of the post's headlines, no AI line, a dig at how often they blog, or a leftover placeholder. Trial 1 passes; self-tests 24/24.
+- **Said straight:** the cloud still can't open their journal's post list. Before you send, someone opens it in a browser to make sure they haven't already written about ashwagandha.
+- There were no new research items, for-claude issues, Atlas comments or Grok tasks since 22:40. All INBOX items already have a Claude review (PR #2).
+
+**Next:** your read for Wellness (step 4). Atlas reviews this pack and the checker fix (Gravity-Studio PR #56).
+**Your taps:**
+1. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+2. **Wellness step 4:** read "What the research has tested" and "Who should skip it" in `quality/wellness-blog-engine/gold-sample-002-winter-sun.md`. Would you pay $150 a month for four of these? *Recommendation: Yes, if the safety section reads like what you'd want on a shop's blog.*
+3. **New, only after step 4 is Yes: OK the Trial 1 text** in `free-trial.md` and choose the email address that goes in the form's Email field (it isn't in the repo, since the repo is public). *Recommendation: OK it as written and use your Gravity Studios email, and send it from the form yourself.*
+4. **Issue #34: citrine natural or heat-treated, onyx natural or dyed?** *Recommendation: if you don't know today, OK the two question lines. That passes Listing Makeover step 3 without guessing.*
+5. **Issue #36: where should Atlas put your Grok prompts?** A commit at 22:34 UTC says you chose the private Gravity-Studio repo. Atlas is holding until you confirm it in chat. *Recommendation: confirm "private repo, X-link pack only".*
+6. **Issue #27 (hold the Spanish gig) and issue #21 (hold El Portal + Founding 3).** *Recommendation: Hold both.*
+
 ## 2026-11-22 — 22:25 UTC hourly run
 **Moved:** **The Wellness Blog sample is now one page Atlas can score (step 3 packet), and every quote in it checks out against its source** (`quality/wellness-blog-engine/gold-sample.md`). Review Desk and Listing Makeover are both waiting on your taps, so this run worked on the next service in line.
 - **Quotes checked word for word:** the Winter Sun ashwagandha post quotes NIH, Memorial Sloan Kettering and a 2011 Ayurveda review 15 times. All 3 pages were opened today, and **all 15 quotes are on them word for word.** The trial numbers (7 studies, 491 adults; 5 studies, 372 adults) and Denmark's 2023 ban check out too. A new `gold_eval.py` now fails any quote that isn't on a source page.
