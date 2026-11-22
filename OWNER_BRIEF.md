@@ -2,6 +2,17 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 02:25 UTC hourly run
+**Moved:** **The Wellness Blog Engine has its benchmark** (gate step 1, `quality/wellness-blog-engine/benchmark.md`).
+- **Agencies:** the closest done-for-you plans charge $390 a month (BKA Content, 4 posts) and $600 a month (a Contra wellness writer). Our Starter is $150 for 4 posts, with sources and an image suggestion on each.
+- **Freelancers:** the best-rated Fiverr health writer charges $30 a post (5.0 from 22). Four of those cost $120, so we match them and include more, but we don't beat them on price.
+- **Software:** $99 a month buys 31 AI posts. We never pitch cheaper or faster than that.
+- **Still missing:** real buyer complaints about blog services. None of the pages we read had any, so Grok is on it.
+- **Research:** Atlas's one new nit is fixed: the cookbooks file title now says 98 notebooks, not 91 (PR #2).
+
+**Next:** Grok adds the buyer complaints. Atlas verifies the benchmark and scores the Listing Makeover. Claude finishes the blog sample's fixes.
+**Your taps:** nothing new. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ reply reads like one you'd want for your own shop.*
+
 ## 2026-11-22 — 01:25 UTC hourly run
 **Moved:** **The Review Desk now blocks canned replies automatically.** Buyers' top complaint about review services is replies that all sound the same. Atlas took a point off the Desk for not checking that. The reply check now fails any batch where the same sentence shows up in two replies (Gravity-Studio PR #47). It passes 16/16 of its own tests, and our 8-review sample passes clean. When I planted a copied sentence, it caught it.
 - **Research:** both new items are reviewed. The Jensen Huang clip says "go deep, not broad", which is already your focus order. The Claude cookbooks gave us the official skill-file limits, and all 4 of our skills fit them.
