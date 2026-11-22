@@ -2,6 +2,16 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 05:30 UTC (Atlas review on PR #14 answered)
+**Moved:** Atlas passed the Listing Makeover benchmark, on condition of 5 fixes. All 5 are made:
+- **The flaw count is corrected:** 8 of the old 12 Davias titles (not 10) were 15+ words.
+- **4 Fiverr gigs and one article are marked unverified.** Fiverr and that site blocked his check.
+- **The price claim is restated on verified rows only:** we charge $2.98–$5 a listing, and the verified competitors charge $15. "Cheapest" is not claimed until a browser confirms the Fiverr prices.
+- **Two smaller fixes:** the PeoplePerHour row now matches the page, and the "140 characters" point covers that gig only.
+
+**Next:** Atlas sets the final step-3 scores. Then the sample comes to you.
+**Your taps:** nothing new. One question is already known: **what wrist size should the bracelets list?** The listings can't be called ready to paste until it's filled in.
+
 ## 2026-11-22 — 01:25 UTC hourly run
 **Moved:** **The Review Desk now blocks canned replies automatically.** Buyers' top complaint about review services is replies that all sound the same. Atlas took a point off the Desk for not checking that. The reply check now fails any batch where the same sentence shows up in two replies (Gravity-Studio PR #47). It passes 16/16 of its own tests, and our 8-review sample passes clean. When I planted a copied sentence, it caught it.
 - **Research:** both new items are reviewed. The Jensen Huang clip says "go deep, not broad", which is already your focus order. The Claude cookbooks gave us the official skill-file limits, and all 4 of our skills fit them.
@@ -12,8 +22,8 @@ Updated by Claude's scheduled run. Newest at the top.
 
 ## 2026-11-22 — 00:25 UTC hourly run
 **Moved:** **The Listing Makeover has its benchmark** (gate step 1, `quality/listing-makeover/benchmark.md`). It also caught a real flaw in our own sample, and that flaw is now fixed.
-- **Price and speed:** the cheapest active rewriter with real reviews charges about $5 a listing in 3 days. Our Fiverr Basic matches that at $5 and delivers in 1 day. Our bigger packages are $2.98–$3.95 a listing.
-- **The flaw:** Etsy now tells sellers to keep titles **under 15 words** and **not repeat words**. 10 of our 12 Davias titles were 15+ words, and all 12 said "Bracelet" twice. Every competitor gig we read still sells the old long style.
+- **Price and speed:** the verified competitors charge $15 for one listing in 2–4 days (PeoplePerHour), or from $50 in 3 days (Contra). We charge $2.98–$5 a listing, and Basic delivers in 1 day. *Correction, Nov 22 05:30 UTC: the "about $5" Fiverr comparison is unverified (Fiverr blocked Atlas's check), so it is not quoted until a browser confirms it.*
+- **The flaw:** Etsy now tells sellers to keep titles **under 15 words** and **not repeat words**. 8 of our 12 Davias titles were 15+ words (corrected from 10 after Atlas's recount), and all 12 said "Bracelet" twice. The one verified competitor still sells the old long style.
 - **The fix:** all 12 titles are rewritten (davias PR #7), e.g. *"Violet Vortex Amethyst & Clear Quartz Crystal Bracelet — Double Helix, Handmade Steel Wire"*. A new check fails any title that breaks the rule: old titles 0/12, new 12/12, self-tests 21/21 (Gravity-Studio PR #46).
 - **Lapis Lazuli** is a rock, not a crystal, so its title and tag now say "natural stone", like Amber and Obsidian.
 - **Research:** the DMSO item is reviewed. It isn't used for any service; see the INBOX note on PR #2.
