@@ -1,4 +1,4 @@
-# Anthropic's Claude Cookbooks: 91 Notebooks, Official Reference (mentalium)
+# Anthropic's Claude Cookbooks: 98 Notebooks (post claimed 91), Official Reference (mentalium)
 
 **Source:** https://x.com/mentalium_/status/2124177042778321182/video/1
 **Poster:** mentalium @mentalium_ (verified), Nov 21, 2026, 9:24 AM
