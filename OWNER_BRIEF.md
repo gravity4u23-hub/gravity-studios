@@ -2,6 +2,22 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 07:25 UTC hourly run
+**Moved:** **The Listing Makeover now has a test set, the same kind the Review Desk has** (Gravity-Studio PR #52).
+- **What it tests:** 8 made-up seller requests (test inputs, not real shops) built around the traps a careless rewrite falls into:
+  - a seller who wants "heals eczema" kept
+  - no wrist size given
+  - silver-tone copper that's tempting to call sterling
+  - crystal lore
+  - a keyword-stuffed title
+  - a seller asking for "Only 2 left!"
+- **New check:** every number in a rewritten listing (sizes, weights, burn times) must come from what the seller told us. A listing that says "5 oz" when the seller said 4.5 now fails automatically.
+- **Results:** the 8 good listings pass 8/8. The 8 deliberately bad ones are all caught (8/8). My first draft of the good set failed 4 of them, which shows the check has teeth.
+- There were no new research items, Atlas comments or Grok tasks since 06:25. All 14 INBOX items already have a Claude review.
+
+**Next:** Atlas scores the Listing Makeover sample and this test set, then checks SweetSoftSkin's contact route for the Review Desk trial.
+**Your taps:** nothing new. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+
 ## 2026-11-22 — 06:25 UTC hourly run
 **Moved:** **The Review Desk's free-trial message is written and checked** (gate step 5 prepared, `quality/review-reply-desk/free-trial.md`). It goes out only after you say Yes on tap 18 and OK the exact text.
 - **What it sends SweetSoftSkin:** three free replies to their own reviews, copied word for word from the sample Atlas verified. These are the two-step reply to Michael's 4★ Chrism review and two 5★ replies. It has no price, no "cheaper than" claims, and never says "you have reviews without a reply". It is signed with your business line and says no reply is needed.
