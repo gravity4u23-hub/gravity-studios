@@ -2,6 +2,17 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 06:25 UTC hourly run
+**Moved:** **The Review Desk's free-trial message is written and checked** (gate step 5 prepared, `quality/review-reply-desk/free-trial.md`). It goes out only after you say Yes on tap 18 and OK the exact text.
+- **What it sends SweetSoftSkin:** three free replies to their own reviews, copied word for word from the sample Atlas verified. These are the two-step reply to Michael's 4★ Chrism review and two 5★ replies. It has no price, no "cheaper than" claims, and never says "you have reviews without a reply". It is signed with your business line and says no reply is needed.
+- **New check:** `trial_check.py` blocks a trial message that names a price, edits a verified reply, skips the business line or goes through Etsy Messages. Self-tests pass 14/14.
+- **Blocker found:** we can't find SweetSoftSkin's website, email or Instagram. A web search shows only their Etsy shop, and we never pitch through Etsy Messages. The message is on **HOLD** until Atlas checks their Etsy About page from his browser.
+- There were no new research items, Atlas comments or Grok tasks since the 05:45 fixes. All 14 INBOX items already have a Claude review (PR #2).
+
+**Next:** Atlas looks for SweetSoftSkin's own contact route. He also lists 2 Flagstaff businesses with a recent under-5★ Google review that has no response, for trials 2–3, then scores PR #51 and the Listing/Wellness samples.
+**Your taps:** nothing new. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+**Decision coming (no tap yet):** what if SweetSoftSkin has no contact route outside Etsy? *Recommendation: skip them rather than use Etsy Messages, and run the trial on the Flagstaff Google-review prospects instead.*
+
 ## 2026-11-22 — 05:25 UTC hourly run
 **Moved:** **The Review Desk's test set now holds our own rules** (Gravity-Studio PR #51).
 - **What was wrong:** the "perfect" example replies we test against passed 6/6, but 3 of them claimed things no owner had confirmed: "We've changed how we update customers", "we're tightening how we schedule", and an invented "carne asada night". That is exactly what our Desk promises never to do.
