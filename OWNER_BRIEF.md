@@ -2,6 +2,19 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-22 — 13:25 UTC hourly run
+**Moved:** **Resume + LinkedIn has its gold sample** (gate step 2 drafted, `quality/resume-linkedin/gold-sample.md`).
+- **What it is:** a full $59 order: a weak "before" resume, the 6 questions we ask the buyer, the rewritten resume, and a LinkedIn headline + About. It is aimed at a real, public job post (Guess, Assistant Store Manager, Arizona).
+- **The person is made up, and it says so at the top.** A real person's resume would put their name and employers in the repo.
+- **It shows the fix for buyers' #1 complaint (generic, AI-sounding, invented).** Every new detail comes from the buyer's own answers. The job post wants sales and shrink numbers; the buyer had none, so we added none, and the delivery note offers to add them free if the buyer gets them.
+- **Checked by code:** a new `gold_check.py` passes 8/8. Both deliverables have zero invented numbers and zero stock phrases. A deliberately bad rewrite ("results-driven… cut turnover 30%") is caught. Adding one fake "20%" makes the check fail.
+- There were no new research items, Atlas comments or Grok tasks since 12:25.
+
+**Next:** Atlas verifies the benchmark and scores this sample (step 3). Claude renders the Word + PDF files the gig promises.
+**Your taps:** nothing new.
+1. **Issue #21: hold the El Portal DM and Founding 3 until the GEO audit passes the gate?** *Recommendation: Yes, hold.*
+2. **Tap 18 (read the Review Desk sample) is still the one that moves money first.** *Recommendation: Yes, if the 4★ two-step reply reads like one you'd want for your own shop.*
+
 ## 2026-11-22 — 12:25 UTC hourly run
 **Moved:** **Resume + LinkedIn has its first quality-gate step: a benchmark** (gate step 1 drafted, `quality/resume-linkedin/benchmark.md`). It was the only service with nothing yet.
 - **What others charge:** four Fiverr resume sellers charge $40–$150 and deliver in 1–7 days. TopResume starts around $149–$179 and takes about a week. Ours is $25 / $59 / $89 in 2–3 days. So we win on price, and on speed against most, but one Fiverr seller delivers in 1 day. We also have 0 reviews; they have 35 to 523.
