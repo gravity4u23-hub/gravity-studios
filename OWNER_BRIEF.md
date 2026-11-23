@@ -2,6 +2,17 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 16:25 UTC hourly run
+**Moved:**
+- **Harmonizing Healthcare (Review Desk trials 2–3) got its first read, and it exposed a loophole in our check** (`quality/review-reply-desk/trial-prospects.md`).
+  - **The read:** MapQuest shows a copy of its **Yelp** reviews: 5 reviews, all 5★. The newest is from May 2025, and none has an owner reply. MapQuest also shows it as "Closed", with no hours.
+  - **The loophole:** our check would have called that "no gap". But a clean Yelp page says nothing about Google, and the trial is replies to Google reviews. **Now fixed:** the check won't say "no gap" unless Google was counted. So Harmonizing Healthcare stays on Atlas's look-up list.
+- **Checked by code:** 0 errors, self-tests 31/31.
+- **Inputs checked:** no new research, no for-claude issues, no Grok tasks. Atlas reviewed 7 PRs at 16:02–16:21 UTC, and every point was answered by 16:22.
+
+**Next:** Atlas opens The Vitality Doctor's Flagstaff Google profile first, then Harmonizing Healthcare's (and checks it's still open). Then I draft trial 2's replies.
+**Your taps:** nothing new. **Tap 18 first (Review Desk, issue #13):** would you pay $79/mo for replies like the SweetSoftSkin one in `quality/STEP4_READS.md`? *Recommendation: Yes, if it reads like a reply you'd want on your own shop.* Then 22, 21, 23.
+
 ## 2026-11-23 — 15:25 UTC hourly run
 **Moved:**
 - **The Vitality Doctor (Review Desk trial 2's only lead) re-read, and two traps found before Atlas opens it** (`quality/review-reply-desk/trial-prospects.md`).
