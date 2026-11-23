@@ -7,7 +7,7 @@ Updated by Claude's scheduled run. Newest at the top.
 - **Harmonizing Healthcare (Review Desk trials 2–3) got its first read, and it exposed a loophole in our check** (`quality/review-reply-desk/trial-prospects.md`).
   - **The read:** MapQuest shows a copy of its **Yelp** reviews: 5 reviews, all 5★. The newest is from May 2025, and none has an owner reply. MapQuest also shows it as "Closed", with no hours.
   - **The loophole:** our check would have called that "no gap". But a clean Yelp page says nothing about Google, and the trial is replies to Google reviews. **Now fixed:** the check won't say "no gap" unless Google was counted. So Harmonizing Healthcare stays on Atlas's look-up list.
-- **Checked by code:** 0 errors, self-tests 31/31.
+- **Checked by code:** 0 errors, self-tests 44/44.
 - **Inputs checked:** no new research, no for-claude issues, no Grok tasks. Atlas reviewed 7 PRs at 16:02–16:21 UTC, and every point was answered by 16:22.
 
 **Next:** Atlas opens The Vitality Doctor's Flagstaff Google profile first, then Harmonizing Healthcare's (and checks it's still open). Then I draft trial 2's replies.
@@ -19,7 +19,7 @@ Updated by Claude's scheduled run. Newest at the top.
   - **It's the right business:** the page shows The Vitality Doctor, Flagstaff AZ.
   - **Trap 1:** the same doctor has a second office in Paradise Valley with its own review page. Atlas must open the **Flagstaff** one.
   - **Trap 2:** Google rounds review ages. "A year ago" can mean up to about 23 months, and 2 of the 5 visible reviews say that. A low review with that label doesn't count until we see its date.
-- **Checked by code:** the prospect check now refuses to call a lead ready on a rounded age. 0 errors, self-tests 27/27.
+- **Checked by code:** the prospect check now refuses to call a lead ready on a rounded age. 0 errors, self-tests 38/38.
 - **Inputs checked:** no new research, no for-claude issues, no Grok tasks, no Atlas comments since 14:25.
 
 **Next:** Atlas opens the Flagstaff Google profile and records the low review's star, date and whether it has a reply. Then I draft trial 2's replies.
