@@ -27,6 +27,10 @@ Rules (all code, no judgment):
                      snapshot line "These are the answers on YYYY-MM-DD"
   crawler_profile    CAN THE AI ENGINES READ YOUR SITE? section with a
                      "ChatGPT business profile: Claimed / Not claimed / Unknown" line
+  profile_claim      when the profile is "Not claimed" (the Business Hub fold-in, Nov 23): the
+                     profile lines must say claiming is free, warn that a published profile
+                     can't be unpublished (check details first), and never ask the buyer for
+                     their login, password, verification code or ID (they verify it themselves)
   unfilled           a template bracket left in, e.g. "[Business name]"
 
 Code proves a report breaks no hard rule. It can't tell whether the fixes are the right ones.
@@ -57,6 +61,11 @@ PROFILE_LIFT = re.compile(r"\b(rank|ranking|higher|more often|recommend|recommen
 STATS = re.compile(r"\d+(\.\d+)?\s?%|\b(studies|research|surveys|statistics|data) (show|shows|prove|proves|suggest|suggests)\b", re.I)
 FINDING = re.compile(r"^(G\d)\b.*?—\s*(Cited|Mentioned|Not mentioned)\s*—\s*Points:\s*(\d)\s*/\s*3", re.I)
 UNKNOWN = re.compile(r"^-?\s*Unknown:\s*(G\d)\b(.*)$", re.I)
+CLAIM_FREE = re.compile(r"\bfree\b|\bno (fee|cost|charge)\b|\bcosts nothing\b", re.I)
+CLAIM_LOCK = re.compile(r"\b(can't|cannot|can not) be (unpublished|taken down|deleted|removed|hidden)\b|"
+                        r"\b(can't|cannot) (unpublish|take down|delete|remove|hide)\b", re.I)
+CLAIM_CREDS = re.compile(r"\b(send|give|share|forward|text|email)\b[^.]*\b(login|log-in|password|"
+                         r"verification code|code|ID|photo ID|driver'?s license|sign-in)\b", re.I)
 SCORE = re.compile(r"^##\s*YOUR SCORE:\s*(\d+)\s*/\s*(\d+)\s*\((\d+)%\)\s*—\s*(.+?)\s*$", re.I)
 
 
@@ -203,6 +212,21 @@ def check(text):
     elif not re.search(r"ChatGPT business profile:\s*(Claimed|Not claimed|Unknown)\b", crawl):
         broken["crawler_profile"] = "no 'ChatGPT business profile: Claimed / Not claimed / Unknown' line"
 
+    # profile_claim: only when we're telling them to claim it
+    plines = [l for l in text.splitlines() if "profile" in l.lower() or "claim" in l.lower()]
+    pl = "\n".join(plines)
+    if re.search(r"ChatGPT business profile:\s*Not claimed\b", text):
+        pc = []
+        if not CLAIM_FREE.search(pl):
+            pc.append("doesn't say claiming is free")
+        if not CLAIM_LOCK.search(pl):
+            pc.append("no warning that a published profile can't be unpublished")
+        creds = [x.strip() for x in sentences(pl) if CLAIM_CREDS.search(x) and not NEGATION.search(x)]
+        if creds:
+            pc.append("asks for the buyer's login/code/ID: " + creds[0][:80])
+        if pc:
+            broken["profile_claim"] = "; ".join(pc)
+
     # unfilled template brackets
     br = re.findall(r"\[[A-Za-z0-9][^\]]{0,60}\]", text)
     if br:
@@ -262,6 +286,11 @@ def _test():
         ("$49 price is not a stat", bool(STATS.search("Order the GBP audit ($49)")), False),
         ("'Visibility Pack' is not a profile claim", bool(PROFILE_LIFT.search("the Visibility Pack ($179)")), False),
         ("'improves your visibility' is", bool(PROFILE_LIFT.search("Claiming it improves your visibility")), True),
+        ("claim lock: 'can't be unpublished'", bool(CLAIM_LOCK.search("guides report it can't be unpublished")), True),
+        ("claim lock: 'can be edited' is not a warning", bool(CLAIM_LOCK.search("it can be edited later")), False),
+        ("creds: 'send us the verification code'", bool(CLAIM_CREDS.search("Send us the verification code and we'll finish it.")), True),
+        ("creds: 'never share your login' is negated", bool(CLAIM_CREDS.search("Never share your login with us.")) and bool(NEGATION.search("Never share your login with us.")), True),
+        ("free: 'no fee'", bool(CLAIM_FREE.search("OpenAI lists no fee for it")), True),
         ("brackets found", bool(re.findall(r"\[[A-Za-z][^\]]{0,40}\]", "AUDIT — [Business name], [City]")), True),
     ]
     ok = 0

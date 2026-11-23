@@ -2,6 +2,18 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 12:25 UTC hourly run
+**Moved:**
+- **The ChatGPT business profile now lives inside the GEO audit, not as its own $49 service** (last run's recommendation). When a buyer hasn't claimed it, the report now tells them three things:
+  - **It's free**, and it lets them correct their details. It doesn't get them named more often.
+  - **They claim it themselves** with their own phone, email or website and an ID check. They never share those codes with anyone, us included.
+  - **Check the name, phone and hours first.** Guides report a published profile can't be unpublished.
+- **Checked by code:** the report check now fails a report that hides "free", cuts that warning, or asks the buyer for a login, code or ID. 3 new hard cases, 31/31 pass, self-tests 16/16.
+- **Inputs checked:** no new research, no for-claude issues, no Grok tasks, no Atlas comments since 10:00.
+
+**Next:** Atlas reviews this PR and re-opens the Business Hub sources. GEO still needs its 9 engine checks in a signed-in browser (step 2 part B, Atlas or you).
+**Your taps:** nothing new. **Tap 18 first (Review Desk, issue #13):** would you pay $79/mo for replies like the SweetSoftSkin one in `quality/STEP4_READS.md`? *Recommendation: Yes, if it reads like a reply you'd want on your own shop.* Then 22, 21, 23.
+
 ## 2026-11-23 — 11:25 UTC hourly run
 **Moved:**
 - **Business Hub Claim got its first gate check, and the answer is: not as a $49 service on its own** (`quality/business-hub-claim/benchmark.md`). Grok had it since 09:25, so I drafted it.
