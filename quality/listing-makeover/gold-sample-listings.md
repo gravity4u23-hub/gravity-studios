@@ -48,7 +48,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 - **Tiger's Eye** — *Proven:* a chatoyant quartz — the shimmer comes from fibrous mineral inclusions; Mohs ~7. *Tradition:* traditionally carried for courage and focus.
 - **Onyx** — *Proven:* banded chalcedony (a microcrystalline quartz), Mohs 6.5–7. *Tradition:* a traditional grounding and protection stone.
 
-Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind.
+Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind. [Onyx: natural or dyed? confirm with the maker before posting — most black onyx sold is dyed chalcedony]
 
 *Crystal traditions are shared as history and culture, not as medical advice or a promise of results.*
 
@@ -96,7 +96,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 - **Amazonite** — *Proven:* a green feldspar, Mohs 6–6.5. *Tradition:* traditionally called a soothing stone.
 - **Aquamarine** — *Proven:* blue beryl (same mineral family as emerald), Mohs 7.5–8. *Tradition:* sailors carried it for calm seas, by old maritime lore.
 
-Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind.
+Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind. [Aquamarine: natural color or heat-treated? confirm with the maker before posting — most aquamarine sold is heated]
 
 *Crystal traditions are shared as history and culture, not as medical advice or a promise of results.*
 
@@ -120,7 +120,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 - **Carnelian** — *Proven:* orange-red chalcedony, Mohs 6.5–7; worn as jewelry since ancient Egypt. *Tradition:* traditionally a stone of vitality and courage.
 - **Clear Quartz** — *Proven:* silicon dioxide crystal, Mohs 7; quartz is piezoelectric — it makes a tiny voltage under pressure, which is why it keeps time in watches. *Tradition:* called the 'master stone' in modern crystal tradition.
 
-Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind.
+Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind. [Carnelian: natural color or heat-treated? confirm with the maker before posting — carnelian is usually heated]
 
 *Crystal traditions are shared as history and culture, not as medical advice or a promise of results.*
 
@@ -168,7 +168,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 - **Citrine** — *Proven:* yellow quartz, Mohs 7. *Tradition:* known in trade lore as the 'merchant's stone' for abundance.
 - **Green Aventurine** — *Proven:* quartz with tiny mica flecks that sparkle, Mohs 6.5–7. *Tradition:* traditionally a stone of luck.
 
-Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind.
+Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind. [Citrine: natural or heat-treated? confirm with the maker before posting — most citrine sold is heated amethyst]
 
 *Crystal traditions are shared as history and culture, not as medical advice or a promise of results.*
 
@@ -192,7 +192,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 - **Amber** — *Proven:* fossilized tree resin millions of years old — organic, not a mineral crystal; very soft (Mohs 2–2.5), so it's set to avoid rubbing. *Tradition:* traditionally a warming, uplifting stone.
 - **Smoky Quartz** — *Proven:* brown-gray quartz, Mohs 7. *Tradition:* traditionally a grounding stone.
 
-Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind.
+Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind. [Smoky Quartz: natural color or irradiated? confirm with the maker before posting — most smoky quartz sold is irradiated]
 
 *Crystal traditions are shared as history and culture, not as medical advice or a promise of results.*
 

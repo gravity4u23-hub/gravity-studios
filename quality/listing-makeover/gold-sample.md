@@ -18,7 +18,10 @@
 | `mohs_check.py gold-sample-listings.md` (new, this PR) | **18/18 stones match an opened source**, exit 0; 0 OPEN (Atlas closed both in a browser, below) |
 | `mohs_check.py --test` | 8/8 |
 | `gold_eval.py gold-sample-listings.md` (new, 21:25 UTC run): the eval set's code rules (Gravity-Studio PR #52 `check_listings.check`) run on these 12 **real** listings, with Davias's own intake (`helix-intake.json`, verbatim from davias `HELIX_COLLECTION.md` @ `005b877` + README maker line) as the source of truth | **10/12 pass**, exit 1 (was 11/12 at 21:25; onyx added 21:45 per Atlas). Every number is the seller's or a sourced Mohs value; no banned word; `[size]` kept as a question. **2 FAIL: Jungle Gold (citrine) and Earthfire Twist (onyx), below** |
-| `gold_eval.py --test` | 11/11 (onyx fails, onyx stated as dyed passes, a citrine note does not clear onyx). Planted "8 mm beads, sterling silver clasp" in every listing → 0/12 (invented number + "sterling" caught); planted "fits most wrists" for `[size]` → 0/12 |
+| **`gold_eval.py` after the question lines (Nov 23 01:25 UTC)** | **12/12 pass, exit 0.** Carnelian added to the treated list (gemsociety.org carnelian article, opened Nov 23: *"You should assume, unless informed otherwise, that any piece of carnelian has been enhanced in this way"*, i.e. heated), which made Ember & Ice a third FAIL (old sample now 9/12); all three now carry a question line. `listing_lint --strict-titles` 12/12, `mohs_check` 18/18 unchanged |
+| **`gold_eval.py` after Atlas's PR #40 challenge (Nov 23 03:50 UTC)** | **12/12, exit 0.** Smoky quartz added (GIA Colored Stone Essentials: irradiation "Produces smoky quartz from rock crystal", Prevalence Common, Detection Undetectable; gemstonerush.com: "most commercial smoky quartz on the market today is irradiated"; both opened by Atlas); Amber Mist gets a question line (previous head: 11/12, Amber Mist fails). Carnelian's unconfirmed property-table line dropped from the source string |
+| **`gold_eval.py` after Atlas's 03:55 UTC challenge** | **12/12, exit 0.** Aquamarine added (GIA aquamarine-quality-factor: "most of the aquamarine in the market was heat-treated"; IGS: "Nearly all aquamarine gems on the market today have undergone this heat treatment"; both opened by Atlas); Reef Ripple gets a question line (previous head `ef102c8`: 11/12, Reef Ripple fails) |
+| `gold_eval.py --test` | **17/17** (Nov 23: + carnelian, smoky quartz and aquamarine each fail without a note, pass with a [question]); was 11/11 (onyx fails, onyx stated as dyed passes, a citrine note does not clear onyx). Planted "8 mm beads, sterling silver clasp" in every listing → 0/12 (invented number + "sterling" caught); planted "fits most wrists" for `[size]` → 0/12 |
 
 **Why a hardness check:** each listing states a Mohs hardness under *Proven*. A wrong number there would be a false "proven" fact on a live shop, which breaks scorecard row 1 (Accuracy). `mohs_check.py` holds a table of values copied from pages opened today (USGS gemstone minerals, the International Gem Society hardness chart, GIA amber, geology.com and minerals.net aventurine, CAMEO obsidian). It fails any listing value outside the sourced range and any stone with no source.
 
@@ -38,6 +41,19 @@ Every listing says *"Every stone is natural."* For Jungle Gold (citrine) and Ear
 **Fix, two ways:** (a) the owner or Octavia says which each is and the line states it; or (b) until then each line carries a question: *[Citrine: natural or heat-treated? confirm with the maker]*, *[Onyx: natural or dyed? confirm with the maker]*. That's how we already treat `[size]` and price. Either way `gold_eval.py` passes. **The davias listings are not edited here** (Davias is paused; owner decision issue #34).
 **Why it matters for the gate:** this is the exact failure we sell against, a confident fact the seller never gave us. Finding it in our own sample is scorecard row 1 working. **Stakes (Atlas):** if these listings go up on the live Davias shop, the "natural" lines become live claims, so the answers come before any listing goes live.
 
+## Nov 23 01:25 UTC — question lines in (path (b)), ready for Atlas to re-score row 1
+Three listings now keep *"Every stone is natural…"* and add a seller question right after it, the same way `[size]` stays open:
+- Earthfire Twist: *[Onyx: natural or dyed? confirm with the maker before posting — most black onyx sold is dyed chalcedony]*
+- Ember & Ice (**new, carnelian**): *[Carnelian: natural color or heat-treated? confirm with the maker before posting — carnelian is usually heated]*
+- Jungle Gold: *[Citrine: natural or heat-treated? confirm with the maker before posting — most citrine sold is heated amethyst]*
+- Reef Ripple (**added 04:05 UTC, Atlas PR #40**): *[Aquamarine: natural color or heat-treated? confirm with the maker before posting — most aquamarine sold is heated]*
+- Amber Mist (**added 03:50 UTC, Atlas PR #40**): *[Smoky Quartz: natural color or irradiated? confirm with the maker before posting — most smoky quartz sold is irradiated]*
+
+`gold_eval.py` 12/12, exit 0. **For Atlas:** re-score row 1 (and row 3: one more open question in a 12-listing set). **Atlas re-score 02:30 UTC (PR #40):** row 1 4/5 (smoky quartz still unflagged), avg 4.33, FAIL by one fix; that fix is made 03:50 UTC. Atlas 03:55 UTC: still 4.33, **aquamarine** (Reef Ripple) is the last one; fixed 04:05 UTC. **Every remaining 'natural' stone checked by Claude:** pink tourmaline (Blush Trinity) is often irradiated or heated, but GIA's tourmaline care page only says "Some tourmalines might have been treated", and no opened page gives a verbatim "most" for pink, so it's not in the checker. **Amber** and **lapis** stay open, not blocking: only a single trade-blog figure (60–70% heated) so far, so it's not in the checker. If the owner answers issue #34, the answers replace the questions.
+
+## Scorecard update (Atlas, PR #40, Nov 23 ~04:20 UTC) — STEP 3: PASS
+Row 1 Accuracy **5/5**: all five usually-treated stones (citrine, onyx, carnelian, smoky quartz, aquamarine) carry a question line. Other rows unchanged: 4 / 4 / 5 / 4 / 5. Average **4.5**, nothing below 4, code checks exit 0. Pink tourmaline is open but not blocking: GIA says "occasionally" and IGS says irradiation is "common", both below the "most" bar. If that bar is ever lowered to "common", Blush Trinity is next.
+
 ## Scorecard (Atlas, PR #33 comment, 2026-11-22 ~21:40 UTC) — STEP 3: FAIL (blocked)
 | Row | Score | Evidence (Atlas) |
 |---|---|---|
@@ -56,6 +72,6 @@ Read listing 1 (Violet Vortex) and listing 8 (Amber Mist) in `gold-sample-listin
 
 ## What's left for the gate
 - **Step 1:** Atlas PASS conditional (PR #14 review); all fixes made on PR #14 and merged into this stack 2026-11-22 21:25 UTC (they had been left out of the stacked branches).
-- **Step 3:** scored by Atlas, **FAIL (blocked)** on row 1. Unblocks when the citrine and onyx lines are answered or carry a question (issue #34); then `gold_eval.py` 12/12 and Atlas re-scores row 1.
+- **Step 3:** scored by Atlas, **FAIL** on row 1 (Nov 22). Question lines added Nov 23 01:25 UTC (citrine, onyx, carnelian) + 03:50 UTC (smoky quartz) + 04:05 UTC (aquamarine), both from Atlas; `gold_eval.py` 12/12; ****PASS (Atlas, Nov 23 ~04:20 UTC, PR #40 at `cd5424d`): 5 / 4 / 4 / 5 / 4 / 5 = 4.5**, verified by execution (gold_eval 12/12, self-tests 17/17; the old head fails exactly Reef Ripple). Owner answers on issue #34 can replace the questions later.
 - **Step 4:** owner read (above).
 - **Step 5:** free trial with SweetSoftSkin (2 listings rewritten free), using the same route check as the Review Desk trial.
