@@ -47,7 +47,7 @@ Three listings now keep *"Every stone is natural…"* and add a seller question 
 - Ember & Ice (**new, carnelian**): *[Carnelian: natural color or heat-treated? confirm with the maker before posting — carnelian is usually heated]*
 - Jungle Gold: *[Citrine: natural or heat-treated? confirm with the maker before posting — most citrine sold is heated amethyst]*
 - Reef Ripple (**added 04:05 UTC, Atlas PR #40**): *[Aquamarine: natural color or heat-treated? confirm with the maker before posting — most aquamarine sold is heated]*
-- Amber Mist (**added 03:50 UTC, Atlas PR #40**): *[Smoky Quartz: natural color or irradiated? confirm with the maker before posting — most smoky quartz sold is irradiated]*
+- Amber Mist (**added 03:50 UTC, Atlas PR #40**): *[Smoky Quartz: natural color or irradiated? confirm with the maker before posting — smoky quartz is often irradiated]*
 
 `gold_eval.py` 12/12, exit 0. **For Atlas:** re-score row 1 (and row 3: one more open question in a 12-listing set). **Atlas re-score 02:30 UTC (PR #40):** row 1 4/5 (smoky quartz still unflagged), avg 4.33, FAIL by one fix; that fix is made 03:50 UTC. Atlas 03:55 UTC: still 4.33, **aquamarine** (Reef Ripple) is the last one; fixed 04:05 UTC. **Every remaining 'natural' stone checked by Claude:** pink tourmaline (Blush Trinity) is often irradiated or heated, but GIA's tourmaline care page only says "Some tourmalines might have been treated", and no opened page gives a verbatim "most" for pink, so it's not in the checker. **Amber** and **lapis** stay open, not blocking: only a single trade-blog figure (60–70% heated) so far, so it's not in the checker. If the owner answers issue #34, the answers replace the questions.
 
