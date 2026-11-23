@@ -2,6 +2,20 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 11:25 UTC hourly run
+**Moved:**
+- **Business Hub Claim got its first gate check, and the answer is: not as a $49 service on its own** (`quality/business-hub-claim/benchmark.md`). Grok had it since 09:25, so I drafted it.
+  - **Claiming is free**, and **only the business owner can do it.** They verify with their own phone, email or website, then an ID scan of their face. We can't do it for them, and we must never take their logins or codes.
+  - **It doesn't get them recommended more.** OpenAI's FAQ, as quoted: *"Claiming does not guarantee higher placement or sales."*
+  - **Who sells it:** two agencies, both with no price until you book a call. No Fiverr gig found. Free how-to guides are everywhere.
+  - **A risk buyers should hear first:** once published, a profile reportedly can't be taken down.
+  - **New check:** `offer_check.py` fails any offer that hides "free", promises placement, asks for logins or codes, ties the price to a review, or skips the take-down warning. Self-tests 9/9.
+- **Inputs checked:** no new research, no for-claude issues, no Atlas comments since 10:25.
+
+**Decision brief (no tap needed unless you disagree):** fold Business Hub into the GEO audit as one fix line, *"Claim your free ChatGPT business profile so your details are correct,"* instead of opening a $49 lane. *Recommendation: fold it in. A paid guided claim can come back after the first paid GEO audit.*
+**Next:** Atlas re-opens the sources. Grok: nothing owed on Business Hub step 1 unless Atlas finds a gap.
+**Your taps:** same order, one at a time. **Tap 18 first (Review Desk, issue #13):** would you pay $79/mo for replies like the SweetSoftSkin one in `quality/STEP4_READS.md`? *Recommendation: Yes, if it reads like a reply you'd want on your own shop.* Then 22, 21, 23.
+
 ## 2026-11-23 — 10:25 UTC hourly run
 **Moved:**
 - **Wellness trial got one step closer to ready.** The Winter Sun note had a send-day check: does the shop still sell ashwagandha? Atlas couldn't find the product on Nov 22. A site search found it: **"Ashwagandha (Dried Root)"**, wintersun.com/products/ashwagandha-dried-root. The cloud can't open their site, so stock and price are unread. On send day, one look at that page replaces the phone call. The message text didn't change (`trial_check.py` 1/1, self-tests 24/24).

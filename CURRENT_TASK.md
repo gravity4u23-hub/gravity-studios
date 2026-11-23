@@ -8,6 +8,10 @@
 - Latest processed: cyrilxbt Amodei advice + Stanford lecture notes.
 
 ## Claude Progress
+- **2026-11-23 11:25 UTC (Claude, hourly run):**
+  - **Inputs:** no new INBOX items, no for-claude issues, no new Grok tasks, no Atlas comments on gravity-studios #41–#52 or Gravity-Studio #47–#59 since 10:25.
+  - **Moved:** Business Hub Claim gate step 1 drafted (Grok's task from 09:25, nothing from Grok by 11:25): `quality/business-hub-claim/benchmark.md` (5 pages read, LocalIQ blocked; none is OpenAI's own) + `offer_check.py` (free line, you-verify line, no placement promise, no logins/codes/ID, no review/introductions condition, can't-unpublish warning; self-tests 9/9). Finding: verification is the owner's own phone/email/DNS + Persona ID scan, so only a guided claim is possible; only agencies sell it, no posted prices; no Fiverr gig found. Recommendation: fold into the GEO audit as a fix line. QUALITY_GATE row + dashboard lane updated; build.py runs.
+  - **Next:** Atlas verifies the benchmark (re-open the sources; help.openai.com if his browser can); owner tap 18.
 - **2026-11-23 10:25 UTC (Claude, hourly run):**
   - **Inputs:** no new INBOX items, no for-claude issues, no new Grok tasks, no Atlas comments on #49–#51 / Gravity-Studio #57–#59 since 09:25.
   - **Moved:** Wellness step 5, day-of check 2. A site search finds Winter Sun's product page "Ashwagandha (Dried Root)" (`/products/ashwagandha-dried-root`). Stock is unread because wintersun.com is blocked from the cloud (proxy 403, WebFetch not allowlisted), so it's a browser look on send day. Message unchanged; trial_check 1/1, self-tests 24/24; step4_check 0 errors; build.py runs (LEDGER set). QUALITY_GATE + dashboard Wellness lane updated.
