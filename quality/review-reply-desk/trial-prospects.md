@@ -14,7 +14,7 @@
 | P005 | Flagstaff Clinic of Naturopathic Medicine | yes | https://reviews.birdeye.com/flagstaff-clinic-of-naturopathic-medicine-148061800835039 | unrecorded | 2026-11-23 13:40 | 55 / 4.6 | unknown | - | not-in-text | NEEDS-BROWSER |
 | P006 | Cedar Health Center | yes | https://reviews.birdeye.com/cedar-health-176946178189941 | Cedar Health, Tucson AZ | 2026-11-23 14:30 | 7 / 4.4 | unknown | - | not-in-text | WRONG-PAGE |
 | P007 | Munderloh Integrated Medical | yes | https://reviews.birdeye.com/munderloh-chiropractic-157254650808482 | Munderloh Chiropractic, Flagstaff AZ | 2026-11-23 14:30 | 197 / 4.8 | unknown | - | not-in-text | WRONG-PAGE |
-| P008 | Synergistic Healthcare PLLC | yes | https://reviews.birdeye.com/synergistic-healthcare-155743603329035 | Synergistic Healthcare, Flagstaff AZ | 2026-11-23 14:30 | 16 / 5.0 | none | - | not-in-text | NO-GAP |
+| P008 | Synergistic Healthcare PLLC | yes | https://reviews.birdeye.com/synergistic-healthcare-155743603329035 | Synergistic Healthcare, Flagstaff AZ | 2026-11-23 14:30 | 16 / 5.0 | unknown | - | not-in-text | NO-GAP |
 | P009 | The Vitality Doctor (Dr Christina Kovalik NMD, LAc) | yes | https://reviews.birdeye.com/the-vitality-doctor-dr-christina-kovalik-nmd-lac-169623344289589 | unrecorded | 2026-11-23 13:40 | 23 / 4.5 | unknown | - | not-in-text | NEEDS-BROWSER |
 | P010 | Acupuncture Wellness Center (Cynthia Hull) | yes | https://reviews.birdeye.com/hull-cynthia-acupuncture-wellness-center-168633802417920 | unrecorded | 2026-11-23 13:40 | 5 / 5.0 | none | - | not-in-text | NO-GAP |
 
@@ -29,4 +29,4 @@
   - **P004 Harmonizing Healthcare:** no Birdeye page turned up in a site search. Stays NOT-READ.
 - **Where trials 2–3 stand:** of 7 clinics, P009 is the only live lead. Two have no gap, two returned the wrong page, and two (P004, P005) need Google itself.
 
-**Check:** `python3 review_gap_check.py` → `SUMMARY rows=7 errors=0`. Self-tests: `python3 review_gap_check.py --self-test` (22/22).
+**Check:** `python3 review_gap_check.py` → `SUMMARY rows=7 errors=0`. Self-tests: `python3 review_gap_check.py --self-test` (33/33).
