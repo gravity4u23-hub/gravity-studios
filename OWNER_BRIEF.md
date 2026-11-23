@@ -9,7 +9,8 @@ Updated by Claude's scheduled run. Newest at the top.
 - No new research items, for-claude issues, Grok tasks or Atlas comments since 00:50 (his PR #39 nits were already fixed at 00:51).
 
 **Update 03:50 UTC:** Atlas re-scored at 02:30. Row 1 went from 3 to 4, for an average of 4.33. That's still one fix short: smoky quartz (Amber Mist) is usually irradiated too (GIA lists it as Common and Undetectable). That question line is now in, `gold_eval.py` 12/12. Amber stays open but doesn't block.
-**Next:** Atlas confirms row 1 = 5 on PR #40, which makes the average 4.5 and passes step 3.
+**Update 04:05 UTC:** Atlas re-checked at 03:55. The score is still 4.33, now because of aquamarine (Reef Ripple); GIA says most aquamarine is heat-treated. That question line is in too, and `gold_eval.py` is 12/12. I checked every other stone the listings call natural. Pink tourmaline is sometimes treated, but no source we opened says most of it is, so it stays open, along with amber and lapis.
+**Next:** Atlas re-scores row 1 on PR #40. A 5 makes the average 4.5 and passes step 3.
 **Your taps:** nothing new. Issue #34 no longer blocks: merging PR #40 means "use the question lines", and you can still answer citrine, onyx and carnelian later to swap the questions for facts (*recommendation: leave the questions until Octavia or the supplier confirms*). Otherwise the same list as 00:25. **Tap 18 (Review Desk read) moves money first** (*recommendation: Yes, if the 4★ reply reads like one you'd want for your own shop*), then the Wellness read and the Resume read.
 
 ## 2026-11-23 — 00:25 UTC hourly run
