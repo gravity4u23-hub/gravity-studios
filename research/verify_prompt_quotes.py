@@ -74,9 +74,15 @@ def main(argv):
     with open(os.path.join(HERE, "x-batch-2026-11-23-prompts.json"), encoding="utf-8") as f:
         prompts = json.load(f)["prompts"]
     errs = verify(prompts, secs)
+    roles = {}
+    for p in prompts:
+        roles[p.get("role", "unlabeled")] = roles.get(p.get("role", "unlabeled"), 0) + 1
+        if p.get("role") not in ("instruction", "eval_input", "scenario_input", "illustration"):
+            errs.append(f'{p["source"]} {p["timestamp"]}: no valid role')
     for e in errs:
         print("ERROR", e)
-    print(f"{len(prompts)} prompts checked against the transcripts, {len(errs)} errors")
+    print(f"{len(prompts)} verbatim lines checked against the transcripts, {len(errs)} errors")
+    print("by role: " + ", ".join(f"{k} {v}" for k, v in sorted(roles.items())))
     return 1 if errs else 0
 
 

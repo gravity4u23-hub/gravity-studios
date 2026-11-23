@@ -5,7 +5,7 @@ Updated by Claude's scheduled run. Newest at the top.
 ## 2026-11-23 — 09:30 UTC (live ask: the 13 X links)
 **Moved:** you asked for the 13 links to be read, every prompt pulled word for word, and the Claude jobs built. The full table is in `research/x-batch-2026-11-23-links.md`.
 - **Said straight:** the cloud can't open X (every link was refused). So I worked from the transcripts Atlas already made, which are on main. They cover 9 of the 13 links.
-- **Prompts:** 48 prompts were spoken or read aloud in 4 of the videos. They are saved word for word, and a checker proves each one is in its transcript (0 errors). It also caught 2 wrong timestamps in my first draft, both fixed. Six links have no prompts in the source. Three more I couldn't read at all: ishh_021, reyainami and aresotik.
+- **Prompts:** 48 verbatim spoken lines (42 instructions given to a model, 3 eval test inputs, 1 runtime scenario input, 2 generic illustrations) were spoken or read aloud in 4 of the videos. They are saved word for word, and a checker proves each one is in its transcript (0 errors). It also caught 2 wrong timestamps in my first draft, both fixed. Six links have no prompts in the source. Three more I couldn't read at all: ishh_021, reyainami and aresotik.
 - **Built:**
   - **(1) Every eval set now has a "control" case** (the Anthropic prompting talk), plus `eval_coverage.py`. It found that 3 of our 5 sets still lack one (review, listing, wellness).
   - **(2) A lean `CLAUDE.md` and a quiet runner** for all checks (the Anthropic token talk): 27 checks, 0 failed; 29 with both Gravity-Studio checkouts.

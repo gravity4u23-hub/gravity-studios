@@ -6,7 +6,7 @@
 - **I could not open any of the 13 X pages.** Every fetch was refused (`robots_disallowed` on x.com) at about 08:40 UTC. I did not try mirrors or workarounds; the rules don't allow them.
 - **So the words below come from the transcripts Atlas already made** of these videos with a local speech-to-text model (faster-whisper). They are on main in `research/x-batch-implementation-pack-2026-11-22-CLEAN-NEUTRAL.md`. **9 of the 13 links are in that pack.**
 - **I read the transcripts myself.** Where the pack says "No prompts in source", I checked the transcripts and found that 4 videos do contain prompts spoken or read aloud.
-- **Every prompt is in `x-batch-2026-11-23-prompts.json`.** `verify_prompt_quotes.py` proves each one is in its transcript, character for character, at the stated time.
+- **Every line is in `x-batch-2026-11-23-prompts.json`, with a `role`** (instruction, eval_input, scenario_input or illustration). Atlas noted on PR #49 that the checker proves a line is verbatim, not that it's a prompt. `verify_prompt_quotes.py` proves each one is in its transcript, character for character, at the stated time.
 - **Speech-to-text errors are kept on purpose** (e.g. "tic-tac 2 app", "obviocavideg"). They are the transcript's words. I didn't guess what was really said.
 
 ## Per link
@@ -32,7 +32,7 @@
 | Control case and case kinds (rahultechx) | `quality/eval_coverage.py`. The `kind` field was added to all 21 cases, plus 2 new control cases: `control-plain-update` in `quality/resume-linkedin/evals/cases.json` and `control-plain-audit` in `quality/geo-ai-search-check/evals/cases.json` | `eval_coverage.py` → 2 sets, 0 gaps; `--self-test` 6/6; `check_resumes.py` 21/21 (was 19/19); `check_reports.py` 27/27 (was 25/25). With `--gs`, the 3 Gravity-Studio sets (review, listing, wellness) show **gaps: no kinds, no control case**. That's a real gap, not yet fixed |
 | Quiet checks + lean CLAUDE.md (rrrangle) | `tools/run_checks.py`, `CLAUDE.md` | `run_checks.py` → "27 checks run, 0 failed, 2 skipped". With both Gravity-Studio checkouts → "29 checks run, 0 failed". It also showed that the wellness self-test needs PR #56; base #55 alone fails 1 |
 | Hook feedback loop (dipanshu_ai) | `tools/hook_feedback.py` | `--self-test` 8/8 on a SYNTHETIC fixture. **No real data yet:** Metricool has no network connected, so nothing has been posted |
-| Prompt extraction | `research/x-batch-2026-11-23-prompts.json`, `research/verify_prompt_quotes.py` | 48 prompts, 0 errors against the pack; `--self-test` 4/4. The verifier caught 2 wrong timestamps in my first draft, both fixed |
+| Prompt extraction | `research/x-batch-2026-11-23-prompts.json`, `research/verify_prompt_quotes.py` | 48 verbatim spoken lines (42 instructions given to a model, 3 eval test inputs, 1 runtime scenario input, 2 generic illustrations), 0 errors against the pack (relabeled per Atlas review on PR #49); `--self-test` 4/4. The verifier caught 2 wrong timestamps in my first draft, both fixed |
 
 ## What David can do to fill the gaps
 Paste the post text, or ask Atlas to commit his local transcripts, for **ishh_021, reyainami and aresotik**. Then **realdrovex, adarshchetan and k1rallik** have no captured text at all. They may be image or text posts that need a screenshot.
