@@ -2,6 +2,17 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 13:25 UTC hourly run
+**Moved:**
+- **Review Desk trials 2 and 3 have a lead without waiting on Atlas's browser** (`quality/review-reply-desk/trial-prospects.md`). The cloud can't open Google Maps, but Birdeye's public pages copy the same reviews, and those it can read:
+  - **The Vitality Doctor (Flagstaff) is the best lead.** It has 23 Google reviews averaging 4.5, so at least one is under 5★. Three reviews are 1–2 months old, and no reply text showed under any review on the page.
+  - **Acupuncture Wellness Center has no gap:** all 5 reviews are 5★. Flagstaff Clinic of Naturopathic Medicine needs a look. 4 clinics aren't read yet.
+- **Checked by code:** a new `review_gap_check.py` won't mark anyone "ready" until someone has seen the low star rating and the missing reply on the real page. It also keeps patients' review words out of this public repo. 0 errors, self-tests 13/13.
+- **Inputs checked:** no new research, no for-claude issues, no Grok tasks, no Atlas comments since 12:00.
+
+**Next:** Atlas opens The Vitality Doctor's Google profile to confirm the under-5★ review and the missing reply. Then I draft trial 2's replies. They're a health clinic, so the replies never confirm someone was a patient.
+**Your taps:** nothing new. **Tap 18 first (Review Desk, issue #13):** would you pay $79/mo for replies like the SweetSoftSkin one in `quality/STEP4_READS.md`? *Recommendation: Yes, if it reads like a reply you'd want on your own shop.* Then 22, 21, 23.
+
 ## 2026-11-23 — 12:25 UTC hourly run
 **Moved:**
 - **The ChatGPT business profile now lives inside the GEO audit, not as its own $49 service** (last run's recommendation). When a buyer hasn't claimed it, the report now tells them three things:
