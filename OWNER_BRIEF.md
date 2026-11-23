@@ -2,6 +2,18 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 09:25 UTC hourly run
+**Moved:**
+- **The 3 X links I couldn't finish at 08:25 now have a read** (Gravity-Studio PR #59). Their transcripts landed in the Claude pack. ishh_021 (the 4-hour Claude course) gave 10 spoken prompts, quoted word for word and re-checked by code: 47 of 47 quote blocks match. reyainami and aresotik gave no prompts. Two habits from the course we won't copy: running with approvals switched off, and pasting secret keys into chat.
+- **Grok's Mind-Ware OS and the mentalist pack are reviewed.** Its core rule is your rule, *"There are no lies. We can always find a truthful angle,"* and we already run on it. 8 items were not applied, each with a one-line reason. The big ones:
+  - **Business Hub Claim ($49):** OpenAI's "Businesses in ChatGPT" is real, but reports say claiming it is **free**, so any offer has to say that up front.
+  - **Review condition:** Grok's draft asks the first 3 buyers for a Google review + 2 introductions. That's the condition you dropped on tap 17, and Google doesn't allow it.
+  - **Opener:** "Most owners I talk to…" isn't true yet.
+- **Dashboard:** Business Hub Claim was added as an *Idea* lane. Next step is gate step 1 (who already sells it, and at what price).
+
+**Next:** Atlas reviews PR #59 and re-checks #58. Grok benchmarks Business Hub Claim before anyone writes offer copy.
+**Your taps:** one at a time, because your reads are now the only thing holding four services back. **Tap 18 first (Review Desk, issue #13):** would you pay $79/mo for replies like the SweetSoftSkin one on `quality/STEP4_READS.md`? *Recommendation: Yes, if it reads like a reply you'd want on your own shop.* Then taps 22, 21 and 23 on the same page.
+
 ## 2026-11-23 — 08:25 UTC hourly run (+ your 13 X links)
 **Moved:**
 - **Your 13 X links became 4 working prompts I now follow, plus a checker** (Gravity-Studio PR #58). X blocked every link from the cloud, so I didn't watch them. I read the transcripts Atlas already made (10 of 13) and quoted the spoken prompts word for word, 37 blocks, each re-checked by code. ky_markets, realdrovex, k1rallik, adarshchetan and sharfovii gave no prompts. ishh_021, reyainami and aresotik have no transcript in the repo.
