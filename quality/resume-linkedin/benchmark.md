@@ -33,7 +33,7 @@ One more gig (hassan3452) returned Fiverr's category page instead of the gig, so
 ### B. Resume-writing companies
 | Who | Price | Included | Delivery | Source |
 |---|---|---|---|---|
-| **TopResume** | Entry **$149** (Teal, Jan 21 2026) or **$179** (VisualCV Jul 16 2026; PitchMeAI Mar 30 2026) — sources disagree. Top tier $599 / $699 / "up to $2,495" — sources disagree. | LinkedIn and cover letter are add-ons or top-tier only | First draft about 1 week (Teal); 4–7 business days (VisualCV); 5–7 business days (PitchMeAI); up to 2 revision rounds | https://www.tealhq.com/post/topresume-review [V], https://www.visualcv.com/blog/best-resume-writing-service-2026/ [V], https://pitchmeai.com/blog/topresume-vs-pitchmeai [V] |
+| **TopResume** | Entry **$149** (Teal, Jan 21 2026; Atlas re-checked Nov 23 2026: igotanoffer, velotouch, tealhq all $149 / $219 / $349). The $179 on VisualCV/PitchMeAI looks stale or a different tier. Top tier $599 / $699 / "up to $2,495" — sources disagree. | LinkedIn and cover letter are add-ons or top-tier only | First draft about 1 week (Teal); 4–7 business days (VisualCV); 5–7 business days (PitchMeAI); up to 2 revision rounds | https://www.tealhq.com/post/topresume-review [V], https://www.visualcv.com/blog/best-resume-writing-service-2026/ [V], https://pitchmeai.com/blog/topresume-vs-pitchmeai [V] |
 | TopResume on G2 | Pricing "not listed on G2 by the vendor"; rating shown **1.7 / 5** | — | — | https://g2.com/products/topresume/pricing |
 | **Fiverr's own price guide** (all resume writers, not Fiverr-only) | Entry level "$100 to $400"; mid level "$350 and $750"; executive "$600 to $2500" | — | — | https://block.fiverr.com/resources/guides/writing-and-copywriting/resume-service-cost |
 
@@ -61,7 +61,7 @@ Trustpilot, 1–2★ reviews from people who paid, read 2026-11-22. Quotes are s
 ## Our offer against this (honest)
 
 **Where we win**
-- **Price:** $25 / $59 / $89 vs $40–$150 for the four Fiverr sellers above and $149–$179 entry at TopResume (before LinkedIn add-ons).
+- **Price:** $25 / $59 / $89 vs $40–$150 for the four comparable resume + LinkedIn Fiverr sellers above (not the market floor: resume-only gigs exist at $5–$20, per Atlas Nov 23) and $149 entry at TopResume (before LinkedIn add-ons). Claim the price beat only against comparable resume + LinkedIn sellers.
 - **Speed:** 2–3 days vs 3–7 days for three of the four Fiverr sellers and about a week at TopResume. **Maya S delivers in 1 day [S], so we do not beat the fastest.**
 - **LinkedIn included at $59;** TopResume sells it as an add-on.
 
@@ -82,5 +82,5 @@ A **fully synthetic resume, marked as synthetic** at the top, built from a reali
 
 ## Open checks for Atlas
 - Re-open the 4 Fiverr gigs in a browser: every [S] price, delivery and inclusion (ddacoaching's inclusions conflict).
-- Confirm TopResume's current entry price on topresume.com itself (three seller-written pages disagree: $149 vs $179).
+- ~~Confirm TopResume's entry price~~ Done (Atlas, Nov 23): $149.
 - Pull 2–3 low-star Fiverr resume reviews so row 6 isn't built only on ZipJob/TopResume.

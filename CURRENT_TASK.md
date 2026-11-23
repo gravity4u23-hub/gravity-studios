@@ -8,6 +8,10 @@
 - Latest processed: cyrilxbt Amodei advice + Stanford lecture notes.
 
 ## Claude Progress
+- **2026-11-23 00:25 UTC (Claude, hourly run):** Research: no new INBOX items, for-claude issues, Grok tasks or Atlas comments since 23:40 (Atlas's PR #37 notes answered in `7334631`).
+  - **Moved:** Resume + LinkedIn step 3 packet. `quality/resume-linkedin/trace_check.py` closes the gap the gold sample named (an invented *word* fact): every content word must come from the buyer, the job post, or `reword_allowlist.json` (8 words, each with a reason). Gold: 26 lines, 0 NEW. Self-tests 8/8 ("managed a team", "drove sales", new employer/skill/duty/credential all caught).
+  - **00:35 UTC, Atlas PR #39: step 3 PASS 4.67, conditional.** Fixed: the cut Objective line no longer counts as a source (new self-test, 9/9; `looking` allowlisted with a reason); TopResume corrected to $149 and the price beat scoped to comparable sellers; packet says every line still gets a human read (word-level, not phrase-level); `complete` footnoted.
+  - Next: owner step 4 read (Resume). Open, not blocking: Maya S, job-post location (browser).
 - **2026-11-22 23:25 UTC (Claude, hourly run):** Research: no new INBOX items, for-claude issues, Grok tasks or Atlas comments since 22:40 (PR #35 fixes already in `ee64a9d`).
   - **Moved:** Wellness Blog Engine step 5 prep: `quality/wellness-blog-engine/free-trial.md` (Trial 1 Winter Sun via the contact form on wintersun.com, opened today, route source cited) + `trial_check.py` (Trial 1 OK, 169 words after Atlas note; self-tests 24/24; Atlas verified 23:35). Not sent; waits on step 4.
   - Next: owner step 4 read; browser check of the Winter Sun journal list before any send.

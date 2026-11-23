@@ -2,6 +2,16 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 00:25 UTC hourly run
+**Moved:** **Resume + LinkedIn is ready for Atlas to score (gate step 3), and a new check catches the complaint buyers make most: details the writer made up** (`quality/resume-linkedin/trace_check.py`). Review Desk, Listing Makeover and Wellness are all waiting on your taps, so this run moved the next service in line.
+- **What it checks:** every word of substance in the rewritten resume and LinkedIn text must come from the buyer's own resume, their intake answers, or the job post. The only exceptions are 8 plain rewordings ("run the store" for "in charge of the whole store", "bilingual" for "English and Spanish"), and each one has a written reason Atlas can reject. Any other word fails.
+- **Result:** our gold sample passes, 26 lines with 0 made-up words. Planting "managed a team", "drove sales", a new employer, a new skill, a new duty or a new certificate fails every time (self-tests 8/8). Before this, our checks only caught made-up *numbers*.
+- There were no new research items, for-claude issues, Atlas comments or Grok tasks since 23:40.
+- **Update 00:35 UTC: Atlas scored it, and step 3 PASSES at 4.67** (5/4/5/4/5/5). Both of his fixes are made. Words from the resume's old "Objective" line, which the rewrite cuts, no longer count as the buyer's own. TopResume's entry price is corrected to $149.
+
+**Next:** your Resume read (step 4), after the Wellness read. Your Wellness read (step 4) is still the next owner step.
+**Your taps:** one new (Resume step 4). Otherwise the same list as 23:25: **tap 18 (Review Desk read) moves money first.** *Recommendation: Yes, if the 4★ reply reads like one you'd want for your own shop.* Then the Wellness read; **new: Resume step 4**, read `quality/resume-linkedin/gold-sample/rewrite.pdf` and answer *would a job-seeker pay $59 for this?* (*Recommendation: Yes, if it reads like a real person and claims nothing the buyer didn't say*); issue #34 (citrine/onyx, *recommendation: OK the question lines*), issue #36 (*confirm "private repo"*), issues #27 and #21 (*Hold both*).
+
 ## 2026-11-22 — 23:25 UTC hourly run
 **Moved:** **The Wellness Blog free trial is written and checked, so the day you say "Yes" on step 4, Trial 1 is one tap away** (gate step 5 prep, `quality/wellness-blog-engine/free-trial.md`). Wellness passed step 3 last hour, and Review Desk and Listing Makeover are both waiting on your taps, so this run prepared Wellness's next step.
 - **The route is the shop's own:** Winter Sun's website has a contact form ("Drop us a line using the form and we'll get back to you as soon as possible"). It was opened today. The site lists no email and no rule against sales messages. Its About page names the founder, Phyllis Hogan (1976).
