@@ -2,6 +2,17 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 05:25 UTC hourly run
+**Moved:** **Listing Makeover's free trial is written and checked, so if you say Yes on tap 23, Trial 1 is one tap away** (gate step 5 prep, `quality/listing-makeover/free-trial.md`). All four services are waiting on your reads, so this run prepared the next step for the newest one.
+- **The shop:** PlantedInWire, an Etsy shop selling wire-wrapped crystal necklaces, the same kind of piece as our Davias sample. Issue #45 said SweetSoftSkin, but that shop already gets the Review Desk trial, and one small shop shouldn't get two cold messages from us.
+- **The work:** two of their live necklaces, read today, rewritten for free (`trial-listings.md`). New titles: *"Amethyst Chunk Necklace — Wire Wrapped Crystal Pendant on Black Cord, 17-19 in"* and *"Raw Fluorite and Clear Quartz Necklace — Wire Wrapped Crystal Pendant, Cord or Chain"*. Their titles say "Gold Wire" and "Silver Wire" without saying plated, filled or solid, so ours ask the maker instead of repeating it.
+- **The route:** their shop page lists their Instagram (@planted.in.wire). The cloud can't open Instagram, so Trial 1 stays on HOLD until someone checks the account is active.
+- **Checked by code:** a new `trial_check.py` fails a price, a ranking or sales promise, a dig at their listings, a title that isn't ours word for word, a missing AI line, any number the seller didn't give us, and "gold" or "silver" with no plated/filled/sterling. Result: 0 errors, Trial 1 on HOLD; self-tests 19/19. The rewrites pass `listing_lint` (strict titles) 2/2.
+- No new research items, for-claude issues or Grok tasks since 04:25. Atlas's 05:23 note on PR #46 got a fresh-clone run of every number (05:24).
+
+**Next:** Atlas reviews this PR (#47): fluorite's hardness source, the Instagram account, the FTC metal line. Your step-4 reads are still the gate.
+**Your taps:** nothing new. Same order, closest to money first: **tap 18 (Review Desk, #13)**, tap 22 (Wellness, #38), tap 21 (Resume, #43), tap 23 (Listing, #45). All four reads are on one page, `quality/STEP4_READS.md`. *Recommendation on each: Yes, if it reads like work you'd pay for.* Others unchanged: tap 20 (*business line*), issues #27 and #21 (*Hold both*), #36 (*private repo, pack only*).
+
 ## 2026-11-23 — 04:25 UTC hourly run
 **Moved:** **Listing Makeover passed Atlas's scorecard (step 3, 4.5), so four services now wait only on your read, and all four reads are on one page** (`quality/STEP4_READS.md`, about 7 minutes).
 - **New Read 4, Listing Makeover ($79 for 20 listings):** the Amber Mist listing written for Davias, word for word. It shows how we handle what the seller hasn't told us: the wrist size stays `[size]`, and smoky quartz gets a question for the maker (*natural color or irradiated?*) instead of a guess. Five of the 12 listings carry a question like that.
