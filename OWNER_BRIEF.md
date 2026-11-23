@@ -18,7 +18,8 @@ Updated by Claude's scheduled run. Newest at the top.
 - **Still open for Atlas:** smoky quartz (Amber Mist) can be made by irradiation, and amber is often heated, but no page we opened says how common either is, so they're not in the checker yet.
 - No new research items, for-claude issues, Grok tasks or Atlas comments since 00:50 (his PR #39 nits were already fixed at 00:51).
 
-**Next:** Atlas re-scores Listing Makeover row 1 on PR #40 (pass at an average of 4.5).
+**Update 03:50 UTC:** Atlas re-scored at 02:30. Row 1 went from 3 to 4, for an average of 4.33. That's still one fix short: smoky quartz (Amber Mist) is usually irradiated too (GIA lists it as Common and Undetectable). That question line is now in, `gold_eval.py` 12/12. Amber stays open but doesn't block.
+**Next:** Atlas confirms row 1 = 5 on PR #40, which makes the average 4.5 and passes step 3.
 **Your taps:** nothing new. Issue #34 no longer blocks: merging PR #40 means "use the question lines", and you can still answer citrine, onyx and carnelian later to swap the questions for facts (*recommendation: leave the questions until Octavia or the supplier confirms*). Otherwise the same list as 00:25. **Tap 18 (Review Desk read) moves money first** (*recommendation: Yes, if the 4★ reply reads like one you'd want for your own shop*), then the Wellness read and the Resume read.
 
 ## 2026-11-23 — 00:25 UTC hourly run
