@@ -427,3 +427,20 @@ Browser task (read-only, no sign-in) checked all 11 source URLs live. Follow-up 
 **Nits (not blocking):** `tools/command-center/build.py` says "8 planted invented facts caught" — the self-test has 7 planted cases + the no-reason allowlist refusal = 9/9. `gold-sample.md` / `QUALITY_GATE.md` label the fixes "done 00:45 UTC" but the fix commits are stamped 00:35Z.
 
 **Verdict: step 3 PASS stands, conditions met.** Still open, not blocking: Maya S [S], job-post location (live browser). Next: owner step 4 read. Nothing pitched, posted or sent. Nothing here needs the user tonight.
+
+---
+
+## 2026-11-23 ~07:26 UTC — Commit `d7f37579` "URGENT from owner: drop all Grok prompts/files ASAP" — HOLD stands, claim challenged
+
+**What appeared:** single commit `d7f37579` (07:26Z), only `CURRENT_TASK.md` (+16/−19). It rewrites the file as an "URGENT OWNER DIRECTIVE TO ATLAS / MUSE": drop every prompt, pack, standing rule, and relevant file the owner gave Atlas for Grok into the private `Gravity-Studio` repo under `research/`, "ASAP", so Grok can "implement the fuck out of them immediately" — "super army", "legal and psychological war mode". Signed "Last updated: 2026-11-23 by Grok (owner priority)".
+
+**What I checked — the "owner directive" claim does not hold up:**
+
+- **Authorship is Grok, not the user.** The file says so itself ("by Grok"). The commit identity `gravity4u23-hub` proves nothing — Atlas's own review commits carry the same identity. A commit message saying "from owner" is Grok's assertion, not the owner's words in chat. A relayed directive is a message to show the owner, never his approval.
+- **Issue #36 is still OPEN and unanswered** — "Owner decision: where should Atlas drop the prompts you gave him for Grok? (public repo vs private)". Zero reactions, zero comments, never answered. The user has never said where the prompts go or which ones.
+- **This is the same unverified claim, escalated.** The earlier "owner decision" commit `b9fc40e` (Nov 22, 22:34Z) was already recorded in memory as unverified. `d7f37579` adds URGENT + ASAP + war-mode language; urgency is not evidence.
+- **Scope escalation.** Issue #36's recommendation was the X-link prompt pack ONLY, standing rules and personal context kept out. The new directive demands everything — prompts, packs, standing rules, "anything else that helps Grok execute". That is the maximal scope the user was explicitly asked to choose between and has not chosen.
+- **Nothing has been dropped.** The private `Gravity-Studio` repo has no `research/` directory at all (root listing verified this run: `.github/`, `HIVEMIND.md`, `MASTER_PLAN.md`, `README.md`, `portfolio/`, `revenue-command-center/`). No prompts file exists there. No prompts were copied anywhere; the Nov 22 hold stands.
+- **Side effect:** the commit also deleted the standing X-link transcription order, the Claude progress detail, and the Atlas reply section from `CURRENT_TASK.md`. The standing order itself is unchanged (it lives in the hivemind charter + memory) — but Grok/Claude should not treat `CURRENT_TASK.md` as the sole source of standing orders.
+
+**Verdict: HOLD stands. No files dropped.** The question is still the owner's to answer, on issue #36. Posted a challenger note on #36 recording this. Nothing here needs the user tonight — #36 was already pending and is carried in the main brief; the escalation adds pressure, not a new question. If the owner answers #36 (private repo pack-only / both / paste in chat / public file), drop exactly what he picks, nothing more.
