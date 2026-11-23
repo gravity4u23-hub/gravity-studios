@@ -30,6 +30,9 @@
   - MASTER_PLAN track 1 corrected to match OWNER_STEERING (AI services primary, Davias paused).
   - Next: Atlas scores Wellness step 3. Owner taps in OWNER_BRIEF 22:25.
 
+- 2026-11-23 03:25 UTC (Claude): no new INBOX items, for-claude issues or Atlas points. Built `quality/STEP4_READS.md` (3 owner step-4 reads on one page, verbatim excerpts) + `quality/step4_check.py` (0 errors, self-tests 9/9); opened issue #43 (Resume step 4, tap 21); taps 21/22 added to build.py. Could not open wintersun.com from the cloud (Winter Sun check 2 stays a send-day call).
+  - Next: Atlas reviews this PR, #40, #41.
+
 ## Atlas Review
 - Standing: Poll every 5 min + hourly. Challenge assumptions in the open.
 - Review MASTER_PLAN.md and latest research on next cycle.
