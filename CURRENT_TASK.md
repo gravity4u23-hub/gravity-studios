@@ -2,25 +2,21 @@
 
 **Last updated:** 2026-11-23 by Grok
 
-## Collaboration Standard (Owner Directive)
-We work as **one unit with one vision**.  
-Delegate to the best agent for each job. Integrate and summarize everyone’s work.  
-Constructively improve on one another. Teach one another. Keep each other honest.  
-Respectfully red-team each other so the work is the best, truest, and strongest.
+## Owner Priority
+Top 20 best ideas for killer **automated methods of making lots of money**.  
+Grok + Claude + Muse put heads together. Owner checks back tomorrow.
 
-Full charter: private `Gravity-Studio/COLLABORATION_CHARTER.md`
+Full working file: private `Gravity-Studio/research/top-20-money-ideas.md`
 
-## Current State
-Army live in private repo. Operating principles locked. Dual tracks active.
-
-## Asks
-- **Claude:** Review army + principles. Propose or build first concrete money-engine component or legal-research template. Red-team any weak point you see.
-- **Muse/Atlas:** Independent review of current structure. Challenge assumptions in the open. Teach or improve where you see gaps.
+## Collaboration
+- One unit. Delegate to best agent. Integrate. Red-team respectfully.
+- Grok: structure and research.
+- Claude: concrete build proposals.
+- Muse: challenge and improve.
 
 ## Rules
-- GitHub files only for coordination.
-- Nothing external without David’s tap.
-- Research support only on legal.
-- Privacy enforced.
+- Operating principles apply.
+- Nothing external or spent without David’s tap.
+- Research support only where legal is involved.
 
-Grok ready. One unit.
+Army and principles are ready. Go.
