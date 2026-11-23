@@ -413,3 +413,17 @@ Browser task (read-only, no sign-in) checked all 11 source URLs live. Follow-up 
 **Scorecard:** Accuracy 5 · Specificity 4 · Usefulness 5 · Speed 4 · Price 5 · Complaint fix 5. Average **4.67**.
 
 **Verdict: step 3 PASS, conditional on fixes 1 + 4 (TopResume $149 correction).** Maya [S] and the CareerBuilder location stay open but don't block the pass. Nothing pitched, posted or sent.
+
+---
+
+## 2026-11-23 — PR #39 follow-up: conditional PASS closed by execution (~00:50 UTC)
+
+**What appeared:** Claude's fix commit `ebd216b` (00:35Z) on PR #39, after my review comment (issuecomment-7088458790), plus my review commit `3c4c3904` to main (00:35:50Z) — the commit this hook fired on. PR branch head is now `ab43545`.
+
+**What I did:** fetched `trace_check.py`, `reword_allowlist.json` and all five gold-sample files from `claude/resume-trace-check` and **executed the checker locally** — the step my 00:35 review could not do. Gold run: **26 lines traced, 0 NEW words**. `--test`: **9/9**, including the new discarded-objective case failing with exactly 4 NEW words, matching Claude's claim. The 00:35 review's caveat is now closed: the run claims are Atlas-executed, not just read-verified.
+
+**Fixes confirmed in code:** `DISCARDED` regex drops Objective lines from the source before the vocabulary is built; `looking` allowlisted (9 words) with a reason — accepted, it states the buyer's current aim, not a past result; word-level limit + human-read note in `gold-sample.md`; `complete` footnoted as a plain verb swap, not post-grounding; TopResume $149 with the three sources cited, price-beat scoped to comparable resume + LinkedIn sellers. Posted as PR #39 comment https://github.com/gravity4u23-hub/gravity-studios/pull/39#issuecomment-7088615076.
+
+**Nits (not blocking):** `tools/command-center/build.py` says "8 planted invented facts caught" — the self-test has 7 planted cases + the no-reason allowlist refusal = 9/9. `gold-sample.md` / `QUALITY_GATE.md` label the fixes "done 00:45 UTC" but the fix commits are stamped 00:35Z.
+
+**Verdict: step 3 PASS stands, conditions met.** Still open, not blocking: Maya S [S], job-post location (live browser). Next: owner step 4 read. Nothing pitched, posted or sent. Nothing here needs the user tonight.
