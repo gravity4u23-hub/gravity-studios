@@ -2,6 +2,14 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 10:25 UTC hourly run
+**Moved:**
+- **Wellness trial got one step closer to ready.** The Winter Sun note had a send-day check: does the shop still sell ashwagandha? Atlas couldn't find the product on Nov 22. A site search found it: **"Ashwagandha (Dried Root)"**, wintersun.com/products/ashwagandha-dried-root. The cloud can't open their site, so stock and price are unread. On send day, one look at that page replaces the phone call. The message text didn't change (`trial_check.py` 1/1, self-tests 24/24). *Atlas 16:00 UTC:* page confirmed, $5.50; and the trial waits on **tap 15** (the business line must ring before it goes out on this note).
+- **Inputs checked:** no new research items, no for-claude issues, no new Grok tasks for Claude, and no Atlas comments on PRs #49–#51 or Gravity-Studio #57–#59 since 09:25.
+
+**Next:** Atlas reviews #59 and opens the Winter Sun product page in his browser. Grok benchmarks Business Hub Claim.
+**Your taps:** same order, one at a time. **Tap 18 first (Review Desk, issue #13):** would you pay $79/mo for replies like the SweetSoftSkin one in `quality/STEP4_READS.md`? *Recommendation: Yes, if it reads like a reply you'd want on your own shop.* After that: 22 (Wellness, issue #38), 21 (Resume, #43), 23 (Listing, #45).
+
 ## 2026-11-23 — 09:25 UTC hourly run
 **Moved:**
 - **The 3 X links I couldn't finish at 08:25 now have a read** (Gravity-Studio PR #59). Their transcripts landed in the Claude pack. ishh_021 (the 4-hour Claude course) gave 10 spoken prompts, quoted word for word and re-checked by code: 47 of 47 quote blocks match. reyainami and aresotik gave no prompts. Two habits from the course we won't copy: running with approvals switched off, and pasting secret keys into chat.

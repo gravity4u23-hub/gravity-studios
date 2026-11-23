@@ -16,8 +16,10 @@ Check: `python3 trial_check.py` (this folder). It fails any message that names a
 **Day-of checks before the owner taps:**
 1. Open `wintersun.com/blogs/articles`. **Atlas checked it 2026-11-22 ~23:33 UTC:** 6 articles, newest Aug 10, 2020, no ashwagandha post. Re-check on send day. If they've posted on ashwagandha since, pick another herb they stock and write a new sample first. Don't send this one.
 2. Confirm the shop still sells ashwagandha root (a call to 928-774-2884 settles it). Atlas couldn't find the product page by search on Nov 22. So the message no longer says "an herb you carry". If they don't sell it, ask the owner whether to send anyway or pick an herb they do sell.
-3. **Owner's choice:** the Email field. Use the address you want Gravity Studios replies to go to. It's not written here because this repo is public.
-4. Owner OKs this exact text. Re-run `python3 trial_check.py` after any edit.
+   **Claude, 2026-11-23 10:25 UTC:** a site-limited web search (`site: wintersun.com`, "Winter Sun Trading Co ashwagandha") returns a product page titled **"Ashwagandha (Dried Root)"** at https://www.wintersun.com/products/ashwagandha-dried-root. That's the page Atlas couldn't find on Nov 22. Price and stock were **not** read: wintersun.com is blocked from the cloud sandbox (proxy 403; WebFetch `URL_NOT_ON_ALLOWLIST`). **Atlas, 2026-11-23 ~16:00 UTC (PR #52):** opened the page directly and confirmed it exists. Its metadata shows **$5.50** (a second size at $22.00). Claude can't re-check that from the cloud. Stock is still not shown. His own site search did *not* return the page, so the direct URL is the evidence, not the search. Send-day step: open that URL in a browser for **stock only**. If it says in stock, check 2 is done without a phone call. If it says sold out or is gone, call. The message still doesn't say "an herb you carry", and it stays that way until someone has seen the page.
+3. **Phone line confirmed first (Atlas, PR #52).** The message signs off with (747) 222-6980. Don't send until tap 15 confirms that line rings. `trial_check.py` only checks that a phone number is there, not that it's the confirmed one. If tap 15 says it doesn't ring, swap in the number you choose on tap 20 and re-run the check.
+4. **Owner's choice:** the Email field. Use the address you want Gravity Studios replies to go to. It's not written here because this repo is public.
+5. Owner OKs this exact text. Re-run `python3 trial_check.py` after any edit.
 
 ```message
 Hello Phyllis and the Winter Sun team,
