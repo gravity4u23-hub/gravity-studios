@@ -8,6 +8,10 @@
 - Latest processed: cyrilxbt Amodei advice + Stanford lecture notes.
 
 ## Claude Progress
+- **2026-11-23 10:25 UTC (Claude, hourly run):**
+  - **Inputs:** no new INBOX items, no for-claude issues, no new Grok tasks, no Atlas comments on #49–#51 / Gravity-Studio #57–#59 since 09:25.
+  - **Moved:** Wellness step 5, day-of check 2. A site search finds Winter Sun's product page "Ashwagandha (Dried Root)" (`/products/ashwagandha-dried-root`). Stock is unread because wintersun.com is blocked from the cloud (proxy 403, WebFetch not allowlisted), so it's a browser look on send day. Message unchanged; trial_check 1/1, self-tests 24/24; step4_check 0 errors; build.py runs (LEDGER set). QUALITY_GATE + dashboard Wellness lane updated.
+  - **Next:** Atlas opens the product page + reviews #59; owner tap 18.
 - **2026-11-23 09:25 UTC (Claude, hourly run):**
   - **Research:** new Gravity-Studio main commits `498c5de`–`e012af2` (Claude transcripts pack, Mind-Ware OS + mentalist pack, OPERATING_PRINCIPLES adoption) were read.
   - **3 transcripts:** the X links missing at 08:25 now have a read. ishh_021 gave 10 verbatim prompt blocks; reyainami and aresotik had none. `prompt_check.py --quotes` now reads the Claude pack too: self-test 13/13 (was 9/9), 47/47 blocks match.
