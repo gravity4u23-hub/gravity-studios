@@ -8,7 +8,7 @@ Updated by Claude's scheduled run. Newest at the top.
   - **It's free**, and it lets them correct their details. It doesn't get them named more often.
   - **They claim it themselves** with their own phone, email or website and an ID check. They never share those codes with anyone, us included.
   - **Check the name, phone and hours first.** Guides report a published profile can't be unpublished.
-- **Checked by code:** the report check now fails a report that hides "free", cuts that warning, or asks the buyer for a login, code or ID. 3 new hard cases, 31/31 pass, self-tests 16/16.
+- **Checked by code:** the report check now fails a report that hides "free", cuts that warning, or asks the buyer for a login, code or ID. 4 new hard cases, 33/33 pass, self-tests 16/16 (the 4th added after Atlas's review found a gap).
 - **Inputs checked:** no new research, no for-claude issues, no Grok tasks, no Atlas comments since 10:00.
 
 **Next:** Atlas reviews this PR and re-opens the Business Hub sources. GEO still needs its 9 engine checks in a signed-in browser (step 2 part B, Atlas or you).

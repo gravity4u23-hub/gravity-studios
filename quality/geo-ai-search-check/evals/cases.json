@@ -120,6 +120,14 @@
       "gold_edits": [],
       "bad_edits": [[" Guides report a published profile can't be unpublished, so check your name, phone and hours before you publish.", ""]],
       "bad_breaks": "profile_claim"
+    },
+    {
+      "id": "profile-free-elsewhere",
+      "request": "(Seller shortcut) Drop 'free' from the profile line; the report already says free in the next-step line.",
+      "gold_note": "A 'free' somewhere else doesn't tell them the profile costs nothing. It stays on the profile line.",
+      "gold_edits": [],
+      "bad_edits": [["Claiming it (free) lets you correct your details.", "Claiming it lets you correct your details."], ["or a re-check after you fix these 3 items.", "or claim your free re-check after you fix these 3 items."]],
+      "bad_breaks": "profile_claim"
     }
   ]
 }

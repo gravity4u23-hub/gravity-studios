@@ -28,7 +28,7 @@ Rules (all code, no judgment):
   crawler_profile    CAN THE AI ENGINES READ YOUR SITE? section with a
                      "ChatGPT business profile: Claimed / Not claimed / Unknown" line
   profile_claim      when the profile is "Not claimed" (the Business Hub fold-in, Nov 23): the
-                     profile lines must say claiming is free, warn that a published profile
+                     profile block (that line + the lines under it) must say claiming is free, warn that a published profile
                      can't be unpublished (check details first), and never ask the buyer for
                      their login, password, verification code or ID (they verify it themselves)
   unfilled           a template bracket left in, e.g. "[Business name]"
@@ -213,7 +213,17 @@ def check(text):
         broken["crawler_profile"] = "no 'ChatGPT business profile: Claimed / Not claimed / Unknown' line"
 
     # profile_claim: only when we're telling them to claim it
-    plines = [l for l in text.splitlines() if "profile" in l.lower() or "claim" in l.lower()]
+    # only the profile block: the "ChatGPT business profile:" line and the lines right under it,
+    # up to the next blank line or heading (a "free" elsewhere, e.g. "Claim your free re-check",
+    # must not satisfy it; Atlas, PR #54)
+    plines, inblock = [], False
+    for l in text.splitlines():
+        if re.match(r"\s*ChatGPT business profile:", l):
+            inblock = True
+        elif inblock and (not l.strip() or l.startswith("#")):
+            inblock = False
+        if inblock:
+            plines.append(l)
     pl = "\n".join(plines)
     if re.search(r"ChatGPT business profile:\s*Not claimed\b", text):
         pc = []
