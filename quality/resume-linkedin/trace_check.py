@@ -119,8 +119,18 @@ def read(name):
         return f.read()
 
 
+# Lines of the buyer's resume that the rewrite throws away are NOT a source:
+# reusing their words would bring back what we cut (Atlas, PR #39 challenge 1).
+DISCARDED = re.compile(r"^\s*(objective|career objective|career goal)\s*:", re.I)
+
+
+def source_text():
+    kept = [l for l in read("original.txt").splitlines() if not DISCARDED.match(l)]
+    return "\n".join(kept) + "\n" + read("buyer-answers.txt")
+
+
 def run(md=False):
-    source = read("original.txt") + "\n" + read("buyer-answers.txt")
+    source = source_text()
     post = read("job-post.txt")
     allow = load_allow(os.path.join(HERE, "reword_allowlist.json"))
     rows, new_total = trace(source, post, read("rewrite.txt"), read("linkedin.txt"), allow)
@@ -148,7 +158,7 @@ def run(md=False):
 
 
 def selftest():
-    source = read("original.txt") + "\n" + read("buyer-answers.txt")
+    source = source_text()
     post = read("job-post.txt")
     allow = load_allow(os.path.join(HERE, "reword_allowlist.json"))
     rw, li = read("rewrite.txt"), read("linkedin.txt")
@@ -162,6 +172,8 @@ def selftest():
         ("invented duty in LinkedIn fails", rw, li + "\nI also led our quarterly audits.\n", False),
         ("new credential fails", rw.replace("High school diploma, 2018",
                                            "High school diploma, 2018; ServSafe Manager"), li, False),
+        ("discarded objective words fail", rw + "\n- Dependable team member eager to grow into management.\n",
+         li, False),
     ]
     ok = 0
     for name, r, l, expect_pass in cases:

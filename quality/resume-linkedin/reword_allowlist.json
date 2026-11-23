@@ -6,5 +6,6 @@
   "bilingual": "Skills line: 'English and Spanish'. Bilingual is the one-word form of the buyer's own fact.",
   "speak": "Skills line: 'English and Spanish'. 'I speak' only states the buyer's listed languages.",
   "retail": "Both employers are stores (grocery and apparel). A category word for LinkedIn search, not a new fact.",
-  "spent": "Time-on-job phrasing for 'Sales Associate, 2018 - 2021'; dates unchanged."
+  "spent": "Time-on-job phrasing for 'Sales Associate, 2018 - 2021'; dates unchanged.",
+  "looking": "The buyer is job-seeking (they bought this rewrite to apply for the Guess ASM post); states the goal, not a past result. Their 'Objective' line is cut and no longer counts as a source."
 }
