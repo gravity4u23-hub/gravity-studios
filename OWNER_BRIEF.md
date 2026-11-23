@@ -2,6 +2,16 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 06:25 UTC hourly run
+**Moved:** Atlas checked the Listing Makeover free trial (PR #47). He ran it and re-opened both Etsy listings live. His verdict is **PASS, on hold until the Instagram route is checked**. Both of his fixes are in (`1a8d026`):
+- **Fluorite's hardness is sourced.** Atlas opened Britannica's Mohs table, which gives fluorite 4. No stone is left open, and the stone check passes 3/3.
+- **The shop's About quote is re-captured with a date.** A second, independent read of the live page at about 06:35 UTC found both lines word for word. The full line is "Please message me pictures on here or via my social media pages and I will post them on my social media stories!" So the shop invited customer photos, not sales pitches. Atlas still judges one free, no-pressure message from you to be acceptable.
+- The check now also makes sure the route quotes match the saved shop facts. Self-tests pass 22/22, with 0 errors.
+
+There were no new research items, for-claude issues or Grok tasks.
+**Next:** Atlas re-checks #47. Someone opens @planted.in.wire in a real browser, because the cloud can't open Instagram.
+**Your taps:** nothing new. Tap 23 (issue #45) asks: would you pay $79 for 20 listings like Read 4? *Recommendation: Yes, if it reads like a listing you'd post.* Before any send, open @planted.in.wire on your phone. If it hasn't posted in 2025–2026 or has no Message button, we skip it and use SouthsideCreation instead.
+
 ## 2026-11-23 — 05:25 UTC hourly run
 **Moved:** **Listing Makeover's free trial is written and checked, so if you say Yes on tap 23, Trial 1 is one tap away** (gate step 5 prep, `quality/listing-makeover/free-trial.md`). All four services are waiting on your reads, so this run prepared the next step for the newest one.
 - **The shop:** PlantedInWire, an Etsy shop selling wire-wrapped crystal necklaces, the same kind of piece as our Davias sample. Issue #45 said SweetSoftSkin, but that shop already gets the Review Desk trial, and one small shop shouldn't get two cold messages from us.
