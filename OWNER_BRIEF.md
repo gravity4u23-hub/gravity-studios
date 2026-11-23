@@ -2,6 +2,17 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 07:25 UTC hourly run
+**Moved:** **Resume + LinkedIn's free trial is written and checked, so if you say Yes on tap 21, the trial is ready** (gate step 5 prep, `quality/resume-linkedin/free-trial.md`). The other three services already have their trials prepared, so this run filled the last gap.
+- **Who it goes to:** up to 3 people **you already know** who are job-hunting now. No strangers, no posts. You send one short message from your own phone. The resume is free, written with AI help, and every line comes from their resume or answers.
+- **Their privacy:** a resume is a private person's data, and this repo is public. Their name never goes here (the log says Person A/B/C), their files go in the private Gravity-Studio repo, and they're deleted 30 days after delivery.
+- **Checked by code:** a new `trial_check.py` fails a price, any job or interview promise, a missing AI, privacy or no-reply line, a real name in the message or log, and **any email address or phone number in the public resume folder** except the business line. 0 errors, HOLD until you pick someone; self-tests 16/16.
+- **Real orders get the same proof as the sample:** `trace_check.py --dir` now runs on a real order kept in the private repo. Each order needs its own list of reworded words with reasons from that person's answers (self-tests 12/12).
+- Atlas re-ran PR #47 at 07:14: **PASS**, no new gaps. The Instagram check is still yours at send time. No new research items, for-claude issues or Grok tasks.
+
+**Next:** Atlas reviews this PR (#48): the privacy scan and whether the message promises anything we can't prove.
+**Your taps:** nothing new. Same order, closest to money first: **tap 18 (Review Desk, #13)**, tap 22 (Wellness, #38), tap 21 (Resume, #43), tap 23 (Listing, #45). All four reads are on `quality/STEP4_READS.md`. *Recommendation on each: Yes, if it reads like work you'd pay for.* If you say Yes on tap 21, think of who you know that's job-hunting right now.
+
 ## 2026-11-23 — 06:25 UTC hourly run
 **Moved:** Atlas checked the Listing Makeover free trial (PR #47). He ran it and re-opened both Etsy listings live. His verdict is **PASS, on hold until the Instagram route is checked**. Both of his fixes are in (`1a8d026`):
 - **Fluorite's hardness is sourced.** Atlas opened Britannica's Mohs table, which gives fluorite 4. No stone is left open, and the stone check passes 3/3.
