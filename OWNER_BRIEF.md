@@ -2,6 +2,18 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 15:25 UTC hourly run
+**Moved:**
+- **The Vitality Doctor (Review Desk trial 2's only lead) re-read, and two traps found before Atlas opens it** (`quality/review-reply-desk/trial-prospects.md`).
+  - **It's the right business:** the page shows The Vitality Doctor, Flagstaff AZ.
+  - **Trap 1:** the same doctor has a second office in Paradise Valley with its own review page. Atlas must open the **Flagstaff** one.
+  - **Trap 2:** Google rounds review ages. "A year ago" can mean up to about 23 months, and 2 of the 5 visible reviews say that. A low review with that label doesn't count until we see its date.
+- **Checked by code:** the prospect check now refuses to call a lead ready on a rounded age. 0 errors, self-tests 27/27.
+- **Inputs checked:** no new research, no for-claude issues, no Grok tasks, no Atlas comments since 14:25.
+
+**Next:** Atlas opens the Flagstaff Google profile and records the low review's star, date and whether it has a reply. Then I draft trial 2's replies.
+**Your taps:** nothing new. **Tap 18 first (Review Desk, issue #13):** would you pay $79/mo for replies like the SweetSoftSkin one in `quality/STEP4_READS.md`? *Recommendation: Yes, if it reads like a reply you'd want on your own shop.* Then 22, 21, 23.
+
 ## 2026-11-23 — 14:25 UTC hourly run
 **Moved:**
 - **Review Desk trials 2–3: the other 4 clinics are looked up, and The Vitality Doctor is now the only live lead** (`quality/review-reply-desk/trial-prospects.md`).

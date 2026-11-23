@@ -36,6 +36,11 @@ Rules:
      of the business name or the other way round. ELIGIBLE needs that match recorded.
      NEEDS-BROWSER and NO-GAP need it too, except legacy "unrecorded" rows. A page that
      fails the match is WRONG-PAGE, and WRONG-PAGE must actually fail it.
+  7. Google's age labels are rounded. "a month ago" to "11 months ago" are exact enough,
+     but "a year ago" covers roughly 12 to 23 months (Nov 23: two of P009's five visible
+     reviews were "a year ago"). So the age cell is whole months (0-11 from a label, or
+     counted from a date), a range "12-23" for "a year ago", or "-". A range never
+     makes a row ELIGIBLE; get the review's date first.
 
 Usage:  python3 review_gap_check.py [trial-prospects.md]
         python3 review_gap_check.py --self-test
@@ -119,7 +124,11 @@ def check_row(line, c, prospect_city="Flagstaff, AZ"):
             errs.append(f"{tag}: WRONG-PAGE but the page matches the prospect; give it a real status")
         if status != "WRONG-PAGE" and not ok:
             errs.append(f"{tag}: {why}; mark it WRONG-PAGE")
+    if age not in ("-", "") and not re.match(r"^\d+(-\d+)?$", age):
+        errs.append(f"{tag}: age must be whole months, a range like '12-23' for 'a year ago', or '-' (got '{age}')")
     if status == "ELIGIBLE":
+        if "-" in age:
+            errs.append(f"{tag}: ELIGIBLE can't rest on a rounded age '{age}'; 'a year ago' may be 23 months, find the date")
         if stars not in ("1", "2", "3", "4"):
             errs.append(f"{tag}: ELIGIBLE needs the under-5 star count seen on the page (got '{stars}')")
         if not age.isdigit() or int(age) > 12:
@@ -172,6 +181,11 @@ def self_test():
         ("wrong-page that matches", ["P008", "Synergistic Healthcare PLLC", "yes", U, "Synergistic Healthcare, Flagstaff AZ", T, "16 / 5.0", "none", "-", "not-in-text", "WRONG-PAGE"], 1),
         ("reordered name with person", ["P010", "Acupuncture Wellness Center (Cynthia Hull)", "yes", U, "Hull Cynthia-Acupuncture Wellness Center, Flagstaff AZ", T, "5 / 5.0", "none", "-", "not-in-text", "NO-GAP"], 0),
         ("one generic word is no match", ["P008", "Synergistic Healthcare PLLC", "yes", U, "Healthcare, Flagstaff AZ", T, "16 / 5.0", "none", "-", "not-in-text", "NO-GAP"], 1),
+        ("a year ago is a range, not eligible", ["P009", "The Vitality Doctor", "yes", U, "The Vitality Doctor- Dr Christina Kovalik NMD, LAc, Flagstaff AZ", T, "23 / 4.5", "4", "12-23", "none-rendered", "ELIGIBLE"], 1),
+        ("a year ago kept as a range is fine", ["P009", "The Vitality Doctor", "yes", U, "The Vitality Doctor- Dr Christina Kovalik NMD, LAc, Flagstaff AZ", T, "23 / 4.5", "4", "12-23", "not-in-text", "NEEDS-BROWSER"], 0),
+        ("age written as words", ["P009", "The Vitality Doctor", "yes", U, "The Vitality Doctor- Dr Christina Kovalik NMD, LAc, Flagstaff AZ", T, "23 / 4.5", "4", "a year", "not-in-text", "NEEDS-BROWSER"], 1),
+        ("same doctor, other office", ["P009", "The Vitality Doctor", "yes", U, "The Vitality Doctor- Dr. Christina Kovalik, NMD, LAc., Paradise Valley AZ", T, "25 / 4.8", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
+        ("page name with a comma inside", ["P009", "The Vitality Doctor (Dr Christina Kovalik NMD, LAc)", "yes", U, "The Vitality Doctor- Dr Christina Kovalik NMD, LAc, Flagstaff AZ", T, "23 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 0),
         ("page cell without a city", ["P008", "Synergistic Healthcare PLLC", "yes", U, "Synergistic Healthcare", T, "16 / 5.0", "none", "-", "not-in-text", "NO-GAP"], 1),
     ]
     ok = 0
