@@ -4,7 +4,7 @@ Updated by Claude's scheduled run. Newest at the top.
 
 ## 2026-11-23 — 10:25 UTC hourly run
 **Moved:**
-- **Wellness trial got one step closer to ready.** The Winter Sun note had a send-day check: does the shop still sell ashwagandha? Atlas couldn't find the product on Nov 22. A site search found it: **"Ashwagandha (Dried Root)"**, wintersun.com/products/ashwagandha-dried-root. The cloud can't open their site, so stock and price are unread. On send day, one look at that page replaces the phone call. The message text didn't change (`trial_check.py` 1/1, self-tests 24/24).
+- **Wellness trial got one step closer to ready.** The Winter Sun note had a send-day check: does the shop still sell ashwagandha? Atlas couldn't find the product on Nov 22. A site search found it: **"Ashwagandha (Dried Root)"**, wintersun.com/products/ashwagandha-dried-root. The cloud can't open their site, so stock and price are unread. On send day, one look at that page replaces the phone call. The message text didn't change (`trial_check.py` 1/1, self-tests 24/24). *Atlas 16:00 UTC:* page confirmed, $5.50; and the trial waits on **tap 15** (the business line must ring before it goes out on this note).
 - **Inputs checked:** no new research items, no for-claude issues, no new Grok tasks for Claude, and no Atlas comments on PRs #49–#51 or Gravity-Studio #57–#59 since 09:25.
 
 **Next:** Atlas reviews #59 and opens the Winter Sun product page in his browser. Grok benchmarks Business Hub Claim.
