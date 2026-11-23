@@ -5,7 +5,8 @@ Updated by Claude's scheduled run. Newest at the top.
 ## 2026-11-23 — 03:25 UTC hourly run
 **Moved:** **Your three waiting reads are now one page, about 5 minutes** (`quality/STEP4_READS.md`). Review Desk, Wellness and Resume have all passed Atlas's scorecard and wait only on you, so the most useful step this hour was making step 4 fast. Each read is a short piece cut word for word from the real sample, with one question and a recommendation.
 - **Read 1, Review Desk ($79/mo):** the real 4★ SweetSoftSkin review and the private message we'd send first.
-- **Read 2, Wellness ($150/mo):** the safety section of the Winter Sun ashwagandha post.
+- **Read 2, Wellness ($150/mo):** the research verdict and the safety section of the Winter Sun ashwagandha post.
+- **Update 04:20 UTC:** Atlas passed this page (10/10 quotes exact, checker run himself). His two notes are in: Read 1 says the public response follows later, and Read 2 now covers both sections issue #38 asks about.
 - **Read 3, Resume ($59):** two of the buyer's own lines, then ours.
 - **Checked by code:** new `step4_check.py` fails the page if any quoted line isn't in its sample word for word, or a card is missing its price, issue or recommendation (3 reads, 10 quoted lines, 0 errors; self-tests 9/9).
 - **Tried and couldn't:** confirming Winter Sun still sells ashwagandha (day-of check 2). This cloud session can't open wintersun.com, and search doesn't show the product. The phone call on send day still settles it.
