@@ -18,6 +18,13 @@ written reason a reviewer can disagree with.
 Usage:
   python3 trace_check.py            check the gold sample, print the trace table
   python3 trace_check.py --md       same, as a Markdown table (for gold-sample.md)
+  python3 trace_check.py --dir DIR  check a real order kept OUTSIDE this public repo
+                                    (DIR holds original.txt, buyer-answers.txt,
+                                    job-post.txt, rewrite.txt, linkedin.txt and, if
+                                    any words were reworded, its OWN
+                                    reword_allowlist.json; the gold sample's reasons
+                                    cite the synthetic buyer's answers, so they never
+                                    carry over to a real buyer)
   python3 trace_check.py --test     self-tests: planted invented facts must fail
 Exit 0 = no NEW words.
 """
@@ -114,8 +121,27 @@ def trace(source, post, rewrite, linkedin, allow):
     return rows, new_total
 
 
+FILES = ("original.txt", "buyer-answers.txt", "job-post.txt", "rewrite.txt", "linkedin.txt")
+ORDER = {"dir": GOLD, "allow": os.path.join(HERE, "reword_allowlist.json")}
+
+
+def use_dir(d):
+    """Point the check at one order's folder. Missing files fail loudly."""
+    d = os.path.abspath(d)
+    missing = [f for f in FILES if not os.path.isfile(os.path.join(d, f))]
+    if missing:
+        sys.exit(f"trace_check: {d} is missing {', '.join(missing)}")
+    ORDER["dir"] = d
+    own = os.path.join(d, "reword_allowlist.json")
+    ORDER["allow"] = own if os.path.isfile(own) else None
+
+
+def allowlist():
+    return load_allow(ORDER["allow"]) if ORDER["allow"] else {}
+
+
 def read(name):
-    with open(os.path.join(GOLD, name)) as f:
+    with open(os.path.join(ORDER["dir"], name)) as f:
         return f.read()
 
 
@@ -132,7 +158,7 @@ def source_text():
 def run(md=False):
     source = source_text()
     post = read("job-post.txt")
-    allow = load_allow(os.path.join(HERE, "reword_allowlist.json"))
+    allow = allowlist()
     rows, new_total = trace(source, post, read("rewrite.txt"), read("linkedin.txt"), allow)
     used = {stem(w) for r in rows for w in r[3]}
     unused = [w for st, (w, _) in allow.items() if st not in used]
@@ -194,12 +220,56 @@ def selftest():
         print("ok   allowlist entry without a reason is refused")
     finally:
         os.remove(tmp)
-    total = len(cases) + 1
+    ok += dir_selftests()
+    total = len(cases) + 1 + 3
     print(f"{ok}/{total}")
     return 0 if ok == total else 1
+
+
+def dir_selftests():
+    """--dir: a real order needs its own allowlist; a missing file is refused."""
+    import io, contextlib, shutil, tempfile
+    ok = 0
+    saved = dict(ORDER)
+    tmp = tempfile.mkdtemp(prefix="order_")
+    try:
+        for f in FILES:
+            shutil.copy(os.path.join(GOLD, f), tmp)
+        quiet = io.StringIO()
+        # 1. Same files, no allowlist of its own -> the gold reasons don't carry over -> fails
+        use_dir(tmp)
+        with contextlib.redirect_stdout(quiet):
+            code = run()
+        good = code == 1 and ORDER["allow"] is None
+        ok += good
+        print(("ok  " if good else "FAIL") + " --dir order without its own allowlist fails (gold reasons don't carry over)")
+        # 2. With its own allowlist -> passes
+        shutil.copy(os.path.join(HERE, "reword_allowlist.json"), tmp)
+        use_dir(tmp)
+        with contextlib.redirect_stdout(quiet):
+            code = run()
+        ok += code == 0
+        print(("ok  " if code == 0 else "FAIL") + " --dir order with its own allowlist passes")
+        # 3. Missing file is refused
+        os.remove(os.path.join(tmp, "linkedin.txt"))
+        try:
+            use_dir(tmp)
+            print("FAIL --dir with a missing file is refused")
+        except SystemExit:
+            ok += 1
+            print("ok   --dir with a missing file is refused")
+    finally:
+        ORDER.update(saved)
+        shutil.rmtree(tmp)
+    return ok
 
 
 if __name__ == "__main__":
     if "--test" in sys.argv:
         sys.exit(selftest())
+    if "--dir" in sys.argv:
+        i = sys.argv.index("--dir")
+        if i + 1 >= len(sys.argv):
+            sys.exit("trace_check: --dir needs a folder")
+        use_dir(sys.argv[i + 1])
     sys.exit(run(md="--md" in sys.argv))
