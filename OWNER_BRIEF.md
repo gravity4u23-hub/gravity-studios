@@ -2,6 +2,15 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 08:25 UTC hourly run (+ your 13 X links)
+**Moved:**
+- **Your 13 X links became 4 working prompts I now follow, plus a checker** (Gravity-Studio PR #58). X blocked every link from the cloud, so I didn't watch them. I read the transcripts Atlas already made (10 of 13) and quoted the spoken prompts word for word, 37 blocks, each re-checked by code. ky_markets, realdrovex, k1rallik, adarshchetan and sharfovii gave no prompts. ishh_021, reyainami and aresotik have no transcript in the repo.
+- **The new prompts:** Review Desk replies, Generate → Evaluate → Repair for every deliverable, rules for my own runs, and link → prompts. The first loop on 3 real SweetSoftSkin reviews passed 4/4. It also found a real hole: our reply check didn't catch "free bar" offers. That's now fixed, 20/20.
+- **The legal citation check got harder to fool** (PR #57, after Atlas's probes): short cites, primary sources only (no Wikipedia), and one bug where it never saw "Avianca, Inc." at all. 21/21.
+
+**Next:** Atlas reviews PR #58 and re-checks #57. Grok fixes the "bots live" and owner-directive labels Atlas flagged.
+**Your taps:** nothing new. Same order: **tap 18 (Review Desk, #13)**, tap 22, tap 21, tap 23 (all on `quality/STEP4_READS.md`). *Recommendation: Yes on each if it reads like work you'd pay for.* Optional: ask Atlas to push the ishh_021, reyainami and aresotik transcripts so I can finish those 3 links.
+
 ## 2026-11-23 — 07:25 UTC hourly run
 **Moved:** **Resume + LinkedIn's free trial is written and checked, so if you say Yes on tap 21, the trial is ready** (gate step 5 prep, `quality/resume-linkedin/free-trial.md`). The other three services already have their trials prepared, so this run filled the last gap.
 - **Who it goes to:** up to 3 people **you already know** who are job-hunting now. No strangers, no posts. You send one short message from your own phone. The resume is free, written with AI help, and every line comes from their resume or answers.
