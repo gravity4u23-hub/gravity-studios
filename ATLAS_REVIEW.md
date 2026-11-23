@@ -390,3 +390,26 @@ Browser task (read-only, no sign-in) checked all 11 source URLs live. Follow-up 
 2. **"an herb you carry" — could not re-confirm online tonight:** `site:wintersun.com ashwagandha` returns nothing and no Winter Sun product page surfaced in search. That may just be poor indexing of their shop (the earlier prospect check said they stock dried root), but the message asserts it, so day-of check #2 (confirm they still list ashwagandha root) is the one that matters before the owner sends. A quick call to 928-774-2884 settles it.
 
 **Needs the owner:** step 4 read (issue #38) + OK on the exact trial text. Nothing sent, no form filled in.
+
+---
+
+## 2026-11-23 ~00:35 UTC — PR #39 Resume + LinkedIn step 3 packet (trace_check.py) — PASS conditional
+
+**What appeared:** PR #39 (stacked on #37, head `214023f`, 00:27 UTC). New: `quality/resume-linkedin/trace_check.py` — every content word in `rewrite.txt` + `linkedin.txt` must trace to the buyer's own resume/answers (SOURCE), the job post (POST), or `reword_allowlist.json` with a written reason (REWORD); anything else is NEW and fails. Claims: 26 lines traced, 0 NEW words; `--test` 8/8; `gold_check.py` 8/8 and `evals/check_resumes.py` 19/19 unchanged. `gold-sample.md` carries the trace table + Claude's self-score 5/4/5/4/5/5.
+
+**What I did:** read the checker, the allowlist, the gold sample and all five source files in full, and hand-traced every content word instead of taking the run output on trust. Posted as PR #39 comment https://github.com/gravity4u23-hub/gravity-studios/pull/39#issuecomment-7088458790.
+
+**Verified by hand-trace — 0 NEW words holds.** All 8 allowlist words ACCEPT: **run** (Q2: "in charge of the whole store for the shift", scoped "when the manager is off / for the shift" — no P&L implication); **build** ("make" → "build", same task); **within / given** (Q6 verbatim); **bilingual / speak** (buyer's listed languages); **retail** (category label, both employers are stores); **spent** (dates unchanged). The 4 post rows check out: **assistant** is the target role, not a claimed title; **staff** is the buyer's "people" in the post's word; **visual merchandising standards** sits in brackets after the buyer's own "floor set guide" as a keyword. All 6 planted failures fail by construction (`managed`→`manag` not in vocab; `drove`, `pharmacy`, `pivot`/`VLOOKUP`, `led`/`quarterly`/`audits`, `servsafe` all NEW; no-reason allowlist refused by `load_allow`).
+
+**Caveat, stated plainly:** I did **not** execute `trace_check.py` this run (local execution of repo code was blocked by an execution-risk check), so the 8/8 and 0-NEW run claims are read-verified + construction-verified, not Atlas-executed. Same for `gold_check.py` 8/8 and `check_resumes.py` 19/19 (unchanged from prior steps, not re-run). Re-run them once and the packet is fully closed.
+
+**Challenges — fix before merge:**
+1. **Dead-text leak (real hole).** `original.txt`'s discarded objective line ("looking for a management job where I can grow") still counts as SOURCE vocab — "looking" in the LinkedIn About traces through it, and `management` / `grow` / `dependable` would pass if reused. Fix: exclude the objective line from the source the checker reads.
+2. **Word-level, not phrase-level.** "Running the floor" (LinkedIn last line) passes via allowlisted `run` + source `floor`, though the buyer never said they run the floor. Framed as aspiration and the post's overview says the ASM "leads on the selling floor", so accepted — but keep a human read on every line; the packet's "code can't judge" warning should extend from post words to allowlist words in new combinations.
+3. **`complete` is sense-mismatched.** It traces via "complete training" in the post, but the rewrite uses it for price changes ("complete the price changes" = buyer's "do price changes"). Harmless verb swap — footnote the trace table row.
+4. **Step 1 (benchmark, PR #23) still not fully Atlas-verified.** TopResume $149 entry now corroborated (multiple sources Sep–Nov 2026: igotanoffer, velotouch, tealhq all $149 / $219 / $349); the $179 figure looks stale/coupon — correct the benchmark to $149. Maya S $40 / 1-day still [S]-unverified (search didn't surface the gig). Also: search surfaced a $5–$20 resume-only Fiverr gig, so "$40–$150" is the four sampled sellers, not the market floor — keep the price-beat claim scoped to comparable resume+LinkedIn sellers. Trustpilot quotes + the "2–3 low-star Fiverr reviews" gap still open.
+5. **Job-post location still open.** CareerBuilder returns 403 to a text fetch, so the AZ-title vs Pismo Beach-footer question needs a live-browser check. The post quotes check out internally (every post word used appears in the quoted bullets).
+
+**Scorecard:** Accuracy 5 · Specificity 4 · Usefulness 5 · Speed 4 · Price 5 · Complaint fix 5. Average **4.67**.
+
+**Verdict: step 3 PASS, conditional on fixes 1 + 4 (TopResume $149 correction).** Maya [S] and the CareerBuilder location stay open but don't block the pass. Nothing pitched, posted or sent.
