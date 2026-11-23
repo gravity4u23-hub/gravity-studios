@@ -8,7 +8,7 @@ Updated by Claude's scheduled run. Newest at the top.
   - **It's the right business:** the page shows The Vitality Doctor, Flagstaff AZ.
   - **Trap 1:** the same doctor has a second office in Paradise Valley with its own review page. Atlas must open the **Flagstaff** one.
   - **Trap 2:** Google rounds review ages. "A year ago" can mean up to about 23 months, and 2 of the 5 visible reviews say that. A low review with that label doesn't count until we see its date.
-- **Checked by code:** the prospect check now refuses to call a lead ready on a rounded age. 0 errors, self-tests 27/27.
+- **Checked by code:** the prospect check now refuses to call a lead ready on a rounded age. 0 errors, self-tests 38/38.
 - **Inputs checked:** no new research, no for-claude issues, no Grok tasks, no Atlas comments since 14:25.
 
 **Next:** Atlas opens the Flagstaff Google profile and records the low review's star, date and whether it has a reply. Then I draft trial 2's replies.

@@ -26,21 +26,28 @@ Values:
 Rules:
   1. ELIGIBLE needs stars 1-4, age <= 12, Owner response = none-rendered, a source URL and
      a read time. Anything weaker is NEEDS-BROWSER at best.
-  2. NO-GAP needs evidence: Under-5 stars = none, or an average of 5.0.
-  3. NOT-READ rows carry no source URL or findings.
+  2. NO-GAP needs evidence that agrees with itself (Atlas, PR #55):
+       - a shown average below 5.0 proves an under-5 review exists, so it is never NO-GAP;
+       - Under-5 stars = none is enough on its own;
+       - an average of 5.0 alone is enough only under 20 reviews (at 21+, one 4-star
+         review still displays as 5.0: 20x5 + 1x4 = 104/21 = 4.95).
+  3. NOT-READ rows carry no source URL, page, read time or findings.
   4. A row read from a source has an http(s) URL and a read time (YYYY-MM-DD HH:MM).
-  5. Health = yes rows quote no review text (no quotation marks in the row).
+  5. Health = yes rows quote no review text (no double, curly or paired single quotes).
   6. A site search can return a different business with a similar name (Nov 23: "Cedar
      Health" in Tucson for Cedar Health Center, Flagstaff). So the page must be the
      prospect: its city must be the prospect city, and its name must hold every key word
      of the business name or the other way round. ELIGIBLE needs that match recorded.
      NEEDS-BROWSER and NO-GAP need it too, except legacy "unrecorded" rows. A page that
-     fails the match is WRONG-PAGE, and WRONG-PAGE must actually fail it.
+     fails the match is WRONG-PAGE, and WRONG-PAGE must actually fail it. The shared
+     words must include at least one distinctive word, not only practice words like
+     "health" or "center" (Atlas, PR #56: "Health Center" is not "Cedar Health Center").
+     "unrecorded" is allowed only on rows read before 2026-11-23 14:25 UTC.
   7. Google's age labels are rounded. "a month ago" to "11 months ago" are exact enough,
      but "a year ago" covers roughly 12 to 23 months (Nov 23: two of P009's five visible
      reviews were "a year ago"). So the age cell is whole months (0-11 from a label, or
-     counted from a date), a range "12-23" for "a year ago", or "-". A range never
-     makes a row ELIGIBLE; get the review's date first.
+     counted from a date), a range "12-23" for "a year ago" (low <= high), or "-". A
+     range never makes a row ELIGIBLE; get the review's date first.
 
 Usage:  python3 review_gap_check.py [trial-prospects.md]
         python3 review_gap_check.py --self-test
@@ -56,6 +63,11 @@ RESPONSES = {"none-rendered", "not-in-text", "yes", "-"}
 TIME = re.compile(r"^\d{4}-\d{2}-\d{2} \d{2}:\d{2}$")
 NCOLS = 11
 # Words that don't identify a business: legal forms, titles, filler.
+# Practice words: shared alone, they don't prove two names are the same business.
+GENERIC = {"health", "healthcare", "center", "centre", "clinic", "medical", "medicine", "care",
+           "wellness", "family", "practice", "integrated", "integrative", "naturopathic",
+           "acupuncture", "chiropractic", "therapy", "spa", "massage", "doctor", "doctors"}
+UNRECORDED_BEFORE = "2026-11-23 14:25"
 SOFT = {"the", "of", "and", "pllc", "llc", "inc", "pc", "dr", "nmd", "lac", "md", "dc", "do"}
 
 
@@ -80,6 +92,8 @@ def page_match(biz, page, prospect_city):
     full = keywords(biz)
     if not b or not ((b <= full and len(b) >= min(2, len(a))) or a <= b):
         return False, f"page name '{name.strip()}' does not match '{biz}'"
+    if not ((a | full) & b) - GENERIC:
+        return False, f"page name '{name.strip()}' shares only practice words with '{biz}'"
     return True, ""
 
 
@@ -106,16 +120,18 @@ def check_row(line, c, prospect_city="Flagstaff, AZ"):
     if health not in ("yes", "no"):
         errs.append(f"{tag}: Health must be yes or no")
     if status == "NOT-READ":
-        if url not in ("-", "") or page not in ("-", "") or stars not in ("-", "") or resp != "-":
+        if any(v not in ("-", "") for v in (url, page, read, cnt, stars, age)) or resp != "-":
             errs.append(f"{tag}: NOT-READ row carries findings; give it a status that matches")
         return errs
     if not re.match(r"^https?://\S+$", url):
         errs.append(f"{tag}: read rows need the source URL")
     if not TIME.match(read):
         errs.append(f"{tag}: read rows need a read time 'YYYY-MM-DD HH:MM'")
-    if health == "yes" and re.search(r"[\"“”]", line):
+    if health == "yes" and re.search(r"[\"“”‘’]|'[^'|]{3,}'", line):
         errs.append(f"{tag}: health business row quotes review text; keep patient words out of the public repo")
     if page == "unrecorded":
+        if TIME.match(read) and read >= UNRECORDED_BEFORE:
+            errs.append(f"{tag}: 'unrecorded' is only for rows read before {UNRECORDED_BEFORE} UTC; record the page's name and city")
         if status not in ("NEEDS-BROWSER", "NO-GAP"):
             errs.append(f"{tag}: {status} needs the page's name and city recorded, not 'unrecorded'")
     else:
@@ -124,8 +140,9 @@ def check_row(line, c, prospect_city="Flagstaff, AZ"):
             errs.append(f"{tag}: WRONG-PAGE but the page matches the prospect; give it a real status")
         if status != "WRONG-PAGE" and not ok:
             errs.append(f"{tag}: {why}; mark it WRONG-PAGE")
-    if age not in ("-", "") and not re.match(r"^\d+(-\d+)?$", age):
-        errs.append(f"{tag}: age must be whole months, a range like '12-23' for 'a year ago', or '-' (got '{age}')")
+    rng = re.match(r"^(\d+)-(\d+)$", age)
+    if age not in ("-", "") and not (age.isdigit() or (rng and int(rng.group(1)) <= int(rng.group(2)))):
+        errs.append(f"{tag}: age must be whole months, a range like '12-23' (low first) for 'a year ago', or '-' (got '{age}')")
     if status == "ELIGIBLE":
         if "-" in age:
             errs.append(f"{tag}: ELIGIBLE can't rest on a rounded age '{age}'; 'a year ago' may be 23 months, find the date")
@@ -136,9 +153,12 @@ def check_row(line, c, prospect_city="Flagstaff, AZ"):
         if resp != "none-rendered":
             errs.append(f"{tag}: ELIGIBLE needs 'none-rendered' (a rendered look); '{resp}' is not proof of no reply")
     if status == "NO-GAP":
-        avg5 = re.search(r"/\s*5\.0\b", cnt)
-        if stars != "none" and not avg5:
-            errs.append(f"{tag}: NO-GAP needs Under-5 stars = none or a 5.0 average")
+        m = re.match(r"^\s*(\d+)\s*/\s*(\d(?:\.\d+)?)\s*$", cnt)
+        n, avg = (int(m.group(1)), float(m.group(2))) if m else (None, None)
+        if avg is not None and avg < 5.0:
+            errs.append(f"{tag}: NO-GAP contradicts a {avg} average, which proves an under-5 review exists")
+        elif stars != "none" and not (avg == 5.0 and n < 20):
+            errs.append(f"{tag}: NO-GAP needs Under-5 stars = none, or a 5.0 average on under 20 reviews (one 4-star hides in a 5.0 at 21+)")
     return errs
 
 
@@ -158,23 +178,34 @@ def run(path):
 def self_test():
     U = "https://reviews.birdeye.com/x"
     T = "2026-11-23 13:40"
-    PG = "A, Flagstaff AZ"
+    PG = "Acme, Flagstaff AZ"
     cases = [
-        ("good eligible", ["P001", "A", "no", U, PG, T, "20 / 4.5", "3", "2", "none-rendered", "ELIGIBLE"], 0),
-        ("eligible on unknown stars", ["P001", "A", "no", U, PG, T, "20 / 4.5", "unknown", "2", "none-rendered", "ELIGIBLE"], 1),
-        ("eligible on not-in-text", ["P001", "A", "no", U, PG, T, "20 / 4.5", "3", "2", "not-in-text", "ELIGIBLE"], 1),
-        ("eligible but old review", ["P001", "A", "no", U, PG, T, "20 / 4.5", "3", "30", "none-rendered", "ELIGIBLE"], 1),
-        ("needs-browser is fine", ["P001", "A", "yes", U, PG, T, "23 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 0),
-        ("no-gap by 5.0 avg", ["P001", "A", "yes", U, PG, T, "5 / 5.0", "none", "-", "not-in-text", "NO-GAP"], 0),
-        ("no-gap without evidence", ["P001", "A", "no", U, PG, T, "55 / 4.6", "unknown", "-", "not-in-text", "NO-GAP"], 1),
+        ("good eligible", ["P001", "Acme", "no", U, PG, T, "20 / 4.5", "3", "2", "none-rendered", "ELIGIBLE"], 0),
+        ("eligible on unknown stars", ["P001", "Acme", "no", U, PG, T, "20 / 4.5", "unknown", "2", "none-rendered", "ELIGIBLE"], 1),
+        ("eligible on not-in-text", ["P001", "Acme", "no", U, PG, T, "20 / 4.5", "3", "2", "not-in-text", "ELIGIBLE"], 1),
+        ("eligible but old review", ["P001", "Acme", "no", U, PG, T, "20 / 4.5", "3", "30", "none-rendered", "ELIGIBLE"], 1),
+        ("needs-browser is fine", ["P001", "Acme", "yes", U, PG, T, "23 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 0),
+        ("no-gap by 5.0 avg", ["P001", "Acme", "yes", U, PG, T, "5 / 5.0", "none", "-", "not-in-text", "NO-GAP"], 0),
+        ("no-gap without evidence", ["P001", "Acme", "no", U, PG, T, "55 / 4.6", "unknown", "-", "not-in-text", "NO-GAP"], 1),
         ("health row quotes a patient", ["P001", "A \"loved my treatment\"", "yes", U, PG, T, "5 / 5.0", "none", "-", "-", "NO-GAP"], 1),
-        ("read row with no URL", ["P001", "A", "no", "-", PG, T, "20 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
-        ("read row with no time", ["P001", "A", "no", U, PG, "today", "20 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
-        ("not-read is fine", ["P001", "A", "yes", "-", "-", "-", "-", "-", "-", "-", "NOT-READ"], 0),
-        ("not-read with findings", ["P001", "A", "yes", U, "-", "-", "-", "3", "-", "-", "NOT-READ"], 1),
-        ("bad status word", ["P001", "A", "no", U, PG, T, "20 / 4.5", "3", "2", "none-rendered", "READY"], 1),
-        ("legacy unrecorded needs-browser", ["P001", "A", "yes", U, "unrecorded", T, "23 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 0),
-        ("legacy unrecorded cannot be eligible", ["P001", "A", "no", U, "unrecorded", T, "20 / 4.5", "3", "2", "none-rendered", "ELIGIBLE"], 1),
+        ("read row with no URL", ["P001", "Acme", "no", "-", PG, T, "20 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
+        ("read row with no time", ["P001", "Acme", "no", U, PG, "today", "20 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
+        ("not-read is fine", ["P001", "Acme", "yes", "-", "-", "-", "-", "-", "-", "-", "NOT-READ"], 0),
+        ("not-read with findings", ["P001", "Acme", "yes", U, "-", "-", "-", "3", "-", "-", "NOT-READ"], 1),
+        ("not-read with a count and read time", ["P001", "Acme", "yes", "-", "-", T, "16 / 4.9", "-", "-", "-", "NOT-READ"], 1),
+        ("no-gap: stars none vs 4.6 avg (Atlas #55)", ["P001", "Acme", "no", U, PG, T, "55 / 4.6", "none", "-", "not-in-text", "NO-GAP"], 1),
+        ("no-gap: 5.0 avg alone at 25 reviews (Atlas #55)", ["P001", "Acme", "no", U, PG, T, "25 / 5.0", "unknown", "-", "not-in-text", "NO-GAP"], 1),
+        ("no-gap: 5.0 avg alone at 16 reviews", ["P001", "Acme", "no", U, PG, T, "16 / 5.0", "unknown", "-", "not-in-text", "NO-GAP"], 0),
+        ("no-gap: stars none at 25 / 5.0", ["P001", "Acme", "no", U, PG, T, "25 / 5.0", "none", "-", "not-in-text", "NO-GAP"], 0),
+        ("health row single-quotes a patient", ["P001", "Acme 'loved my treatment'", "yes", U, PG, T, "5 / 5.0", "none", "-", "-", "NO-GAP"], 1),
+        ("health row with an apostrophe in the name", ["P001", "Acme's Clinic", "yes", U, "Acme's Clinic, Flagstaff AZ", T, "5 / 5.0", "none", "-", "-", "NO-GAP"], 0),
+        ("unrecorded with a fresh read time (Atlas #56)", ["P001", "Acme", "yes", U, "unrecorded", "2026-11-23 15:35", "23 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
+        ("practice words only (Atlas #56)", ["P006", "Cedar Health Center", "yes", U, "Health Center, Flagstaff AZ", T, "7 / 4.4", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
+        ("practice words only, marked wrong-page", ["P006", "Cedar Health Center", "yes", U, "Health Center, Flagstaff AZ", T, "7 / 4.4", "unknown", "-", "not-in-text", "WRONG-PAGE"], 0),
+        ("reversed age range (Atlas #57)", ["P009", "Acme", "yes", U, PG, T, "23 / 4.5", "4", "23-12", "not-in-text", "NEEDS-BROWSER"], 1),
+        ("bad status word", ["P001", "Acme", "no", U, PG, T, "20 / 4.5", "3", "2", "none-rendered", "READY"], 1),
+        ("legacy unrecorded needs-browser", ["P001", "Acme", "yes", U, "unrecorded", T, "23 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 0),
+        ("legacy unrecorded cannot be eligible", ["P001", "Acme", "no", U, "unrecorded", T, "20 / 4.5", "3", "2", "none-rendered", "ELIGIBLE"], 1),
         ("same name, other city", ["P006", "Cedar Health Center", "yes", U, "Cedar Health, Tucson AZ", T, "7 / 4.4", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
         ("other city marked wrong-page", ["P006", "Cedar Health Center", "yes", U, "Cedar Health, Tucson AZ", T, "7 / 4.4", "unknown", "-", "not-in-text", "WRONG-PAGE"], 0),
         ("other practice, same surname", ["P007", "Munderloh Integrated Medical", "yes", U, "Munderloh Chiropractic, Flagstaff AZ", T, "197 / 4.8", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),

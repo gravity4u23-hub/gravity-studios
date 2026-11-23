@@ -29,10 +29,10 @@
   - **P004 Harmonizing Healthcare:** no Birdeye page turned up in a site search. Stays NOT-READ.
 - **Read 3 (Nov 23, 15:35 UTC): P009 re-read, two traps for Atlas found.**
   - **Name and city now recorded:** the page shows "The Vitality Doctor- Dr Christina Kovalik NMD, LAc", Flagstaff AZ (Yancey Ln). It passes the name + city match.
-  - **Trap 1, a second office.** Birdeye also has a page for the same doctor in **Paradise Valley, AZ** (25 reviews). Atlas must open the **Flagstaff** Google profile; the check marks the Paradise Valley page WRONG-PAGE (self-test "same doctor, other office").
-  - **Trap 2, rounded ages.** The 5 visible Google reviews are "a month ago" (2), "2 months ago" (1) and "a year ago" (2). Google's "a year ago" can mean up to about 23 months, so a low review with that label can't count as "last 12 months". The check now takes "12-23" for that label and never marks it ELIGIBLE. *Atlas: if the under-5★ review says "a year ago", hover or open it for the date before calling it eligible.*
+  - **Trap 1, a second office.** Birdeye also has a page for the same doctor in **Paradise Valley, AZ** (a search result titled it "25 Reviews"; that page itself was not opened). Atlas must open the **Flagstaff** Google profile; the check marks the Paradise Valley page WRONG-PAGE (self-test "same doctor, other office").
+  - **Trap 2, rounded ages.** Per the cloud fetch of the Flagstaff page (Atlas's read of the same page showed no per-review ages, so treat this as unconfirmed), the 5 visible Google reviews are "a month ago" (2), "2 months ago" (1) and "a year ago" (2). Google's "a year ago" can mean up to about 23 months, so a low review with that label can't count as "last 12 months". The check now takes "12-23" for that label and never marks it ELIGIBLE. *Atlas: if the under-5★ review says "a year ago", hover or open it for the date before calling it eligible.*
   - **Still unseen:** the star on each review (the histogram cells were empty in the text the cloud got) and the other 18 reviews. No owner reply showed under the 5 visible ones. The Birdeye profile is unclaimed.
   - **Not a new lead:** Massage Therapy by Bliss (Flagstaff, 15 reviews, 4.9) showed up in the same search. Its newest visible review is about 3 years old, so it can't give a 12-month gap. Not added.
 - **Where trials 2–3 stand:** of 7 clinics, P009 is the only live lead. Two have no gap, two returned the wrong page, and two (P004, P005) need Google itself.
 
-**Check:** `python3 review_gap_check.py` → `SUMMARY rows=7 errors=0`. Self-tests: `python3 review_gap_check.py --self-test` (27/27).
+**Check:** `python3 review_gap_check.py` → `SUMMARY rows=7 errors=0`. Self-tests: `python3 review_gap_check.py --self-test` (38/38).
