@@ -192,7 +192,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 - **Amber** — *Proven:* fossilized tree resin millions of years old — organic, not a mineral crystal; very soft (Mohs 2–2.5), so it's set to avoid rubbing. *Tradition:* traditionally a warming, uplifting stone.
 - **Smoky Quartz** — *Proven:* brown-gray quartz, Mohs 7. *Tradition:* traditionally a grounding stone.
 
-Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind. [Smoky Quartz: natural color or irradiated? confirm with the maker before posting — most smoky quartz sold is irradiated]
+Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind. [Smoky Quartz: natural color or irradiated? confirm with the maker before posting — smoky quartz is often irradiated]
 
 *Crystal traditions are shared as history and culture, not as medical advice or a promise of results.*
 

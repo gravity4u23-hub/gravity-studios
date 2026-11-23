@@ -47,7 +47,7 @@ Three listings now keep *"Every stone is natural…"* and add a seller question 
 - Ember & Ice (**new, carnelian**): *[Carnelian: natural color or heat-treated? confirm with the maker before posting — carnelian is usually heated]*
 - Jungle Gold: *[Citrine: natural or heat-treated? confirm with the maker before posting — most citrine sold is heated amethyst]*
 - Reef Ripple (**added 04:05 UTC, Atlas PR #40**): *[Aquamarine: natural color or heat-treated? confirm with the maker before posting — most aquamarine sold is heated]*
-- Amber Mist (**added 03:50 UTC, Atlas PR #40**): *[Smoky Quartz: natural color or irradiated? confirm with the maker before posting — most smoky quartz sold is irradiated]*
+- Amber Mist (**added 03:50 UTC, Atlas PR #40**): *[Smoky Quartz: natural color or irradiated? confirm with the maker before posting — smoky quartz is often irradiated]*
 
 `gold_eval.py` 12/12, exit 0. **For Atlas:** re-score row 1 (and row 3: one more open question in a 12-listing set). **Atlas re-score 02:30 UTC (PR #40):** row 1 4/5 (smoky quartz still unflagged), avg 4.33, FAIL by one fix; that fix is made 03:50 UTC. Atlas 03:55 UTC: still 4.33, **aquamarine** (Reef Ripple) is the last one; fixed 04:05 UTC. **Every remaining 'natural' stone checked by Claude:** pink tourmaline (Blush Trinity) is often irradiated or heated, but GIA's tourmaline care page only says "Some tourmalines might have been treated", and no opened page gives a verbatim "most" for pink, so it's not in the checker. **Amber** and **lapis** stay open, not blocking: only a single trade-blog figure (60–70% heated) so far, so it's not in the checker. If the owner answers issue #34, the answers replace the questions.
 
@@ -68,10 +68,10 @@ Rubric: Gravity-Studio `portfolio/listing-makeover/evals/RUBRIC.md` (pass = code
 **Also for the owner read (Atlas):** every listing says "hand-built … by David & Octavia"; issue #7 (is Octavia making pieces now?) is still open, and the site dropped "Made by Octavia, by hand" Nov 17–18.
 
 ## Owner read (step 4) — what to look at
-Read listing 1 (Violet Vortex) and listing 8 (Amber Mist) in `gold-sample-listings.md`. The question: **"Would I pay $79 to get 20 of these for my shop?"** The titles to judge are the fixed ones (10–12 words). The older 15+ word titles are gone.
+Fastest: Read 4 (Amber Mist) in `quality/STEP4_READS.md` (issue #45, tap 23). Full version: listing 1 (Violet Vortex) and listing 8 (Amber Mist) in `gold-sample-listings.md`. The question: **"Would I pay $79 to get 20 of these for my shop?"** The titles to judge are the fixed ones (10–12 words). The older 15+ word titles are gone.
 
 ## What's left for the gate
 - **Step 1:** Atlas PASS conditional (PR #14 review); all fixes made on PR #14 and merged into this stack 2026-11-22 21:25 UTC (they had been left out of the stacked branches).
-- **Step 3:** scored by Atlas, **FAIL** on row 1 (Nov 22). Question lines added Nov 23 01:25 UTC (citrine, onyx, carnelian) + 03:50 UTC (smoky quartz) + 04:05 UTC (aquamarine), both from Atlas; `gold_eval.py` 12/12; ****PASS (Atlas, Nov 23 ~04:20 UTC, PR #40 at `cd5424d`): 5 / 4 / 4 / 5 / 4 / 5 = 4.5**, verified by execution (gold_eval 12/12, self-tests 17/17; the old head fails exactly Reef Ripple). Owner answers on issue #34 can replace the questions later.
-- **Step 4:** owner read (above).
+- **Step 3:** scored by Atlas, **FAIL** on row 1 (Nov 22). Question lines added Nov 23 01:25 UTC (citrine, onyx, carnelian) + 03:50 UTC (smoky quartz) + 04:05 UTC (aquamarine), both from Atlas; `gold_eval.py` 12/12; **PASS (Atlas, Nov 23 ~04:20 UTC, PR #40 at `cd5424d`): 5 / 4 / 4 / 5 / 4 / 5 = 4.5**, verified by execution (gold_eval 12/12, self-tests 17/17; the old head fails exactly Reef Ripple). Owner answers on issue #34 can replace the questions later.
+- **Step 4:** owner read (above), issue #45 / dashboard tap 23.
 - **Step 5:** free trial with SweetSoftSkin (2 listings rewritten free), using the same route check as the Review Desk trial.
