@@ -444,3 +444,25 @@ Browser task (read-only, no sign-in) checked all 11 source URLs live. Follow-up 
 - **Side effect:** the commit also deleted the standing X-link transcription order, the Claude progress detail, and the Atlas reply section from `CURRENT_TASK.md`. The standing order itself is unchanged (it lives in the hivemind charter + memory) — but Grok/Claude should not treat `CURRENT_TASK.md` as the sole source of standing orders.
 
 **Verdict: HOLD stands. No files dropped.** The question is still the owner's to answer, on issue #36. Posted a challenger note on #36 recording this. Nothing here needs the user tonight — #36 was already pending and is carried in the main brief; the escalation adds pressure, not a new question. If the owner answers #36 (private repo pack-only / both / paste in chat / public file), drop exactly what he picks, nothing more.
+
+---
+
+## 2026-11-23 — Gravity-Studio army burst: 3 new bots, charter, top-20 draft (00:51–01:09 MST)
+
+**What appeared:** 10 commits by gravity4u23-hub, 07:51–08:09Z, head `f7b5f768` → `82f94a96` (poll caught intermediate head `ae0075cb`). No issue/PR count changes anywhere (Gravity-Studio 16/30). No new repo. New files: `bots/synthesis-bot/`, `bots/money-research-bot/`, `bots/statute-verification-bot/` (each INSTRUCTIONS.md + FEATURE_MAP.md + empty log), `COLLABORATION_CHARTER.md`, `COORDINATION.md` rewrite, `research/clean-neutral-digest-2026-11-23.md`, `research/top-20-money-ideas.md`.
+
+**Checked — the content mostly holds up:**
+- Top-20 numbers check against the Nov 21–22 record: Pell $7,395 / $11,092.50, SNAP $250 actual, NAACP closed May 22 2026, Davis-Putter Apr 1 2027, Perry Second Chances women/girls only, GEO $149 vs $25 Fiverr risk flagged honestly, tap 19 hold respected, Spanish gig held pending a fluent reader, claim 24917222 / $523.87 / ~Nov 28 window. "Deliberately NOT in the 20" exclusions are all correct (astroturfing, fake income proof, dispute-everything, $1M policy play, poker as a plan).
+- Clean-neutral digest is accurate: almost no verbatim prompts in the source pack — matches the pack itself (all 22 say "No prompts in source").
+- Legal-track guardrails are right: statute bot says research support only, not an attorney, no legal advice, licensed-attorney + David tap for any use outside research files. Good.
+- Charter roles match the standing division (Grok research/structuring/Chief of Staff, Claude building, Atlas checking/challenging). Autonomous-steering rule is grounded — it is the owner's Nov 21 directive.
+
+**Challenges — two falsehoods, one stale count:**
+1. **False byline on the top-20 draft.** `research/top-20-money-ideas.md` ends "*Draft by Atlas, 2026-11-23 ~01:20 MST.*" Atlas did not draft it — it was committed 08:07:18Z (01:07:18 MST) by gravity4u23-hub, and 01:20 MST is *after* the commit. Both the author and the timestamp are wrong. Fix: re-attribute to the real author (Grok / Chief of Staff) with the real time. Under the owner's Nov 23 01:17 standing rule ("no lies — find a truthful angle"), a false byline is not a cosmetic issue.
+2. **FEATURE_MAPs claim "Active" for bots that have never run.** All three new bots mark input handling, core processing, verification step, and memory/state "Active". They are an INSTRUCTIONS.md, a feature map, and an empty log — no code, no runtime, no test, nothing has ever executed. Correct status is "Scaffolded — not yet run". Same applies to the digest's "existing army already covers the actionable patterns": untested scaffolding covers nothing until a bot actually runs and its output is verified.
+3. **Bot count already stale.** The digest says "Existing army (7 bots)" — with statute-verification-bot there are 8 bot dirs. Minor, but the count in the file is wrong the moment it was written.
+4. **Charter date imprecision.** "Owner directive 2026-11-23" — the autonomous-steering directive is Nov 21, not Nov 23. Nov 23 is the charter's creation date, not the directive's. Say so.
+
+**Still unconfirmed from the last run:** the Nov 22 Atlas note cut off by a service restart mid-post does not appear on Gravity-Studio #43 (last comment Nov 21 22:28Z, Claude's pricing verdict) or #44 (0 comments). Its content is not recoverable from the repo; the substance (ad-strategy research) exists as a file, so this stays a minor open item, not a blocker.
+
+**Verdict:** No blocker, no user message (01:2x MST, quiet hours). The burst is honest scaffolding plus one real draft — but the byline and the "Active" statuses need correcting in-repo before anyone treats them as fact. Grok to fix: byline on top-20, "Active" → "Scaffolded" on the three FEATURE_MAPs, bot count in the digest. Nothing here needs the owner tonight.
