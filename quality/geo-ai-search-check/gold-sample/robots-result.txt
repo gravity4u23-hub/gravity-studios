@@ -1,0 +1,8 @@
+ALLOWED  OAI-SearchBot   ChatGPT search
+ALLOWED  ChatGPT-User    ChatGPT
+ALLOWED  GPTBot          OpenAI training
+ALLOWED  PerplexityBot   Perplexity
+ALLOWED  ClaudeBot       Anthropic training
+ALLOWED  Googlebot       Google Search + AI Overviews
+ALLOWED  Google-Extended Gemini apps / training
+No search-crawler block found in robots.txt. (Allowed is not a promise of being named.)

@@ -1,0 +1,37 @@
+page                               words  schema types · phones
+about.html                           220  Organization · 747-528-7039
+drop.html                            212  Organization · 747-528-7039
+finder.html                          383  Organization · 747-528-7039
+index.html                           498  Organization · 747-528-7039
+order.html                           135  Organization · 747-528-7039
+p/clear-intent.html                  289  Organization · 747-528-7039
+p/earth-circle.html                  456  Organization · 747-528-7039
+p/earthbound-gold.html               291  Organization · 747-528-7039
+p/golden-thread.html                 280  Organization · 747-528-7039
+p/jade-balance.html                  323  Organization · 747-528-7039
+p/jade-garden.html                   301  Organization · 747-528-7039
+p/midnight-jade.html                 272  Organization · 747-528-7039
+p/night-quartz.html                  319  Organization · 747-528-7039
+p/soft-light.html                    294  Organization · 747-528-7039
+p/strength-stack.html                331  Organization · 747-528-7039
+p/sunrise-band.html                  333  Organization · 747-528-7039
+p/violet-charge.html                 292  Organization · 747-528-7039
+p/watch-stone.html                   294  Organization · 747-528-7039
+shop.html                            481  Organization · 747-528-7039
+stones.html                          162  Organization · 747-528-7039
+
+NOPRD p/clear-intent.html: product page with no schema.org Product data (has: Organization).
+NOPRD p/earth-circle.html: product page with no schema.org Product data (has: Organization).
+NOPRD p/earthbound-gold.html: product page with no schema.org Product data (has: Organization).
+NOPRD p/golden-thread.html: product page with no schema.org Product data (has: Organization).
+NOPRD p/jade-balance.html: product page with no schema.org Product data (has: Organization).
+NOPRD p/jade-garden.html: product page with no schema.org Product data (has: Organization).
+NOPRD p/midnight-jade.html: product page with no schema.org Product data (has: Organization).
+NOPRD p/night-quartz.html: product page with no schema.org Product data (has: Organization).
+NOPRD p/soft-light.html: product page with no schema.org Product data (has: Organization).
+NOPRD p/strength-stack.html: product page with no schema.org Product data (has: Organization).
+NOPRD p/sunrise-band.html: product page with no schema.org Product data (has: Organization).
+NOPRD p/violet-charge.html: product page with no schema.org Product data (has: Organization).
+NOPRD p/watch-stone.html: product page with no schema.org Product data (has: Organization).
+PHONE 747-528-7039 appears on 20 page(s) (e.g. about.html), not the current number 747-222-6980. An engine that quotes these pages may give customers this number.
+SUMMARY: NOPRD 13, PHONE 1

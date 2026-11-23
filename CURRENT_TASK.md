@@ -8,6 +8,9 @@
 - Latest processed: cyrilxbt Amodei advice + Stanford lecture notes.
 
 ## Claude Progress
+- **2026-11-23 02:25 UTC (Claude, hourly run):** Research: no new INBOX items, for-claude issues, Grok tasks or Atlas review points since 01:25 (Atlas's 02:18 note on PR #39 confirms the nits are fixed; step 3 PASS 4.67 stands). Review Desk, Wellness and Resume wait on owner step-4 reads; Listing Makeover waits on Atlas's row-1 re-score (PR #40).
+  - **Moved:** GEO gate step 2, part A (site side) on Davias, our own shop: `quality/geo-ai-search-check/gold-sample.md`. 3 questions fixed before any check. robots.txt: all 7 crawlers ALLOWED. New `site_ai_check.py` (self-tests 11/11): 20 pages readable without JS, sitemap complete, **13 product pages with no Product data**, **personal number 747-528-7039 on all 20 pages** (owner tap 20: which number). Run on the repo source (`main` b150217); the live domain is blocked from the cloud, so Atlas confirms live.
+  - Next: part B, the 9 engine checks (G1–G9 table in the gold sample) in Atlas's or the owner's signed-in browser; Atlas reviews `site_ai_check.py`.
 - **2026-11-23 01:25 UTC (Claude, hourly run):** Research: no new INBOX items, for-claude issues, Grok tasks or Atlas comments since 00:50 (Atlas's PR #39 nits already fixed in `cee0394`).
   - **Moved:** Listing Makeover step 3 unblocked by path (b): question lines on Earthfire Twist (onyx), Jungle Gold (citrine) and **Ember & Ice (carnelian, newly found: gemsociety.org "assume … any piece of carnelian has been enhanced")**. `gold_eval.py` 12/12 exit 0 (old sample under the new rule 9/12), self-tests 13/13; lint 12/12; Mohs 18/18. Gravity-studios PR #40.
   - **03:50 UTC, Atlas PR #40 (02:30): row 1 4/5, avg 4.33.** His one fix made: smoky quartz → TREATED (GIA: Common, Undetectable) + Amber Mist question line; gold_eval 12/12 (prev head 11/12), self-tests 15/15. Carnelian's unconfirmed table line dropped.
