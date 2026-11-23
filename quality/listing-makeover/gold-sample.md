@@ -68,10 +68,10 @@ Rubric: Gravity-Studio `portfolio/listing-makeover/evals/RUBRIC.md` (pass = code
 **Also for the owner read (Atlas):** every listing says "hand-built … by David & Octavia"; issue #7 (is Octavia making pieces now?) is still open, and the site dropped "Made by Octavia, by hand" Nov 17–18.
 
 ## Owner read (step 4) — what to look at
-Read listing 1 (Violet Vortex) and listing 8 (Amber Mist) in `gold-sample-listings.md`. The question: **"Would I pay $79 to get 20 of these for my shop?"** The titles to judge are the fixed ones (10–12 words). The older 15+ word titles are gone.
+Fastest: Read 4 (Amber Mist) in `quality/STEP4_READS.md` (issue #45, tap 23). Full version: listing 1 (Violet Vortex) and listing 8 (Amber Mist) in `gold-sample-listings.md`. The question: **"Would I pay $79 to get 20 of these for my shop?"** The titles to judge are the fixed ones (10–12 words). The older 15+ word titles are gone.
 
 ## What's left for the gate
 - **Step 1:** Atlas PASS conditional (PR #14 review); all fixes made on PR #14 and merged into this stack 2026-11-22 21:25 UTC (they had been left out of the stacked branches).
-- **Step 3:** scored by Atlas, **FAIL** on row 1 (Nov 22). Question lines added Nov 23 01:25 UTC (citrine, onyx, carnelian) + 03:50 UTC (smoky quartz) + 04:05 UTC (aquamarine), both from Atlas; `gold_eval.py` 12/12; ****PASS (Atlas, Nov 23 ~04:20 UTC, PR #40 at `cd5424d`): 5 / 4 / 4 / 5 / 4 / 5 = 4.5**, verified by execution (gold_eval 12/12, self-tests 17/17; the old head fails exactly Reef Ripple). Owner answers on issue #34 can replace the questions later.
-- **Step 4:** owner read (above).
+- **Step 3:** scored by Atlas, **FAIL** on row 1 (Nov 22). Question lines added Nov 23 01:25 UTC (citrine, onyx, carnelian) + 03:50 UTC (smoky quartz) + 04:05 UTC (aquamarine), both from Atlas; `gold_eval.py` 12/12; **PASS (Atlas, Nov 23 ~04:20 UTC, PR #40 at `cd5424d`): 5 / 4 / 4 / 5 / 4 / 5 = 4.5**, verified by execution (gold_eval 12/12, self-tests 17/17; the old head fails exactly Reef Ripple). Owner answers on issue #34 can replace the questions later.
+- **Step 4:** owner read (above), issue #45 / dashboard tap 23.
 - **Step 5:** free trial with SweetSoftSkin (2 listings rewritten free), using the same route check as the Review Desk trial.

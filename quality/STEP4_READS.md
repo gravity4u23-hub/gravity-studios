@@ -1,6 +1,6 @@
-# Step 4 reads — three services, one page, about 5 minutes
+# Step 4 reads — four services, one page, about 7 minutes
 
-**For David.** Three services have passed Atlas's scorecard (gate step 3) and now wait only on you. Each read below is a short piece cut **word for word** from the real sample (`step4_check.py` fails this page if any quoted line is not in its source file). Answer one question per read. Nothing is sent, posted or listed by answering; a Yes only opens step 5 (free trial), and every trial send still needs your OK on its exact text.
+**For David.** Four services have passed Atlas's scorecard (gate step 3) and now wait only on you. Each read below is a short piece cut **word for word** from the real sample (`step4_check.py` fails this page if any quoted line is not in its source file). Answer one question per read. Nothing is sent, posted or listed by answering; a Yes only opens step 5 (free trial), and every trial send still needs your OK on its exact text.
 
 Order = closest to money first.
 
@@ -54,6 +54,25 @@ The buyer's own lines (synthetic candidate, marked as such), then ours. Every wo
 (Full one-page PDF: `quality/resume-linkedin/gold-sample/rewrite.pdf`.)
 
 **Recommendation:** Yes, if it reads like a real person and claims nothing the buyer didn't say.
+
+## Read 4 — Listing Makeover
+**Question:** Would I pay **$79** to get 20 listings like this for my shop?
+**Issue:** #45 (dashboard tap 23) · **Atlas step 3:** 5/4/4/5/4/5 = 4.5
+**Source:** quality/listing-makeover/gold-sample-listings.md
+
+One of the 12 Helix listings written for Davias, our own shop: Amber Mist. The title, then the description as a buyer sees it:
+
+> **Title (82/140):** Amber Mist Smoky Quartz Natural Stone Bracelet — Double Helix, Handmade Steel Wire
+> **Made to last:** strung on nylon-coated stainless-steel beading wire with a solid metal clasp — no stretchy elastic to snap. Size: [size].
+> - **Amber** — *Proven:* fossilized tree resin millions of years old — organic, not a mineral crystal; very soft (Mohs 2–2.5), so it's set to avoid rubbing. *Tradition:* traditionally a warming, uplifting stone.
+> - **Smoky Quartz** — *Proven:* brown-gray quartz, Mohs 7. *Tradition:* traditionally a grounding stone.
+> Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind. [Smoky Quartz: natural color or irradiated? confirm with the maker before posting — most smoky quartz sold is irradiated]
+
+The bracketed parts are on purpose. We don't guess what the seller hasn't told us: `[size]` waits for the wrist size, and the smoky quartz question waits for the maker, because GIA lists irradiation as a common way smoky quartz is made from clear quartz. Five of the 12 listings carry a question like this one.
+
+(Every listing also says "hand-built … by David & Octavia". If Octavia isn't making pieces yet, tap 14, that line changes before anything goes live. It doesn't change this answer.)
+
+**Recommendation:** Yes, if Amber Mist reads like a listing you'd post on your own shop.
 
 ---
 *How to answer:* reply on each issue (or tell any agent in chat) "Yes" or "No, because …". A "No" sends that service back to step 2 with your reason.

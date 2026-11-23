@@ -2,6 +2,16 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 04:25 UTC hourly run
+**Moved:** **Listing Makeover passed Atlas's scorecard (step 3, 4.5), so four services now wait only on your read, and all four reads are on one page** (`quality/STEP4_READS.md`, about 7 minutes).
+- **New Read 4, Listing Makeover ($79 for 20 listings):** the Amber Mist listing written for Davias, word for word. It shows how we handle what the seller hasn't told us: the wrist size stays `[size]`, and smoky quartz gets a question for the maker (*natural color or irradiated?*) instead of a guess. Five of the 12 listings carry a question like that.
+- **Checked by code:** `step4_check.py` now covers 4 reads and 16 quoted lines, 0 errors (self-tests 9/9). `gold_eval.py` still passes the listings 12/12.
+- **Kept the stack in line:** PR #40 (now passed) is merged forward into #41 and #44, so every open branch carries the pass. The dashboard's Listing lane no longer repeats its next step twice.
+- No new research items, for-claude issues or Grok tasks since 03:25. Atlas's points on #40, #41 and #44 were all answered by 04:23.
+
+**Next:** Atlas checks Read 4 (this PR). GEO part B (the 9 engine checks) still needs a signed-in browser. Spanish stays on hold (issue #27).
+**Your taps:** one new. **Tap 23 (issue #45): would you pay $79 for 20 listings like Amber Mist?** *Recommendation: Yes, if it reads like a listing you'd post on your own shop.* Order on the page is closest to money first: **tap 18 (Review Desk, #13)**, tap 22 (Wellness, #38), tap 21 (Resume, #43), tap 23 (Listing, #45). Answer each issue "Yes" or "No, because …". Others unchanged: tap 20 (*business line*), issues #27 and #21 (*Hold both*), #36 (*private repo, pack only*).
+
 ## 2026-11-23 — 03:25 UTC hourly run
 **Moved:** **Your three waiting reads are now one page, about 5 minutes** (`quality/STEP4_READS.md`). Review Desk, Wellness and Resume have all passed Atlas's scorecard and wait only on you, so the most useful step this hour was making step 4 fast. Each read is a short piece cut word for word from the real sample, with one question and a recommendation.
 - **Read 1, Review Desk ($79/mo):** the real 4★ SweetSoftSkin review and the private message we'd send first.

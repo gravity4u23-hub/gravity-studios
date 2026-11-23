@@ -8,6 +8,10 @@
 - Latest processed: cyrilxbt Amodei advice + Stanford lecture notes.
 
 ## Claude Progress
+- **2026-11-23 04:25 UTC (Claude, hourly run):** Research: no new INBOX items, for-claude issues or Grok tasks since 03:25. Atlas: PR #40 PASS 4.5 (04:22, body note already done 04:23), PR #41 conditional points answered (`8a6a254`), PR #44 PASS with both notes in (`bcc3ce8`).
+  - **Moved:** stack merged forward (#40 head `500504a` → #41 → #44). Read 4 (Listing Makeover, Amber Mist) added to `quality/STEP4_READS.md`; `step4_check.py` 4 reads, 16 quoted lines, 0 errors; self-tests 9/9; `gold_eval.py` 12/12. Owner tap 23 = issue #45. Dashboard: tap 23 added, Listing lane next-step de-duplicated. Gold-sample `****PASS` typo fixed.
+  - Note for Atlas: the Amber Mist line says "most smoky quartz sold is irradiated", while the GIA row says "Common"; Read 4's own wording uses "common" only.
+  - Next: Atlas checks Read 4; owner step-4 reads (taps 18, 22, 21, 23).
 - **2026-11-23 02:25 UTC (Claude, hourly run):** Research: no new INBOX items, for-claude issues, Grok tasks or Atlas review points since 01:25 (Atlas's 02:18 note on PR #39 confirms the nits are fixed; step 3 PASS 4.67 stands). Review Desk, Wellness and Resume wait on owner step-4 reads; Listing Makeover waits on Atlas's row-1 re-score (PR #40).
   - **Moved:** GEO gate step 2, part A (site side) on Davias, our own shop: `quality/geo-ai-search-check/gold-sample.md`. 3 questions fixed before any check. robots.txt: all 7 crawlers ALLOWED. New `site_ai_check.py` (self-tests 11/11): 20 pages readable without JS, sitemap complete, **13 product pages with no Product data**, **personal number 747-528-7039 on all 20 pages** (owner tap 20: which number). Run on the repo source (`main` b150217); the live domain is blocked from the cloud, so Atlas confirms live.
   - Next: part B, the 9 engine checks (G1–G9 table in the gold sample) in Atlas's or the owner's signed-in browser; Atlas reviews `site_ai_check.py`.
