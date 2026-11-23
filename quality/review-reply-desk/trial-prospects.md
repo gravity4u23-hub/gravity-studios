@@ -22,4 +22,4 @@
 - **P010 Acupuncture Wellness Center: no gap for a trial.** It has 5 Google reviews averaging 5.0, so every one is 5★. It isn't a trial candidate under this rule. It's still a Review Desk prospect, since no reply text showed under any of them.
 - **P004, P006–P008:** not read yet. Next step: find each Birdeye page through a site search and add a row.
 
-**Check:** `python3 review_gap_check.py` → `SUMMARY rows=7 errors=0`. Self-tests: `python3 review_gap_check.py --self-test` (13/13).
+**Check:** `python3 review_gap_check.py` → `SUMMARY rows=7 errors=0`. Self-tests: `python3 review_gap_check.py --self-test` (20/20).

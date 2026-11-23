@@ -22,10 +22,14 @@ Values:
 Rules:
   1. ELIGIBLE needs stars 1-4, age <= 12, Owner response = none-rendered, a source URL and
      a read time. Anything weaker is NEEDS-BROWSER at best.
-  2. NO-GAP needs evidence: Under-5 stars = none, or an average of 5.0.
-  3. NOT-READ rows carry no source URL or findings.
+  2. NO-GAP needs evidence that agrees with itself (Atlas, PR #55):
+       - a shown average below 5.0 proves an under-5 review exists, so it is never NO-GAP;
+       - Under-5 stars = none is enough on its own;
+       - an average of 5.0 alone is enough only under 20 reviews (at 21+, one 4-star
+         review still displays as 5.0: 20x5 + 1x4 = 104/21 = 4.95).
+  3. NOT-READ rows carry no source URL, read time or findings.
   4. A row read from a source has an http(s) URL and a read time (YYYY-MM-DD HH:MM).
-  5. Health = yes rows quote no review text (no quotation marks in the row).
+  5. Health = yes rows quote no review text (no double, curly or paired single quotes).
 
 Usage:  python3 review_gap_check.py [trial-prospects.md]
         python3 review_gap_check.py --self-test
@@ -64,14 +68,14 @@ def check_row(line, c):
     if health not in ("yes", "no"):
         errs.append(f"{tag}: Health must be yes or no")
     if status == "NOT-READ":
-        if url not in ("-", "") or stars not in ("-", "") or resp != "-":
+        if any(v not in ("-", "") for v in (url, read, cnt, stars, age)) or resp != "-":
             errs.append(f"{tag}: NOT-READ row carries findings; give it a status that matches")
         return errs
     if not re.match(r"^https?://\S+$", url):
         errs.append(f"{tag}: read rows need the source URL")
     if not TIME.match(read):
         errs.append(f"{tag}: read rows need a read time 'YYYY-MM-DD HH:MM'")
-    if health == "yes" and re.search(r"[\"“”]", line):
+    if health == "yes" and re.search(r"[\"“”‘’]|'[^'|]{3,}'", line):
         errs.append(f"{tag}: health business row quotes review text; keep patient words out of the public repo")
     if status == "ELIGIBLE":
         if stars not in ("1", "2", "3", "4"):
@@ -81,9 +85,12 @@ def check_row(line, c):
         if resp != "none-rendered":
             errs.append(f"{tag}: ELIGIBLE needs 'none-rendered' (a rendered look); '{resp}' is not proof of no reply")
     if status == "NO-GAP":
-        avg5 = re.search(r"/\s*5\.0\b", cnt)
-        if stars != "none" and not avg5:
-            errs.append(f"{tag}: NO-GAP needs Under-5 stars = none or a 5.0 average")
+        m = re.match(r"^\s*(\d+)\s*/\s*(\d(?:\.\d+)?)\s*$", cnt)
+        n, avg = (int(m.group(1)), float(m.group(2))) if m else (None, None)
+        if avg is not None and avg < 5.0:
+            errs.append(f"{tag}: NO-GAP contradicts a {avg} average, which proves an under-5 review exists")
+        elif stars != "none" and not (avg == 5.0 and n < 20):
+            errs.append(f"{tag}: NO-GAP needs Under-5 stars = none, or a 5.0 average on under 20 reviews (one 4-star hides in a 5.0 at 21+)")
     return errs
 
 
@@ -114,6 +121,13 @@ def self_test():
         ("read row with no time", ["P001", "A", "no", U, "today", "20 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
         ("not-read is fine", ["P001", "A", "yes", "-", "-", "-", "-", "-", "-", "NOT-READ"], 0),
         ("not-read with findings", ["P001", "A", "yes", U, "-", "-", "3", "-", "-", "NOT-READ"], 1),
+        ("not-read with a count and read time", ["P001", "A", "yes", "-", T, "16 / 4.9", "-", "-", "-", "NOT-READ"], 1),
+        ("no-gap: stars none vs 4.6 avg (Atlas)", ["P001", "A", "no", U, T, "55 / 4.6", "none", "-", "not-in-text", "NO-GAP"], 1),
+        ("no-gap: 5.0 avg alone at 25 reviews (Atlas)", ["P001", "A", "no", U, T, "25 / 5.0", "unknown", "-", "not-in-text", "NO-GAP"], 1),
+        ("no-gap: 5.0 avg alone at 16 reviews", ["P001", "A", "no", U, T, "16 / 5.0", "unknown", "-", "not-in-text", "NO-GAP"], 0),
+        ("no-gap: stars none at 25 / 5.0", ["P001", "A", "no", U, T, "25 / 5.0", "none", "-", "not-in-text", "NO-GAP"], 0),
+        ("health row single-quotes a patient", ["P001", "A 'loved my treatment'", "yes", U, T, "5 / 5.0", "none", "-", "-", "NO-GAP"], 1),
+        ("health row with an apostrophe in the name", ["P001", "Kovalik's Clinic", "yes", U, T, "5 / 5.0", "none", "-", "-", "NO-GAP"], 0),
         ("bad status word", ["P001", "A", "no", U, T, "20 / 4.5", "3", "2", "none-rendered", "READY"], 1),
     ]
     ok = 0
