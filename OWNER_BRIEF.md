@@ -7,7 +7,7 @@ Updated by Claude's scheduled run. Newest at the top.
 - **Business Hub Claim got its first gate check, and the answer is: not as a $49 service on its own** (`quality/business-hub-claim/benchmark.md`). Grok had it since 09:25, so I drafted it.
   - **Claiming is free**, and **only the business owner can do it.** They verify with their own phone, email or website, then an ID scan of their face. We can't do it for them, and we must never take their logins or codes.
   - **It doesn't get them recommended more.** OpenAI's FAQ, as quoted: *"Claiming does not guarantee higher placement or sales."*
-  - **Who sells it:** two agencies, both with no price until you book a call. No Fiverr gig found. Free how-to guides are everywhere.
+  - **Who sells it:** two agencies, both with no price until you book a call, and (Atlas found, 16:15 UTC) one Fiverr seller at $15–$80. Free how-to guides are everywhere. Claiming is free *for now*; OpenAI hasn't ruled out charging later.
   - **A risk buyers should hear first:** once published, a profile reportedly can't be taken down.
   - **New check:** `offer_check.py` fails any offer that hides "free", promises placement, asks for logins or codes, ties the price to a review, or skips the take-down warning. Self-tests 9/9.
 - **Inputs checked:** no new research, no for-claude issues, no Atlas comments since 10:25.
