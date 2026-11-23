@@ -1,0 +1,341 @@
+{
+  "_about": "Prompts said or read aloud in the X-batch videos (2026-11-23 links), copied character for character from the faster-whisper transcripts in research/x-batch-implementation-pack-2026-11-22-CLEAN-NEUTRAL.md (main). ASR errors are kept on purpose: these are the transcript's words, not corrected guesses. verify_prompt_quotes.py proves each one is in the transcript. 'role' says what each line is (Atlas review on PR #49: the checker proves a line is verbatim, not that it is a prompt): instruction = words given to a model to act on; eval_input = a test message sent to a bot in an eval; scenario_input = facts fed into a prompt at runtime; illustration = a generic example of the kind of thing you'd type, not a prompt the speaker used.",
+  "prompts": [
+    {
+      "source": "rahultechx",
+      "timestamp": "00:14:54",
+      "kind": "system prompt (original, read on screen)",
+      "text": "we changed our plans recently and the policy doc shows the current plan data and customers on grandfather's plan have different rates. Never give a customer the wrong plan details instead point them to the URL.",
+      "role": "instruction"
+    },
+    {
+      "source": "rahultechx",
+      "timestamp": "00:18:18",
+      "kind": "system prompt (original)",
+      "text": "don't ever give a customer a vague answer. Critical always calculates any prerated amounts correctly.",
+      "role": "instruction"
+    },
+    {
+      "source": "rahultechx",
+      "timestamp": "00:18:45",
+      "kind": "system prompt (fixed)",
+      "text": "whenever you're doing any calculations, please use the calculate pro-ration tool to do so.",
+      "role": "instruction"
+    },
+    {
+      "source": "rahultechx",
+      "timestamp": "00:20:59",
+      "kind": "system prompt (original)",
+      "text": "avoid escalating or transferring to a care specialist unless absolutely necessary as it cost approximately $8 and it counts against our team's fast contract resolution.",
+      "role": "instruction"
+    },
+    {
+      "source": "rahultechx",
+      "timestamp": "00:31:31",
+      "kind": "runtime soft constraints",
+      "text": "Harry doesn't like working with Sally. So as much as possible, try and separate them from working together. Or we need a third shift on Wednesday, for example.",
+      "role": "scenario_input"
+    },
+    {
+      "source": "rahultechx",
+      "timestamp": "00:15:54",
+      "kind": "system prompt (fixed; may be paraphrased by speaker)",
+      "text": "customers on grandfather's plan have different allowances but it's captured in the customer information that's given and that is the accurate source of truth.",
+      "role": "instruction"
+    },
+    {
+      "source": "rahultechx",
+      "timestamp": "00:21:38",
+      "kind": "system prompt (fixed; may be paraphrased by speaker)",
+      "text": "it costs $8 to escalate a case. But actually, if you get this wrong, then it's going to cost you a refund as well as customer trust.",
+      "role": "instruction"
+    },
+    {
+      "source": "rahultechx",
+      "timestamp": "00:05:05",
+      "kind": "eval test message",
+      "text": "what's the data limit in the basic plan.",
+      "role": "eval_input"
+    },
+    {
+      "source": "rahultechx",
+      "timestamp": "00:13:33",
+      "kind": "eval test message",
+      "text": "how much hotspot data is on my unlimited plan.",
+      "role": "eval_input"
+    },
+    {
+      "source": "rahultechx",
+      "timestamp": "00:17:21",
+      "kind": "eval test message",
+      "text": "what if I upgrade to the 30 gigabyte plan? What will my next build be?",
+      "role": "eval_input"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:04:38",
+      "kind": "typed prompt / custom instructions",
+      "text": "now plot this, use log scale for y-axis.",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:05:46",
+      "kind": "typed prompt / custom instructions",
+      "text": "Now fit a trend line and extrapolate until the year 2030. Mark the expected valuation in 2030.",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:08:25",
+      "kind": "typed prompt / custom instructions",
+      "text": "generate 20 flashcards from the following text",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:08:58",
+      "kind": "typed prompt / custom instructions",
+      "text": "use the artifacts feature to write a flash cards app to test these flashcards",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:11:07",
+      "kind": "typed prompt / custom instructions",
+      "text": "we are reading the author of Nations by Adam Smith I'm attaching chapter three and book one. Please create a conceptual diagram of this chapter",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:15:06",
+      "kind": "typed prompt / custom instructions",
+      "text": "set up a new react repository delete a lot of the boilerplate please make a simple tic-tac 2 app",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:17:18",
+      "kind": "typed prompt / custom instructions",
+      "text": "when either x or o wins i want confetti or something",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:43:00",
+      "kind": "typed prompt / custom instructions",
+      "text": "okay, which of these would be considered safest and also potentially less least less safe",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:43:06",
+      "kind": "typed prompt / custom instructions",
+      "text": "okay If I only care about the actual function of the toothpaste and I don't really care about other useless things like colors And stuff like that which of these could be thrown out",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:44:50",
+      "kind": "typed prompt / custom instructions",
+      "text": "generate an image that summarizes today",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:51:38",
+      "kind": "typed prompt / custom instructions",
+      "text": "Uh, can you please Remember this",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:54:17",
+      "kind": "typed prompt / custom instructions",
+      "text": "Just don't be like an HR business partner Just talk to me normally and also just give me I just love explanations, education's insights, etc So be educational whatever you can",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:56:20",
+      "kind": "typed prompt / custom instructions",
+      "text": "background information. I'm learning Korean on beginner Instructions um, I will give you a piece of text and I want you to extract the vocabulary",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:59:49",
+      "kind": "typed prompt / custom instructions",
+      "text": "You'll be giving a sentence a Korean your task is to translate the whole sentence into English first and then break up the entire translation in detail",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "01:02:02",
+      "kind": "typed prompt / custom instructions",
+      "text": "So first OCR it, then translate it and then break it down",
+      "role": "instruction"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:15:52",
+      "kind": "typed prompt / custom instructions",
+      "text": "please change this line of code to do this or that",
+      "role": "illustration"
+    },
+    {
+      "source": "crangerus",
+      "timestamp": "00:16:04",
+      "kind": "typed prompt / custom instructions",
+      "text": "explain this chunk of code",
+      "role": "illustration"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:02:03",
+      "kind": "typed prompt",
+      "text": "build a beautiful modern landing page before This information right goal equals convert traffic",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:08:19",
+      "kind": "typed prompt",
+      "text": "do this when I paste a YouTube video transcript",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:08:38",
+      "kind": "typed prompt",
+      "text": "create five fairly short attention grabbing headline options to when I paste in this video do this blah blah blah And then if I include the keyword do this optimize it around my keyword after you censors do this",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:14:42",
+      "kind": "typed prompt",
+      "text": "Okay, go off and create a mini app for a Pomodoro timer",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:15:08",
+      "kind": "typed prompt",
+      "text": "Okay, give me the latest AI updates and news from today Specifically about AI tools Plus new tools I could cover In my YouTube videos plus live streams",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:17:59",
+      "kind": "typed prompt",
+      "text": "You give me five ideas For mini apps I could build inside Claude artifacts That would help me the most",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:18:55",
+      "kind": "typed prompt",
+      "text": "Make this more interesting Colorful Animated Animations Don't mean inducing Crazy effects etc Plus fun",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:22:00",
+      "kind": "typed prompt",
+      "text": "Okay, recreate this",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:33:00",
+      "kind": "typed prompt",
+      "text": "give me some ideas on what I should talk about inside my video",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:35:03",
+      "kind": "typed prompt",
+      "text": "go to you know create an SEO about SEO training in Japan then plug that into a blog post or into a Google Doc for me too",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:41:04",
+      "kind": "typed prompt",
+      "text": "okay make this more interesting that we introduce here gamifier with experience points make it colorful add animations etc",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:43:20",
+      "kind": "typed prompt",
+      "text": "okay use a LinkedIn writing post skill to generate a LinkedIn post",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:45:21",
+      "kind": "typed prompt",
+      "text": "save this as a skill call it YouTube titles",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:47:22",
+      "kind": "typed prompt",
+      "text": "Axio Alibaba AI tool use the YouTube title skill to come up with ideas for this",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:48:46",
+      "kind": "typed prompt",
+      "text": "okay figure out a 30-day plan for implementing this and attracting sales reps to my team with SEO experience",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:48:53",
+      "kind": "typed prompt",
+      "text": "okay now create a spreadsheet tracker to track the inputs that get the outputs input equals set up a new job post on obviocavideg plus reach out to the candidate hot list",
+      "role": "instruction"
+    },
+    {
+      "source": "dipanshu_ai",
+      "timestamp": "00:50:58",
+      "kind": "typed prompt",
+      "text": "create an a i x c o content right in tool to generate content for any topic that I typed in",
+      "role": "instruction"
+    },
+    {
+      "source": "rrrangle",
+      "timestamp": "00:02:29",
+      "kind": "typed prompt",
+      "text": "fix the failing test in utils test. Yes",
+      "role": "instruction"
+    },
+    {
+      "source": "rrrangle",
+      "timestamp": "00:09:10",
+      "kind": "typed prompt (@-file)",
+      "text": "fix the failing tests in at you tells the test. Yes.",
+      "role": "instruction"
+    },
+    {
+      "source": "rrrangle",
+      "timestamp": "00:13:14",
+      "kind": "example prompt",
+      "text": "make the button green",
+      "role": "instruction"
+    },
+    {
+      "source": "rrrangle",
+      "timestamp": "00:12:47",
+      "kind": "example CLAUDE.md line",
+      "text": "run the single test with NPX retest run file name and then reporter dot.",
+      "role": "instruction"
+    }
+  ]
+}

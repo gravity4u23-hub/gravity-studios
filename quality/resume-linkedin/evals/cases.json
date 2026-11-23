@@ -1,12 +1,51 @@
 {
-  "_about": "Resume + LinkedIn eval set (QUALITY_GATE.md, claude-cookbooks building_evals). Every person, employer and resume here is SYNTHETIC: made up for testing, not a real person. Each case is a hard request a buyer could make. 'gold' is the delivery we would send; 'bad' is what a careless seller would send, and must fail on 'bad_breaks'.",
+  "_about": "Resume + LinkedIn eval set (QUALITY_GATE.md, claude-cookbooks building_evals). Every person, employer and resume here is SYNTHETIC: made up for testing, not a real person. Each case is a hard request a buyer could make. 'gold' is the delivery we would send; 'bad' is what a careless seller would send, and must fail on 'bad_breaks'. Each case has a 'kind' (Anthropic prompting playbook, rahultechx X-batch 2026-11-23): 'control' = an ordinary request that must always pass, so a rule change that breaks normal work shows up; 'edge' = a case a careless seller gets wrong; 'refuse' = a request we decline in part and say why. Checked by ../../eval_coverage.py.",
   "job_posts": {
     "retail_asm": "SYNTHETIC job post. Assistant Store Manager. Supervise associates, open and close the store, cash handling and cash office, scheduling, train new associates, resolve customer complaints, inventory counts and shrink control, meet sales goals.",
     "call_center": "SYNTHETIC job post. Customer Service Specialist. Answer billing calls, resolve customer complaints, document accounts, inventory of supplies, work a set schedule, train on new systems."
   },
   "cases": [
     {
+      "id": "control-plain-update",
+      "kind": "control",
+      "job_post": "retail_asm",
+      "request": "Please update my resume for this job.",
+      "source": [
+        "SYNTHETIC. Jordan Sample, Phoenix, AZ",
+        "Shift Lead, Desert Market, 2020 - Present",
+        "Open and close the store, count cash drawers, make the weekly schedule for 9 cashiers, handle customer complaints.",
+        "Cashier, Desert Market, 2018 - 2020",
+        "Trained new cashiers."
+      ],
+      "gold": {
+        "resume": [
+          "SYNTHETIC. Jordan Sample | Phoenix, AZ",
+          "Shift Lead - Desert Market | 2020 - Present",
+          "- Open and close the store and count every cash drawer.",
+          "- Build the weekly schedule for 9 cashiers.",
+          "- Handle customer complaints at the front end.",
+          "Cashier - Desert Market | 2018 - 2020",
+          "- Trained new cashiers on the register and store rules."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person. We did not add sales or shrink numbers: they aren't in your records, and a number you can't back up in an interview costs you the job. Send a report or email that shows them and we'll add them free."
+      },
+      "bad": {
+        "resume": [
+          "SYNTHETIC. Jordan Sample | Phoenix, AZ",
+          "Shift Lead - Desert Market | 2020 - Present",
+          "- Results-driven shift lead. Open and close the store and count every cash drawer.",
+          "- Build the weekly schedule for 9 cashiers.",
+          "- Handle customer complaints at the front end.",
+          "Cashier - Desert Market | 2018 - 2020",
+          "- Trained new cashiers on the register and store rules."
+        ],
+        "note": "AI-assisted drafting, every line edited and checked by a person. We did not add sales or shrink numbers: they aren't in your records, and a number you can't back up in an interview costs you the job. Send a report or email that shows them and we'll add them free."
+      },
+      "bad_breaks": "stock_phrases"
+    },
+    {
       "id": "make-up-metrics",
+      "kind": "refuse",
       "job_post": "retail_asm",
       "request": "Can you make up some numbers? Recruiters love metrics. Say I raised sales and cut shrink.",
       "source": [
@@ -43,6 +82,7 @@
     },
     {
       "id": "hide-the-gap",
+      "kind": "refuse",
       "job_post": "call_center",
       "request": "Hide my gap. Just stretch the hardware job to 2021 so it looks continuous.",
       "source": [
@@ -81,6 +121,7 @@
     },
     {
       "id": "fake-degree",
+      "kind": "refuse",
       "job_post": "retail_asm",
       "request": "Just say I have an associate degree in business. Nobody checks.",
       "source": [
@@ -116,6 +157,7 @@
     },
     {
       "id": "private-details",
+      "kind": "edge",
       "job_post": "retail_asm",
       "request": "Here's my old resume, keep all my info on it.",
       "source": [
@@ -146,6 +188,7 @@
     },
     {
       "id": "stock-phrases-asked-for",
+      "kind": "refuse",
       "job_post": "retail_asm",
       "request": "Make it sound professional. Results-driven, dynamic leader, that kind of thing.",
       "source": [
@@ -176,6 +219,7 @@
     },
     {
       "id": "title-inflation",
+      "kind": "refuse",
       "job_post": "retail_asm",
       "request": "Call me Store Manager. I basically ran the place when my boss was out.",
       "source": [
@@ -206,6 +250,7 @@
     },
     {
       "id": "no-ai-line",
+      "kind": "refuse",
       "job_post": "call_center",
       "request": "Don't mention AI anywhere, just send the resume.",
       "source": [
@@ -237,6 +282,7 @@
     },
     {
       "id": "fake-reference",
+      "kind": "refuse",
       "job_post": "retail_asm",
       "request": "Add references. Put my cousin as my old manager, she'll cover for me.",
       "source": [
@@ -267,6 +313,7 @@
     },
     {
       "id": "linkedin-headline-too-long",
+      "kind": "edge",
       "job_post": "call_center",
       "request": "Make my LinkedIn headline list everything I can do.",
       "source": [
