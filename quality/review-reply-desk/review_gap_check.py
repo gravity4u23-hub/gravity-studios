@@ -17,6 +17,8 @@ Values:
   Health          yes / no   (yes = clinic: no review text may be quoted in the row, and
                               replies must never confirm the reviewer was a patient)
   Under-5 stars   1-4 (seen on the page) / unknown / none
+  Reviews / avg   "count / average (Site, Site)", e.g. "23 / 4.5 (Google)"; the bracket is
+                  required on NO-GAP rows (rule 8)
   Owner response  none-rendered (looked at the rendered page, no reply) / not-in-text /
                   yes / -
   Page name, city the name and city the source page shows, as "Name, City ST";
@@ -48,6 +50,11 @@ Rules:
      reviews were "a year ago"). So the age cell is whole months (0-11 from a label, or
      counted from a date), a range "12-23" for "a year ago" (low <= high), or "-". A
      range never makes a row ELIGIBLE; get the review's date first.
+  8. A 5.0 average on one site says nothing about another. (Nov 23: Harmonizing Healthcare's
+     only cloud-readable copy was Yelp's, via MapQuest: 5 reviews, 5.0. Its Google reviews
+     are still unread.) The trial is replies to Google reviews, so the Reviews / avg cell
+     names the site(s) it counted in brackets, e.g. "16 / 5.0 (Google)", and NO-GAP needs
+     Google among them. A Yelp-only 5.0 stays NEEDS-BROWSER until Google is read.
 
 Usage:  python3 review_gap_check.py [trial-prospects.md]
         python3 review_gap_check.py --self-test
@@ -153,7 +160,12 @@ def check_row(line, c, prospect_city="Flagstaff, AZ"):
         if resp != "none-rendered":
             errs.append(f"{tag}: ELIGIBLE needs 'none-rendered' (a rendered look); '{resp}' is not proof of no reply")
     if status == "NO-GAP":
-        m = re.match(r"^\s*(\d+)\s*/\s*(\d(?:\.\d+)?)\s*$", cnt)
+        sites = re.search(r"\(([^)]*)\)\s*$", cnt)
+        if not sites:
+            errs.append(f"{tag}: NO-GAP must name the site its count comes from, e.g. '16 / 5.0 (Google)'")
+        elif "google" not in sites.group(1).lower():
+            errs.append(f"{tag}: NO-GAP rests on {sites.group(1)} only; the trial is Google replies, so read Google first (NEEDS-BROWSER)")
+        m = re.match(r"^\s*(\d+)\s*/\s*(\d(?:\.\d+)?)\s*(?:\([^)]*\))?\s*$", cnt)
         n, avg = (int(m.group(1)), float(m.group(2))) if m else (None, None)
         if avg is not None and avg < 5.0:
             errs.append(f"{tag}: NO-GAP contradicts a {avg} average, which proves an under-5 review exists")
@@ -185,7 +197,7 @@ def self_test():
         ("eligible on not-in-text", ["P001", "Acme", "no", U, PG, T, "20 / 4.5", "3", "2", "not-in-text", "ELIGIBLE"], 1),
         ("eligible but old review", ["P001", "Acme", "no", U, PG, T, "20 / 4.5", "3", "30", "none-rendered", "ELIGIBLE"], 1),
         ("needs-browser is fine", ["P001", "Acme", "yes", U, PG, T, "23 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 0),
-        ("no-gap by 5.0 avg", ["P001", "Acme", "yes", U, PG, T, "5 / 5.0", "none", "-", "not-in-text", "NO-GAP"], 0),
+        ("no-gap by 5.0 avg", ["P001", "Acme", "yes", U, PG, T, "5 / 5.0 (Google)", "none", "-", "not-in-text", "NO-GAP"], 0),
         ("no-gap without evidence", ["P001", "Acme", "no", U, PG, T, "55 / 4.6", "unknown", "-", "not-in-text", "NO-GAP"], 1),
         ("health row quotes a patient", ["P001", "A \"loved my treatment\"", "yes", U, PG, T, "5 / 5.0", "none", "-", "-", "NO-GAP"], 1),
         ("read row with no URL", ["P001", "Acme", "no", "-", PG, T, "20 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
@@ -195,10 +207,10 @@ def self_test():
         ("not-read with a count and read time", ["P001", "Acme", "yes", "-", "-", T, "16 / 4.9", "-", "-", "-", "NOT-READ"], 1),
         ("no-gap: stars none vs 4.6 avg (Atlas #55)", ["P001", "Acme", "no", U, PG, T, "55 / 4.6", "none", "-", "not-in-text", "NO-GAP"], 1),
         ("no-gap: 5.0 avg alone at 25 reviews (Atlas #55)", ["P001", "Acme", "no", U, PG, T, "25 / 5.0", "unknown", "-", "not-in-text", "NO-GAP"], 1),
-        ("no-gap: 5.0 avg alone at 16 reviews", ["P001", "Acme", "no", U, PG, T, "16 / 5.0", "unknown", "-", "not-in-text", "NO-GAP"], 0),
-        ("no-gap: stars none at 25 / 5.0", ["P001", "Acme", "no", U, PG, T, "25 / 5.0", "none", "-", "not-in-text", "NO-GAP"], 0),
+        ("no-gap: 5.0 avg alone at 16 reviews", ["P001", "Acme", "no", U, PG, T, "16 / 5.0 (Google)", "unknown", "-", "not-in-text", "NO-GAP"], 0),
+        ("no-gap: stars none at 25 / 5.0", ["P001", "Acme", "no", U, PG, T, "25 / 5.0 (Google)", "none", "-", "not-in-text", "NO-GAP"], 0),
         ("health row single-quotes a patient", ["P001", "Acme 'loved my treatment'", "yes", U, PG, T, "5 / 5.0", "none", "-", "-", "NO-GAP"], 1),
-        ("health row with an apostrophe in the name", ["P001", "Acme's Clinic", "yes", U, "Acme's Clinic, Flagstaff AZ", T, "5 / 5.0", "none", "-", "-", "NO-GAP"], 0),
+        ("health row with an apostrophe in the name", ["P001", "Acme's Clinic", "yes", U, "Acme's Clinic, Flagstaff AZ", T, "5 / 5.0 (Google)", "none", "-", "-", "NO-GAP"], 0),
         ("unrecorded with a fresh read time (Atlas #56)", ["P001", "Acme", "yes", U, "unrecorded", "2026-11-23 15:35", "23 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
         ("practice words only (Atlas #56)", ["P006", "Cedar Health Center", "yes", U, "Health Center, Flagstaff AZ", T, "7 / 4.4", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
         ("practice words only, marked wrong-page", ["P006", "Cedar Health Center", "yes", U, "Health Center, Flagstaff AZ", T, "7 / 4.4", "unknown", "-", "not-in-text", "WRONG-PAGE"], 0),
@@ -210,13 +222,19 @@ def self_test():
         ("other city marked wrong-page", ["P006", "Cedar Health Center", "yes", U, "Cedar Health, Tucson AZ", T, "7 / 4.4", "unknown", "-", "not-in-text", "WRONG-PAGE"], 0),
         ("other practice, same surname", ["P007", "Munderloh Integrated Medical", "yes", U, "Munderloh Chiropractic, Flagstaff AZ", T, "197 / 4.8", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
         ("wrong-page that matches", ["P008", "Synergistic Healthcare PLLC", "yes", U, "Synergistic Healthcare, Flagstaff AZ", T, "16 / 5.0", "none", "-", "not-in-text", "WRONG-PAGE"], 1),
-        ("reordered name with person", ["P010", "Acupuncture Wellness Center (Cynthia Hull)", "yes", U, "Hull Cynthia-Acupuncture Wellness Center, Flagstaff AZ", T, "5 / 5.0", "none", "-", "not-in-text", "NO-GAP"], 0),
+        ("reordered name with person", ["P010", "Acupuncture Wellness Center (Cynthia Hull)", "yes", U, "Hull Cynthia-Acupuncture Wellness Center, Flagstaff AZ", T, "5 / 5.0 (Google)", "none", "-", "not-in-text", "NO-GAP"], 0),
         ("one generic word is no match", ["P008", "Synergistic Healthcare PLLC", "yes", U, "Healthcare, Flagstaff AZ", T, "16 / 5.0", "none", "-", "not-in-text", "NO-GAP"], 1),
         ("a year ago is a range, not eligible", ["P009", "The Vitality Doctor", "yes", U, "The Vitality Doctor- Dr Christina Kovalik NMD, LAc, Flagstaff AZ", T, "23 / 4.5", "4", "12-23", "none-rendered", "ELIGIBLE"], 1),
         ("a year ago kept as a range is fine", ["P009", "The Vitality Doctor", "yes", U, "The Vitality Doctor- Dr Christina Kovalik NMD, LAc, Flagstaff AZ", T, "23 / 4.5", "4", "12-23", "not-in-text", "NEEDS-BROWSER"], 0),
         ("age written as words", ["P009", "The Vitality Doctor", "yes", U, "The Vitality Doctor- Dr Christina Kovalik NMD, LAc, Flagstaff AZ", T, "23 / 4.5", "4", "a year", "not-in-text", "NEEDS-BROWSER"], 1),
         ("same doctor, other office", ["P009", "The Vitality Doctor", "yes", U, "The Vitality Doctor- Dr. Christina Kovalik, NMD, LAc., Paradise Valley AZ", T, "25 / 4.8", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 1),
         ("page name with a comma inside", ["P009", "The Vitality Doctor (Dr Christina Kovalik NMD, LAc)", "yes", U, "The Vitality Doctor- Dr Christina Kovalik NMD, LAc, Flagstaff AZ", T, "23 / 4.5", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 0),
+        ("no-gap with no site named (rule 8)", ["P008", "Synergistic Healthcare PLLC", "yes", U, "Synergistic Healthcare, Flagstaff AZ", T, "16 / 5.0", "none", "-", "not-in-text", "NO-GAP"], 1),
+        ("no-gap from a Yelp copy only (rule 8)", ["P004", "Harmonizing Healthcare PLLC", "yes", "https://startpage.mapquest.com/x", "Harmonizing Healthcare, Flagstaff AZ", T, "5 / 5.0 (Yelp)", "none", "-", "not-in-text", "NO-GAP"], 1),
+        ("yelp-only 5.0 kept as needs-browser (rule 8)", ["P004", "Harmonizing Healthcare PLLC", "yes", "https://startpage.mapquest.com/x", "Harmonizing Healthcare, Flagstaff AZ", T, "5 / 5.0 (Yelp)", "unknown", "-", "not-in-text", "NEEDS-BROWSER"], 0),
+        ("no-gap over several sites incl. Google (rule 8)", ["P008", "Synergistic Healthcare PLLC", "yes", U, "Synergistic Healthcare, Flagstaff AZ", T, "16 / 5.0 (Google, Facebook)", "none", "-", "not-in-text", "NO-GAP"], 0),
+        ("site tag doesn't hide a 21+ 5.0 (Atlas #55)", ["P001", "Acme", "no", U, PG, T, "55 / 5.0 (Google)", "unknown", "-", "not-in-text", "NO-GAP"], 1),
+        ("site tag doesn't hide a 4.6 avg (Atlas #55)", ["P001", "Acme", "no", U, PG, T, "55 / 4.6 (Google)", "none", "-", "not-in-text", "NO-GAP"], 1),
         ("page cell without a city", ["P008", "Synergistic Healthcare PLLC", "yes", U, "Synergistic Healthcare", T, "16 / 5.0", "none", "-", "not-in-text", "NO-GAP"], 1),
     ]
     ok = 0

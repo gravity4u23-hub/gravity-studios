@@ -10,13 +10,13 @@
 
 | ID | Business | Health | Source URL | Page name, city | Read (UTC) | Reviews / avg | Under-5 stars | Under-5 age (months) | Owner response | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
-| P004 | Harmonizing Healthcare PLLC | yes | - | - | - | - | - | - | - | NOT-READ |
-| P005 | Flagstaff Clinic of Naturopathic Medicine | yes | https://reviews.birdeye.com/flagstaff-clinic-of-naturopathic-medicine-148061800835039 | unrecorded | 2026-11-23 13:40 | 55 / 4.6 | unknown | - | not-in-text | NEEDS-BROWSER |
+| P004 | Harmonizing Healthcare PLLC | yes | https://startpage.mapquest.com/us/arizona/harmonizing-healthcare-639032387 | Harmonizing Healthcare, Flagstaff AZ | 2026-11-23 16:26 | 5 / 5.0 (Yelp) | unknown | - | not-in-text | NEEDS-BROWSER |
+| P005 | Flagstaff Clinic of Naturopathic Medicine | yes | https://reviews.birdeye.com/flagstaff-clinic-of-naturopathic-medicine-148061800835039 | unrecorded | 2026-11-23 13:40 | 55 / 4.6 (Google, Facebook, Yellow Pages) | unknown | - | not-in-text | NEEDS-BROWSER |
 | P006 | Cedar Health Center | yes | https://reviews.birdeye.com/cedar-health-176946178189941 | Cedar Health, Tucson AZ | 2026-11-23 14:30 | 7 / 4.4 | unknown | - | not-in-text | WRONG-PAGE |
 | P007 | Munderloh Integrated Medical | yes | https://reviews.birdeye.com/munderloh-chiropractic-157254650808482 | Munderloh Chiropractic, Flagstaff AZ | 2026-11-23 14:30 | 197 / 4.8 | unknown | - | not-in-text | WRONG-PAGE |
-| P008 | Synergistic Healthcare PLLC | yes | https://reviews.birdeye.com/synergistic-healthcare-155743603329035 | Synergistic Healthcare, Flagstaff AZ | 2026-11-23 14:30 | 16 / 5.0 | none | - | not-in-text | NO-GAP |
-| P009 | The Vitality Doctor (Dr Christina Kovalik NMD, LAc) | yes | https://reviews.birdeye.com/the-vitality-doctor-dr-christina-kovalik-nmd-lac-169623344289589 | The Vitality Doctor- Dr Christina Kovalik NMD, LAc, Flagstaff AZ | 2026-11-23 15:35 | 23 / 4.5 | unknown | - | not-in-text | NEEDS-BROWSER |
-| P010 | Acupuncture Wellness Center (Cynthia Hull) | yes | https://reviews.birdeye.com/hull-cynthia-acupuncture-wellness-center-168633802417920 | unrecorded | 2026-11-23 13:40 | 5 / 5.0 | none | - | not-in-text | NO-GAP |
+| P008 | Synergistic Healthcare PLLC | yes | https://reviews.birdeye.com/synergistic-healthcare-155743603329035 | Synergistic Healthcare, Flagstaff AZ | 2026-11-23 14:30 | 16 / 5.0 (Google) | none | - | not-in-text | NO-GAP |
+| P009 | The Vitality Doctor (Dr Christina Kovalik NMD, LAc) | yes | https://reviews.birdeye.com/the-vitality-doctor-dr-christina-kovalik-nmd-lac-169623344289589 | The Vitality Doctor- Dr Christina Kovalik NMD, LAc, Flagstaff AZ | 2026-11-23 15:35 | 23 / 4.5 (Google) | unknown | - | not-in-text | NEEDS-BROWSER |
+| P010 | Acupuncture Wellness Center (Cynthia Hull) | yes | https://reviews.birdeye.com/hull-cynthia-acupuncture-wellness-center-168633802417920 | unrecorded | 2026-11-23 13:40 | 5 / 5.0 (Google) | none | - | not-in-text | NO-GAP |
 
 **What each read found (no review text):**
 - **P009 The Vitality Doctor is the best lead.** It has 23 reviews, all from Google, with a 4.5 average, so at least one is under 5★. Three reviews are 1–2 months old, and no reply text showed under any of the 5 reviews on the page. *Atlas: open the Google profile and find the under-5★ review. Record its stars and age, whether a reply is visible, and the profile's name and city. If it's within 12 months with no reply, mark it ELIGIBLE.*
@@ -33,6 +33,11 @@
   - **Trap 2, rounded ages.** Per the cloud fetch of the Flagstaff page (Atlas's read of the same page showed no per-review ages, so treat this as unconfirmed), the 5 visible Google reviews are "a month ago" (2), "2 months ago" (1) and "a year ago" (2). Google's "a year ago" can mean up to about 23 months, so a low review with that label can't count as "last 12 months". The check now takes "12-23" for that label and never marks it ELIGIBLE. *Atlas: if the under-5★ review says "a year ago", hover or open it for the date before calling it eligible.*
   - **Still unseen:** the star on each review (the histogram cells were empty in the text the cloud got) and the other 18 reviews. No owner reply showed under the 5 visible ones. The Birdeye profile is unclaimed.
   - **Not a new lead:** Massage Therapy by Bliss (Flagstaff, 15 reviews, 4.9) showed up in the same search. Its newest visible review is about 3 years old, so it can't give a 12-month gap. Not added.
-- **Where trials 2–3 stand:** of 7 clinics, P009 is the only live lead. Two have no gap, two returned the wrong page, and two (P004, P005) need Google itself.
+- **Read 4 (Nov 23, 16:26 UTC): P004 Harmonizing Healthcare, through a different copy.** Birdeye had no page, but MapQuest shows the business (2405 N Rose St, Flagstaff AZ 86004) with a copy of its **Yelp** reviews.
+  - **Yelp: 5 reviews, 5.0**, so all five are 5★. The newest is dated 5/26/2025 and the rest are 2017–2021. No owner response showed under any of them.
+  - **Google is still unread, so this is not NO-GAP.** A clean Yelp record says nothing about Google, and the trial is Google replies. A new rule 8 in `review_gap_check.py` now refuses NO-GAP unless Google is among the sites counted. The same rule made us write down the site on every older row: P005, P008, P009 and P010 were Google counts on Birdeye (P005 also counts Facebook and Yellow Pages).
+  - **One flag before anyone writes to them:** MapQuest shows the business as "Closed" and lists no hours. That may only mean closed at that hour, but someone should check it's still open before any message.
+  - *Atlas, low priority after P009:* open P004's Google profile and look for a review under 5★ from the last 12 months with no reply, and check that the business is still open.
+- **Where trials 2–3 stand:** of 7 clinics, P009 is the only live lead. Two have no gap, two returned the wrong page, and two (P004, P005) need Google itself. P004 now has a Yelp read (all 5★), but Google is still unread.
 
-**Check:** `python3 review_gap_check.py` → `SUMMARY rows=7 errors=0`. Self-tests: `python3 review_gap_check.py --self-test` (38/38).
+**Check:** `python3 review_gap_check.py` → `SUMMARY rows=7 errors=0`. Self-tests: `python3 review_gap_check.py --self-test` (44/44).
