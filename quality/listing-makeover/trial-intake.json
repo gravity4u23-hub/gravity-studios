@@ -3,38 +3,53 @@
   "shop": {
     "url": "https://www.etsy.com/shop/PlantedInWire",
     "about_route_line": "I would love to see pictures of your beautiful plants in your new pots! IG @planted.in.wire",
-    "about_contact_line": "Please message me pictures on here or via my social media pages",
+    "about_contact_line": "Please message me pictures on here or via my social media pages and I will post them on my social media stories! With your permission of course.",
     "sales": "1033 Sales (header), read 2026-11-23 - snapshot, never quote in a message",
-    "latest_activity": "Oct 18, 2026"
+    "latest_activity": "Oct 18, 2026 (05:35 read); Atlas 06:14 re-check: latest review Nov 11, 2026, sales 1037 - snapshot, never quote",
+    "about_captured": "Re-captured 2026-11-23 ~06:30 UTC (cloud fetch, HTTP 200, verbatim part of the page, under the heading 'About PlantedInWire'). Atlas's 06:14 crawl did not render the About section; the Instagram profile links back to plantedinwire.etsy.com (Atlas, PR #47)."
   },
   "listings": {
     "Amethyst Chunk Necklace": {
       "url": "https://www.etsy.com/listing/1289325877/uniquely-wire-wrapped-amethyst-chunk",
       "title": "Uniquely Wire Wrapped Amethyst Chunk Necklace/ Gold Wire Wrap/ BlackCord17-19in",
-      "highlights": ["Gemstone: Amethyst"],
+      "highlights": [
+        "Gemstone: Amethyst"
+      ],
       "facts": [
         "Each crystal is wrapped to have a specific front and back",
         "Black Cord 17 inch plus 2 inch extension chain (total of 19 inches)",
         "This is a unique item"
       ],
-      "not_shown": ["pendant size", "what the gold wire is (gold-filled, plated or gold-colored)", "tags"],
+      "not_shown": [
+        "pendant size",
+        "what the gold wire is (gold-filled, plated or gold-colored)",
+        "tags"
+      ],
       "lore_in_original": "a paragraph on amethyst and an 8-bullet list of metaphysical claims, e.g. 'Spiritual insight'"
     },
     "Raw Fluorite and Clear Quartz Necklace": {
       "url": "https://www.etsy.com/listing/1467781865/raw-fluorite-and-clear-quartz-silver",
       "title": "Raw Fluorite and Clear Quartz Silver Wire Wrapped Necklace",
-      "highlights": ["Materials: Fluorite, Clear Quartz, Quartz, healing jewelry, healing crystal"],
+      "highlights": [
+        "Materials: Fluorite, Clear Quartz, Quartz, healing jewelry, healing crystal"
+      ],
       "facts": [
         "Each crystal is wrapped to have a specific front and back",
         "Necklace Options: BlackCord 17-19in, Silver Plated 20in, Stainless Steel Ball Chain 24in",
         "Fluorite is known as the \"Genius Stone\""
       ],
-      "not_shown": ["pendant size", "what the silver wire is (sterling, plated or silver-colored)", "tags"],
+      "not_shown": [
+        "pendant size",
+        "what the silver wire is (sterling, plated or silver-colored)",
+        "tags"
+      ],
       "lore_in_original": "two long paragraphs on fluorite and clear quartz"
     }
   },
   "sourced_numbers": {
     "_about": "Numbers a rewrite may add that are not the seller's: Mohs values, checked by mohs_check.py SOURCES.",
-    "amethyst": "7", "clear quartz": "7", "fluorite": "4"
+    "amethyst": "7",
+    "clear quartz": "7",
+    "fluorite": "4"
   }
 }

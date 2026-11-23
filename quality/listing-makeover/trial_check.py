@@ -14,6 +14,9 @@ MESSAGE
      with the business line (747) 222-6980; at most 200 words.
   7. Never tells the seller their listings are bad ("weak", "poor", "missing tags", ...).
   8. A route marked UNVERIFIED passes the text rules but prints HOLD (not sendable).
+  2b. The route source quotes the shop's own words ("...", 20+ chars), and every such quote is
+     verbatim in trial-intake.json "shop" (captured with a date), so the route never rests on
+     an uncited quote (Atlas, PR #47).
 LISTINGS
   9. Every number in a listing traces to the seller (trial-intake.json facts/title) or to a
      sourced Mohs value; the "(n/140)" counter and the "13 / 20" tag header are exempt.
@@ -78,8 +81,15 @@ def titles_of(listings_text):
     return {norm(t) for t in re.findall(r"^\*\*Title[^*]*:\*\*\s*(.+)$", listings_text, re.M)}
 
 
-def check_message(name, route, source, message, titles):
+def check_message(name, route, source, message, titles, shop_lines=None):
     errs = []
+    if shop_lines is not None:
+        quotes = [q for q in re.findall(r'"([^"]{20,})"', source or "")]
+        if not quotes:
+            errs.append(f"{name}: route source must quote the shop's own words (\"...\", 20+ chars)")
+        for q in quotes:
+            if not any(norm(q) in norm(l) for l in shop_lines):
+                errs.append(f"{name}: route-source quote not captured in trial-intake.json shop: {q[:50]}")
     if not message.strip():
         return [f"{name}: no ```message block"]
     if not route or ETSY_ROUTE.search(route):
@@ -185,7 +195,8 @@ def run(gs_root=None):
         errors += 1
     held = 0
     for name, route, source, msg in trials:
-        errs = check_message(name, route, source, msg, titles)
+        shop_lines = [str(v) for k, v in intake.get("shop", {}).items() if k.startswith("about")]
+        errs = check_message(name, route, source, msg, titles, shop_lines)
         for e in errs:
             print("ERROR", e)
         errors += len(errs)
@@ -220,6 +231,13 @@ def self_test():
         ("pressure fails", ig, src, good.replace("No reply needed.\n", ""), 1),
         ("too long fails", ig, src, good + "word " * 210, 1),
     ]
+    shop = ["I would love to see pictures of your plants! IG @shop.name"]
+    qsrc = 'https://www.etsy.com/shop/X (About: "I would love to see pictures of your plants! IG @shop.name")'
+    qcases = [
+        ("route-source quote captured in intake passes", qsrc, 0),
+        ("route-source quote not in intake fails", qsrc.replace("plants", "crystals"), 1),
+        ("route source with no quote fails", src, 1),
+    ]
     intake = {"title": "Amethyst Necklace/ Gold Wire Wrap/ BlackCord17-19in",
               "facts": ["Black Cord 17 inch plus 2 inch extension chain (total of 19 inches)"]}
     blk = ("## 1. A\n**Title (10/140):** Amethyst Necklace\n**Length:** 17 inches plus 2 (19 total). "
@@ -236,6 +254,11 @@ def self_test():
     passed = total = 0
     for label, r, s, m, want in mcases:
         got = 1 if check_message("t", r, s, m, titles) else 0
+        total += 1
+        passed += got == want
+        print(("PASS " if got == want else "FAIL ") + label)
+    for label, s_, want in qcases:
+        got = 1 if check_message("t", ig, s_, good, titles, shop) else 0
         total += 1
         passed += got == want
         print(("PASS " if got == want else "FAIL ") + label)
