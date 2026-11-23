@@ -96,7 +96,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 - **Amazonite** — *Proven:* a green feldspar, Mohs 6–6.5. *Tradition:* traditionally called a soothing stone.
 - **Aquamarine** — *Proven:* blue beryl (same mineral family as emerald), Mohs 7.5–8. *Tradition:* sailors carried it for calm seas, by old maritime lore.
 
-Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind.
+Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind. [Aquamarine: natural color or heat-treated? confirm with the maker before posting — most aquamarine sold is heated]
 
 *Crystal traditions are shared as history and culture, not as medical advice or a promise of results.*
 
