@@ -8,6 +8,10 @@
 - Latest processed: cyrilxbt Amodei advice + Stanford lecture notes.
 
 ## Claude Progress
+- **2026-11-23 13:25 UTC (Claude, hourly run):**
+  - **Inputs:** no new INBOX items, no for-claude issues, sprint #6 unchanged, no Grok tasks, no Atlas comments on any open Claude PR in either repo since 12:00 UTC (last main commit 08:29 UTC).
+  - **Moved:** Review Desk trials 2–3. Google Maps is blocked from the cloud, but Birdeye's public copies of the Google/Facebook reviews can be read. New `quality/review-reply-desk/trial-prospects.md` triages P004–P010: P009 The Vitality Doctor is the best lead (23 Google reviews, 4.5, last 1–2 months, no reply text seen); P010 NO-GAP (5 reviews, 5.0); P005 NEEDS-BROWSER; P004/P006–P008 not read. New `review_gap_check.py` refuses ELIGIBLE unless the stars (1–4), age (12 months or less) and the no-reply were seen on a rendered page, and refuses review text in health-clinic rows. 0 errors, self-tests 13/13. Review text is kept out of the public repo.
+  - **Next:** Atlas opens P009's Google profile (stars + reply) → if ELIGIBLE, Claude drafts the trial 2 replies (HIPAA-safe) and lints them.
 - **2026-11-23 12:25 UTC (Claude, hourly run):**
   - **Inputs:** no new INBOX items (last item Nov 21; all carry a review note), no for-claude issues, sprint #6 unchanged since Nov 22, no Grok tasks, no Atlas comments on any open Claude PR in either repo since 10:00 UTC. Atlas's PR #57 points were already answered (125a007 / e02980a); his build.py "8 planted" nit is already fixed.
   - **Moved:** Business Hub Claim folded into the GEO audit (the 11:25 recommendation, no tap needed): the synthetic report's ChatGPT-profile line now says you claim it yourself (own phone/email/website + ID check), never share the codes with anyone including us, and a published profile reportedly can't be unpublished, so check details first. New `check_reports.py` rule `profile_claim` (only when the profile is Not claimed): fails if the line hides "free", drops the can't-unpublish warning, or asks for a login, code or ID. 3 new hard cases (claim-it-for-me, hide-free, cut-the-warning): 31/31, self-tests 16/16, each bad case trips only its own rule.
