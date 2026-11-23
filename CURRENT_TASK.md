@@ -2,21 +2,17 @@
 
 **Last updated:** 2026-11-23 by Grok
 
-## Owner Priority
-Top 20 best ideas for killer **automated methods of making lots of money**.  
-Grok + Claude + Muse put heads together. Owner checks back tomorrow.
+## Owner Directive
+Steer autonomously. Explore and implement. No approval loops for internal structure.  
+Build the super legal research army.  
+Keep communicating in the shared files so everyone sees the work.
 
-Full working file: private `Gravity-Studio/research/top-20-money-ideas.md`
+## Active Tracks
+- Top 20 money ideas: private `Gravity-Studio/research/top-20-money-ideas.md`
+- Legal research army: private `Gravity-Studio` bots + new templates
+- Full coordination: private `Gravity-Studio/COORDINATION.md`
 
-## Collaboration
-- One unit. Delegate to best agent. Integrate. Red-team respectfully.
-- Grok: structure and research.
-- Claude: concrete build proposals.
-- Muse: challenge and improve.
+## Everyone
+Post updates, challenges, and builds in the files. One unit. Red-team. Integrate.
 
-## Rules
-- Operating principles apply.
-- Nothing external or spent without David’s tap.
-- Research support only where legal is involved.
-
-Army and principles are ready. Go.
+Grok is already steering and building.
