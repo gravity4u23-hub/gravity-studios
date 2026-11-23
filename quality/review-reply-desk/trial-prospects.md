@@ -15,7 +15,7 @@
 | P006 | Cedar Health Center | yes | https://reviews.birdeye.com/cedar-health-176946178189941 | Cedar Health, Tucson AZ | 2026-11-23 14:30 | 7 / 4.4 | unknown | - | not-in-text | WRONG-PAGE |
 | P007 | Munderloh Integrated Medical | yes | https://reviews.birdeye.com/munderloh-chiropractic-157254650808482 | Munderloh Chiropractic, Flagstaff AZ | 2026-11-23 14:30 | 197 / 4.8 | unknown | - | not-in-text | WRONG-PAGE |
 | P008 | Synergistic Healthcare PLLC | yes | https://reviews.birdeye.com/synergistic-healthcare-155743603329035 | Synergistic Healthcare, Flagstaff AZ | 2026-11-23 14:30 | 16 / 5.0 | none | - | not-in-text | NO-GAP |
-| P009 | The Vitality Doctor (Dr Christina Kovalik NMD, LAc) | yes | https://reviews.birdeye.com/the-vitality-doctor-dr-christina-kovalik-nmd-lac-169623344289589 | unrecorded | 2026-11-23 13:40 | 23 / 4.5 | unknown | - | not-in-text | NEEDS-BROWSER |
+| P009 | The Vitality Doctor (Dr Christina Kovalik NMD, LAc) | yes | https://reviews.birdeye.com/the-vitality-doctor-dr-christina-kovalik-nmd-lac-169623344289589 | The Vitality Doctor- Dr Christina Kovalik NMD, LAc, Flagstaff AZ | 2026-11-23 15:35 | 23 / 4.5 | unknown | - | not-in-text | NEEDS-BROWSER |
 | P010 | Acupuncture Wellness Center (Cynthia Hull) | yes | https://reviews.birdeye.com/hull-cynthia-acupuncture-wellness-center-168633802417920 | unrecorded | 2026-11-23 13:40 | 5 / 5.0 | none | - | not-in-text | NO-GAP |
 
 **What each read found (no review text):**
@@ -27,6 +27,12 @@
   - **P006 Cedar Health Center: wrong page.** The only Birdeye match is "Cedar Health" in **Tucson**, not our Flagstaff clinic. No Flagstaff page found yet.
   - **P007 Munderloh Integrated Medical: wrong page.** The only Birdeye match is **Munderloh Chiropractic**, Flagstaff (197 reviews, 4.8). It shares the surname, but it isn't the same name, so we don't use it. The newest review the cloud saw on it was about 10 years old. *Atlas: on Google, check whether Munderloh Integrated Medical has its own profile.*
   - **P004 Harmonizing Healthcare:** no Birdeye page turned up in a site search. Stays NOT-READ.
+- **Read 3 (Nov 23, 15:35 UTC): P009 re-read, two traps for Atlas found.**
+  - **Name and city now recorded:** the page shows "The Vitality Doctor- Dr Christina Kovalik NMD, LAc", Flagstaff AZ (Yancey Ln). It passes the name + city match.
+  - **Trap 1, a second office.** Birdeye also has a page for the same doctor in **Paradise Valley, AZ** (25 reviews). Atlas must open the **Flagstaff** Google profile; the check marks the Paradise Valley page WRONG-PAGE (self-test "same doctor, other office").
+  - **Trap 2, rounded ages.** The 5 visible Google reviews are "a month ago" (2), "2 months ago" (1) and "a year ago" (2). Google's "a year ago" can mean up to about 23 months, so a low review with that label can't count as "last 12 months". The check now takes "12-23" for that label and never marks it ELIGIBLE. *Atlas: if the under-5★ review says "a year ago", hover or open it for the date before calling it eligible.*
+  - **Still unseen:** the star on each review (the histogram cells were empty in the text the cloud got) and the other 18 reviews. No owner reply showed under the 5 visible ones. The Birdeye profile is unclaimed.
+  - **Not a new lead:** Massage Therapy by Bliss (Flagstaff, 15 reviews, 4.9) showed up in the same search. Its newest visible review is about 3 years old, so it can't give a 12-month gap. Not added.
 - **Where trials 2–3 stand:** of 7 clinics, P009 is the only live lead. Two have no gap, two returned the wrong page, and two (P004, P005) need Google itself.
 
-**Check:** `python3 review_gap_check.py` → `SUMMARY rows=7 errors=0`. Self-tests: `python3 review_gap_check.py --self-test` (22/22).
+**Check:** `python3 review_gap_check.py` → `SUMMARY rows=7 errors=0`. Self-tests: `python3 review_gap_check.py --self-test` (27/27).
