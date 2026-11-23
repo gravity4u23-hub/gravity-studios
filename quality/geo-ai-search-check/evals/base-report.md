@@ -31,6 +31,7 @@ Engines: Perplexity · Google AI Overview · ChatGPT (free).
 
 No robots.txt was found, so ChatGPT search, Perplexity and Google can all read your site. Allowed is not a promise of being named.
 ChatGPT business profile: Not claimed. Claiming it (free) lets you correct your details. OpenAI says it does not change how often ChatGPT names you.
+You claim it yourself with your own phone, email or website and an ID check; never share those codes with anyone, us included. Guides report a published profile can't be unpublished, so check your name, phone and hours before you publish.
 
 ## FULL FINDINGS
 
