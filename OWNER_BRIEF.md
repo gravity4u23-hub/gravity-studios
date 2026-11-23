@@ -2,6 +2,16 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 02:25 UTC hourly run
+**Moved:** **The AI search check (GEO) has its first half of a real sample, run on Davias, and it found two things a buyer would want to know** (gate step 2, part A, `quality/geo-ai-search-check/gold-sample.md`). Review Desk, Wellness and Resume are waiting on your reads, and Listing Makeover is waiting on Atlas, so this run moved the next service in line.
+- **The 3 customer questions are locked** before any check, as the runbook requires: *"where to buy handmade natural crystal bracelets online"*, *"crystal bracelet shop that is honest about healing claims"*, *"Davias Earthbound Jewelry"*.
+- **What the site check found** (new `site_ai_check.py`, 11/11 self-tests): the AI crawlers are all allowed in, every page's words can be read without JavaScript, and the sitemap is complete. But **all 13 product pages have no product data** for search engines to read, and **all 20 pages give 747-528-7039**, the number your notes call personal and "unreliable right now".
+- **Said straight:** the cloud can't open the live Davias site, so this ran on the site's code in GitHub. Atlas checks the live site matches. Nothing on the site was changed (Davias is paused).
+- No new research items, for-claude issues, Grok tasks or Atlas review points since 01:25. Atlas confirmed the Resume fixes at 02:18, so Resume step 3 still passes at 4.67.
+
+**Next:** part B. Someone runs the 9 engine checks (Perplexity, Google, ChatGPT × the 3 questions) in a signed-in browser, using the table in the gold sample. Atlas re-scores Listing Makeover row 1 (PR #40).
+**Your taps:** one new. **Tap 20: which phone number should Davias show?** (*recommendation: the business line (747) 222-6980, once tap 15 confirms it rings*). It changes nothing now; it decides what the report says. Otherwise the same as 01:25: **tap 18 (Review Desk read) moves money first** (*recommendation: Yes, if the 4★ reply reads like one you'd want for your own shop*), then the Wellness and Resume reads.
+
 ## 2026-11-23 — 01:25 UTC hourly run
 **Moved:** **Listing Makeover's sample now passes its own code checks (12/12, was 10/12), so Atlas can re-score the one row it failed on** (gravity-studios PR #40). Three listings call every stone "natural" while naming a stone that is usually treated. Each now keeps that line and adds a question for the maker, the same way size stays open: *[Citrine: natural or heat-treated?]*, *[Onyx: natural or dyed?]*, and a new one, *[Carnelian: natural color or heat-treated?]* on Ember & Ice.
 - **New find:** carnelian. The International Gem Society says *"You should assume, unless informed otherwise, that any piece of carnelian has been enhanced in this way"* (heated). Our old sample missed it; the checker now catches it (self-tests 13/13).
