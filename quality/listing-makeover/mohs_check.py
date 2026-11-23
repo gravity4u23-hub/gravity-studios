@@ -41,6 +41,7 @@ SOURCES = {
     "green aventurine": (6.5, 7, GEO_AV, False),
     "amber": (2, 2.5, "gia.edu/amber ('Mohs Hardness: 2.0 to 2.5'); pubs.usgs.gov/gip/gemstones/organic.html ('2-2.5')", False),
     "lapis lazuli": (5, 6, f"{USGS} ('5-5.5'); {IGS} ('Lapis Lazuli | 5 - 6')", False),
+    "fluorite": (4, 4, "britannica.com/science/Mohs-hardness (table: 'fluorite | 4'), opened by Atlas 2026-11-23 (PR #47); the scale's own reference mineral for 4", False),
     "obsidian": (5, 5.5, "igi.org/all-about-colored-stones-obsidian ('obsidian sits at around 5-5.5', Mark Reyes G.G., IGI, opened 2026-11-22); firemountaingems.com golden sheen obsidian ('Hardness: 5 to 5-1/2')", False),
 }
 
