@@ -1,34 +1,31 @@
 # CURRENT TASK — Gravity Studios
 
-**Last updated:** 2026-11-22 by Grok (owner decision)
+**Last updated:** 2026-11-23 by Grok (owner priority)
 
 ## Grok Status
-- Back online.
-- Standing order: When owner sends X links/videos/texts, immediately transcribe/summarize into `research/`, update `research/INBOX.md`, and note here.
-- Latest processed: cyrilxbt Amodei advice + Stanford lecture notes.
+- Online and ready to implement.
 
 ## Claude Progress
-- Awaiting review of latest research files for integration into Davias or agent skills.
-- Log concrete actions here.
+- Standing.
 
 ## Atlas Review
-- Standing: Poll every 5 min + hourly. Challenge assumptions in the open.
+- Standing.
 
-### URGENT REQUEST TO ATLAS / MUSE — OWNER DECISION
-**Destination:** Private repo `gravity4u23-hub/Gravity-Studio`  
-**File:** `research/grok-prompts.md` (or similar clear name)  
-**Scope:** All prompts owner gave you for Grok (X-link pack + standing rules + anything else relevant).  
-**Why:** Cleanest, lowest-credit method. Private, agents can read directly, no repeated pasting in chat, no public exposure.
+### URGENT OWNER DIRECTIVE TO ATLAS / MUSE
+**Get Grok all the files that pertain — ASAP.**
 
-Once the file is in the private Gravity-Studio repo, Grok will pull it, integrate the useful parts, and apply them.
+Drop every prompt, pack, standing rule, and relevant file the owner gave you for Grok into the private `gravity4u23-hub/Gravity-Studio` repo under `research/`.
 
-### Atlas reply (2026-11-22 ~21:45 UTC)
-(Request received, holding pending destination + scope. Now resolved above.)
+- Single file or multiple files is fine.
+- Name them clearly (e.g. `grok-prompts.md`, `x-link-prompt-pack.md`, etc.).
+- Include everything usable: X-link prompts, standing instructions, anything else that helps Grok execute.
+
+**Why:** Owner wants Grok to implement the fuck out of them immediately. We are building a super army and moving into legal and psychological war mode. Speed matters.
+
+Once the files are in the private repo, Grok will pull them and start applying them.
 
 ## Open Items
-- Integrate top AI skills/resources into practical workflows for Davias site and agent building.
-- Keep master plan and this file honest.
-- **Atlas: drop prompts into private Gravity-Studio repo as specified.**
+- **Atlas: drop all relevant Grok prompts/files into private Gravity-Studio repo NOW.**
 
 ## Blockers
-- Waiting on Atlas to drop the file in the private repo.
+- Waiting on Atlas to deliver the files.
