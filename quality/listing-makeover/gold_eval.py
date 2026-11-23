@@ -13,7 +13,7 @@ So "no invented numbers" here means: every number in a listing is either the sel
 sourced Mohs value. It adds one rule the synthetic set did not have:
 
   TREATMENT: a listing that says "Every stone is natural" while naming a stone that is usually
-  treated (citrine: heated; onyx: dyed; carnelian: heated) must carry a note or [question] about THAT stone. Source for citrine:
+  treated (citrine: heated; onyx: dyed; carnelian: heated; smoky quartz: irradiated; aquamarine: heated) must carry a note or [question] about THAT stone. Source for citrine:
   GIA, gia.edu/citrine-description ("Since natural citrine is rare, most of the citrine on the
   market is the result of heat treatment"), opened 2026-11-22. FTC: sellers should disclose a
   treatment "if it significantly affects the value of the gemstone" (ftc.gov "Loupe" guidance
@@ -39,7 +39,13 @@ TREATED = {
     "onyx": ("dyed", "gemsociety.org black-onyx article (opened 2026-11-22): 'Most solid black pieces sold today is actually "
                      "dyed black chalcedony'; GIA (Atlas, browser, PR #33): 'What many call \u2018black onyx\u2019 is actually dyed black chalcedony'"),
     "carnelian": ("heat-treated", "gemsociety.org carnelian article (opened 2026-11-23): 'You should assume, unless informed otherwise, "
-                                  "that any piece of carnelian has been enhanced in this way' (heating); property table 'Typical Treatments: Heat Treatment'"),
+                                  "that any piece of carnelian has been enhanced in this way' (heating)"),
+    "smoky quartz": ("irradiated", "GIA Colored Stone Essentials Reference Guide, smoky quartz treatments: Irradiation 'Produces smoky quartz from "
+                                    "rock crystal', Prevalence: Common, Detection: Undetectable; gemstonerush.com/smoky-quartz: 'most commercial smoky "
+                                    "quartz on the market today is irradiated rather than mined in the natural color' (both opened by Atlas, PR #40)"),
+    "aquamarine": ("heat-treated", "GIA gia.edu/aquamarine-quality-factor: 'most of the aquamarine in the market was heat-treated to give it more "
+                                   "of a pure blue'; IGS: 'Nearly all aquamarine gems on the market today have undergone this heat treatment' "
+                                   "(both opened by Atlas, PR #40, Nov 23)"),
 }
 NATURAL_LINE = re.compile(r"every stone is natural", re.I)
 TREAT_WORD = r"(treat|heat|dye|natural|untreated)"
@@ -144,6 +150,14 @@ def self_test():
          len(treatment_errors("Every stone is natural.", ["Carnelian", "Clear Quartz"])) == 1),
         ("carnelian with a [question] passes",
          treatment_errors("Every stone is natural. [Carnelian: natural color or heat-treated? ask the maker]", ["Carnelian"]) == []),
+        ("smoky quartz + 'every stone is natural' fails (Atlas, PR #40)",
+         len(treatment_errors("Every stone is natural.", ["Amber", "Smoky Quartz"])) == 1),
+        ("smoky quartz with a [question] passes",
+         treatment_errors("Every stone is natural. [Smoky Quartz: natural color or irradiated? ask the maker]", ["Smoky Quartz"]) == []),
+        ("aquamarine + 'every stone is natural' fails (Atlas, PR #40)",
+         len(treatment_errors("Every stone is natural.", ["Amazonite", "Aquamarine"])) == 1),
+        ("aquamarine with a [question] passes",
+         treatment_errors("Every stone is natural. [Aquamarine: natural color or heat-treated? ask the maker]", ["Aquamarine"]) == []),
         ("Mohs facts come from mohs_check SOURCES", {"5", "5.5"} <= set(mohs_facts(["Obsidian"]))),
         ("a value quoted from an opened page counts (USGS lapis 5-5.5)", "5.5" in mohs_facts(["Lapis Lazuli"])),
         ("a value outside the sourced range never counts", "8" not in mohs_facts(["Amethyst"])),

@@ -4,8 +4,8 @@
 **Status:** Part A (site side) done by Claude, 2026-11-23 02:25 UTC run. **Part B (the 9 engine checks) is not run yet:** it needs a browser (Perplexity, Google, and a signed-in ChatGPT), which this cloud session can't use. Nothing below is a score.
 **Why Davias:** the benchmark's step-2 plan says "run the full 9-check audit on our own business first". The Davias *website work* is paused (owner, Nov 21 4:20 PM); this audit reads the site and changes nothing. It is a labelled self-audit (COMMAND_CENTER: "a labelled self-audit demo, not a case study"), never shown to buyers as a customer result.
 
-## 1. The 3 questions, fixed before the first check (2026-11-23 02:40 UTC)
-Davias sells online with no shop address, so the questions are what an online buyer would type, not "near me". They may not change after the first check (runbook rule).
+## 1. The 3 questions, fixed before the first check (committed 2026-11-23 02:28 UTC, `563e634`)
+Davias sells online with no shop address, so the questions are what an online buyer would type, not "near me". They may not change after the first check (runbook rule). No engine check has been run yet, so they were fixed before any check. (An earlier version of this line said 02:40 UTC; the commit time, 02:28:25Z, is the right one. Atlas caught it.)
 
 1. `where to buy handmade natural crystal bracelets online`
 2. `crystal bracelet shop that is honest about healing claims`
@@ -30,11 +30,12 @@ Work-log line: `Robots: No search-crawler block found in robots.txt. (Allowed is
 
 ### What part A would put in the report (draft fix lines, not final until part B runs)
 1. **If Davias should use the business line:** "Your site gives 747-528-7039 on all 20 pages, including the contact data search engines read. What could happen: an AI answer that quotes your site may give customers that number. Fix: change it to the line you answer, in the footer and the Organization data. Effort: needs your web person (one find-and-replace)."
+   - *404 page: it also shows 747-528-7039 twice. The checker skips 404 pages on purpose; the buyer report should still say "all 20 pages plus the not-found page".*
 2. **Product data:** "Your 13 product pages have no Product data. What could happen: engines may read them as general pages, not products. Fix: add a Product block (name, image, description) to each. Effort: needs your web person."
 Part B decides whether these make the top 3. A fix only reaches the top 3 if an engine's answer shows the problem (rubric row 2).
 
 ## 3. Part B — the 9 engine checks (to run, Atlas's or the owner's browser)
-Follow Gravity-Studio `revenue-command-center/geo-audit-runbook.md` (PR #54 branch) top to bottom. Screenshots G1–G9 in this order; every Unknown still gets a file with its reason:
+Follow the runbook top to bottom. **Where the files are:** they are in the *other* repo, `gravity4u23-hub/Gravity-Studio`, on branch `claude/geo-runbook-gaps` (Gravity-Studio PR #54, open, head `844bb85`), not in this repo and not on any `main` yet, which is why a code search finds nothing: `revenue-command-center/geo-audit-runbook.md`, `geo_worklog_check.py`, `geo_score.py`, `geo-report-template.md`. `check_reports.py` is in this repo (`quality/geo-ai-search-check/evals/`). Screenshots G1–G9 in this order; every Unknown still gets a file with its reason:
 
 | ID | Engine | Query |
 |---|---|---|
@@ -49,7 +50,7 @@ Follow Gravity-Studio `revenue-command-center/geo-audit-runbook.md` (PR #54 bran
 | G9 | ChatGPT | Davias Earthbound Jewelry |
 
 Also, in the signed-in ChatGPT session: `ChatGPT profile: Claimed / Not claimed / Unknown - <reason>`.
-Then: `geo_worklog_check.py worklog.md` must print READY → `geo_score.py` → report from `geo-report-template.md` → `check_reports.py REPORT.md` must pass.
+Then (from a checkout of that Gravity-Studio branch): `python3 revenue-command-center/geo_worklog_check.py worklog.md` must print READY → `geo_score.py` → report from `geo-report-template.md` → `check_reports.py REPORT.md` must pass.
 **For step 3, same day:** run the same shop through the two free tools the benchmark names (Insites, HubSpot AI Search Grader) and save what they show, so Atlas compares like for like. HubSpot's form asks for company details; the owner decides whether to submit it.
 
 **Expected honestly:** a new online shop with no reviews or press will most likely be "Not mentioned" on Q1 and Q2. That is a real result, not a failed sample. The gold sample is judged on whether the report is true, specific and useful (rubric rows 1–6), not on Davias scoring well.
