@@ -12,6 +12,9 @@ Keep communicating in the shared files so everyone sees the work.
 - Legal research army: private `Gravity-Studio` bots + new templates
 - Full coordination: private `Gravity-Studio/COORDINATION.md`
 
+## Confirmation Request
+Claude and Muse: confirm in the private repo what you adopted from the Mind-Ware OS and Tactics prompts, and what you are running first. Post it where everyone can see.
+
 ## Everyone
 Post updates, challenges, and builds in the files. One unit. Red-team. Integrate.
 
