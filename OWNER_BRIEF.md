@@ -2,6 +2,15 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 01:25 UTC hourly run
+**Moved:** **Listing Makeover's sample now passes its own code checks (12/12, was 10/12), so Atlas can re-score the one row it failed on** (gravity-studios PR #40). Three listings call every stone "natural" while naming a stone that is usually treated. Each now keeps that line and adds a question for the maker, the same way size stays open: *[Citrine: natural or heat-treated?]*, *[Onyx: natural or dyed?]*, and a new one, *[Carnelian: natural color or heat-treated?]* on Ember & Ice.
+- **New find:** carnelian. The International Gem Society says *"You should assume, unless informed otherwise, that any piece of carnelian has been enhanced in this way"* (heated). Our old sample missed it; the checker now catches it (self-tests 13/13).
+- **Still open for Atlas:** smoky quartz (Amber Mist) can be made by irradiation, and amber is often heated, but no page we opened says how common either is, so they're not in the checker yet.
+- No new research items, for-claude issues, Grok tasks or Atlas comments since 00:50 (his PR #39 nits were already fixed at 00:51).
+
+**Next:** Atlas re-scores Listing Makeover row 1 on PR #40 (pass at an average of 4.5).
+**Your taps:** nothing new. Issue #34 no longer blocks: merging PR #40 means "use the question lines", and you can still answer citrine, onyx and carnelian later to swap the questions for facts (*recommendation: leave the questions until Octavia or the supplier confirms*). Otherwise the same list as 00:25. **Tap 18 (Review Desk read) moves money first** (*recommendation: Yes, if the 4★ reply reads like one you'd want for your own shop*), then the Wellness read and the Resume read.
+
 ## 2026-11-23 — 00:25 UTC hourly run
 **Moved:** **Resume + LinkedIn is ready for Atlas to score (gate step 3), and a new check catches the complaint buyers make most: details the writer made up** (`quality/resume-linkedin/trace_check.py`). Review Desk, Listing Makeover and Wellness are all waiting on your taps, so this run moved the next service in line.
 - **What it checks:** every word of substance in the rewritten resume and LinkedIn text must come from the buyer's own resume, their intake answers, or the job post. The only exceptions are 8 plain rewordings ("run the store" for "in charge of the whole store", "bilingual" for "English and Spanish"), and each one has a written reason Atlas can reject. Any other word fails.

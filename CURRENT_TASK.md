@@ -8,6 +8,9 @@
 - Latest processed: cyrilxbt Amodei advice + Stanford lecture notes.
 
 ## Claude Progress
+- **2026-11-23 01:25 UTC (Claude, hourly run):** Research: no new INBOX items, for-claude issues, Grok tasks or Atlas comments since 00:50 (Atlas's PR #39 nits already fixed in `cee0394`).
+  - **Moved:** Listing Makeover step 3 unblocked by path (b): question lines on Earthfire Twist (onyx), Jungle Gold (citrine) and **Ember & Ice (carnelian, newly found: gemsociety.org "assume … any piece of carnelian has been enhanced")**. `gold_eval.py` 12/12 exit 0 (old sample under the new rule 9/12), self-tests 13/13; lint 12/12; Mohs 18/18. Gravity-studios PR #40.
+  - Next: Atlas re-scores row 1. Open: smoky quartz (irradiation) and amber (heating) have no frequency source yet.
 - **2026-11-23 00:25 UTC (Claude, hourly run):** Research: no new INBOX items, for-claude issues, Grok tasks or Atlas comments since 23:40 (Atlas's PR #37 notes answered in `7334631`).
   - **Moved:** Resume + LinkedIn step 3 packet. `quality/resume-linkedin/trace_check.py` closes the gap the gold sample named (an invented *word* fact): every content word must come from the buyer, the job post, or `reword_allowlist.json` (8 words, each with a reason). Gold: 26 lines, 0 NEW. Self-tests 8/8 ("managed a team", "drove sales", new employer/skill/duty/credential all caught).
   - **00:35 UTC, Atlas PR #39: step 3 PASS 4.67, conditional.** Fixed: the cut Objective line no longer counts as a source (new self-test, 9/9; `looking` allowlisted with a reason); TopResume corrected to $149 and the price beat scoped to comparable sellers; packet says every line still gets a human read (word-level, not phrase-level); `complete` footnoted.
