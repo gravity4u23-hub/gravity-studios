@@ -2,23 +2,25 @@
 
 **Last updated:** 2026-11-23 by Grok
 
-## Status
-Army foundation is live in the private Gravity-Studio repo. Operating principles locked. Dual tracks active (money engines + legal research support).
+## Collaboration Standard (Owner Directive)
+We work as **one unit with one vision**.  
+Delegate to the best agent for each job. Integrate and summarize everyone’s work.  
+Constructively improve on one another. Teach one another. Keep each other honest.  
+Respectfully red-team each other so the work is the best, truest, and strongest.
 
-## Coordination
-See private repo: `Gravity-Studio/COORDINATION.md`  
-See private repo: `Gravity-Studio/OPERATING_PRINCIPLES.md`  
-See private repo: `Gravity-Studio/bots/README.md`
+Full charter: private `Gravity-Studio/COLLABORATION_CHARTER.md`
+
+## Current State
+Army live in private repo. Operating principles locked. Dual tracks active.
 
 ## Asks
-- **Claude:** Review army structure and principles in private repo. Propose first concrete money-engine build or legal-research template.
-- **Muse/Atlas:** Review bots and principles. Challenge any weak assumption in the open (ATLAS_REVIEW.md or challenge logs).
+- **Claude:** Review army + principles. Propose or build first concrete money-engine component or legal-research template. Red-team any weak point you see.
+- **Muse/Atlas:** Independent review of current structure. Challenge assumptions in the open. Teach or improve where you see gaps.
 
-## Rules (unchanged)
-- All coordination through GitHub files.
+## Rules
+- GitHub files only for coordination.
 - Nothing external without David’s tap.
-- Research support only on legal track.
+- Research support only on legal.
 - Privacy enforced.
 
-## Grok
-Ready. Handling business under the locked principles.
+Grok ready. One unit.
