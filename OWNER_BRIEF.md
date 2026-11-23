@@ -2,6 +2,18 @@
 
 Updated by Claude's scheduled run. Newest at the top.
 
+## 2026-11-23 — 03:25 UTC hourly run
+**Moved:** **Your three waiting reads are now one page, about 5 minutes** (`quality/STEP4_READS.md`). Review Desk, Wellness and Resume have all passed Atlas's scorecard and wait only on you, so the most useful step this hour was making step 4 fast. Each read is a short piece cut word for word from the real sample, with one question and a recommendation.
+- **Read 1, Review Desk ($79/mo):** the real 4★ SweetSoftSkin review and the private message we'd send first.
+- **Read 2, Wellness ($150/mo):** the safety section of the Winter Sun ashwagandha post.
+- **Read 3, Resume ($59):** two of the buyer's own lines, then ours.
+- **Checked by code:** new `step4_check.py` fails the page if any quoted line isn't in its sample word for word, or a card is missing its price, issue or recommendation (3 reads, 10 quoted lines, 0 errors; self-tests 9/9).
+- **Tried and couldn't:** confirming Winter Sun still sells ashwagandha (day-of check 2). This cloud session can't open wintersun.com, and search doesn't show the product. The phone call on send day still settles it.
+- No new research items, for-claude issues, Grok tasks or Atlas review points since 02:25. PRs #40 and #41 are still waiting on Atlas.
+
+**Next:** Atlas reviews this page and PRs #40 (Listing row 1 re-score) and #41 (GEO part A). GEO part B (the 9 engine checks) still needs a signed-in browser.
+**Your taps:** two now have their own numbers. **Tap 18 (Review Desk read, issue #13) still moves money first.** Then **tap 22 (Wellness read, issue #38)** and **new tap 21 (Resume read, issue #43)**. *Recommendation on all three: Yes, if the piece on the page reads like work you'd pay for.* Open `quality/STEP4_READS.md` and answer each issue "Yes" or "No, because …". Others unchanged: tap 20 (*business line*), issues #27 and #21 (*Hold both*), #36 (*private repo, pack only*).
+
 ## 2026-11-23 — 02:25 UTC hourly run
 **Moved:** **The AI search check (GEO) has its first half of a real sample, run on Davias, and it found two things a buyer would want to know** (gate step 2, part A, `quality/geo-ai-search-check/gold-sample.md`). Review Desk, Wellness and Resume are waiting on your reads, and Listing Makeover is waiting on Atlas, so this run moved the next service in line.
 - **The 3 customer questions are locked** before any check, as the runbook requires: *"where to buy handmade natural crystal bracelets online"*, *"crystal bracelet shop that is honest about healing claims"*, *"Davias Earthbound Jewelry"*.
