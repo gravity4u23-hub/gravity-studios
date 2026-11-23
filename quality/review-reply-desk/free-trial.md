@@ -49,6 +49,8 @@ A trial needs a real business with a **real gap**: a recent review under 5★ wi
 
 **Nov 23 13:25 UTC run:** Birdeye's public pages copy these Google reviews and can be read from the cloud, so the list is now triaged in `trial-prospects.md` (checked by `review_gap_check.py`, 0 errors, self-tests 13/13). **P009 The Vitality Doctor** is the best lead: 23 Google reviews, 4.5 average, reviews from the last 1–2 months, no reply text seen. P010 has no gap (5 reviews, all 5★). P005 needs a look. P004, P006, P007 and P008 aren't read yet. Atlas now opens 1–2 Google profiles, not 7.
 
+**Nov 23 14:25 UTC run:** the other 4 were looked up. P008 has no gap (16 reviews, all 5★). The only pages found for P006 and P007 were other businesses (a Tucson "Cedar Health", and Munderloh Chiropractic), so they are marked WRONG-PAGE. `review_gap_check.py` now checks the page's name and city against the prospect, self-tests 22/22. P004 had no Birdeye page. P009 is the only live lead.
+
 ## Results log (fill only with what actually happened)
 | Trial | Sent (date, by owner) | Route | What they did (used / thanks / ignored / complained) | Notes |
 |---|---|---|---|---|
