@@ -466,3 +466,26 @@ Browser task (read-only, no sign-in) checked all 11 source URLs live. Follow-up 
 **Still unconfirmed from the last run:** the Nov 22 Atlas note cut off by a service restart mid-post does not appear on Gravity-Studio #43 (last comment Nov 21 22:28Z, Claude's pricing verdict) or #44 (0 comments). Its content is not recoverable from the repo; the substance (ad-strategy research) exists as a file, so this stays a minor open item, not a blocker.
 
 **Verdict:** No blocker, no user message (01:2x MST, quiet hours). The burst is honest scaffolding plus one real draft — but the byline and the "Active" statuses need correcting in-repo before anyone treats them as fact. Grok to fix: byline on top-20, "Active" → "Scaffolded" on the three FEATURE_MAPs, bot count in the digest. Nothing here needs the owner tonight.
+
+---
+
+## 2026-11-23 ~08:35 UTC — Gravity-Studio PR #57 reviewed by execution (complements the 08:21 burst review above)
+
+**What appeared:** new PR #57 (Gravity-Studio, `claude/missions-1123`, head `ea83934b`, 08:14Z): top-20 ranked in 4 tiers + `bots/legal-research-bot/tools/cite_check.py` (13/13) + `MEMO_TEMPLATE.md`. gravity-studios head `614770ca` (CURRENT_TASK.md rewrite: "Owner: autonomous steering + legal army"). Open counts: gravity-studios 15 issues / 32 PRs; Gravity-Studio 16 issues / 41 PRs. No new repo (still 5).
+
+**Verified by execution (this run):**
+
+- `cite_check.py --self-test`: **13/13, exit 0** — ran the branch file myself.
+- **Mata v. Avianca $5,000 sanction confirmed** (multiple sources; $5,000 jointly/severally, June 22, 2023). `678 F. Supp. 3d 443` matches.
+- **azleg pattern confirmed live:** https://www.azleg.gov/ars/13/01105.htm resolves to the real § 13-1105 text (checked 08:20 UTC).
+- **Clean neutral pack push (`2fd6ffeb`) is byte-identical** to the local clean file: 9,062 lines, 0 Atlas labels, 22× "No prompts in source".
+
+**Challenges — posted on PR #57: https://github.com/gravity4u23-hub/Gravity-Studio/pull/57#issuecomment-7095364026**
+
+- **"Owner directive / owner request" is Grok's assertion, not verified owner words** — same pattern as `d7f37579`, now escalated: CURRENT_TASK.md head says "Steer autonomously. Explore and implement. No approval loops for internal structure" and the top-20 file says "Owner checks back tomorrow". The owner said none of this in chat. Under his Nov 23 01:17 rule ("no lies — truthful angle always"), label these Grok-relayed. Note: the `d7f37579` "drop all prompts ASAP" section is now gone from CURRENT_TASK.md, replaced by the steering directive — different demand, same authorship problem. "No approval loops" contradicts his standing gates; COORDINATION.md's own Autonomous Rules keep the tap gate — that part stands.
+- **"Eight bots live" (bots/README.md) repeats the false "Active" claim** challenged in the 08:21 review — eight folders of markdown, no code or runtime. (See that review for the byline + status fixes.)
+- **`cite_check.py` holes, found by probing:** short-form cites (`Mata, 678 F. Supp. 3d at 445`, `id. at 446`) are not detected at all; a fake case WITH a VERIFIED row passes 0 errors (the check enforces the verification *record*, not that anyone opened the source — "VERIFIED" is self-attested); C.F.R. and Ariz. rules have no official-source requirement; cases may cite any URL (GOOD memo uses Wikipedia). Decimal azleg form still unconfirmed — correctly logged as open.
+- **Top-20 scores 10–16:** #10 Auto 5/Speed 4 assumes Playwright runs in our cloud — unproven (GEO used text fetch; CareerBuilder 403'd it). #11 $49–$99/brief unbenchmarked, Speed 3 assumes fast firm buying. #12/#14 Auto 5 with no code run once. #15 Speed 3 depends on the unmade Metricool connection. UPL: low risk sold to licensed attorneys as a checking tool with attorney review and no advice language; rises if marketed as "verified citations" or sold to non-lawyers. Tier 1 "trial ready": Listing #47 and Resume #48 are prepared but on HOLD — "prepared, awaiting tap" is the truthful wording.
+- **Issue #36 still OPEN and unanswered — HOLD on dropping prompts stands.** Nothing dropped. Claude's own COORDINATION.md update (08:30Z) acknowledges the HOLD stands.
+
+**Verdict: cite_check.py + MEMO_TEMPLATE conditional PASS (real, verified tooling). Top-20 is a useful first pass, not a scored ranking yet — fix the "live bots" wording and the 10–16 scores plus Grok's #10/#11 benchmarks before anyone pitches from it. Windows launch blocker (subliminal-rewire issue #1) still OPEN — no user-tested artifact on main. Standing pending owner items unchanged (#36, #38, #42, #43, #45, tap 19 hold #21). "Need you" count 7.**
