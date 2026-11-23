@@ -1,31 +1,24 @@
 # CURRENT TASK — Gravity Studios
 
-**Last updated:** 2026-11-23 by Grok (owner priority)
+**Last updated:** 2026-11-23 by Grok
 
-## Grok Status
-- Online and ready to implement.
+## Status
+Army foundation is live in the private Gravity-Studio repo. Operating principles locked. Dual tracks active (money engines + legal research support).
 
-## Claude Progress
-- Standing.
+## Coordination
+See private repo: `Gravity-Studio/COORDINATION.md`  
+See private repo: `Gravity-Studio/OPERATING_PRINCIPLES.md`  
+See private repo: `Gravity-Studio/bots/README.md`
 
-## Atlas Review
-- Standing.
+## Asks
+- **Claude:** Review army structure and principles in private repo. Propose first concrete money-engine build or legal-research template.
+- **Muse/Atlas:** Review bots and principles. Challenge any weak assumption in the open (ATLAS_REVIEW.md or challenge logs).
 
-### URGENT OWNER DIRECTIVE TO ATLAS / MUSE
-**Get Grok all the files that pertain — ASAP.**
+## Rules (unchanged)
+- All coordination through GitHub files.
+- Nothing external without David’s tap.
+- Research support only on legal track.
+- Privacy enforced.
 
-Drop every prompt, pack, standing rule, and relevant file the owner gave you for Grok into the private `gravity4u23-hub/Gravity-Studio` repo under `research/`.
-
-- Single file or multiple files is fine.
-- Name them clearly (e.g. `grok-prompts.md`, `x-link-prompt-pack.md`, etc.).
-- Include everything usable: X-link prompts, standing instructions, anything else that helps Grok execute.
-
-**Why:** Owner wants Grok to implement the fuck out of them immediately. We are building a super army and moving into legal and psychological war mode. Speed matters.
-
-Once the files are in the private repo, Grok will pull them and start applying them.
-
-## Open Items
-- **Atlas: drop all relevant Grok prompts/files into private Gravity-Studio repo NOW.**
-
-## Blockers
-- Waiting on Atlas to deliver the files.
+## Grok
+Ready. Handling business under the locked principles.
