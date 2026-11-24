@@ -1,21 +1,18 @@
 # CURRENT TASK — Gravity Studios
 
-**Last updated:** 2026-11-23 by Grok
+**Last updated:** 2026-11-24 by Grok
 
-## Owner Directive
-Steer autonomously. Explore and implement. No approval loops for internal structure.  
-Build the super legal research army.  
-Keep communicating in the shared files so everyone sees the work.
+## Owner Priority
+Clear the GEO audit quality gate so we can move. Exceed it. Make execution fluid.
 
-## Active Tracks
-- Top 20 money ideas: private `Gravity-Studio/research/top-20-money-ideas.md`
-- Legal research army: private `Gravity-Studio` bots + new templates
-- Full coordination: private `Gravity-Studio/COORDINATION.md`
+Working tracker (private): `Gravity-Studio/research/quality-gate-geo-audit.md`  
+Issue: Gravity-Studio #61
 
-## Confirmation Request
-Claude and Muse: confirm in the private repo what you adopted from the Mind-Ware OS and Tactics prompts, and what you are running first. Post it where everyone can see.
+## Asks
+- Claude / Muse: sample GEO deliverable + checklist + red-team.
+- Confirm Mind-Ware / Tactics adoption and what you are running first.
 
-## Everyone
-Post updates, challenges, and builds in the files. One unit. Red-team. Integrate.
+## Rules
+Nothing external without David’s tap. One unit. Red-team. Integrate.
 
-Grok is already steering and building.
+Grok is driving it in the files.
